@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>python on Carlos Gustavo Ruiz</title>
+    <link>https://carlosgruiz.dev/tags/python/</link>
+    <description>Recent content in python on Carlos Gustavo Ruiz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 21 Sep 2018 16:26:16 -0500</lastBuildDate><atom:link href="https://carlosgruiz.dev/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Entrevista Python Venezuela</title>
+      <link>https://carlosgruiz.dev/blog/entrevista-python-venezuela/</link>
+      <pubDate>Fri, 21 Sep 2018 16:26:16 -0500</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/entrevista-python-venezuela/</guid>
+      <description>&lt;p&gt;Jesús Gómez (&lt;a href=&#34;https://twitter.com/jgomo3&#34;&gt;@jgomo3&lt;/a&gt;) ha dado inicio a una
+serie de entrevistas a miembros de la comunidad de Python Venezuela, y bueno
+tuve la fortuna de ser su primer invitado. Durante una hora estuvimos hablando
+de mis inicios como programador, cómo conocí y adopté a Python y finalmente un
+poco sobre el proyecto en el que trabajo actualmente.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vim &#43; Python Mode</title>
+      <link>https://carlosgruiz.dev/blog/vim-python-mode/</link>
+      <pubDate>Fri, 22 Apr 2016 16:34:32 -0500</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/vim-python-mode/</guid>
+      <description>Presentación que realicé en el Día Python 2016 (1) en la Universidad Central de Venezuela. Comentando un poco de las herramientas que uso para mi trabajo.</description>
+    </item>
+    
+    <item>
+      <title>Introducció a Pyramid</title>
+      <link>https://carlosgruiz.dev/blog/introduccion-a-pyramid/</link>
+      <pubDate>Tue, 20 Aug 2013 08:18:00 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/introduccion-a-pyramid/</guid>
+      <description>En el mundo de los Frameworks de Python para aplicaciones en la web por años han resaltado algunos nombres Django, Pylons, CherryPy, TurboGears, Flask y Bottle entre otros. En medio de este conjunto de excelentes herramientas surge del proyecto Pylons el desarrollo llamado Pyramid.</description>
+    </item>
+    
+    <item>
+      <title>Introduccion a ZODB</title>
+      <link>https://carlosgruiz.dev/blog/breve-introduccion-a-zodb/</link>
+      <pubDate>Fri, 26 Jul 2013 19:31:00 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/breve-introduccion-a-zodb/</guid>
+      <description>&lt;p&gt;En concreto ZODB (Zope Object Data Base) es un gestor de bases de datos
+orientado a objetos. Esto significa para el usuario nuevo en esta
+tecnología que a diferencia de las bases de datos de uso mas frecuente
+en ZODB no hallará tablas ni esquemas ni nada parecido, así mismo no
+encontrará sentencias SQL en pues el lenguaje de consulta e indexado es
+Python.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>&#34;Hola PostgreSQL&#34; (con Python)</title>
+      <link>https://carlosgruiz.dev/blog/hola-postgresql-con-python/</link>
+      <pubDate>Mon, 18 Feb 2013 12:39:00 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/hola-postgresql-con-python/</guid>
+      <description>&lt;p&gt;Una de las tareas más frecuentes cuando iniciamos con las bases de datos
+es cómo conectamos las mismas con nuestros programas. En particular
+conectarse con PostgreSQL es una tarea bastante simple con Python.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Tutorial &#34;Introducción a la programacion Qt&#34; y otros hallazgos en la azotea</title>
+      <link>https://carlosgruiz.dev/blog/tutorial-introduccion-a-la-programacion-qt-y-otros-hallazgos-en-la-azotea/</link>
+      <pubDate>Fri, 25 Jan 2013 15:21:49 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/tutorial-introduccion-a-la-programacion-qt-y-otros-hallazgos-en-la-azotea/</guid>
+      <description>&lt;p&gt;En fin, hoy limpiando la wiki que solía utilizar en mi web personal
+conseguí algunas curiosidades que valen la pena compartir.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Integrando C&#43;&#43; con Python</title>
+      <link>https://carlosgruiz.dev/blog/integrando-cpp-con-python/</link>
+      <pubDate>Sun, 11 Nov 2012 13:32:23 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/integrando-cpp-con-python/</guid>
+      <description>&lt;p&gt;Durante el &lt;a href=&#34;https://carlosgruiz.dev/posts/pycon-venezuela-2012.html&#34;&gt;PyCon
+Venezuela&lt;/a&gt; hice una
+charla llamada &lt;a href=&#34;https://carlosgruiz.dev/talks/2012/Integrando-mis-librer%C3%ADas-C%2B%2B-con-Python.pdf&#34;&gt;Integrando mis librerías C++ con
+Python&lt;/a&gt;,
+sin embargo quedó pendiente la parte práctica de la misma. Es por ello
+que decidí convertir el taller en un post donde de muestre los ejemplos
+prácticos con algunos comentarios.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Web Mapping con Django</title>
+      <link>https://carlosgruiz.dev/blog/web-mapping-con-django/</link>
+      <pubDate>Wed, 07 Nov 2012 15:08:14 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/web-mapping-con-django/</guid>
+      <description>Luego de 3 años tocando la puerta en distintos eventos de Geomática por fin tuve la oportunidad de presentar el taller de creación de aplicaciones web de mapas con Django. Las razones en cada caso fueron las mismas, protagonismos y antagonismos, pero al final tuvo que ser mi ambiente natural quien me abriese la puerta, el PyCon Venezuela 2012.</description>
+    </item>
+    
+    <item>
+      <title>Pycon Venezuela 2012</title>
+      <link>https://carlosgruiz.dev/blog/pycon-venezuela-2012/</link>
+      <pubDate>Mon, 05 Nov 2012 16:27:31 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/pycon-venezuela-2012/</guid>
+      <description>&lt;p&gt;La Conferencia de Usuarios Python de Venezuela (PyConVE) fue una jornada
+frenética. No solamente por las noches preparando el material sino por
+la cantidad de información que fluyó entre nosotros. Caras nuevas en
+nombres conocidos, fue una oportunidad de conocer personalmente a amigos
+a quienes conozco principalmente por sus perfiles en Twitter, GitHub o
+BitBucket. Al final, luego de estos tres días de intensas jornadas creo
+que el objetivo, desde mi punto de vista, se cumplió por completo,
+consolidar la comunidad de Python en nuestro país.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>OpenVE y los &#34;Kits de arranque&#34;</title>
+      <link>https://carlosgruiz.dev/blog/openve-y-los-kits-de-arranque/</link>
+      <pubDate>Sun, 28 Oct 2012 04:24:34 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/openve-y-los-kits-de-arranque/</guid>
+      <description>&lt;p&gt;Hace unas semanas &lt;a href=&#34;http://sadasant.com/&#34;&gt;Daniel Rodríguez&lt;/a&gt; y &lt;a href=&#34;http://osledybazo.com/&#34;&gt;Osledy
+Bazó&lt;/a&gt; me invitaron a participar en la iniciativa
+&lt;a href=&#34;http://openve.github.com/&#34;&gt;OpenVE&lt;/a&gt; luego de la entrevista que me
+realizaran en su podcast &lt;a href=&#34;http://echandocodigo.com/&#34;&gt;EchandoCodigo&lt;/a&gt;.
+Inicialmente no sabía mucho de que trataba, sin embargo me quedó más
+claro cuando leí la declaración donde dice que &lt;strong&gt;&amp;ldquo;es una comunidad libre
+para la investigación y el desarrollo de proyectos de computación de
+código abierto&amp;rdquo;&lt;/strong&gt; y que uno de sus objetivos es hacer disponible una
+biblioteca de código abierto.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python vs El Mundo</title>
+      <link>https://carlosgruiz.dev/blog/python-vs-el-mundo/</link>
+      <pubDate>Tue, 10 May 2011 00:00:57 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/python-vs-el-mundo/</guid>
+      <description>Inspirado en la Película Scott Pilgrim vs El Mundo y en ocasión del Día Python en Mayo de 2011, tuve la oportunidad de presentar la evaluación tecnológica para responder a la pregunta frecuente de ¿Por qué usar Python para mi proyecto?.</description>
+    </item>
+    
+    <item>
+      <title>Django vs Pylons</title>
+      <link>https://carlosgruiz.dev/blog/django-vs-pylons/</link>
+      <pubDate>Sun, 15 Aug 2010 17:50:59 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/django-vs-pylons/</guid>
+      <description>&lt;p&gt;s comparaciones suelen ser odiosas, destapar algún
+tipo de polémica o mostrar preferencias más allá del aspecto técnico y
+objetivo de una plataforma o programa. Sin embargo, debido a que me toca
+hacer una evaluación tecnológica para un proyecto me vi en la necesidad
+de poner tratar de comparar las plataformas web disponibles en Python
+que pudiesen apoyar mis actividades.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GeoEtiquetas (Presentación en Jornadas gvSIG)</title>
+      <link>https://carlosgruiz.dev/blog/geoetiquetas-presentacion-en-jornadas-gvsig/</link>
+      <pubDate>Mon, 19 Jul 2010 17:36:01 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/geoetiquetas-presentacion-en-jornadas-gvsig/</guid>
+      <description>Presentación del proyecto GeoEtiquetas, en las 2das Jornadas de gvSIG Latinoamérica y del Caribe.</description>
+    </item>
+    
+    <item>
+      <title>Camelot</title>
+      <link>https://carlosgruiz.dev/blog/camelot/</link>
+      <pubDate>Wed, 09 Jun 2010 04:34:00 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/camelot/</guid>
+      <description>&lt;p&gt;Hace un año más o menos me enteré de la existencia del proyecto Camelot,
+un proyecto para GUIs inspirado en las funcionalidades de Django. Algo
+realmente ambicioso y por supuesto bienvenido para los programadores que
+como yo, habiendo conseguido un excelente Framework para la web,
+sentimos que faltaba en el mundo de las GUI.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

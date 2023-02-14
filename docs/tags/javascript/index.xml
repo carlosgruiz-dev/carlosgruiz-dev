@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>javascript on Carlos Gustavo Ruiz</title>
+    <link>https://carlosgruiz.dev/tags/javascript/</link>
+    <description>Recent content in javascript on Carlos Gustavo Ruiz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Aug 2009 21:27:00 -0400</lastBuildDate><atom:link href="https://carlosgruiz.dev/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>El Lenguaje De Programacion Javascript</title>
+      <link>https://carlosgruiz.dev/blog/el-lenguaje-de-programacion-javascript/</link>
+      <pubDate>Mon, 03 Aug 2009 21:27:00 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/el-lenguaje-de-programacion-javascript/</guid>
+      <description>&lt;p&gt;Esta es una serie de videos donde se da una introducción al lenguaje de
+programación JavaScript. Las filminas (láminas/slides) se encuentran en
+esta dirección &lt;a href=&#34;http://yuiblog.com/assets/crockford/javascript.zip&#34;&gt;http://yuiblog.com/assets/crockford/javascript.zip&lt;/a&gt;. Si
+bien el tópico no es de Python, si se desea trabajar sobre web hay que
+conocer este lenguaje de programación.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

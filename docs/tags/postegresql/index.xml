@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>postegresql on Carlos Gustavo Ruiz</title>
+    <link>https://carlosgruiz.dev/tags/postegresql/</link>
+    <description>Recent content in postegresql on Carlos Gustavo Ruiz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 30 Oct 2013 23:27:00 -0400</lastBuildDate><atom:link href="https://carlosgruiz.dev/tags/postegresql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bases de Datos Libres desde 40.000 pies de altura</title>
+      <link>https://carlosgruiz.dev/blog/bases-de-datos-libres-desde-40000-pies-de-altura/</link>
+      <pubDate>Wed, 30 Oct 2013 23:27:00 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/bases-de-datos-libres-desde-40000-pies-de-altura/</guid>
+      <description>El día 17 de octubre tuve la oportunidad durante la 1ra Cayapa Universitaria en la UPTOS CR (Cumaná, Estado Sucre, Venezuela) tuve la oportunidad de presentar la ponencia &amp;ldquo;Bases de Datos Libres desde 40.000 pies de altura&amp;rdquo; en representación del equipo de tubasededatoslibre.org. En este post se encuentra la presentación y el código utilizado durante esta jornada.</description>
+    </item>
+    
+  </channel>
+</rss>

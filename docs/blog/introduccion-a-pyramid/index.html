@@ -1,0 +1,408 @@
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Introducció a Pyramid | Carlos Gustavo Ruiz</title><meta name=keywords content="tutorial,python,pyramid,framework,sqlalchemy,spanish"><meta name=description content="En el mundo de los Frameworks de Python para aplicaciones en la web por años han resaltado algunos nombres Django, Pylons, CherryPy, TurboGears, Flask y Bottle entre otros. En medio de este conjunto de excelentes herramientas surge del proyecto Pylons el desarrollo llamado Pyramid."><meta name=author content><link rel=canonical href=https://carlosgruiz.dev/blog/introduccion-a-pyramid/><link crossorigin=anonymous href=/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css integrity="sha256-yIlj/i15RiAA/Q+xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as=style><script defer crossorigin=anonymous src=/assets/js/highlight.min.b95bacdc39e37a332a9f883b1e78be4abc1fdca2bc1f2641f55e3cd3dabd4d61.js integrity="sha256-uVus3DnjejMqn4g7Hni+Srwf3KK8HyZB9V4809q9TWE=" onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://carlosgruiz.dev/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://carlosgruiz.dev/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://carlosgruiz.dev/favicon-32x32.png><link rel=apple-touch-icon href=https://carlosgruiz.dev/apple-touch-icon.png><link rel=mask-icon href=https://carlosgruiz.dev/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:title" content="Introducció a Pyramid"><meta property="og:description" content="En el mundo de los Frameworks de Python para aplicaciones en la web por años han resaltado algunos nombres Django, Pylons, CherryPy, TurboGears, Flask y Bottle entre otros. En medio de este conjunto de excelentes herramientas surge del proyecto Pylons el desarrollo llamado Pyramid."><meta property="og:type" content="article"><meta property="og:url" content="https://carlosgruiz.dev/blog/introduccion-a-pyramid/"><meta property="article:section" content="blog"><meta property="article:published_time" content="2013-08-20T08:18:00-04:00"><meta property="article:modified_time" content="2014-12-12T16:14:00-04:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Introducció a Pyramid"><meta name=twitter:description content="En el mundo de los Frameworks de Python para aplicaciones en la web por años han resaltado algunos nombres Django, Pylons, CherryPy, TurboGears, Flask y Bottle entre otros. En medio de este conjunto de excelentes herramientas surge del proyecto Pylons el desarrollo llamado Pyramid."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Blog","item":"https://carlosgruiz.dev/blog/"},{"@type":"ListItem","position":2,"name":"Introducció a Pyramid","item":"https://carlosgruiz.dev/blog/introduccion-a-pyramid/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Introducció a Pyramid","name":"Introducció a Pyramid","description":"En el mundo de los Frameworks de Python para aplicaciones en la web por años han resaltado algunos nombres Django, Pylons, CherryPy, TurboGears, Flask y Bottle entre otros. En medio de este conjunto de excelentes herramientas surge del proyecto Pylons el desarrollo llamado Pyramid.","keywords":["tutorial","python","pyramid","framework","sqlalchemy","spanish"],"articleBody":"Como es sabido, es posible escribir una aplicación web con Python sin necesidad de un Framework, sin embargo estos han ganado popularidad pues facilitan el trabajo a través de métodos y armazones que simplifican las tareas más frecuentes. En el mundo de los Frameworks de Python para aplicaciones en la web por años han resaltado algunos nombres: Django, Pylons, CherryPy, TurboGears, Flask y Bottle entre otros, todos buenos, con sus ventajas particulares para cada tipo de aplicación. En medio de este conjunto de excelentes herramientas surge del proyecto Pylons el desarrollo llamado Pyramid, que a mi juicio es un sucesor con muy buenas perspectivas. Dejemos entonces la conversación y comencemos a ver un poco de que trata este programa.\n¿Qué es Pyramid? Pyramid es un framework ligero para desarrollo web hecho en Python, es de uso general, así que no importa que tan grande o pequeña sea su aplicación Pyramid puede ser su mejor solución. En su pagina web exponen los principios de diseño en que se basa, vale la pena echarles un vistazo:\nSimplicidad: con Pyramid usted “paga lo que va a consumir”, usted requerirá de un grupo de conceptos básicos y en adelante usted es libre de utilizar la tecnología de su preferencia para crear su aplicación. Minimalismo: Pyramid le proveerá de soluciones rápidas y de alta calidad para los aspectos esenciales de cualquier aplicación web moderna. Documentación: el aspecto anterior permite que la documentación de Pyramid pueda estar completamente actualizada y que no queden aspectos sin documentar. En tal sentido es un valor que no exista aspecto de Pyramid desactualizado. Velocidad: Pyramid está diseñado para mejorar el desempeño en tareas comunes como el uso de plantillas y en manejo de respuestas. Aunque el mantra de “el hardware es barato” parece ofrecer una solución rápida al desempeño, suele ser un penoso despertar cuando aparecen las evidentes limitaciones de este enfoque al conseguirse administrando un gran número de equipos. Confiabilidad: Para el equipo de desarrollo de Pyramid esta frase es un mantra: “Si no ha sido probado, está roto”. Cada lanzamiento de Pyramid ha sido 100% probado vía pruebas unitarias. Apertura: de forma similar a Python, Pyramid es distribuido con una licencia abierta permisiva. Pasemos ahora a la acción.\nCalentando Motores Lo primero que debemos hacer es instalar Pyramid, sin embargo normalmente cuando trabajamos con Python procuramos utilizar un entorno virtual antes que colocar los programas en nuestra instalación de Python. Incluso muchas veces se mantiene así en ambientes compartidos como los servicios de hosting comerciales.\nCreación de un Entorno Virtual Aunque existen varios programas para el manejo de entornos virtuales, nos concentraremos en el uso de uno de ellos. Su nombre es virtualenv (y en caso de querer simplificar su trabajo puede usar virtualenvwrapper). Este ambiente aislado permite instalar los programas python desde PYPI sin necesidad de alterar la configuración de PC y dándole a usted la capacidad de probar múltiples versiones de múltiples programas. Usar virtualenv es realmente sencillo, para crear un entorno virtual escriba.\n$ virtualenv --no-site-packages env (env) $ Para activar su entorno virtual puede escribir:\n$ source [/ruta/a/la/carpteta/]env/bin/activate (env) $ y para desactivarlo:\n(env) $ deactivate $ Esta es una introducción rápida a virtualenv, si no lo ha usado anteriormente es recomendable darse una visita a la página virtualenv.org.\nInstalando Paquetes Una vez instalado y activado el entorno virtual instalar pyramid es sumamente sencillo, basta con escribir\n(env) $ pip install pyramid .... .... (chum chum chum) ... .... Cleaning up... (env) $ y si en el proceso no envió ningún mensaje de error puede entrar a Python para probarlo.\n\u003e\u003e\u003e import pyramid \u003e\u003e\u003e Primera Aplicación de Prueba ¿Ansioso por comenzar? bueno entonces no esperemos más, dentro del entorno virtual que acabas de iniciar crea un archivo llamado holapyramid.py y copia el siguiente código fuente:\nfrom wsgiref.simple_server import make_server from pyramid.config import Configurator from pyramid.response import Response def hello_world(request): return Response('Hola Pyramid') def main(): config = Configurator() config.add_route('hello', '/') config.add_view(hello_world, route_name='hello') app = config.make_wsgi_app() return app if __name__ == '__main__': app = main() server = make_server('0.0.0.0', 8080, app) print ('Iniciando servidor en http://localhost:8080') server.serve_forever() (ejemplo adaptado de pyramid_tutorials)\nEl funcionamiento de este programa es bastante simple, incorporamos a nuestro programa la función make_server del módulo wsgiref además de los componentes Configurator y Response de Pyramid. Lo siquiente que hacemos es declarar una función llamada hello_world que toma una solicitud por argumento y devuelve el texto Hola Pyramid como respuesta. Hasta allí todo muy sencillo.\nParte del corazón de Pyramid es el Configurator que permite gestionar los aspectos que controlan la aplicación. En tal sentido en la función main creamos un objeto Configurator, definimos una ruta llamada hello y que apunta a la raíz del sitio web, y seguidamente asignamos la función hello_world a modo de una vista llamable (View Callable) a la ruta hello. Finalmente, a través del objeto Configurator creamos una aplicación wsgi y la devolvemos como resultado de la función.\nLa última parte del script se ejecuta cuando hacemos el llamado desde la línea de comandos y es que entonces con la función main() creamos una aplicación que enviamos a wsgi para publicar desde nuestro equipo por el puerto 8080. Enviamos un mensaje al usuario indicando la dirección de la página, cuando seguidamente iniciamos el servidor wsgi para recibir solicitudes.\nOtra Aplicación de Prueba Pyramid permite simplificar el proceso de crear una aplicación mediante el uso de un armazón (scaffold). Incluso podrá crear sus propios esquemas que se adapten a su estilo y preferencias. Para efecto de este ejemplo utilizaremos uno de los armazón de los que trae Pyramid por defecto. Para ver los disponibles escriba en su terminal.\n(env) $ pcreate -l Available scaffolds: alchemy: Pyramid SQLAlchemy project using url dispatch starter: Pyramid starter project zodb: Pyramid ZODB project using traversal (env) $ las opciones son alchemy que crea un esquema que utiliza SQL Alchemy para gestionar la persistencia y un despachador de direcciones URL, starter para un andamiaje simple y finalmente zodb para gestionar la persistencia de datos con la base de datos orientada a objetos ZODB y resolución de URL mediante transversal.\nCrear Aplicación usando un Armazón (scaffold) Para crear un armazón dentro de Pyramid tendrá que ejecutar el siguiente comando:\n(env) $ pcreate -s alchemy MyApp .... .... (chum chum chum) ... .... =================================================================== Tutorials: http://docs.pylonsproject.org/projects/pyramid_tutorials Documentation: http://docs.pylonsproject.org/projects/pyramid Twitter (tips \u0026 updates): http://twitter.com/pylons Mailing List: http://groups.google.com/group/pylons-discuss Welcome to Pyramid. Sorry for the convenience. =================================================================== (env) $ Ahora tendrá un sistema como resultado del comando ‘pcreate‘ el andamiaje listo para su aplicación mediante esta estructura de archivos.\nMyApp/ myapp/ scripts/ __init__.py initializedb.py static/ (....) templates/ mytemplate.pt __init__.py models.py tests.py views.py CHANGES.txt MANIFEST.in README.txt development.ini production.ini setup.cfg setup.py Esta estructura de directorios componen ahora su proyecto, el directorio MyApp es su distribución de Python (tal y como los consigue en PyPI), el directorio myapp contiene nuestra aplicación web, con su código fuente y archivos estáticos.\nEl archivo setup.py puede ser usado para distribuir su aplicación, o instalarla en su ambiente de producción, los archivos .ini se utilizan para almacenar configuraciones. Dentro de la aplicación podrá notar que se encuentran las carpetas scripts, static y templates que son para colocar diálogos (generalmente para configuraciones), contenidos estáticos y plantillas respectivamente. Finalmente los archivos __init__.py, models.py, test.py y view.py se encargan de definir un módulo de python, almacenar la información de los modelos en SQL Alchemy, las pruebas del código y las vistas que se encargarán de tramitar las solicitudes realizadas a la aplicación.\nInstalando la Aplicación El siguiente paso que toca realizar es instalar la nuestra aplicación. Para ello escribimos el siguiente comando:\n(env) $ cd MyApp (env) $ python setup.py develop .... .... (chum chum chum) ... .... Finished processing dependencies for MyApp==0.0 (env) $ Posteriormente inicializamos la base de datos mediante el comando:\n(env) $ initialize_MyApp_db development.ini .... .... (chum chum chum) ... .... (env) $ Probando el Armazón Para probar nuestra aplicación escribamos el siguiente comando:\n(env) $ pserve development.ini --reload Starting subprocess with file monitor Starting server in PID 16536. serving on http://0.0.0.0:6543 Proceda a abrir su navegador en la dirección http://localhost:6543/ y podrá ver la aplicación por defecto que viene con el armazón alchemy de Pyramid. A continuación se muestran unos pantallazos de la aplicación de muestra junto con los datos que muestra la barra de depuración.\nNote lo siguiente, como Pyramid publica por la dirección http://0.0.0.0:6543 otros equipos podrán acceder a su aplicación a través de su dirección IP, sin embargo la barra de depuración sólo está disponible para los usuarios locales.\nModificando el Armazón Ahora avancemos con los cambios para hacer nuestra aplicación, pero primero comencemos por definir qué es lo que queremos que haga. Una de las tareas más comunes es el llenado de formularios web, así que hagamos un ejemplo con esto. Acá una salvedad, Pyramid es bastante extenso y tal vez lo propuesto acá sea rudimentario en comparación a una solución del mundo real, concretamente hablo del manejo de formulario, validaciones, pruebas y control de usuarios (este último no se tomó en cuenta). Sin embargo es un ejemplo para ilustrar el proceso básico de capturar una información a través de una planilla y poder ver los resultados.\nAcorde a esto el sitio web deberá tener la siguiente estructura:\nURL Acción Vista Planitilla\n/ Mostrar planilla de recolección de información. home home.pt /data Desplegar la lista de planillas recibidas. list list.pt /data/numero Mostrar la planilla con el id igual a numero. Si el registro numero no existe redirigir la página a /data. show show.pt\nA continuación, agregaremos dentro del archivo myapp/__init__.py las rutas (urls) de nuestra aplicación:\nfrom pyramid.config import Configurator from sqlalchemy import engine_from_config from .models import ( DBSession, Base, ) def main(global_config, **settings): \"\"\" This function returns a Pyramid WSGI application. \"\"\" engine = engine_from_config(settings, 'sqlalchemy.') DBSession.configure(bind=engine) Base.metadata.bind = engine config = Configurator(settings=settings) config.add_static_view('static', 'static', cache_max_age=3600) config.add_route('home', '/') # para el inicio de la app config.add_route('list','/data') # para visualizar el listado config.add_route('show','/data/{uid}') # para ver el detalle config.scan() return config.make_wsgi_app() Saltemos por un momento al modelo, la tabla que utilizaremos para nuestra aplicación tendrá los siguientes campos; un identificador, un título y el texto para cada título. Para ello modificaremos nuestro archivo myapp/models.py para que coincida con el siguiente texto:\nfrom sqlalchemy import ( Column, Integer, Text, Sequence, ) from sqlalchemy.ext.declarative import declarative_base from sqlalchemy.orm import ( scoped_session, sessionmaker, ) from zope.sqlalchemy import ZopeTransactionExtension DBSession = scoped_session(sessionmaker(extension=ZopeTransactionExtension())) Base = declarative_base() class WebFormData(Base): __tablename__ = 'webformdata' id = Column(Integer, Sequence('webformdata_seq'), primary_key=True) title = Column(Text, unique=True) comment_text = Column(Text) def __init__(self, title, comment_text): self.title = title self.comment_text = comment_text Para que sus cambios surtan efecto, modifique igualmente el archivo myapp/scripts/initializedb.py con el siguiente contenido:\nimport os import sys import transaction from sqlalchemy import engine_from_config from pyramid.paster import ( get_appsettings, setup_logging, ) from ..models import ( DBSession, WebFormData, Base, ) def usage(argv): cmd = os.path.basename(argv[0]) print('usage: %s \u0026amp;lt;config_uri\u0026amp;gt;\\n' '(example: \"%s development.ini\")' % (cmd, cmd)) sys.exit(1) def main(argv=sys.argv): if len(argv) != 2: usage(argv) config_uri = argv[1] setup_logging(config_uri) settings = get_appsettings(config_uri) engine = engine_from_config(settings, 'sqlalchemy.') DBSession.configure(bind=engine) Base.metadata.create_all(engine) En este punto ejecute de nuevo initialize\\MyApp\\db como hizo anteriormente actualizar su base de datos.\nPasemos ahora a trabajar con las plantillas. Para las plantillas haremos uso de una de las bibliotecas de plantillas que nos propone inicialmente Pyramid, llamada Chameleon (el otro propuesto de entrada es Mako, sin embargo usted es libre de seleccionar otro sistema de plantillas, como Jinja2 o Genshi, si lo desea). De la lista del diseño se contemplan tres plantillas, que son a saber:\nhome.pt\n\u003c!DOCTYPE html\u003e \u003chtml\u003e \u003chead\u003e \u003ctitle\u003eMy First Pyramid App\u003c/title\u003e \u003cmeta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\"/\u003e \u003c/head\u003e \u003cbody\u003e \u003ch1\u003eTell me something...\u003c/h1\u003e \u003cform action=\"${save_form}\" method=\"post\"\u003e \u003cinput type=\"text\" name=\"title\"\u003e\u003c/input\u003e\u003cbr /\u003e \u003ctextarea name=\"comment_text\"\u003e\u003c/textarea\u003e\u003cbr /\u003e \u003cinput type=\"submit\" name=\"form.submitted\" value=\"Send\"\u003e \u003c/form\u003e \u003cbr /\u003e \u003ca href=\"${save_form}\"\u003eother comments..\u003c/a\u003e \u003c/body\u003e \u003c/html\u003e list.pt\n\u003c!DOCTYPE html\u003e \u003chtml\u003e \u003chead\u003e \u003ctitle\u003eMy First Pyramid App\u003c/title\u003e \u003cmeta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\"/\u003e \u003c/head\u003e \u003cbody\u003e \u003ch1\u003eYou have said..\u003c/h1\u003e \u003cul\u003e \u003ctal:block repeat=\"item data\"\u003e \u003cli\u003e\u003ca href=\"/data/${item.id}\"\u003e${item.title}\u003c/a\u003e\u003c/li\u003e \u003c/tal:block\u003e \u003c/ul\u003e \u003ca href=\"/\"\u003ehome\u003c/a\u003e \u003c/body\u003e \u003c/html\u003e y show.pt\n\u003c!DOCTYPE html\u003e \u003chtml\u003e \u003chead\u003e \u003ctitle\u003eMy First Pyramid App\u003c/title\u003e \u003cmeta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\"/\u003e \u003c/head\u003e \u003cbody\u003e \u003ch1\u003e${comment.title}\u003c/h1\u003e \u003chr /\u003e \u003cp\u003e${comment.comment_text}\u003c/p\u003e \u003cp\u003e\u003ca href=\"/\"\u003ehome\u003c/a\u003e\u003c/p\u003e \u003c/body\u003e \u003c/html\u003e Para finalizar completemos el código de nuestras vistas transcribiendo lo siguiente:\nfrom pyramid.view import view_config from pyramid.httpexceptions import HTTPFound from sqlalchemy.exc import DBAPIError from .models import ( DBSession, WebFormData, ) @view_config(route_name='home', renderer='templates/home.pt') def home(request): save_form = request.route_url('list') return {'save_form':save_form} @view_config(route_name='list', renderer='templates/list.pt') def list(request): if 'form.submitted' in request.params: title = request.params['title'] comment_text = request.params['comment_text'] comment = WebFormData(title, comment_text) DBSession.add(comment) data = DBSession.query(WebFormData).all() return {'data':data} @view_config(route_name='show', renderer=\"templates/show.pt\") def show(request): uid = request.matchdict['uid'] comment = DBSession.query(WebFormData).filter_by(id=uid).first() if comment is None: return HTTPFound(request.route_url('list')) return {'comment': comment} Para completar inicie su aplicación y vea los cambios, si observa algún error compare su código con el del repositorio en GitHub que acompaña este artículo.\nMi primera aplicación Que hace nuestra aplicación, en pocas palabras, despachamos una aplicación wsgi. Esta aplicación tiene su configuración en el archivo myapp/__init__.py donde definimos el motor de base de datos (línea 13) y las rutas (líneas 18 al 20). Con ayuda de SQL Alchemy (en el archivo models.py) definimos un modelo llamado WebFormData, nótese que este modelo es equivalente a la tabla webformdata. Al ejecutar el script initialize_MyApp_db lo que sucede es que creamos en el gestor de base datos (en el caso del parámetro development.ini es un archivo SQLite) la tabla webformdata.\nSeguidamente cuando el servidor web está en ejecución (en los ejemplo con la instrucción pserve), al ingresar a la dirección http://localhost:6543/ la aplicación le mostrará la plantilla correspondiente a la ruta home, si agrega un comentario le mostrará a continuación el listado de los comentarios recibidos y finalmente al hacer click en el vínculo asociado a alguno de los comentarios listados verá el texto completo del comentario. A continuación unos pantallazos.\nHay muchos detalles convenientes en el uso de Pyramid, en especial me ha sido útil para dar representación web a proyectos generados en otros contextos, la invitación es pues a explorar las alternativas que ofrece a sus necesidades.\n¿Donde continuar? Existen abundantes y muy buenos recursos para aprender e implementar Pyramid, sin embargo estos son algunos de los recursos a los cuales vale la pena echarles un vistazo:\nPágina del proyecto Pylons: pylonsproject.org Documentación de Pyramid: docs.pylonsproject.org Presentación de Keith Yang “Use Pyramid Like a Pro”: keitheis.github.io Presentación de Daniel Nouri en el EuroPython 2012: danielnouri.org github.com/dnouri Tutoriales de Pyramid: github.com/Pylons/pyramid_tutorials Comparativa de rendimiento con otros frameworks: http://blog.curiasolutions.com/the-great-web-framework-shootout/ ","wordCount":"2382","inLanguage":"en","datePublished":"2013-08-20T08:18:00-04:00","dateModified":"2014-12-12T16:14:00-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://carlosgruiz.dev/blog/introduccion-a-pyramid/"},"publisher":{"@type":"Organization","name":"Carlos Gustavo Ruiz","logo":{"@type":"ImageObject","url":"https://carlosgruiz.dev/favicon.ico"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://carlosgruiz.dev/ accesskey=h title="Carlos Gustavo Ruiz (Alt + H)">Carlos Gustavo Ruiz</a>
+<span class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></span></div><ul id=menu><li><a href=https://carlosgruiz.dev/blog/ title=blog><span>blog</span></a></li><li><a href=https://carlosgruiz.dev/wiki/ title=wiki><span>wiki</span></a></li><li><a href=https://carlosgruiz.dev/talks/ title=talks><span>talks</span></a></li><li><a href=https://carlosgruiz.dev/bookmarks/ title=bookmarks><span>bookmarks</span></a></li><li><a href=https://carlosgruiz.dev/now/ title=now><span>now</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><h1 class=post-title>Introducció a Pyramid</h1><div class=post-meta><span title='2013-08-20 08:18:00 -0400 -0400'>August 20, 2013</span></div></header><div class=post-content><p>Como es sabido, es posible escribir una aplicación web con Python sin
+necesidad de un Framework, sin embargo estos han ganado popularidad pues
+facilitan el trabajo a través de métodos y armazones que simplifican las
+tareas más frecuentes. En el mundo de los Frameworks de Python para
+aplicaciones en la web por años han resaltado algunos nombres:
+<a href=https://www.djangoproject.com/>Django</a>,
+<a href=http://www.pylonsproject.org/>Pylons</a>,
+<a href=http://www.cherrypy.org/>CherryPy</a>,
+<a href=http://turbogears.org/>TurboGears</a>, <a href=http://flask.pocoo.org/>Flask</a> y
+<a href=http://bottlepy.org/>Bottle</a> entre otros, todos buenos, con sus
+ventajas particulares para cada tipo de aplicación. En medio de este
+conjunto de excelentes herramientas surge del proyecto Pylons el
+desarrollo llamado
+<a href=http://www.pylonsproject.org/projects/pyramid/>Pyramid</a>, que a mi
+juicio es un sucesor con muy buenas perspectivas. Dejemos entonces la
+conversación y comencemos a ver un poco de que trata este programa.</p><p><img loading=lazy src=/images/pyramid.biglogo.png alt=image></p><h2 id=qué-es-pyramid>¿Qué es Pyramid?<a hidden class=anchor aria-hidden=true href=#qué-es-pyramid>#</a></h2><p>Pyramid es un framework ligero para desarrollo web hecho en Python, es
+de uso general, así que no importa que tan grande o pequeña sea su
+aplicación Pyramid puede ser su mejor solución. En su pagina web exponen
+los principios de diseño en que se basa, vale la pena echarles un
+vistazo:</p><ul><li><strong>Simplicidad</strong>: con Pyramid usted <em>&ldquo;paga lo que va a consumir&rdquo;</em>,
+usted requerirá de un grupo de conceptos básicos y en adelante usted
+es libre de utilizar la tecnología de su preferencia para crear
+su aplicación.</li><li><strong>Minimalismo</strong>: Pyramid le proveerá de soluciones rápidas y de alta
+calidad para los aspectos esenciales de cualquier aplicación web moderna.</li><li><strong>Documentación</strong>: el aspecto anterior permite que la documentación de
+Pyramid pueda estar completamente actualizada y que no queden
+aspectos sin documentar. En tal sentido es un valor que no exista
+aspecto de Pyramid desactualizado.</li><li><strong>Velocidad</strong>: Pyramid está diseñado para mejorar el desempeño en
+tareas comunes como el uso de plantillas y en manejo de respuestas.
+Aunque el mantra de <em>&ldquo;el hardware es barato&rdquo;</em> parece ofrecer una
+solución rápida al desempeño, suele ser un penoso despertar cuando
+aparecen las evidentes limitaciones de este enfoque al conseguirse
+administrando un gran número de equipos.</li><li><strong>Confiabilidad</strong>: Para el equipo de desarrollo de Pyramid esta frase
+es un mantra: <em>&ldquo;Si no ha sido probado, está roto&rdquo;</em>. Cada lanzamiento
+de Pyramid ha sido 100% probado vía pruebas unitarias.</li><li><strong>Apertura</strong>: de forma similar a Python, Pyramid es distribuido con
+una <a href=http://www.pylonsproject.org/about/license>licencia abierta permisiva</a>.</li></ul><p>Pasemos ahora a la acción.</p><h2 id=calentando-motores>Calentando Motores<a hidden class=anchor aria-hidden=true href=#calentando-motores>#</a></h2><p><img loading=lazy src=/images/pyramid-tee-banner.png alt=image></p><p>Lo primero que debemos hacer es instalar Pyramid, sin embargo
+normalmente cuando trabajamos con Python procuramos utilizar un entorno
+virtual antes que colocar los programas en nuestra instalación de
+Python. Incluso muchas veces se mantiene así en ambientes compartidos
+como los servicios de hosting comerciales.</p><h3 id=creación-de-un-entorno-virtual>Creación de un Entorno Virtual<a hidden class=anchor aria-hidden=true href=#creación-de-un-entorno-virtual>#</a></h3><p>Aunque existen varios programas para el manejo de entornos virtuales,
+nos concentraremos en el uso de uno de ellos. Su nombre es
+<a href=http://www.virtualenv.org/>virtualenv</a> (y en caso de querer
+simplificar su trabajo puede usar
+<a href=http://virtualenvwrapper.readthedocs.org/>virtualenvwrapper</a>). Este
+ambiente aislado permite instalar los programas python desde PYPI sin
+necesidad de alterar la configuración de PC y dándole a usted la
+capacidad de probar múltiples versiones de múltiples programas. Usar
+virtualenv es realmente sencillo, para crear un entorno virtual escriba.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ virtualenv --no-site-packages env
+</span></span><span style=display:flex><span><span style=color:#f92672>(</span>env<span style=color:#f92672>)</span> $
+</span></span></code></pre></div><p>Para activar su entorno virtual puede escribir:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ source <span style=color:#f92672>[</span>/ruta/a/la/carpteta/<span style=color:#f92672>]</span>env/bin/activate
+</span></span><span style=display:flex><span><span style=color:#f92672>(</span>env<span style=color:#f92672>)</span> $
+</span></span></code></pre></div><p>y para desactivarlo:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#f92672>(</span>env<span style=color:#f92672>)</span> $ deactivate
+</span></span><span style=display:flex><span>$
+</span></span></code></pre></div><p>Esta es una introducción rápida a virtualenv, si no lo ha usado
+anteriormente es recomendable darse una visita a la página
+<a href=http://www.virtualenv.org/>virtualenv.org</a>.</p><h3 id=instalando-paquetes>Instalando Paquetes<a hidden class=anchor aria-hidden=true href=#instalando-paquetes>#</a></h3><p>Una vez instalado y activado el entorno virtual instalar pyramid es
+sumamente sencillo, basta con escribir</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#f92672>(</span>env<span style=color:#f92672>)</span> $ pip install pyramid
+</span></span><span style=display:flex><span>....
+</span></span><span style=display:flex><span>.... <span style=color:#f92672>(</span>chum chum chum<span style=color:#f92672>)</span> ...
+</span></span><span style=display:flex><span>....
+</span></span><span style=display:flex><span>Cleaning up...
+</span></span><span style=display:flex><span><span style=color:#f92672>(</span>env<span style=color:#f92672>)</span> $
+</span></span></code></pre></div><p>y si en el proceso no envió ningún mensaje de error puede entrar a
+Python para probarlo.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>&gt;&gt;&gt; import pyramid
+</span></span><span style=display:flex><span>&gt;&gt;&gt;
+</span></span></code></pre></div><h2 id=primera-aplicación-de-prueba>Primera Aplicación de Prueba<a hidden class=anchor aria-hidden=true href=#primera-aplicación-de-prueba>#</a></h2><p>¿Ansioso por comenzar? bueno entonces no esperemos más, dentro del
+entorno virtual que acabas de iniciar crea un archivo llamado
+<code>holapyramid.py</code> y copia el siguiente código fuente:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>from</span> wsgiref.simple_server <span style=color:#f92672>import</span> make_server <span style=color:#f92672>from</span> pyramid.config
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> Configurator <span style=color:#f92672>from</span> pyramid.response <span style=color:#f92672>import</span> Response
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>hello_world</span>(request):
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> Response(<span style=color:#e6db74>&#39;Hola Pyramid&#39;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>main</span>():
+</span></span><span style=display:flex><span>    config <span style=color:#f92672>=</span> Configurator()
+</span></span><span style=display:flex><span>    config<span style=color:#f92672>.</span>add_route(<span style=color:#e6db74>&#39;hello&#39;</span>, <span style=color:#e6db74>&#39;/&#39;</span>)
+</span></span><span style=display:flex><span>    config<span style=color:#f92672>.</span>add_view(hello_world, route_name<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;hello&#39;</span>)
+</span></span><span style=display:flex><span>    app <span style=color:#f92672>=</span> config<span style=color:#f92672>.</span>make_wsgi_app()
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> app
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>if</span> __name__ <span style=color:#f92672>==</span> <span style=color:#e6db74>&#39;__main__&#39;</span>:
+</span></span><span style=display:flex><span>    app <span style=color:#f92672>=</span> main()
+</span></span><span style=display:flex><span>    server <span style=color:#f92672>=</span> make_server(<span style=color:#e6db74>&#39;0.0.0.0&#39;</span>, <span style=color:#ae81ff>8080</span>, app)
+</span></span><span style=display:flex><span>    print (<span style=color:#e6db74>&#39;Iniciando servidor en http://localhost:8080&#39;</span>)
+</span></span><span style=display:flex><span>    server<span style=color:#f92672>.</span>serve_forever()
+</span></span></code></pre></div><p>(ejemplo adaptado de
+<a href=https://github.com/Pylons/pyramid_tutorials>pyramid_tutorials</a>)</p><p>El funcionamiento de este programa es bastante simple, incorporamos a
+nuestro programa la función <code>make_server</code> del módulo <code>wsgiref</code>
+además de los componentes <code>Configurator</code> y <code>Response</code> de Pyramid. Lo
+siquiente que hacemos es declarar una función llamada <code>hello_world</code>
+que toma una solicitud por argumento y devuelve el texto <code>Hola Pyramid</code> como respuesta. Hasta allí todo muy sencillo.</p><p>Parte del corazón de Pyramid es el <code>Configurator</code> que permite
+gestionar los aspectos que controlan la aplicación. En tal sentido en la
+función <code>main</code> creamos un objeto <code>Configurator</code>, definimos una ruta
+llamada <code>hello</code> y que apunta a la raíz del sitio web, y seguidamente
+asignamos la función <code>hello_world</code> a modo de una vista llamable
+(<a href=http://docs.pylonsproject.org/projects/pyramid/en/1.4-branch/narr/views.html#view-callables>View Callable</a>)
+a la ruta <code>hello</code>. Finalmente, a través del objeto <code>Configurator</code>
+creamos una aplicación <code>wsgi</code> y la devolvemos como resultado de la
+función.</p><p>La última parte del script se ejecuta cuando hacemos el llamado desde la
+línea de comandos y es que entonces con la función <code>main()</code> creamos
+una aplicación que enviamos a <code>wsgi</code> para publicar desde nuestro equipo
+por el puerto <code>8080</code>. Enviamos un mensaje al usuario indicando la
+dirección de la página, cuando seguidamente iniciamos el servidor <code>wsgi</code>
+para recibir solicitudes.</p><h2 id=otra-aplicación-de-prueba>Otra Aplicación de Prueba<a hidden class=anchor aria-hidden=true href=#otra-aplicación-de-prueba>#</a></h2><p>Pyramid permite simplificar el proceso de crear una aplicación mediante
+el uso de un armazón (scaffold). Incluso podrá crear sus propios
+esquemas que se adapten a su estilo y preferencias. Para efecto de este
+ejemplo utilizaremos uno de los armazón de los que trae Pyramid por
+defecto. Para ver los disponibles escriba en su terminal.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#f92672>(</span>env<span style=color:#f92672>)</span> $ pcreate -l
+</span></span><span style=display:flex><span>Available scaffolds:
+</span></span><span style=display:flex><span>alchemy: Pyramid SQLAlchemy project using url dispatch
+</span></span><span style=display:flex><span>starter: Pyramid starter project
+</span></span><span style=display:flex><span>zodb: Pyramid ZODB project using traversal
+</span></span><span style=display:flex><span><span style=color:#f92672>(</span>env<span style=color:#f92672>)</span> $
+</span></span></code></pre></div><p>las opciones son <code>alchemy</code> que crea un esquema que utiliza <a href=http://www.sqlalchemy.org/>SQL
+Alchemy</a> para gestionar la persistencia y un
+despachador de direcciones URL, <code>starter</code> para un andamiaje simple y
+finalmente <code>zodb</code> para gestionar la persistencia de datos con la base
+de datos orientada a objetos <a href=http://www.zodb.org/>ZODB</a> y resolución
+de URL mediante
+<a href=http://docs.pylonsproject.org/projects/pyramid/en/latest/api/traversal.html>transversal</a>.</p><h3 id=crear-aplicación-usando-un-armazón-scaffold>Crear Aplicación usando un Armazón (scaffold)<a hidden class=anchor aria-hidden=true href=#crear-aplicación-usando-un-armazón-scaffold>#</a></h3><p>Para crear un armazón dentro de Pyramid tendrá que ejecutar el siguiente
+comando:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#f92672>(</span>env<span style=color:#f92672>)</span> $ pcreate -s alchemy MyApp
+</span></span><span style=display:flex><span>....
+</span></span><span style=display:flex><span>.... <span style=color:#f92672>(</span>chum chum chum<span style=color:#f92672>)</span> ...
+</span></span><span style=display:flex><span>....
+</span></span><span style=display:flex><span><span style=color:#f92672>===================================================================</span>
+</span></span><span style=display:flex><span>Tutorials: http://docs.pylonsproject.org/projects/pyramid_tutorials
+</span></span><span style=display:flex><span>Documentation: http://docs.pylonsproject.org/projects/pyramid
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Twitter <span style=color:#f92672>(</span>tips &amp; updates<span style=color:#f92672>)</span>: http://twitter.com/pylons
+</span></span><span style=display:flex><span>Mailing List: http://groups.google.com/group/pylons-discuss
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Welcome to Pyramid.  Sorry <span style=color:#66d9ef>for</span> the convenience.
+</span></span><span style=display:flex><span><span style=color:#f92672>===================================================================</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>(</span>env<span style=color:#f92672>)</span> $
+</span></span></code></pre></div><p>Ahora tendrá un sistema como resultado del comando ‘pcreate‘ el
+andamiaje listo para su aplicación mediante esta estructura de archivos.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>MyApp/
+</span></span><span style=display:flex><span>    myapp/
+</span></span><span style=display:flex><span>        scripts/
+</span></span><span style=display:flex><span>            __init__.py
+</span></span><span style=display:flex><span>            initializedb.py
+</span></span><span style=display:flex><span>        static/
+</span></span><span style=display:flex><span>            <span style=color:#f92672>(</span>....<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>        templates/
+</span></span><span style=display:flex><span>            mytemplate.pt
+</span></span><span style=display:flex><span>        __init__.py
+</span></span><span style=display:flex><span>        models.py
+</span></span><span style=display:flex><span>        tests.py
+</span></span><span style=display:flex><span>        views.py
+</span></span><span style=display:flex><span>    CHANGES.txt
+</span></span><span style=display:flex><span>    MANIFEST.in
+</span></span><span style=display:flex><span>    README.txt
+</span></span><span style=display:flex><span>    development.ini
+</span></span><span style=display:flex><span>    production.ini
+</span></span><span style=display:flex><span>    setup.cfg
+</span></span><span style=display:flex><span>    setup.py
+</span></span></code></pre></div><p>Esta estructura de directorios componen ahora su proyecto, el directorio
+<code>MyApp</code> es su distribución de Python (tal y como los consigue en
+<a href=https://pypi.python.org>PyPI</a>), el directorio <code>myapp</code> contiene
+nuestra aplicación web, con su código fuente y archivos estáticos.</p><p>El archivo setup.py puede ser usado para distribuir su aplicación, o
+instalarla en su ambiente de producción, los archivos .ini se utilizan
+para almacenar configuraciones. Dentro de la aplicación podrá notar que
+se encuentran las carpetas <code>scripts</code>, <code>static</code> y <code>templates</code> que son
+para colocar diálogos (generalmente para configuraciones), contenidos
+estáticos y plantillas respectivamente. Finalmente los archivos
+<code>__init__.py</code>, <code>models.py</code>, <code>test.py</code> y <code>view.py</code> se encargan de
+definir un módulo de python, almacenar la información de los modelos en
+SQL Alchemy, las pruebas del código y las vistas que se encargarán de
+tramitar las solicitudes realizadas a la aplicación.</p><h3 id=instalando-la-aplicación>Instalando la Aplicación<a hidden class=anchor aria-hidden=true href=#instalando-la-aplicación>#</a></h3><p>El siguiente paso que toca realizar es instalar la nuestra aplicación.
+Para ello escribimos el siguiente comando:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#f92672>(</span>env<span style=color:#f92672>)</span> $ cd MyApp
+</span></span><span style=display:flex><span><span style=color:#f92672>(</span>env<span style=color:#f92672>)</span> $ python setup.py develop
+</span></span><span style=display:flex><span>....
+</span></span><span style=display:flex><span>.... <span style=color:#f92672>(</span>chum chum chum<span style=color:#f92672>)</span> ...
+</span></span><span style=display:flex><span>....
+</span></span><span style=display:flex><span>Finished processing dependencies <span style=color:#66d9ef>for</span> MyApp<span style=color:#f92672>==</span>0.0
+</span></span><span style=display:flex><span><span style=color:#f92672>(</span>env<span style=color:#f92672>)</span> $
+</span></span></code></pre></div><p>Posteriormente inicializamos la base de datos mediante el comando:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#f92672>(</span>env<span style=color:#f92672>)</span> $ initialize_MyApp_db development.ini
+</span></span><span style=display:flex><span>....
+</span></span><span style=display:flex><span>.... <span style=color:#f92672>(</span>chum chum chum<span style=color:#f92672>)</span> ...
+</span></span><span style=display:flex><span>....
+</span></span><span style=display:flex><span><span style=color:#f92672>(</span>env<span style=color:#f92672>)</span> $
+</span></span></code></pre></div><h3 id=probando-el-armazón>Probando el Armazón<a hidden class=anchor aria-hidden=true href=#probando-el-armazón>#</a></h3><p>Para probar nuestra aplicación escribamos el siguiente comando:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#f92672>(</span>env<span style=color:#f92672>)</span> $ pserve development.ini --reload
+</span></span><span style=display:flex><span>Starting subprocess with file monitor
+</span></span><span style=display:flex><span>Starting server in PID 16536.
+</span></span><span style=display:flex><span>serving on http://0.0.0.0:6543
+</span></span></code></pre></div><p>Proceda a abrir su navegador en la dirección <a href=http://localhost:6543/>http://localhost:6543/</a> y
+podrá ver la aplicación por defecto que viene con el armazón <code>alchemy</code>
+de Pyramid. A continuación se muestran unos pantallazos de la aplicación
+de muestra junto con los datos que muestra la barra de depuración.</p><p>Note lo siguiente, como Pyramid publica por la dirección
+<a href=http://0.0.0.0:6543>http://0.0.0.0:6543</a> otros equipos podrán acceder a su aplicación a
+través de su dirección IP, sin embargo la barra de depuración sólo está
+disponible para los usuarios locales.</p><p><img loading=lazy src=/images/pyramid.gif alt=pyramid></p><h2 id=modificando-el-armazón>Modificando el Armazón<a hidden class=anchor aria-hidden=true href=#modificando-el-armazón>#</a></h2><p>Ahora avancemos con los cambios para hacer nuestra aplicación, pero
+primero comencemos por definir qué es lo que queremos que haga. Una de
+las tareas más comunes es el llenado de formularios web, así que hagamos
+un ejemplo con esto. Acá una salvedad, Pyramid es bastante extenso y tal
+vez lo propuesto acá sea rudimentario en comparación a una solución del
+mundo real, concretamente hablo del manejo de formulario, validaciones,
+pruebas y control de usuarios (este último no se tomó en cuenta). Sin
+embargo es un ejemplo para ilustrar el proceso básico de capturar una
+información a través de una planilla y poder ver los resultados.</p><p>Acorde a esto el sitio web deberá tener la siguiente estructura:</p><p>URL Acción Vista Planitilla</p><hr><p>/ Mostrar planilla de recolección de información. home home.pt
+/data Desplegar la lista de planillas recibidas. list list.pt
+/data/numero Mostrar la planilla con el id igual a <code>numero</code>. Si el registro <code>numero</code> no existe redirigir la página a <code>/data</code>. show show.pt</p><hr><p>A continuación, agregaremos dentro del archivo <code>myapp/__init__.py</code>
+las rutas (urls) de nuestra aplicación:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>from</span> pyramid.config <span style=color:#f92672>import</span> Configurator
+</span></span><span style=display:flex><span><span style=color:#f92672>from</span> sqlalchemy <span style=color:#f92672>import</span> engine_from_config
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>from</span> .models <span style=color:#f92672>import</span> (
+</span></span><span style=display:flex><span>     DBSession,
+</span></span><span style=display:flex><span>     Base,
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>main</span>(global_config, <span style=color:#f92672>**</span>settings):
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;&#34;&#34; This function returns a Pyramid WSGI application.
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    &#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span>    engine <span style=color:#f92672>=</span> engine_from_config(settings, <span style=color:#e6db74>&#39;sqlalchemy.&#39;</span>)
+</span></span><span style=display:flex><span>    DBSession<span style=color:#f92672>.</span>configure(bind<span style=color:#f92672>=</span>engine)
+</span></span><span style=display:flex><span>    Base<span style=color:#f92672>.</span>metadata<span style=color:#f92672>.</span>bind <span style=color:#f92672>=</span> engine
+</span></span><span style=display:flex><span>    config <span style=color:#f92672>=</span> Configurator(settings<span style=color:#f92672>=</span>settings)
+</span></span><span style=display:flex><span>    config<span style=color:#f92672>.</span>add_static_view(<span style=color:#e6db74>&#39;static&#39;</span>, <span style=color:#e6db74>&#39;static&#39;</span>, cache_max_age<span style=color:#f92672>=</span><span style=color:#ae81ff>3600</span>)
+</span></span><span style=display:flex><span>    config<span style=color:#f92672>.</span>add_route(<span style=color:#e6db74>&#39;home&#39;</span>, <span style=color:#e6db74>&#39;/&#39;</span>)           <span style=color:#75715e># para el inicio de la app</span>
+</span></span><span style=display:flex><span>    config<span style=color:#f92672>.</span>add_route(<span style=color:#e6db74>&#39;list&#39;</span>,<span style=color:#e6db74>&#39;/data&#39;</span>)        <span style=color:#75715e># para visualizar el listado</span>
+</span></span><span style=display:flex><span>    config<span style=color:#f92672>.</span>add_route(<span style=color:#e6db74>&#39;show&#39;</span>,<span style=color:#e6db74>&#39;/data/</span><span style=color:#e6db74>{uid}</span><span style=color:#e6db74>&#39;</span>)  <span style=color:#75715e># para ver el detalle</span>
+</span></span><span style=display:flex><span>    config<span style=color:#f92672>.</span>scan()
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> config<span style=color:#f92672>.</span>make_wsgi_app()
+</span></span></code></pre></div><p>Saltemos por un momento al modelo, la tabla que utilizaremos para
+nuestra aplicación tendrá los siguientes campos; un identificador, un
+título y el texto para cada título. Para ello modificaremos nuestro
+archivo <code>myapp/models.py</code> para que coincida con el siguiente texto:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>from</span> sqlalchemy <span style=color:#f92672>import</span> (
+</span></span><span style=display:flex><span>    Column,
+</span></span><span style=display:flex><span>    Integer,
+</span></span><span style=display:flex><span>    Text,
+</span></span><span style=display:flex><span>    Sequence,
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>from</span> sqlalchemy.ext.declarative <span style=color:#f92672>import</span> declarative_base
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>from</span> sqlalchemy.orm <span style=color:#f92672>import</span> (
+</span></span><span style=display:flex><span>    scoped_session,
+</span></span><span style=display:flex><span>    sessionmaker,
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>from</span> zope.sqlalchemy <span style=color:#f92672>import</span> ZopeTransactionExtension
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>DBSession <span style=color:#f92672>=</span> scoped_session(sessionmaker(extension<span style=color:#f92672>=</span>ZopeTransactionExtension()))
+</span></span><span style=display:flex><span>Base <span style=color:#f92672>=</span> declarative_base()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>WebFormData</span>(Base):
+</span></span><span style=display:flex><span>    __tablename__ <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;webformdata&#39;</span>
+</span></span><span style=display:flex><span>    id <span style=color:#f92672>=</span> Column(Integer, Sequence(<span style=color:#e6db74>&#39;webformdata_seq&#39;</span>), primary_key<span style=color:#f92672>=</span><span style=color:#66d9ef>True</span>)
+</span></span><span style=display:flex><span>    title <span style=color:#f92672>=</span> Column(Text, unique<span style=color:#f92672>=</span><span style=color:#66d9ef>True</span>)
+</span></span><span style=display:flex><span>    comment_text <span style=color:#f92672>=</span> Column(Text)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> __init__(self, title, comment_text):
+</span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>title <span style=color:#f92672>=</span> title
+</span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>comment_text <span style=color:#f92672>=</span> comment_text
+</span></span></code></pre></div><p>Para que sus cambios surtan efecto, modifique igualmente el archivo
+<code>myapp/scripts/initializedb.py</code> con el siguiente contenido:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>import</span> os
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> sys
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> transaction
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>from</span> sqlalchemy <span style=color:#f92672>import</span> engine_from_config
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>from</span> pyramid.paster <span style=color:#f92672>import</span> (
+</span></span><span style=display:flex><span>    get_appsettings,
+</span></span><span style=display:flex><span>    setup_logging,
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>from</span> ..models <span style=color:#f92672>import</span> (
+</span></span><span style=display:flex><span>    DBSession,
+</span></span><span style=display:flex><span>    WebFormData,
+</span></span><span style=display:flex><span>    Base,
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>usage</span>(argv):
+</span></span><span style=display:flex><span>    cmd <span style=color:#f92672>=</span> os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>basename(argv[<span style=color:#ae81ff>0</span>])
+</span></span><span style=display:flex><span>    print(<span style=color:#e6db74>&#39;usage: </span><span style=color:#e6db74>%s</span><span style=color:#e6db74> &amp;amp;lt;config_uri&amp;amp;gt;</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#39;</span>
+</span></span><span style=display:flex><span>          <span style=color:#e6db74>&#39;(example: &#34;</span><span style=color:#e6db74>%s</span><span style=color:#e6db74> development.ini&#34;)&#39;</span> <span style=color:#f92672>%</span> (cmd, cmd))
+</span></span><span style=display:flex><span>    sys<span style=color:#f92672>.</span>exit(<span style=color:#ae81ff>1</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>main</span>(argv<span style=color:#f92672>=</span>sys<span style=color:#f92672>.</span>argv):
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> len(argv) <span style=color:#f92672>!=</span> <span style=color:#ae81ff>2</span>:
+</span></span><span style=display:flex><span>        usage(argv)
+</span></span><span style=display:flex><span>    config_uri <span style=color:#f92672>=</span> argv[<span style=color:#ae81ff>1</span>]
+</span></span><span style=display:flex><span>    setup_logging(config_uri)
+</span></span><span style=display:flex><span>    settings <span style=color:#f92672>=</span> get_appsettings(config_uri)
+</span></span><span style=display:flex><span>    engine <span style=color:#f92672>=</span> engine_from_config(settings, <span style=color:#e6db74>&#39;sqlalchemy.&#39;</span>)
+</span></span><span style=display:flex><span>    DBSession<span style=color:#f92672>.</span>configure(bind<span style=color:#f92672>=</span>engine)
+</span></span><span style=display:flex><span>    Base<span style=color:#f92672>.</span>metadata<span style=color:#f92672>.</span>create_all(engine)
+</span></span></code></pre></div><p>En este punto ejecute de nuevo <code>initialize\MyApp\db</code> como hizo
+anteriormente actualizar su base de datos.</p><p>Pasemos ahora a trabajar con las plantillas. Para las plantillas haremos
+uso de una de las bibliotecas de plantillas que nos propone inicialmente
+Pyramid, llamada <a href=http://chameleon.readthedocs.org/>Chameleon</a> (el otro
+propuesto de entrada es <a href=http://www.makotemplates.org/>Mako</a>, sin
+embargo usted es libre de seleccionar otro sistema de plantillas, como
+<a href=http://jinja.pocoo.org/>Jinja2</a> o
+<a href=http://genshi.edgewall.org/>Genshi</a>, si lo desea). De la lista del
+diseño se contemplan tres plantillas, que son a saber:</p><p><strong>home.pt</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span><span style=color:#75715e>&lt;!DOCTYPE html&gt;</span>
+</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>html</span>&gt;
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>head</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>title</span>&gt;My First Pyramid App&lt;/<span style=color:#f92672>title</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>http-equiv</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;Content-Type&#34;</span> <span style=color:#a6e22e>content</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;text/html;charset=UTF-8&#34;</span>/&gt;
+</span></span><span style=display:flex><span>  &lt;/<span style=color:#f92672>head</span>&gt;
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>body</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>h1</span>&gt;Tell me something...&lt;/<span style=color:#f92672>h1</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>form</span> <span style=color:#a6e22e>action</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;${save_form}&#34;</span> <span style=color:#a6e22e>method</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;post&#34;</span>&gt;
+</span></span><span style=display:flex><span>       &lt;<span style=color:#f92672>input</span> <span style=color:#a6e22e>type</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;text&#34;</span> <span style=color:#a6e22e>name</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;title&#34;</span>&gt;&lt;/<span style=color:#f92672>input</span>&gt;&lt;<span style=color:#f92672>br</span> /&gt;
+</span></span><span style=display:flex><span>       &lt;<span style=color:#f92672>textarea</span> <span style=color:#a6e22e>name</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;comment_text&#34;</span>&gt;&lt;/<span style=color:#f92672>textarea</span>&gt;&lt;<span style=color:#f92672>br</span> /&gt;
+</span></span><span style=display:flex><span>       &lt;<span style=color:#f92672>input</span> <span style=color:#a6e22e>type</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;submit&#34;</span> <span style=color:#a6e22e>name</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;form.submitted&#34;</span> <span style=color:#a6e22e>value</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;Send&#34;</span>&gt;
+</span></span><span style=display:flex><span>    &lt;/<span style=color:#f92672>form</span>&gt;
+</span></span><span style=display:flex><span>        &lt;<span style=color:#f92672>br</span> /&gt;
+</span></span><span style=display:flex><span>        &lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;${save_form}&#34;</span>&gt;other comments..&lt;/<span style=color:#f92672>a</span>&gt;
+</span></span><span style=display:flex><span>  &lt;/<span style=color:#f92672>body</span>&gt;
+</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>html</span>&gt;
+</span></span></code></pre></div><p><strong>list.pt</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span><span style=color:#75715e>&lt;!DOCTYPE html&gt;</span>
+</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>html</span>&gt;
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>head</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>title</span>&gt;My First Pyramid App&lt;/<span style=color:#f92672>title</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>http-equiv</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;Content-Type&#34;</span> <span style=color:#a6e22e>content</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;text/html;charset=UTF-8&#34;</span>/&gt;
+</span></span><span style=display:flex><span>  &lt;/<span style=color:#f92672>head</span>&gt;
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>body</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>h1</span>&gt;You have said..&lt;/<span style=color:#f92672>h1</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>ul</span>&gt;
+</span></span><span style=display:flex><span>      &lt;<span style=color:#f92672>tal:block</span> <span style=color:#a6e22e>repeat</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;item data&#34;</span>&gt;
+</span></span><span style=display:flex><span>      &lt;<span style=color:#f92672>li</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/data/${item.id}&#34;</span>&gt;${item.title}&lt;/<span style=color:#f92672>a</span>&gt;&lt;/<span style=color:#f92672>li</span>&gt;
+</span></span><span style=display:flex><span>      &lt;/<span style=color:#f92672>tal:block</span>&gt;
+</span></span><span style=display:flex><span>    &lt;/<span style=color:#f92672>ul</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/&#34;</span>&gt;home&lt;/<span style=color:#f92672>a</span>&gt;
+</span></span><span style=display:flex><span>  &lt;/<span style=color:#f92672>body</span>&gt;
+</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>html</span>&gt;
+</span></span></code></pre></div><p>y <strong>show.pt</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span><span style=color:#75715e>&lt;!DOCTYPE html&gt;</span>
+</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>html</span>&gt;
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>head</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>title</span>&gt;My First Pyramid App&lt;/<span style=color:#f92672>title</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>http-equiv</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;Content-Type&#34;</span> <span style=color:#a6e22e>content</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;text/html;charset=UTF-8&#34;</span>/&gt;
+</span></span><span style=display:flex><span>  &lt;/<span style=color:#f92672>head</span>&gt;
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>body</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>h1</span>&gt;${comment.title}&lt;/<span style=color:#f92672>h1</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>hr</span> /&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>p</span>&gt;${comment.comment_text}&lt;/<span style=color:#f92672>p</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>p</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/&#34;</span>&gt;home&lt;/<span style=color:#f92672>a</span>&gt;&lt;/<span style=color:#f92672>p</span>&gt;
+</span></span><span style=display:flex><span>  &lt;/<span style=color:#f92672>body</span>&gt;
+</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>html</span>&gt;
+</span></span></code></pre></div><p>Para finalizar completemos el código de nuestras vistas transcribiendo
+lo siguiente:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>from</span> pyramid.view <span style=color:#f92672>import</span> view_config
+</span></span><span style=display:flex><span><span style=color:#f92672>from</span> pyramid.httpexceptions <span style=color:#f92672>import</span> HTTPFound    
+</span></span><span style=display:flex><span><span style=color:#f92672>from</span> sqlalchemy.exc <span style=color:#f92672>import</span> DBAPIError
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>from</span> .models <span style=color:#f92672>import</span> (
+</span></span><span style=display:flex><span>    DBSession,
+</span></span><span style=display:flex><span>    WebFormData,
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>@view_config</span>(route_name<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;home&#39;</span>, renderer<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;templates/home.pt&#39;</span>)
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>home</span>(request):
+</span></span><span style=display:flex><span>    save_form <span style=color:#f92672>=</span> request<span style=color:#f92672>.</span>route_url(<span style=color:#e6db74>&#39;list&#39;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> {<span style=color:#e6db74>&#39;save_form&#39;</span>:save_form}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>@view_config</span>(route_name<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;list&#39;</span>, renderer<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;templates/list.pt&#39;</span>)
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>list</span>(request):
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#e6db74>&#39;form.submitted&#39;</span> <span style=color:#f92672>in</span> request<span style=color:#f92672>.</span>params:
+</span></span><span style=display:flex><span>        title <span style=color:#f92672>=</span> request<span style=color:#f92672>.</span>params[<span style=color:#e6db74>&#39;title&#39;</span>]
+</span></span><span style=display:flex><span>        comment_text <span style=color:#f92672>=</span> request<span style=color:#f92672>.</span>params[<span style=color:#e6db74>&#39;comment_text&#39;</span>]
+</span></span><span style=display:flex><span>        comment <span style=color:#f92672>=</span> WebFormData(title, comment_text)
+</span></span><span style=display:flex><span>        DBSession<span style=color:#f92672>.</span>add(comment)
+</span></span><span style=display:flex><span>    data <span style=color:#f92672>=</span> DBSession<span style=color:#f92672>.</span>query(WebFormData)<span style=color:#f92672>.</span>all()
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> {<span style=color:#e6db74>&#39;data&#39;</span>:data}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>@view_config</span>(route_name<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;show&#39;</span>, renderer<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;templates/show.pt&#34;</span>)
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>show</span>(request):
+</span></span><span style=display:flex><span>    uid <span style=color:#f92672>=</span> request<span style=color:#f92672>.</span>matchdict[<span style=color:#e6db74>&#39;uid&#39;</span>]
+</span></span><span style=display:flex><span>    comment <span style=color:#f92672>=</span> DBSession<span style=color:#f92672>.</span>query(WebFormData)<span style=color:#f92672>.</span>filter_by(id<span style=color:#f92672>=</span>uid)<span style=color:#f92672>.</span>first()
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> comment <span style=color:#f92672>is</span> <span style=color:#66d9ef>None</span>:
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> HTTPFound(request<span style=color:#f92672>.</span>route_url(<span style=color:#e6db74>&#39;list&#39;</span>))
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> {<span style=color:#e6db74>&#39;comment&#39;</span>: comment}
+</span></span></code></pre></div><p>Para completar inicie su aplicación y vea los cambios, si observa algún
+error compare su código con el del repositorio en
+<a href=https://github.com/carlosgruiz-dev/post-intro-pyramid>GitHub</a> que acompaña
+este artículo.</p><h3 id=mi-primera-aplicación>Mi primera aplicación<a hidden class=anchor aria-hidden=true href=#mi-primera-aplicación>#</a></h3><p>Que hace nuestra aplicación, en pocas palabras, despachamos una
+aplicación wsgi. Esta aplicación tiene su configuración en el archivo
+<code>myapp/__init__.py</code> donde definimos el motor de base de datos
+(línea 13) y las rutas (líneas 18 al 20). Con ayuda de <a href=http://www.sqlalchemy.org/>SQL
+Alchemy</a> (en el archivo <code>models.py</code>)
+definimos un modelo llamado <code>WebFormData</code>, nótese que este modelo es
+equivalente a la tabla <code>webformdata</code>. Al ejecutar el script
+<code>initialize_MyApp_db</code> lo que sucede es que creamos en el gestor de
+base datos (en el caso del parámetro development.ini es un archivo
+<a href=http://sqlite.org/>SQLite</a>) la tabla <code>webformdata</code>.</p><p>Seguidamente cuando el servidor web está en ejecución (en los ejemplo
+con la instrucción <code>pserve</code>), al ingresar a la dirección
+<a href=http://localhost:6543/>http://localhost:6543/</a> la aplicación le mostrará la plantilla
+correspondiente a la ruta <code>home</code>, si agrega un comentario le mostrará
+a continuación el listado de los comentarios recibidos y finalmente al
+hacer click en el vínculo asociado a alguno de los comentarios listados
+verá el texto completo del comentario. A continuación unos pantallazos.</p><p><img loading=lazy src=/images/pyramid_app.gif alt="pyramid app"></p><p>Hay muchos detalles convenientes en el uso de Pyramid, en especial me ha
+sido útil para dar representación web a proyectos generados en otros
+contextos, la invitación es pues a explorar las alternativas que ofrece
+a sus necesidades.</p><h2 id=donde-continuar>¿Donde continuar?<a hidden class=anchor aria-hidden=true href=#donde-continuar>#</a></h2><p>Existen abundantes y muy buenos recursos para aprender e implementar
+Pyramid, sin embargo estos son algunos de los recursos a los cuales vale
+la pena echarles un vistazo:</p><ul><li>Página del proyecto Pylons:
+<a href=http://www.pylonsproject.org/>pylonsproject.org</a></li><li>Documentación de Pyramid:
+<a href=http://docs.pylonsproject.org/en/latest/docs/pyramid.html>docs.pylonsproject.org</a></li><li>Presentación de Keith Yang “Use Pyramid Like a Pro”:
+<a href=http://keitheis.github.io/use-pyramid-like-a-pro/?full#Cover>keitheis.github.io</a></li><li>Presentación de Daniel Nouri en el EuroPython 2012:
+<a href=http://danielnouri.org/notes/2012/08/16/pyramid-europython-tutorial-video/>danielnouri.org</a>
+<a href=https://github.com/dnouri/pyramid-tutorial>github.com/dnouri</a></li><li>Tutoriales de Pyramid:
+<a href=https://github.com/Pylons/pyramid_tutorials>github.com/Pylons/pyramid_tutorials</a></li><li>Comparativa de rendimiento con otros frameworks:
+<a href=http://blog.curiasolutions.com/the-great-web-framework-shootout/>http://blog.curiasolutions.com/the-great-web-framework-shootout/</a></li></ul></div><footer class=post-footer><ul class=post-tags><li><a href=https://carlosgruiz.dev/tags/tutorial/>tutorial</a></li><li><a href=https://carlosgruiz.dev/tags/python/>python</a></li><li><a href=https://carlosgruiz.dev/tags/pyramid/>pyramid</a></li><li><a href=https://carlosgruiz.dev/tags/framework/>framework</a></li><li><a href=https://carlosgruiz.dev/tags/sqlalchemy/>sqlalchemy</a></li><li><a href=https://carlosgruiz.dev/tags/spanish/>spanish</a></li></ul></footer></article></main><footer class=footer><span>&copy; 2023 <a href=https://carlosgruiz.dev/>Carlos Gustavo Ruiz</a></span>
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>

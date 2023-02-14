@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>c&#43;&#43; on Carlos Gustavo Ruiz</title>
+    <link>https://carlosgruiz.dev/tags/c&#43;&#43;/</link>
+    <description>Recent content in c&#43;&#43; on Carlos Gustavo Ruiz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Jan 2013 15:21:49 -0400</lastBuildDate><atom:link href="https://carlosgruiz.dev/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tutorial &#34;Introducción a la programacion Qt&#34; y otros hallazgos en la azotea</title>
+      <link>https://carlosgruiz.dev/blog/tutorial-introduccion-a-la-programacion-qt-y-otros-hallazgos-en-la-azotea/</link>
+      <pubDate>Fri, 25 Jan 2013 15:21:49 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/tutorial-introduccion-a-la-programacion-qt-y-otros-hallazgos-en-la-azotea/</guid>
+      <description>&lt;p&gt;En fin, hoy limpiando la wiki que solía utilizar en mi web personal
+conseguí algunas curiosidades que valen la pena compartir.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Integrando C&#43;&#43; con Python</title>
+      <link>https://carlosgruiz.dev/blog/integrando-cpp-con-python/</link>
+      <pubDate>Sun, 11 Nov 2012 13:32:23 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/integrando-cpp-con-python/</guid>
+      <description>&lt;p&gt;Durante el &lt;a href=&#34;https://carlosgruiz.dev/posts/pycon-venezuela-2012.html&#34;&gt;PyCon
+Venezuela&lt;/a&gt; hice una
+charla llamada &lt;a href=&#34;https://carlosgruiz.dev/talks/2012/Integrando-mis-librer%C3%ADas-C%2B%2B-con-Python.pdf&#34;&gt;Integrando mis librerías C++ con
+Python&lt;/a&gt;,
+sin embargo quedó pendiente la parte práctica de la misma. Es por ello
+que decidí convertir el taller en un post donde de muestre los ejemplos
+prácticos con algunos comentarios.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>OpenVE y los &#34;Kits de arranque&#34;</title>
+      <link>https://carlosgruiz.dev/blog/openve-y-los-kits-de-arranque/</link>
+      <pubDate>Sun, 28 Oct 2012 04:24:34 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/openve-y-los-kits-de-arranque/</guid>
+      <description>&lt;p&gt;Hace unas semanas &lt;a href=&#34;http://sadasant.com/&#34;&gt;Daniel Rodríguez&lt;/a&gt; y &lt;a href=&#34;http://osledybazo.com/&#34;&gt;Osledy
+Bazó&lt;/a&gt; me invitaron a participar en la iniciativa
+&lt;a href=&#34;http://openve.github.com/&#34;&gt;OpenVE&lt;/a&gt; luego de la entrevista que me
+realizaran en su podcast &lt;a href=&#34;http://echandocodigo.com/&#34;&gt;EchandoCodigo&lt;/a&gt;.
+Inicialmente no sabía mucho de que trataba, sin embargo me quedó más
+claro cuando leí la declaración donde dice que &lt;strong&gt;&amp;ldquo;es una comunidad libre
+para la investigación y el desarrollo de proyectos de computación de
+código abierto&amp;rdquo;&lt;/strong&gt; y que uno de sus objetivos es hacer disponible una
+biblioteca de código abierto.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Frameworks de C&#43;&#43; para la web</title>
+      <link>https://carlosgruiz.dev/blog/frameworks-de-c-para-la-web/</link>
+      <pubDate>Tue, 03 Apr 2012 03:34:14 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/frameworks-de-c-para-la-web/</guid>
+      <description>Normalmente al pensar en la web inmediatamente viene a la mente los nombres de lenguajes como Python, PHP, Perl o Ruby, Sin embargo haciendo una pequeña investigación podemos hacer un desmentido de esta idea. No solamente hay herramientas potentes sino que las hay con paradigmas bien variados.</description>
+    </item>
+    
+  </channel>
+</rss>

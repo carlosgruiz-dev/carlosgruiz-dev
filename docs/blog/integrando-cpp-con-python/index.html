@@ -1,0 +1,180 @@
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Integrando C++ con Python | Carlos Gustavo Ruiz</title><meta name=keywords content="talks,c++,pycon venezuela,python,spanish"><meta name=description content="Durante el PyCon
+Venezuela hice una
+charla llamada Integrando mis librerías C++ con
+Python,
+sin embargo quedó pendiente la parte práctica de la misma. Es por ello
+que decidí convertir el taller en un post donde de muestre los ejemplos
+prácticos con algunos comentarios."><meta name=author content><link rel=canonical href=https://carlosgruiz.dev/blog/integrando-cpp-con-python/><link crossorigin=anonymous href=/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css integrity="sha256-yIlj/i15RiAA/Q+xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as=style><script defer crossorigin=anonymous src=/assets/js/highlight.min.b95bacdc39e37a332a9f883b1e78be4abc1fdca2bc1f2641f55e3cd3dabd4d61.js integrity="sha256-uVus3DnjejMqn4g7Hni+Srwf3KK8HyZB9V4809q9TWE=" onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://carlosgruiz.dev/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://carlosgruiz.dev/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://carlosgruiz.dev/favicon-32x32.png><link rel=apple-touch-icon href=https://carlosgruiz.dev/apple-touch-icon.png><link rel=mask-icon href=https://carlosgruiz.dev/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:title" content="Integrando C++ con Python"><meta property="og:description" content="Durante el PyCon
+Venezuela hice una
+charla llamada Integrando mis librerías C++ con
+Python,
+sin embargo quedó pendiente la parte práctica de la misma. Es por ello
+que decidí convertir el taller en un post donde de muestre los ejemplos
+prácticos con algunos comentarios."><meta property="og:type" content="article"><meta property="og:url" content="https://carlosgruiz.dev/blog/integrando-cpp-con-python/"><meta property="article:section" content="blog"><meta property="article:published_time" content="2012-11-11T13:32:23-04:00"><meta property="article:modified_time" content="2014-12-22T00:28:00-04:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Integrando C++ con Python"><meta name=twitter:description content="Durante el PyCon
+Venezuela hice una
+charla llamada Integrando mis librerías C++ con
+Python,
+sin embargo quedó pendiente la parte práctica de la misma. Es por ello
+que decidí convertir el taller en un post donde de muestre los ejemplos
+prácticos con algunos comentarios."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Blog","item":"https://carlosgruiz.dev/blog/"},{"@type":"ListItem","position":2,"name":"Integrando C++ con Python","item":"https://carlosgruiz.dev/blog/integrando-cpp-con-python/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Integrando C++ con Python","name":"Integrando C\u002b\u002b con Python","description":"Durante el PyCon Venezuela hice una charla llamada Integrando mis librerías C++ con Python, sin embargo quedó pendiente la parte práctica de la misma. Es por ello que decidí convertir el taller en un post donde de muestre los ejemplos prácticos con algunos comentarios.\n","keywords":["talks","c++","pycon venezuela","python","spanish"],"articleBody":"Durante el PyCon Venezuela hice una charla llamada Integrando mis librerías C++ con Python, sin embargo quedó pendiente la parte práctica de la misma. Es por ello que decidí convertir el taller en un post donde de muestre los ejemplos prácticos con algunos comentarios.\nLa Presentación La idea básica a presentar es el típico problema del “Performance vs. Productivity”, que aparece de cuando en cuando en las listas de correo de los distintos lenguajes de programación. Sin ahondar en el por qué de estas discusiones, me centro en que mi apuesta tecnológica es tomar lo mejor de ambos mundos y asegurarme que se puedan juntar. La Biblioteca Estándar de C++ y la STL tienen implementados muchas herramientas que con la correcta integración entre ambos lenguajes permiten sacar el mejor provecho de ambos mundos. Python provee la versatilidad y rapidez de desarrollo, C++ provee el poder y el control, balancear lo mejor de ambos en favor de una aplicación es aconsejable y deseable. En fin, les sugiero vean la presentación:\nLa Práctica A continuación una serie de cuatro ejemplos de integración Python-C++ comenzando por incrustar Python dentro de C++ a alto nivel, el uso de Swig y un par de casos con Boost. En cada caso se incluyen los listados de los fuentes y los comandos para su compilación y ejecución. Igualmente puede descargar la guía de ejercicios si así lo desea. Estos ejercicios fueron probados en Debian 6.0 Estable, haga los ajustes en caso de tener otra plataforma en su computador. Finalmente recuerde tener instalados los paquetes para el compilador gcc, g++, la biblioteca libboost, el programa swig y el paquete python-dev o equivalentes de su plataforma.\nIncrustando Python en C++ Ejemplo sencillo de C++ ejecutando intrucciones Python, este tipo de incrustación es de alto nivel, desde C++ es posible acceder a elementos muchos más detallados dentro de Python.\n/* archivo: ejemplo.cpp */ #include int main(int argc, char *argv[]) { Py_Initialize(); PyRun_SimpleString(\"print 'Epale Sonia!!'\"); Py_Finalize(); return 0; } Construyendo el programa con Python incrustado\n$ g++ ejemplo.cpp -o ejemplo -I /usr/include/python2.6 -pthread -lm -ldl -lutil -lpython2.6 Probando el programa\n$ ./ejemplo Epale Sonia!! $ Extendiendo Python con C y Swig Ejemplo sencillo de Swig con C y Python, que aunque no es C++ es extensible a este lenguaje.\n/* archivo: ejemplo.c */ /* variable */ double mi_variable = 3.0; /* calcula el factorial de n */ int fact(int n) { if (n \u003e= 1) return 1; else return n*fact(n-1); } /* calcula n mod M */ int mi_mod(int n, int m) { return(n % m); }; y\n/* archivo: ejemplo.i */ %module ejemplo %{ /* colocar encabezados y otras declaraciones aqui */ extern double mi_variable; extern int fact(int); extern int mi_mod(int n, int m); %} extern double mi_variable; extern int fact(int); extern int mi_mod(int n, int m); Construyendo un módulo de Python\n$ swig -python ejemplo.i $ gcc -c -fpic ejemplo.c ejemplo_wrap.c -I/usr/include/python2.6 $ gcc -shared ejemplo.o ejemplo_wrap.o -o _ejemplo.so Probando el módulo\n$ python Python 2.6.6 (r266:84292, Dec 27 2010, 00:02:40) [GCC 4.4.5] on linux2 Type \"help\", \"copyright\", \"credits\" or \"license\" for more information. \u003e\u003e\u003e import ejemplo \u003e\u003e\u003e ejemplo.fact(4) 24 \u003e\u003e\u003e ejemplo.mi_mod(8, 3) 2 \u003e\u003e\u003e Extendiendo Python con C++ y Boost (Funciones) La integración de C++ con Python mediante Boost es limpia y transparente. En este ejemplo se observa con cierta simplicidad el proceso de extender Python.\n/* archivo: ejemplo.cpp */ #include ; #include ; char const* saluda() { return \"Epale Sonia!!\"; } BOOST_PYTHON_MODULE(ejemplo_ext) { using namespace boost::python; def(\"saluda\", saluda); } Construyendo un módulo de Python\n$ g++ -I/usr/local/include -I/usr/include/python2.6 -fpic -c -o ejemplo_ext.o ejemplo.cpp $ g++ -shared -Wl,-soname,\"ejemplo_ext.so\" -L/usr/local/lib ejemplo_ext.o -lboost_python -fpic -o ejemplo_ext.so Probando el módulo de Python\nPython 2.6.6 (r266:84292, Dec 27 2010, 00:02:40) [GCC 4.4.5] on linux2 Type \"help\", \"copyright\", \"credits\" or \"license\" for more information. \u003e\u003e\u003e import ejemplo_ext \u003e\u003e\u003e ejemplo_ext.saluda() 'Epale Sonia!!' \u003e\u003e\u003e Extendiendo Python con C++ y Boost (Clases) Claro que el atractivo de trabajar con C++ sigue siendo en gran medida trabajar con elementos de programación orientada a objetos desde un lenguaje que permita bajar al control y poder crudo del computador. Desde allí podemos integrar ambas plataformas.\nejemplo.cpp\n/* archivo: ejemplo.cpp */ #include ; using namespace boost::python; struct Saludo { void set(std::string msg) { this-\u003emsg = msg; } std::string saluda() { return msg; } std::string msg; }; BOOST_PYTHON_MODULE(ejemplo_ext) { class_\u003cSaludo\u003e(\"Saludo\") .def(\"saluda\", \u0026Saludo::saluda) .def(\"set\", \u0026Saludo::set) ; } Construyendo un módulo de Python\n$ g++ -I/usr/local/include -I/usr/include/python2.6 -fpic -c -o ejemplo_ext.o ejemplo.cpp $ g++ -shared -Wl,-soname,\"ejemplo_ext.so\" -L/usr/local/lib ejemplo_ext.o -lboost_python -fpic -o ejemplo_ext.so Probando el módulo de Python\nPython 2.6.6 (r266:84292, Dec 27 2010, 00:02:40) [GCC 4.4.5] on linux2 Type \"help\", \"copyright\", \"credits\" or \"license\" for more information. \u003e\u003e\u003e import ejemplo_ext \u003e\u003e\u003e Sonia = ejemplo_ext.Saludo() \u003e\u003e\u003e Sonia.set(\"Epale\") \u003e\u003e\u003e Sonia.saluda() 'Epale' \u003e\u003e\u003e A modo de cierre A pesar que estos ejemplos son adaptaciones de la documentación oficial de Python, Swig y Boost es notable lo ilustrativo que resulta verlos juntos. Integrar Python y C++ resulta una tarea de definir los elementos que se desean compartir entre ambas plataformas, sin embargo luce interesante las bondades para pruebas y prototipos así como para optimizaciones de módulos Python a través de una implementación en C++.\nDesde mi punto de vista, la apuesta tecnológica de Python y C++ como lenguajes de Productividad y Desempeño respectivamente, junto la llegada de los estándares Python3 y C++11 anuncia tiempos de muchos beneficios para los programadores. Permitiendo trabajar con estas dos plataformas de alto nivel para desarrollar de forma veloz y potente, además con alternativas sólidas para su integración.\n","wordCount":"917","inLanguage":"en","datePublished":"2012-11-11T13:32:23-04:00","dateModified":"2014-12-22T00:28:00-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://carlosgruiz.dev/blog/integrando-cpp-con-python/"},"publisher":{"@type":"Organization","name":"Carlos Gustavo Ruiz","logo":{"@type":"ImageObject","url":"https://carlosgruiz.dev/favicon.ico"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://carlosgruiz.dev/ accesskey=h title="Carlos Gustavo Ruiz (Alt + H)">Carlos Gustavo Ruiz</a>
+<span class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></span></div><ul id=menu><li><a href=https://carlosgruiz.dev/blog/ title=blog><span>blog</span></a></li><li><a href=https://carlosgruiz.dev/wiki/ title=wiki><span>wiki</span></a></li><li><a href=https://carlosgruiz.dev/talks/ title=talks><span>talks</span></a></li><li><a href=https://carlosgruiz.dev/bookmarks/ title=bookmarks><span>bookmarks</span></a></li><li><a href=https://carlosgruiz.dev/now/ title=now><span>now</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><h1 class=post-title>Integrando C++ con Python</h1><div class=post-meta><span title='2012-11-11 13:32:23 -0400 -0400'>November 11, 2012</span></div></header><div class=post-content><p>Durante el <a href=/posts/pycon-venezuela-2012.html>PyCon
+Venezuela</a> hice una
+charla llamada <a href=/talks/2012/Integrando-mis-librer%C3%ADas-C%2B%2B-con-Python.pdf>Integrando mis librerías C++ con
+Python</a>,
+sin embargo quedó pendiente la parte práctica de la misma. Es por ello
+que decidí convertir el taller en un post donde de muestre los ejemplos
+prácticos con algunos comentarios.</p><h2 id=la-presentación>La Presentación<a hidden class=anchor aria-hidden=true href=#la-presentación>#</a></h2><p>La idea básica a presentar es el típico problema del <strong>&ldquo;Performance vs.
+Productivity&rdquo;</strong>, que aparece de cuando en cuando en las listas de correo
+de los distintos lenguajes de programación. Sin ahondar en el por qué de
+estas discusiones, me centro en que mi apuesta tecnológica es tomar lo
+mejor de ambos mundos y asegurarme que se puedan juntar. La <a href=http://en.wikipedia.org/wiki/C%2B%2B_Standard_Library>Biblioteca
+Estándar de C++</a>
+y la <a href=http://en.wikipedia.org/wiki/Standard_Template_Library>STL</a>
+tienen implementados muchas herramientas que con la correcta integración
+entre ambos lenguajes permiten sacar el mejor provecho de ambos mundos.
+Python provee la versatilidad y rapidez de desarrollo, C++ provee el
+poder y el control, balancear lo mejor de ambos en favor de una
+aplicación es aconsejable y deseable. En fin, les sugiero vean la
+presentación:</p><iframe src=//www.slideshare.net/slideshow/embed_code/15042059 width=100% height=420 frameborder=0 marginwidth=0 marginheight=0 scrolling=no style="border:1px solid #ccc;border-width:1px;margin-bottom:5px;max-width:100%" allowfullscreen></iframe><h2 id=la-práctica>La Práctica<a hidden class=anchor aria-hidden=true href=#la-práctica>#</a></h2><p>A continuación una serie de cuatro ejemplos de integración Python-C++
+comenzando por incrustar Python dentro de C++ a alto nivel, el uso de
+<a href=http://swig.org/>Swig</a> y un par de casos con
+<a href=http://www.boost.org/>Boost</a>. En cada caso se incluyen los listados de
+los fuentes y los comandos para su compilación y ejecución. Igualmente
+puede descargar la <a href=/talks/2012/integrando-cpp-python.tar.gz>guía de ejercicios</a>
+si así lo desea. Estos ejercicios fueron probados en <a href=http://www.debian.org/releases/squeeze/>Debian 6.0
+Estable</a>, haga los ajustes en
+caso de tener otra plataforma en su computador. Finalmente recuerde
+tener instalados los paquetes para el compilador gcc, g++, la biblioteca
+libboost, el programa swig y el paquete python-dev o equivalentes de su
+plataforma.</p><h3 id=incrustando-python-en-c>Incrustando Python en C++<a hidden class=anchor aria-hidden=true href=#incrustando-python-en-c>#</a></h3><p>Ejemplo sencillo de C++ ejecutando intrucciones Python, este tipo de
+incrustación es de alto nivel, desde C++ es posible acceder a elementos
+muchos más detallados dentro de Python.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++><span style=display:flex><span><span style=color:#75715e>/* archivo: ejemplo.cpp */</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#include</span> <span style=color:#75715e>&lt;Python.h&gt;</span><span style=color:#75715e>
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>int</span> <span style=color:#a6e22e>main</span>(<span style=color:#66d9ef>int</span> argc, <span style=color:#66d9ef>char</span> <span style=color:#f92672>*</span>argv[]) {
+</span></span><span style=display:flex><span>    Py_Initialize();
+</span></span><span style=display:flex><span>    PyRun_SimpleString(<span style=color:#e6db74>&#34;print &#39;Epale Sonia!!&#39;&#34;</span>);
+</span></span><span style=display:flex><span>    Py_Finalize();
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>Construyendo el programa con Python incrustado</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ g++ ejemplo.cpp -o ejemplo -I /usr/include/python2.6 -pthread -lm -ldl -lutil -lpython2.6
+</span></span></code></pre></div><p>Probando el programa</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ ./ejemplo
+</span></span><span style=display:flex><span>Epale Sonia!!
+</span></span><span style=display:flex><span>$
+</span></span></code></pre></div><h3 id=extendiendo-python-con-c-y-swig>Extendiendo Python con C y Swig<a hidden class=anchor aria-hidden=true href=#extendiendo-python-con-c-y-swig>#</a></h3><p>Ejemplo sencillo de Swig con C y Python, que aunque no es C++ es
+extensible a este lenguaje.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span><span style=color:#75715e>/* archivo: ejemplo.c */</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>/* variable */</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>double</span> mi_variable <span style=color:#f92672>=</span> <span style=color:#ae81ff>3.0</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>/* calcula el factorial de n */</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> <span style=color:#a6e22e>fact</span>(<span style=color:#66d9ef>int</span> n) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (n <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>1</span>)
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> <span style=color:#ae81ff>1</span>;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>else</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> n<span style=color:#f92672>*</span>fact(n<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>);
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>/* calcula n mod M */</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> <span style=color:#a6e22e>mi_mod</span>(<span style=color:#66d9ef>int</span> n, <span style=color:#66d9ef>int</span> m) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span>(n <span style=color:#f92672>%</span> m);
+</span></span><span style=display:flex><span>};
+</span></span></code></pre></div><p>y</p><pre tabindex=0><code>/* archivo: ejemplo.i */
+
+%module ejemplo
+%{
+    /* colocar encabezados y otras declaraciones aqui */
+    extern double mi_variable;
+    extern int fact(int);
+    extern int
+
+    mi_mod(int n, int m);
+%}
+extern double mi_variable;
+extern int fact(int);
+extern int mi_mod(int n, int m);
+</code></pre><p>Construyendo un módulo de Python</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ swig -python ejemplo.i
+</span></span><span style=display:flex><span>$ gcc -c -fpic ejemplo.c ejemplo_wrap.c -I/usr/include/python2.6
+</span></span><span style=display:flex><span>$ gcc -shared ejemplo.o ejemplo_wrap.o -o _ejemplo.so
+</span></span></code></pre></div><p>Probando el módulo</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ python
+</span></span><span style=display:flex><span>Python 2.6.6 <span style=color:#f92672>(</span>r266:84292, Dec <span style=color:#ae81ff>27</span> 2010, 00:02:40<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>[</span>GCC 4.4.5<span style=color:#f92672>]</span> on linux2
+</span></span><span style=display:flex><span>Type <span style=color:#e6db74>&#34;help&#34;</span>, <span style=color:#e6db74>&#34;copyright&#34;</span>, <span style=color:#e6db74>&#34;credits&#34;</span> or <span style=color:#e6db74>&#34;license&#34;</span> <span style=color:#66d9ef>for</span> more information.
+</span></span><span style=display:flex><span>&gt;&gt;&gt; import ejemplo
+</span></span><span style=display:flex><span>&gt;&gt;&gt; ejemplo.fact<span style=color:#f92672>(</span>4<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span><span style=color:#ae81ff>24</span>
+</span></span><span style=display:flex><span>&gt;&gt;&gt; ejemplo.mi_mod<span style=color:#f92672>(</span>8, 3<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span><span style=color:#ae81ff>2</span>
+</span></span><span style=display:flex><span>&gt;&gt;&gt;
+</span></span></code></pre></div><h3 id=extendiendo-python-con-c-y-boost-funciones>Extendiendo Python con C++ y Boost (Funciones)<a hidden class=anchor aria-hidden=true href=#extendiendo-python-con-c-y-boost-funciones>#</a></h3><p>La integración de C++ con Python mediante Boost es limpia y
+transparente. En este ejemplo se observa con cierta simplicidad el
+proceso de extender Python.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++><span style=display:flex><span><span style=color:#75715e>/* archivo: ejemplo.cpp */</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#include</span> <span style=color:#75715e>&lt;boost/python/module.hpp&gt;;</span><span style=color:#75715e>
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#include</span> <span style=color:#75715e>&lt;boost/python/def.hpp&gt;;</span><span style=color:#75715e>
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>char</span> <span style=color:#66d9ef>const</span><span style=color:#f92672>*</span> <span style=color:#a6e22e>saluda</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#e6db74>&#34;Epale Sonia!!&#34;</span>;
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>BOOST_PYTHON_MODULE(ejemplo_ext) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>using</span> <span style=color:#66d9ef>namespace</span> boost<span style=color:#f92672>::</span>python; def(<span style=color:#e6db74>&#34;saluda&#34;</span>, saluda);
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>Construyendo un módulo de Python</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ g++ -I/usr/local/include -I/usr/include/python2.6 -fpic -c -o ejemplo_ext.o ejemplo.cpp
+</span></span><span style=display:flex><span>$ g++ -shared -Wl,-soname,<span style=color:#e6db74>&#34;ejemplo_ext.so&#34;</span> -L/usr/local/lib ejemplo_ext.o -lboost_python -fpic -o ejemplo_ext.so
+</span></span></code></pre></div><p>Probando el módulo de Python</p><pre tabindex=0><code>Python 2.6.6 (r266:84292, Dec 27 2010, 00:02:40)
+[GCC 4.4.5] on linux2
+Type &#34;help&#34;, &#34;copyright&#34;, &#34;credits&#34; or &#34;license&#34; for more information.
+&gt;&gt;&gt; import ejemplo_ext
+&gt;&gt;&gt; ejemplo_ext.saluda()
+&#39;Epale Sonia!!&#39;
+&gt;&gt;&gt;
+</code></pre><h3 id=extendiendo-python-con-c-y-boost-clases>Extendiendo Python con C++ y Boost (Clases)<a hidden class=anchor aria-hidden=true href=#extendiendo-python-con-c-y-boost-clases>#</a></h3><p>Claro que el atractivo de trabajar con C++ sigue siendo en gran medida
+trabajar con elementos de programación orientada a objetos desde un
+lenguaje que permita bajar al control y poder crudo del computador.
+Desde allí podemos integrar ambas plataformas.</p><p>ejemplo.cpp</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++><span style=display:flex><span><span style=color:#75715e>/* archivo: ejemplo.cpp */</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#include</span> <span style=color:#75715e>&lt;boost/python.hpp&gt;;</span><span style=color:#75715e>
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>using</span> <span style=color:#66d9ef>namespace</span> boost<span style=color:#f92672>::</span>python;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>struct</span> <span style=color:#a6e22e>Saludo</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>set</span>(std<span style=color:#f92672>::</span>string msg) { <span style=color:#66d9ef>this</span><span style=color:#f92672>-&gt;</span>msg <span style=color:#f92672>=</span> msg; }
+</span></span><span style=display:flex><span>    std<span style=color:#f92672>::</span>string saluda() { <span style=color:#66d9ef>return</span> msg; }
+</span></span><span style=display:flex><span>    std<span style=color:#f92672>::</span>string msg;
+</span></span><span style=display:flex><span>};
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>BOOST_PYTHON_MODULE(ejemplo_ext) {
+</span></span><span style=display:flex><span>    class_<span style=color:#f92672>&lt;</span>Saludo<span style=color:#f92672>&gt;</span>(<span style=color:#e6db74>&#34;Saludo&#34;</span>)
+</span></span><span style=display:flex><span>        .def(<span style=color:#e6db74>&#34;saluda&#34;</span>, <span style=color:#f92672>&amp;</span>Saludo<span style=color:#f92672>::</span>saluda)
+</span></span><span style=display:flex><span>        .def(<span style=color:#e6db74>&#34;set&#34;</span>, <span style=color:#f92672>&amp;</span>Saludo<span style=color:#f92672>::</span>set)
+</span></span><span style=display:flex><span>    ;
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>Construyendo un módulo de Python</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ g++ -I/usr/local/include -I/usr/include/python2.6 -fpic -c -o ejemplo_ext.o ejemplo.cpp
+</span></span><span style=display:flex><span>$ g++ -shared -Wl,-soname,<span style=color:#e6db74>&#34;ejemplo_ext.so&#34;</span> -L/usr/local/lib ejemplo_ext.o -lboost_python -fpic -o ejemplo_ext.so
+</span></span></code></pre></div><p>Probando el módulo de Python</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>Python 2.6.6 <span style=color:#f92672>(</span>r266:84292, Dec <span style=color:#ae81ff>27</span> 2010, 00:02:40<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>[</span>GCC 4.4.5<span style=color:#f92672>]</span> on linux2
+</span></span><span style=display:flex><span>Type <span style=color:#e6db74>&#34;help&#34;</span>, <span style=color:#e6db74>&#34;copyright&#34;</span>, <span style=color:#e6db74>&#34;credits&#34;</span> or <span style=color:#e6db74>&#34;license&#34;</span> <span style=color:#66d9ef>for</span> more information.
+</span></span><span style=display:flex><span>&gt;&gt;&gt; import ejemplo_ext
+</span></span><span style=display:flex><span>&gt;&gt;&gt; Sonia <span style=color:#f92672>=</span> ejemplo_ext.Saludo<span style=color:#f92672>()</span>
+</span></span><span style=display:flex><span>&gt;&gt;&gt; Sonia.set<span style=color:#f92672>(</span><span style=color:#e6db74>&#34;Epale&#34;</span><span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>&gt;&gt;&gt; Sonia.saluda<span style=color:#f92672>()</span>
+</span></span><span style=display:flex><span><span style=color:#e6db74>&#39;Epale&#39;</span>
+</span></span><span style=display:flex><span>&gt;&gt;&gt;
+</span></span></code></pre></div><h2 id=a-modo-de-cierre>A modo de cierre<a hidden class=anchor aria-hidden=true href=#a-modo-de-cierre>#</a></h2><p>A pesar que estos ejemplos son adaptaciones de la documentación oficial
+de Python, Swig y Boost es notable lo ilustrativo que resulta verlos
+juntos. Integrar Python y C++ resulta una tarea de definir los elementos
+que se desean compartir entre ambas plataformas, sin embargo luce
+interesante las bondades para pruebas y prototipos así como para
+optimizaciones de módulos Python a través de una implementación en C++.</p><p>Desde mi punto de vista, la apuesta tecnológica de Python y C++ como
+lenguajes de Productividad y Desempeño respectivamente, junto la llegada
+de los estándares Python3 y C++11 anuncia tiempos de muchos beneficios
+para los programadores. Permitiendo trabajar con estas dos plataformas
+de alto nivel para desarrollar de forma veloz y potente, además con
+alternativas sólidas para su integración.</p></div><footer class=post-footer><ul class=post-tags><li><a href=https://carlosgruiz.dev/tags/talks/>talks</a></li><li><a href=https://carlosgruiz.dev/tags/c++/>c++</a></li><li><a href=https://carlosgruiz.dev/tags/pycon-venezuela/>pycon venezuela</a></li><li><a href=https://carlosgruiz.dev/tags/python/>python</a></li><li><a href=https://carlosgruiz.dev/tags/spanish/>spanish</a></li></ul></footer></article></main><footer class=footer><span>&copy; 2023 <a href=https://carlosgruiz.dev/>Carlos Gustavo Ruiz</a></span>
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>lab on Carlos Gustavo Ruiz</title>
+    <link>https://carlosgruiz.dev/tags/lab/</link>
+    <description>Recent content in lab on Carlos Gustavo Ruiz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 04 Mar 2018 21:48:46 -0500</lastBuildDate><atom:link href="https://carlosgruiz.dev/tags/lab/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Starting a Haskell Project With Stack</title>
+      <link>https://carlosgruiz.dev/blog/starting-a-haskell-project-with-stack/</link>
+      <pubDate>Sun, 04 Mar 2018 21:48:46 -0500</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/starting-a-haskell-project-with-stack/</guid>
+      <description>&lt;p&gt;I was trying &lt;a href=&#34;https://asciinema.org&#34;&gt;asciinema&lt;/a&gt;, and to test it I recorded this
+video. If you want to try Haskell Stack just type this in your terminal&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Haskell Simple HTTP Server</title>
+      <link>https://carlosgruiz.dev/blog/haskell-simple-http-server/</link>
+      <pubDate>Sun, 20 Aug 2017 19:00:24 -0500</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/haskell-simple-http-server/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m pushing myself to learn Haskell, but I realized that the best way to learn is
+to make things, broke them and build them again. So I decided to start a toy
+project to create a substitute for commands like &lt;code&gt;$ python3 -m http.server&lt;/code&gt; or
+&lt;code&gt;$ php -S 0.0.0.0:8000&lt;/code&gt; that fires a simple HTTP server to look your HTML files.
+For this, I have a &lt;a href=&#34;https://twitter.com/octonemo/status/897987573024399361&#34;&gt;twitter thread&lt;/a&gt;
+to log me and avoid procrastination.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Installing FreeBSD on Virtualbox</title>
+      <link>https://carlosgruiz.dev/blog/installing-freebsd-on-virtualbox/</link>
+      <pubDate>Sun, 21 Aug 2016 22:46:02 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/installing-freebsd-on-virtualbox/</guid>
+      <description>&lt;p&gt;Practicing with a FreeBSD installation as a guest operating system on
+VirtualBox I found a way to make a cool animated gif, take a look.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Introduccion a ZODB</title>
+      <link>https://carlosgruiz.dev/blog/breve-introduccion-a-zodb/</link>
+      <pubDate>Fri, 26 Jul 2013 19:31:00 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/breve-introduccion-a-zodb/</guid>
+      <description>&lt;p&gt;En concreto ZODB (Zope Object Data Base) es un gestor de bases de datos
+orientado a objetos. Esto significa para el usuario nuevo en esta
+tecnología que a diferencia de las bases de datos de uso mas frecuente
+en ZODB no hallará tablas ni esquemas ni nada parecido, así mismo no
+encontrará sentencias SQL en pues el lenguaje de consulta e indexado es
+Python.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Urumaco y los datos</title>
+      <link>https://carlosgruiz.dev/blog/urumaco-y-los-datos/</link>
+      <pubDate>Mon, 03 Dec 2012 08:26:45 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/urumaco-y-los-datos/</guid>
+      <description>Urumaco es de esos proyectos donde comienzas a estudiar una tecnología y poco a poco te involucras en algo más grande. Además es un desarrollo al que le he tomado cariño.</description>
+    </item>
+    
+    <item>
+      <title>Dogfooding</title>
+      <link>https://carlosgruiz.dev/blog/dogfooding/</link>
+      <pubDate>Thu, 18 Oct 2012 13:46:00 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/dogfooding/</guid>
+      <description>&lt;p&gt;Leyendo sobre un driver para &lt;a href=&#34;http://www.mongodb.org/&#34;&gt;MongoDB&lt;/a&gt; y
+&lt;a href=&#34;http://www.tornadoweb.org/&#34;&gt;Tornado&lt;/a&gt;
+(&lt;a href=&#34;http://emptysquare.net/blog/eating-your-own-hamster-food/&#34;&gt;aquí&lt;/a&gt; el
+artículo) conseguí este término interesante, &amp;ldquo;Eating your own dog food&amp;rdquo;,
+que denota el uso de los propios productos para demostrar tanto la
+calidad como la confianza que se tiene en los mismos. Viniendo del mundo
+de la programación, y tecnología en general, se consiguen con frecuencia
+opiniones muy fuertes sobre cualquier tema en base a un video que vieron
+en Youtube, un comentario de un personaje reconocido, o un prejuicio
+sobre alguna plataforma, programa o servicio.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mi Distro de Linux</title>
+      <link>https://carlosgruiz.dev/blog/mi-distro-de-linux/</link>
+      <pubDate>Tue, 10 Apr 2012 22:42:00 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/mi-distro-de-linux/</guid>
+      <description>Hablar de preferencias de GNU/Linux es complicado, sobre todo porque puede lucir siempre como una oportunidad para hacer Troll. Así que para comenzar debo aclarar un par de cosas. Primero que estas son mis apreciaciones &lt;strong&gt;NO&lt;/strong&gt; técnicas, acá hablo de gustos, no de métricas, filosofía, contratos sociales, compiladores y demás blah blah, si quieren información de este tipo vean &lt;a href=&#34;http://distrowatch.com/&#34;&gt;Distrowatch&lt;/a&gt;.</description>
+    </item>
+    
+    <item>
+      <title>Frameworks de C&#43;&#43; para la web</title>
+      <link>https://carlosgruiz.dev/blog/frameworks-de-c-para-la-web/</link>
+      <pubDate>Tue, 03 Apr 2012 03:34:14 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/frameworks-de-c-para-la-web/</guid>
+      <description>Normalmente al pensar en la web inmediatamente viene a la mente los nombres de lenguajes como Python, PHP, Perl o Ruby, Sin embargo haciendo una pequeña investigación podemos hacer un desmentido de esta idea. No solamente hay herramientas potentes sino que las hay con paradigmas bien variados.</description>
+    </item>
+    
+    <item>
+      <title>Django vs Pylons</title>
+      <link>https://carlosgruiz.dev/blog/django-vs-pylons/</link>
+      <pubDate>Sun, 15 Aug 2010 17:50:59 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/django-vs-pylons/</guid>
+      <description>&lt;p&gt;s comparaciones suelen ser odiosas, destapar algún
+tipo de polémica o mostrar preferencias más allá del aspecto técnico y
+objetivo de una plataforma o programa. Sin embargo, debido a que me toca
+hacer una evaluación tecnológica para un proyecto me vi en la necesidad
+de poner tratar de comparar las plataformas web disponibles en Python
+que pudiesen apoyar mis actividades.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Introduccion a Openlayers</title>
+      <link>https://carlosgruiz.dev/blog/introduccion-a-openlayers/</link>
+      <pubDate>Wed, 09 Jun 2010 23:49:35 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/introduccion-a-openlayers/</guid>
+      <description>&lt;p&gt;Una de las cosas con las que he trabajado últimamente es con
+&lt;a href=&#34;http://www.openlayers.org/&#34;&gt;OpenLayers&lt;/a&gt;. Este es una librería de
+JavaScript muy interesante para colocar mapas en una página web. Así que
+pues qué más simpático que compartir poco a poco lo que he aprendido en
+el camino.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Camelot</title>
+      <link>https://carlosgruiz.dev/blog/camelot/</link>
+      <pubDate>Wed, 09 Jun 2010 04:34:00 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/camelot/</guid>
+      <description>&lt;p&gt;Hace un año más o menos me enteré de la existencia del proyecto Camelot,
+un proyecto para GUIs inspirado en las funcionalidades de Django. Algo
+realmente ambicioso y por supuesto bienvenido para los programadores que
+como yo, habiendo conseguido un excelente Framework para la web,
+sentimos que faltaba en el mundo de las GUI.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>El Lenguaje De Programacion Javascript</title>
+      <link>https://carlosgruiz.dev/blog/el-lenguaje-de-programacion-javascript/</link>
+      <pubDate>Mon, 03 Aug 2009 21:27:00 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/el-lenguaje-de-programacion-javascript/</guid>
+      <description>&lt;p&gt;Esta es una serie de videos donde se da una introducción al lenguaje de
+programación JavaScript. Las filminas (láminas/slides) se encuentran en
+esta dirección &lt;a href=&#34;http://yuiblog.com/assets/crockford/javascript.zip&#34;&gt;http://yuiblog.com/assets/crockford/javascript.zip&lt;/a&gt;. Si
+bien el tópico no es de Python, si se desea trabajar sobre web hay que
+conocer este lenguaje de programación.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

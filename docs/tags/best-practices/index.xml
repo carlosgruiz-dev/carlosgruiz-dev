@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>best practices on Carlos Gustavo Ruiz</title>
+    <link>https://carlosgruiz.dev/tags/best-practices/</link>
+    <description>Recent content in best practices on Carlos Gustavo Ruiz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 30 Oct 2013 22:12:04 -0400</lastBuildDate><atom:link href="https://carlosgruiz.dev/tags/best-practices/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Comunidades Tecnologicas 101</title>
+      <link>https://carlosgruiz.dev/blog/comunidades-tecnologicas-101/</link>
+      <pubDate>Wed, 30 Oct 2013 22:12:04 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/comunidades-tecnologicas-101/</guid>
+      <description>&lt;p&gt;Durante mi visita al &lt;a href=&#34;http://es.wikipedia.org/wiki/Sucre_%28estado%29&#34;&gt;Estado Sucre&lt;/a&gt; tuve la
+oportunidad de compartir con un grupo de jóvenes entusiastas de la sede
+Cariaco de la &lt;a href=&#34;http://www.uptos.edu.ve/&#34;&gt;Universidad Politécnica Territorial del Oeste de Sucre &amp;ldquo;Clodosbaldo Rusián&amp;rdquo;&lt;/a&gt; (en adelante la llamaré
+UPTOS-CR para simplificar), que preguntaron cómo iniciar una comunidad
+de software libre. Durante esa visita el tiempo voló, literalmente
+hablamos de miles de cosas, desde la instalación de GNU/Linux, hasta
+estrategias para alcanzar objetivos, pasando incluso por los problemas
+de salud comunes para el mundo geek.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

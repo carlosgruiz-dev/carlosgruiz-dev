@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>best prectices on Carlos Gustavo Ruiz</title>
+    <link>https://carlosgruiz.dev/tags/best-prectices/</link>
+    <description>Recent content in best prectices on Carlos Gustavo Ruiz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Oct 2012 13:46:00 -0400</lastBuildDate><atom:link href="https://carlosgruiz.dev/tags/best-prectices/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dogfooding</title>
+      <link>https://carlosgruiz.dev/blog/dogfooding/</link>
+      <pubDate>Thu, 18 Oct 2012 13:46:00 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/dogfooding/</guid>
+      <description>&lt;p&gt;Leyendo sobre un driver para &lt;a href=&#34;http://www.mongodb.org/&#34;&gt;MongoDB&lt;/a&gt; y
+&lt;a href=&#34;http://www.tornadoweb.org/&#34;&gt;Tornado&lt;/a&gt;
+(&lt;a href=&#34;http://emptysquare.net/blog/eating-your-own-hamster-food/&#34;&gt;aquí&lt;/a&gt; el
+artículo) conseguí este término interesante, &amp;ldquo;Eating your own dog food&amp;rdquo;,
+que denota el uso de los propios productos para demostrar tanto la
+calidad como la confianza que se tiene en los mismos. Viniendo del mundo
+de la programación, y tecnología en general, se consiguen con frecuencia
+opiniones muy fuertes sobre cualquier tema en base a un video que vieron
+en Youtube, un comentario de un personaje reconocido, o un prejuicio
+sobre alguna plataforma, programa o servicio.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

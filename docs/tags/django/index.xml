@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>django on Carlos Gustavo Ruiz</title>
+    <link>https://carlosgruiz.dev/tags/django/</link>
+    <description>Recent content in django on Carlos Gustavo Ruiz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 19 Jul 2010 17:36:01 -0400</lastBuildDate><atom:link href="https://carlosgruiz.dev/tags/django/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GeoEtiquetas (Presentación en Jornadas gvSIG)</title>
+      <link>https://carlosgruiz.dev/blog/geoetiquetas-presentacion-en-jornadas-gvsig/</link>
+      <pubDate>Mon, 19 Jul 2010 17:36:01 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/geoetiquetas-presentacion-en-jornadas-gvsig/</guid>
+      <description>Presentación del proyecto GeoEtiquetas, en las 2das Jornadas de gvSIG Latinoamérica y del Caribe.</description>
+    </item>
+    
+  </channel>
+</rss>

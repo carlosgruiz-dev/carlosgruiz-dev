@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>dogfooding on Carlos Gustavo Ruiz</title>
+    <link>https://carlosgruiz.dev/tags/dogfooding/</link>
+    <description>Recent content in dogfooding on Carlos Gustavo Ruiz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Aug 2016 22:46:02 -0400</lastBuildDate><atom:link href="https://carlosgruiz.dev/tags/dogfooding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installing FreeBSD on Virtualbox</title>
+      <link>https://carlosgruiz.dev/blog/installing-freebsd-on-virtualbox/</link>
+      <pubDate>Sun, 21 Aug 2016 22:46:02 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/installing-freebsd-on-virtualbox/</guid>
+      <description>&lt;p&gt;Practicing with a FreeBSD installation as a guest operating system on
+VirtualBox I found a way to make a cool animated gif, take a look.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vim &#43; Python Mode</title>
+      <link>https://carlosgruiz.dev/blog/vim-python-mode/</link>
+      <pubDate>Fri, 22 Apr 2016 16:34:32 -0500</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/vim-python-mode/</guid>
+      <description>Presentación que realicé en el Día Python 2016 (1) en la Universidad Central de Venezuela. Comentando un poco de las herramientas que uso para mi trabajo.</description>
+    </item>
+    
+    <item>
+      <title>Manten tu documentacion a mano con Zeal</title>
+      <link>https://carlosgruiz.dev/blog/manten-tu-documentacion-a-mano-con-zeal/</link>
+      <pubDate>Fri, 13 Mar 2015 15:50:34 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/manten-tu-documentacion-a-mano-con-zeal/</guid>
+      <description>&lt;p&gt;Zeal es una herramienta para explorar la documentación de las API más
+populares en modo desconectado. Está inspirado en
+&lt;a href=&#34;http://kapeli.com/dash&#34;&gt;Dash&lt;/a&gt; y está disponible para GNU/Linux y MS
+Windows.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Comunidades Tecnologicas 101</title>
+      <link>https://carlosgruiz.dev/blog/comunidades-tecnologicas-101/</link>
+      <pubDate>Wed, 30 Oct 2013 22:12:04 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/comunidades-tecnologicas-101/</guid>
+      <description>&lt;p&gt;Durante mi visita al &lt;a href=&#34;http://es.wikipedia.org/wiki/Sucre_%28estado%29&#34;&gt;Estado Sucre&lt;/a&gt; tuve la
+oportunidad de compartir con un grupo de jóvenes entusiastas de la sede
+Cariaco de la &lt;a href=&#34;http://www.uptos.edu.ve/&#34;&gt;Universidad Politécnica Territorial del Oeste de Sucre &amp;ldquo;Clodosbaldo Rusián&amp;rdquo;&lt;/a&gt; (en adelante la llamaré
+UPTOS-CR para simplificar), que preguntaron cómo iniciar una comunidad
+de software libre. Durante esa visita el tiempo voló, literalmente
+hablamos de miles de cosas, desde la instalación de GNU/Linux, hasta
+estrategias para alcanzar objetivos, pasando incluso por los problemas
+de salud comunes para el mundo geek.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Llena tu Windows de FOSS</title>
+      <link>https://carlosgruiz.dev/blog/llena-tu-windows-de-foss/</link>
+      <pubDate>Fri, 12 Jul 2013 01:47:24 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/llena-tu-windows-de-foss/</guid>
+      <description>El LP &lt;em&gt;Llena tu Cabeza de Rock&lt;/em&gt; es una imagen bien ochentera (y nada rockera) y con ella aprovecho de describir un poco lo que ha sido mi aventura de tener que retomar el uso de Windows y en el proceso no darme por vencido respecto al uso de las excelentes herramientas que me proporciona el OpenSource.</description>
+    </item>
+    
+    <item>
+      <title>Dogfooding</title>
+      <link>https://carlosgruiz.dev/blog/dogfooding/</link>
+      <pubDate>Thu, 18 Oct 2012 13:46:00 -0400</pubDate>
+      
+      <guid>https://carlosgruiz.dev/blog/dogfooding/</guid>
+      <description>&lt;p&gt;Leyendo sobre un driver para &lt;a href=&#34;http://www.mongodb.org/&#34;&gt;MongoDB&lt;/a&gt; y
+&lt;a href=&#34;http://www.tornadoweb.org/&#34;&gt;Tornado&lt;/a&gt;
+(&lt;a href=&#34;http://emptysquare.net/blog/eating-your-own-hamster-food/&#34;&gt;aquí&lt;/a&gt; el
+artículo) conseguí este término interesante, &amp;ldquo;Eating your own dog food&amp;rdquo;,
+que denota el uso de los propios productos para demostrar tanto la
+calidad como la confianza que se tiene en los mismos. Viniendo del mundo
+de la programación, y tecnología en general, se consiguen con frecuencia
+opiniones muy fuertes sobre cualquier tema en base a un video que vieron
+en Youtube, un comentario de un personaje reconocido, o un prejuicio
+sobre alguna plataforma, programa o servicio.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
