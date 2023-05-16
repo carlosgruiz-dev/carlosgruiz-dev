@@ -91,5 +91,14 @@ meramente técnicos que deben ser tomados en cuenta a la hora de migrar
 sus bases de datos.&lt;/p&gt;</description>
     </item>
     
+    <item>
+      <title>H2</title>
+      <link>https://carlosgruiz.dev/wiki/h2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://carlosgruiz.dev/wiki/h2/</guid>
+      <description>Quick notes about H2 database</description>
+    </item>
+    
   </channel>
 </rss>

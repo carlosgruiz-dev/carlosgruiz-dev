@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>wiki on Carlos Gustavo Ruiz</title>
+    <link>https://carlosgruiz.dev/tags/wiki/</link>
+    <description>Recent content in wiki on Carlos Gustavo Ruiz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://carlosgruiz.dev/tags/wiki/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Astronomer</title>
+      <link>https://carlosgruiz.dev/wiki/astronomer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://carlosgruiz.dev/wiki/astronomer/</guid>
+      <description>Commands commonly used when we use Astronomer CLI&amp;rsquo;s</description>
+    </item>
+    
+    <item>
+      <title>Base64</title>
+      <link>https://carlosgruiz.dev/wiki/base64/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://carlosgruiz.dev/wiki/base64/</guid>
+      <description>Usage of the command base64</description>
+    </item>
+    
+    <item>
+      <title>Curl</title>
+      <link>https://carlosgruiz.dev/wiki/curl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://carlosgruiz.dev/wiki/curl/</guid>
+      <description>Quick notes</description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://carlosgruiz.dev/wiki/docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://carlosgruiz.dev/wiki/docker/</guid>
+      <description>notes</description>
+    </item>
+    
+    <item>
+      <title>FreeBSD</title>
+      <link>https://carlosgruiz.dev/wiki/freebsd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://carlosgruiz.dev/wiki/freebsd/</guid>
+      <description>notes</description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://carlosgruiz.dev/wiki/git/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://carlosgruiz.dev/wiki/git/</guid>
+      <description>Stuff I use to google sometimes</description>
+    </item>
+    
+    <item>
+      <title>H2</title>
+      <link>https://carlosgruiz.dev/wiki/h2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://carlosgruiz.dev/wiki/h2/</guid>
+      <description>Quick notes about H2 database</description>
+    </item>
+    
+    <item>
+      <title>Haskell</title>
+      <link>https://carlosgruiz.dev/wiki/haskell/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://carlosgruiz.dev/wiki/haskell/</guid>
+      <description>notes</description>
+    </item>
+    
+    <item>
+      <title>HTML</title>
+      <link>https://carlosgruiz.dev/wiki/html/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://carlosgruiz.dev/wiki/html/</guid>
+      <description>Old notes</description>
+    </item>
+    
+    <item>
+      <title>IntelliJ Idea</title>
+      <link>https://carlosgruiz.dev/wiki/intellij-idea/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://carlosgruiz.dev/wiki/intellij-idea/</guid>
+      <description>Shortcuts</description>
+    </item>
+    
+    <item>
+      <title>Ionic</title>
+      <link>https://carlosgruiz.dev/wiki/ionic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://carlosgruiz.dev/wiki/ionic/</guid>
+      <description>Some notes, maybe outdated</description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>https://carlosgruiz.dev/wiki/java/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://carlosgruiz.dev/wiki/java/</guid>
+      <description>Notes and hacks</description>
+    </item>
+    
+    <item>
+      <title>KVM</title>
+      <link>https://carlosgruiz.dev/wiki/kvm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://carlosgruiz.dev/wiki/kvm/</guid>
+      <description>gists</description>
+    </item>
+    
+    <item>
+      <title>Lisp</title>
+      <link>https://carlosgruiz.dev/wiki/lisp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://carlosgruiz.dev/wiki/lisp/</guid>
+      <description>notes</description>
+    </item>
+    
+    <item>
+      <title>MySQL</title>
+      <link>https://carlosgruiz.dev/wiki/mysql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://carlosgruiz.dev/wiki/mysql/</guid>
+      <description>notes</description>
+    </item>
+    
+    <item>
+      <title>Node.js</title>
+      <link>https://carlosgruiz.dev/wiki/nodejs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://carlosgruiz.dev/wiki/nodejs/</guid>
+      <description>notes</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL</title>
+      <link>https://carlosgruiz.dev/wiki/postgres/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://carlosgruiz.dev/wiki/postgres/</guid>
+      <description>Notes about PostgreSQL</description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://carlosgruiz.dev/wiki/python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://carlosgruiz.dev/wiki/python/</guid>
+      <description>import &lt;strong&gt;notes&lt;/strong&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rust</title>
+      <link>https://carlosgruiz.dev/wiki/rust/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://carlosgruiz.dev/wiki/rust/</guid>
+      <description>Notes and searches</description>
+    </item>
+    
+    <item>
+      <title>Scala</title>
+      <link>https://carlosgruiz.dev/wiki/scala/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://carlosgruiz.dev/wiki/scala/</guid>
+      <description>🙂</description>
+    </item>
+    
+    <item>
+      <title>Scoop</title>
+      <link>https://carlosgruiz.dev/wiki/scoop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://carlosgruiz.dev/wiki/scoop/</guid>
+      <description>A command-line installer for Windows</description>
+    </item>
+    
+    <item>
+      <title>Shell</title>
+      <link>https://carlosgruiz.dev/wiki/shell/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://carlosgruiz.dev/wiki/shell/</guid>
+      <description>hacks and one-liners</description>
+    </item>
+    
+    <item>
+      <title>Spark</title>
+      <link>https://carlosgruiz.dev/wiki/spark/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://carlosgruiz.dev/wiki/spark/</guid>
+      <description>notes</description>
+    </item>
+    
+    <item>
+      <title>Tapir</title>
+      <link>https://carlosgruiz.dev/wiki/tapir/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://carlosgruiz.dev/wiki/tapir/</guid>
+      <description>Quick notes about Tapir (Declarative, type-safe web endpoints library.)</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu</title>
+      <link>https://carlosgruiz.dev/wiki/ubuntu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://carlosgruiz.dev/wiki/ubuntu/</guid>
+      <description>notes</description>
+    </item>
+    
+    <item>
+      <title>VIM</title>
+      <link>https://carlosgruiz.dev/wiki/vim/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://carlosgruiz.dev/wiki/vim/</guid>
+      <description>Some of notes about VIM</description>
+    </item>
+    
+  </channel>
+</rss>
