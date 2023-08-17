@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://carlosgruiz.dev/wiki/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>ArcGIS</title>
+      <link>https://carlosgruiz.dev/wiki/arcgis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://carlosgruiz.dev/wiki/arcgis/</guid>
+      <description>🌎</description>
+    </item>
+    
+    <item>
       <title>Astronomer</title>
       <link>https://carlosgruiz.dev/wiki/astronomer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
