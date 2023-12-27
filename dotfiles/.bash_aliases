@@ -1,0 +1,40 @@
+# Easier navigation
+alias ~="cd ~"
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+# shortcuts
+alias v=vim
+alias g=git
+alias q=exit
+alias t=tmux
+alias ta="tmux a"
+
+# ssh to servers
+# alias server01="ssh server01 -l user"
+
+# bad typing
+alias sl=ls
+alias got=git
+alias gti=git
+
+# folders
+alias ws="cd ~/Workspace"
+alias at3="cd ~/Workspace/carlosgruiz-dev"
+alias wiki="cd ~/Documents/wiki"
+alias docs="cd ~/Documents"
+
+# notebooks
+alias daily="vim ~/.daily.md"
+alias notes="vim ~/.notes.md"
+
+# tools
+alias pull="git pull"
+alias push="git push"
+alias log3="git log -3"
+alias log5="git log -5"
+alias ghci="stack ghci"
+alias serve="python3 -m http.server"
+alias activate="source venv/bin/activate"
