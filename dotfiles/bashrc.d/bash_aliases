@@ -38,3 +38,5 @@ alias log5="git log -5"
 alias ghci="stack ghci"
 alias serve="python3 -m http.server"
 alias activate="source venv/bin/activate"
+
+# vim:ts=4:sw=4
