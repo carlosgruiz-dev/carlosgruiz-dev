@@ -29,32 +29,5 @@ elección y generalmente tengo razón.&lt;/p&gt;</description>
       <description>Urumaco es de esos proyectos donde comienzas a estudiar una tecnología y poco a poco te involucras en algo más grande. Además es un desarrollo al que le he tomado cariño.</description>
     </item>
     
-    <item>
-      <title>H2</title>
-      <link>https://carlosgruiz.dev/wiki/h2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://carlosgruiz.dev/wiki/h2/</guid>
-      <description>Quick notes about H2 database</description>
-    </item>
-    
-    <item>
-      <title>MySQL</title>
-      <link>https://carlosgruiz.dev/wiki/mysql/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://carlosgruiz.dev/wiki/mysql/</guid>
-      <description>notes</description>
-    </item>
-    
-    <item>
-      <title>PostgreSQL</title>
-      <link>https://carlosgruiz.dev/wiki/postgres/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://carlosgruiz.dev/wiki/postgres/</guid>
-      <description>Notes about PostgreSQL</description>
-    </item>
-    
   </channel>
 </rss>

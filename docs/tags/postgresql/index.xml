@@ -64,14 +64,5 @@ conseguí algunas curiosidades que valen la pena compartir.&lt;/p&gt;</descripti
       <description>Participando con el equipo de TuBaseDeDatosLibre.org expuse algunas consideraciones para explicar lo que se entiende por Alta Disponibilidad desde el punto de vista de las Base de Datos, y en particular con PostgreSQL.</description>
     </item>
     
-    <item>
-      <title>PostgreSQL</title>
-      <link>https://carlosgruiz.dev/wiki/postgres/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://carlosgruiz.dev/wiki/postgres/</guid>
-      <description>Notes about PostgreSQL</description>
-    </item>
-    
   </channel>
 </rss>

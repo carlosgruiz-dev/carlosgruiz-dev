@@ -48,23 +48,5 @@ que pudiesen apoyar mis actividades.&lt;/p&gt;</description>
       <description>Presentación del proyecto GeoEtiquetas, en las 2das Jornadas de gvSIG Latinoamérica y del Caribe.</description>
     </item>
     
-    <item>
-      <title>Ionic</title>
-      <link>https://carlosgruiz.dev/wiki/ionic/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://carlosgruiz.dev/wiki/ionic/</guid>
-      <description>Some notes, maybe outdated</description>
-    </item>
-    
-    <item>
-      <title>Tapir</title>
-      <link>https://carlosgruiz.dev/wiki/tapir/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://carlosgruiz.dev/wiki/tapir/</guid>
-      <description>Quick notes about Tapir (Declarative, type-safe web endpoints library.)</description>
-    </item>
-    
   </channel>
 </rss>

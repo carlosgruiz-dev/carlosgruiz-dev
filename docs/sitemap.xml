@@ -2,9 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://carlosgruiz.dev/now/</loc>
-    <lastmod>2023-03-05T23:14:32+00:00</lastmod>
-  </url><url>
     <loc>https://carlosgruiz.dev/talks/</loc>
     <lastmod>2022-03-04T05:11:27+00:00</lastmod>
   </url><url>
@@ -284,128 +281,8 @@
     <loc>https://carlosgruiz.dev/tags/javascript/</loc>
     <lastmod>2014-11-28T08:39:00-04:00</lastmod>
   </url><url>
-    <loc>https://carlosgruiz.dev/tags/airflow/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/tags/arcgis/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/wiki/arcgis/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/tags/astronomer/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/wiki/astronomer/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/tags/base64/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/wiki/base64/</loc>
-  </url><url>
     <loc>https://carlosgruiz.dev/bookmarks/</loc>
   </url><url>
     <loc>https://carlosgruiz.dev/categories/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/wiki/coding-activity/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/tags/containers/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/tags/curl/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/wiki/curl/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/tags/database/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/tags/docker/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/wiki/docker/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/tags/encode/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/wiki/freebsd/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/tags/functional-programming/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/tags/gis/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/wiki/gis/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/wiki/git/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/tags/h2/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/wiki/h2/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/wiki/haskell/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/tags/html/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/wiki/html/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/wiki/intellij-idea/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/tags/intellij-idea/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/tags/ionic/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/wiki/ionic/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/tags/java/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/wiki/java/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/tags/kvm/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/wiki/kvm/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/tags/lisp/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/wiki/lisp/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/tags/mobile/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/tags/mysql/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/wiki/mysql/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/wiki/nodejs/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/tags/nodejs/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/wiki/postgres/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/wiki/python/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/tags/rust/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/wiki/rust/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/tags/scala/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/wiki/scala/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/tags/scoop/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/wiki/scoop/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/tags/shell/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/wiki/shell/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/tags/spark/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/wiki/spark/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/tags/tapir/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/wiki/tapir/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/tags/ubuntu/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/wiki/ubuntu/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/wiki/vim/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/tags/virtualization/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/tags/wiki/</loc>
-  </url><url>
-    <loc>https://carlosgruiz.dev/wiki/</loc>
   </url>
 </urlset>
