@@ -489,14 +489,5 @@ bien el tópico no es de Python, si se desea trabajar sobre web hay que
 conocer este lenguaje de programación.&lt;/p&gt;</description>
     </item>
     
-    <item>
-      <title>Bookmarks</title>
-      <link>https://carlosgruiz.dev/bookmarks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://carlosgruiz.dev/bookmarks/</guid>
-      <description>0 0bin - encrypted pastebin 3 30 seconds of code (gh) - Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less. 30 seconds of code (js) - Short JavaScript code snippets for all your development needs. 30 seconds of code - Short code snippets for all your development needs. 33 Concepts Every JavaScript Developer Should Know - created with the intention of helping developers master their concepts in JavaScript.</description>
-    </item>
-    
   </channel>
 </rss>
