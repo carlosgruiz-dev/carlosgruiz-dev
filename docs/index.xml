@@ -8,6 +8,17 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 21 Sep 2018 16:26:16 -0500</lastBuildDate><atom:link href="https://carlosgruiz.dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>What I&#39;m doing now</title>
+      <link>https://carlosgruiz.dev/now/</link>
+      <pubDate>Sun, 05 Mar 2023 23:14:32 +0000</pubDate>
+      
+      <guid>https://carlosgruiz.dev/now/</guid>
+      <description>Hello, happy to see you here. This is what I am doing now:
+Learning I&amp;rsquo;m still studying the [Master in Big Data and Business Analytics][4], and making real advance on my Scala skills. Have a couple of projects for testing ideas, learn how to create REST APIs, and pack projects using SBT and scala-cli
+Reading This year I start reading a lot, so I completed The World of Ice &amp;amp; Fire: The Untold History of Westeros and the Game of Thrones, Learn Functional Programming Without Fear, and a couple more books.</description>
+    </item>
+    
+    <item>
       <title>Talks</title>
       <link>https://carlosgruiz.dev/talks/</link>
       <pubDate>Fri, 04 Mar 2022 05:11:27 +0000</pubDate>
