@@ -1,30 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>mercurial on Carlos Gustavo Ruiz</title>
+    <title>Mercurial on Carlos Gustavo Ruiz</title>
     <link>https://carlosgruiz.dev/tags/mercurial/</link>
-    <description>Recent content in mercurial on Carlos Gustavo Ruiz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Mercurial on Carlos Gustavo Ruiz</description>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Feb 2013 16:04:00 -0400</lastBuildDate><atom:link href="https://carlosgruiz.dev/tags/mercurial/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Mar 2015 14:31:00 -0400</lastBuildDate>
+    <atom:link href="https://carlosgruiz.dev/tags/mercurial/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Convertir repositorios Mercurial a git</title>
       <link>https://carlosgruiz.dev/blog/convertir-repositorios-mercurial-a-git/</link>
       <pubDate>Mon, 04 Feb 2013 16:04:00 -0400</pubDate>
-      
       <guid>https://carlosgruiz.dev/blog/convertir-repositorios-mercurial-a-git/</guid>
       <description>Recientemente he comenzado una mudanza de los repositorios de mis proyectos abiertos en Bitbucket a GitHub, esto ha hecho necesario que migre algunos de ellos que se encuentran en Mercurial a git.</description>
     </item>
-    
     <item>
       <title>Tutorial &#34;Introducción a la programacion Qt&#34; y otros hallazgos en la azotea</title>
       <link>https://carlosgruiz.dev/blog/tutorial-introduccion-a-la-programacion-qt-y-otros-hallazgos-en-la-azotea/</link>
       <pubDate>Fri, 25 Jan 2013 15:21:49 -0400</pubDate>
-      
       <guid>https://carlosgruiz.dev/blog/tutorial-introduccion-a-la-programacion-qt-y-otros-hallazgos-en-la-azotea/</guid>
       <description>&lt;p&gt;En fin, hoy limpiando la wiki que solía utilizar en mi web personal
 conseguí algunas curiosidades que valen la pena compartir.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

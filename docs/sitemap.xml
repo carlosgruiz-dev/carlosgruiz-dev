@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://carlosgruiz.dev/</loc>
+    <lastmod>2024-05-15T16:23:55-05:00</lastmod>
+  </url><url>
     <loc>https://carlosgruiz.dev/now/</loc>
     <lastmod>2023-03-05T23:14:32+00:00</lastmod>
   </url><url>
@@ -9,9 +12,6 @@
     <lastmod>2022-03-04T05:11:27+00:00</lastmod>
   </url><url>
     <loc>https://carlosgruiz.dev/blog/</loc>
-    <lastmod>2024-05-15T16:23:55-05:00</lastmod>
-  </url><url>
-    <loc>https://carlosgruiz.dev/</loc>
     <lastmod>2024-05-15T16:23:55-05:00</lastmod>
   </url><url>
     <loc>https://carlosgruiz.dev/tags/collaborations/</loc>
@@ -264,10 +264,10 @@
     <lastmod>2014-12-16T23:26:00-04:00</lastmod>
   </url><url>
     <loc>https://carlosgruiz.dev/tags/django/</loc>
-    <lastmod>2010-07-19T17:36:01-04:00</lastmod>
+    <lastmod>2014-12-13T14:50:00-04:00</lastmod>
   </url><url>
     <loc>https://carlosgruiz.dev/blog/geoetiquetas-presentacion-en-jornadas-gvsig/</loc>
-    <lastmod>2010-07-19T17:36:01-04:00</lastmod>
+    <lastmod>2014-12-13T14:50:00-04:00</lastmod>
   </url><url>
     <loc>https://carlosgruiz.dev/blog/introduccion-a-openlayers/</loc>
     <lastmod>2014-12-13T14:35:35-04:00</lastmod>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>pycon venezuela on Carlos Gustavo Ruiz</title>
+    <title>Pycon Venezuela on Carlos Gustavo Ruiz</title>
     <link>https://carlosgruiz.dev/tags/pycon-venezuela/</link>
-    <description>Recent content in pycon venezuela on Carlos Gustavo Ruiz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Pycon Venezuela on Carlos Gustavo Ruiz</description>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Nov 2012 13:32:23 -0400</lastBuildDate><atom:link href="https://carlosgruiz.dev/tags/pycon-venezuela/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Dec 2014 00:28:00 -0400</lastBuildDate>
+    <atom:link href="https://carlosgruiz.dev/tags/pycon-venezuela/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Integrando C&#43;&#43; con Python</title>
       <link>https://carlosgruiz.dev/blog/integrando-cpp-con-python/</link>
       <pubDate>Sun, 11 Nov 2012 13:32:23 -0400</pubDate>
-      
       <guid>https://carlosgruiz.dev/blog/integrando-cpp-con-python/</guid>
       <description>&lt;p&gt;Durante el &lt;a href=&#34;https://carlosgruiz.dev/posts/pycon-venezuela-2012.html&#34;&gt;PyCon
 Venezuela&lt;/a&gt; hice una
@@ -21,21 +21,17 @@ sin embargo quedó pendiente la parte práctica de la misma. Es por ello
 que decidí convertir el taller en un post donde de muestre los ejemplos
 prácticos con algunos comentarios.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Web Mapping con Django</title>
       <link>https://carlosgruiz.dev/blog/web-mapping-con-django/</link>
       <pubDate>Wed, 07 Nov 2012 15:08:14 -0400</pubDate>
-      
       <guid>https://carlosgruiz.dev/blog/web-mapping-con-django/</guid>
       <description>Luego de 3 años tocando la puerta en distintos eventos de Geomática por fin tuve la oportunidad de presentar el taller de creación de aplicaciones web de mapas con Django. Las razones en cada caso fueron las mismas, protagonismos y antagonismos, pero al final tuvo que ser mi ambiente natural quien me abriese la puerta, el PyCon Venezuela 2012.</description>
     </item>
-    
     <item>
       <title>Pycon Venezuela 2012</title>
       <link>https://carlosgruiz.dev/blog/pycon-venezuela-2012/</link>
       <pubDate>Mon, 05 Nov 2012 16:27:31 -0400</pubDate>
-      
       <guid>https://carlosgruiz.dev/blog/pycon-venezuela-2012/</guid>
       <description>&lt;p&gt;La Conferencia de Usuarios Python de Venezuela (PyConVE) fue una jornada
 frenética. No solamente por las noches preparando el material sino por
@@ -46,6 +42,5 @@ BitBucket. Al final, luego de estos tres días de intensas jornadas creo
 que el objetivo, desde mi punto de vista, se cumplió por completo,
 consolidar la comunidad de Python en nuestro país.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

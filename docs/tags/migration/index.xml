@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>migration on Carlos Gustavo Ruiz</title>
+    <title>Migration on Carlos Gustavo Ruiz</title>
     <link>https://carlosgruiz.dev/tags/migration/</link>
-    <description>Recent content in migration on Carlos Gustavo Ruiz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Migration on Carlos Gustavo Ruiz</description>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Jul 2013 01:47:24 -0400</lastBuildDate><atom:link href="https://carlosgruiz.dev/tags/migration/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Mar 2015 21:48:00 -0400</lastBuildDate>
+    <atom:link href="https://carlosgruiz.dev/tags/migration/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Llena tu Windows de FOSS</title>
       <link>https://carlosgruiz.dev/blog/llena-tu-windows-de-foss/</link>
       <pubDate>Fri, 12 Jul 2013 01:47:24 -0400</pubDate>
-      
       <guid>https://carlosgruiz.dev/blog/llena-tu-windows-de-foss/</guid>
       <description>El LP &lt;em&gt;Llena tu Cabeza de Rock&lt;/em&gt; es una imagen bien ochentera (y nada rockera) y con ella aprovecho de describir un poco lo que ha sido mi aventura de tener que retomar el uso de Windows y en el proceso no darme por vencido respecto al uso de las excelentes herramientas que me proporciona el OpenSource.</description>
     </item>
-    
     <item>
       <title>Migraciones a Software Libre (Parte 1)</title>
       <link>https://carlosgruiz.dev/blog/migraciones-a-software-libre-parte-1/</link>
       <pubDate>Tue, 16 Apr 2013 15:03:33 -0400</pubDate>
-      
       <guid>https://carlosgruiz.dev/blog/migraciones-a-software-libre-parte-1/</guid>
       <description>Este grupo de artículos no pretende ser una guía exhaustiva de cómo hacer una migración a software libre, sin embargo es una serie de recomendaciones basadas en la experiencia como técnico y consultor.</description>
     </item>
-    
     <item>
       <title>Requerimientos para PostgreSQL</title>
       <link>https://carlosgruiz.dev/blog/requerimientos-para-postgresql/</link>
       <pubDate>Wed, 30 May 2012 23:15:00 -0400</pubDate>
-      
       <guid>https://carlosgruiz.dev/blog/requerimientos-para-postgresql/</guid>
-      <description>Presentación que realicé en el 3er Encuentro de Migración a Bases de Datos Libres, que se realizó el 04/05/2012 en la sede de CANTV organizado por el Centro Nacional de Tecnologías de Información.</description>
+      <description>&lt;p&gt;Presentación que realicé en el 3er Encuentro de Migración a Bases de
+Datos Libres, que se realizó el 04/05/2012 en la sede de CANTV
+organizado por el Centro Nacional de Tecnologías de Información.&lt;/p&gt;
+
+
+
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/12880923&#34; width=&#34;100%&#34; height=&#34;480&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt;&lt;/div&gt;</description>
     </item>
-    
     <item>
       <title>Mejores Prácticas para la Migracion de Bases de Datos</title>
       <link>https://carlosgruiz.dev/blog/mejores-practicas-para-la-migracion-de-bases-de-datos/</link>
       <pubDate>Wed, 05 Oct 2011 22:20:00 -0400</pubDate>
-      
       <guid>https://carlosgruiz.dev/blog/mejores-practicas-para-la-migracion-de-bases-de-datos/</guid>
       <description>&lt;p&gt;En el marco de las jornadas del 2do Encuentro de Migración de Bases de
 Datos Privativas a Tecnologías de Información Libres hice la siguiente
@@ -46,6 +46,5 @@ presentación. En ella procuro explicar mayormente algunos aspectos no
 meramente técnicos que deben ser tomados en cuenta a la hora de migrar
 sus bases de datos.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

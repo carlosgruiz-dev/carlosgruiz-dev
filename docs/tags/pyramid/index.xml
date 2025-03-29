@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>pyramid on Carlos Gustavo Ruiz</title>
+    <title>Pyramid on Carlos Gustavo Ruiz</title>
     <link>https://carlosgruiz.dev/tags/pyramid/</link>
-    <description>Recent content in pyramid on Carlos Gustavo Ruiz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Pyramid on Carlos Gustavo Ruiz</description>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Aug 2013 08:18:00 -0400</lastBuildDate><atom:link href="https://carlosgruiz.dev/tags/pyramid/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Dec 2014 16:14:00 -0400</lastBuildDate>
+    <atom:link href="https://carlosgruiz.dev/tags/pyramid/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introducció a Pyramid</title>
       <link>https://carlosgruiz.dev/blog/introduccion-a-pyramid/</link>
       <pubDate>Tue, 20 Aug 2013 08:18:00 -0400</pubDate>
-      
       <guid>https://carlosgruiz.dev/blog/introduccion-a-pyramid/</guid>
       <description>En el mundo de los Frameworks de Python para aplicaciones en la web por años han resaltado algunos nombres Django, Pylons, CherryPy, TurboGears, Flask y Bottle entre otros. En medio de este conjunto de excelentes herramientas surge del proyecto Pylons el desarrollo llamado Pyramid.</description>
     </item>
-    
   </channel>
 </rss>

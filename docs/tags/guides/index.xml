@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>guides on Carlos Gustavo Ruiz</title>
+    <title>Guides on Carlos Gustavo Ruiz</title>
     <link>https://carlosgruiz.dev/tags/guides/</link>
-    <description>Recent content in guides on Carlos Gustavo Ruiz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Guides on Carlos Gustavo Ruiz</description>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Feb 2014 21:41:00 -0400</lastBuildDate><atom:link href="https://carlosgruiz.dev/tags/guides/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 May 2024 16:23:55 -0500</lastBuildDate>
+    <atom:link href="https://carlosgruiz.dev/tags/guides/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Instalar Netbeans en Gentoo</title>
       <link>https://carlosgruiz.dev/blog/instalar-netbeans-en-gentoo/</link>
       <pubDate>Sun, 02 Feb 2014 21:41:00 -0400</pubDate>
-      
       <guid>https://carlosgruiz.dev/blog/instalar-netbeans-en-gentoo/</guid>
       <description>&lt;p&gt;Esta entrada es una bitácora para mi instalación de Gentoo Linux, así
 que a lo que voy. Mi requerimiento era de una IDE que me ayudase a
@@ -20,12 +20,10 @@ poco decidí aprovechar las bondades de NetBeans y no solo tener un IDE
 para PHP sino poder usarlo con C/C++, Ruby y veremos que tal con la
 programación visual de la web.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Introduccion a ZODB</title>
       <link>https://carlosgruiz.dev/blog/breve-introduccion-a-zodb/</link>
       <pubDate>Fri, 26 Jul 2013 19:31:00 -0400</pubDate>
-      
       <guid>https://carlosgruiz.dev/blog/breve-introduccion-a-zodb/</guid>
       <description>&lt;p&gt;En concreto ZODB (Zope Object Data Base) es un gestor de bases de datos
 orientado a objetos. Esto significa para el usuario nuevo en esta
@@ -34,32 +32,26 @@ en ZODB no hallará tablas ni esquemas ni nada parecido, así mismo no
 encontrará sentencias SQL en pues el lenguaje de consulta e indexado es
 Python.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>&#34;Hola PostgreSQL&#34; (con Python)</title>
       <link>https://carlosgruiz.dev/blog/hola-postgresql-con-python/</link>
       <pubDate>Mon, 18 Feb 2013 12:39:00 -0400</pubDate>
-      
       <guid>https://carlosgruiz.dev/blog/hola-postgresql-con-python/</guid>
       <description>&lt;p&gt;Una de las tareas más frecuentes cuando iniciamos con las bases de datos
 es cómo conectamos las mismas con nuestros programas. En particular
 conectarse con PostgreSQL es una tarea bastante simple con Python.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Convertir repositorios Mercurial a git</title>
       <link>https://carlosgruiz.dev/blog/convertir-repositorios-mercurial-a-git/</link>
       <pubDate>Mon, 04 Feb 2013 16:04:00 -0400</pubDate>
-      
       <guid>https://carlosgruiz.dev/blog/convertir-repositorios-mercurial-a-git/</guid>
       <description>Recientemente he comenzado una mudanza de los repositorios de mis proyectos abiertos en Bitbucket a GitHub, esto ha hecho necesario que migre algunos de ellos que se encuentran en Mercurial a git.</description>
     </item>
-    
     <item>
       <title>OpenVE y los &#34;Kits de arranque&#34;</title>
       <link>https://carlosgruiz.dev/blog/openve-y-los-kits-de-arranque/</link>
       <pubDate>Sun, 28 Oct 2012 04:24:34 -0400</pubDate>
-      
       <guid>https://carlosgruiz.dev/blog/openve-y-los-kits-de-arranque/</guid>
       <description>&lt;p&gt;Hace unas semanas &lt;a href=&#34;http://sadasant.com/&#34;&gt;Daniel Rodríguez&lt;/a&gt; y &lt;a href=&#34;http://osledybazo.com/&#34;&gt;Osledy
 Bazó&lt;/a&gt; me invitaron a participar en la iniciativa
@@ -71,6 +63,5 @@ para la investigación y el desarrollo de proyectos de computación de
 código abierto&amp;rdquo;&lt;/strong&gt; y que uno de sus objetivos es hacer disponible una
 biblioteca de código abierto.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

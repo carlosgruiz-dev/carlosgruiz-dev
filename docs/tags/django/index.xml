@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>django on Carlos Gustavo Ruiz</title>
+    <title>Django on Carlos Gustavo Ruiz</title>
     <link>https://carlosgruiz.dev/tags/django/</link>
-    <description>Recent content in django on Carlos Gustavo Ruiz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Django on Carlos Gustavo Ruiz</description>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Jul 2010 17:36:01 -0400</lastBuildDate><atom:link href="https://carlosgruiz.dev/tags/django/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Dec 2014 14:50:00 -0400</lastBuildDate>
+    <atom:link href="https://carlosgruiz.dev/tags/django/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GeoEtiquetas (Presentación en Jornadas gvSIG)</title>
       <link>https://carlosgruiz.dev/blog/geoetiquetas-presentacion-en-jornadas-gvsig/</link>
       <pubDate>Mon, 19 Jul 2010 17:36:01 -0400</pubDate>
-      
       <guid>https://carlosgruiz.dev/blog/geoetiquetas-presentacion-en-jornadas-gvsig/</guid>
-      <description>Presentación del proyecto GeoEtiquetas, en las 2das Jornadas de gvSIG Latinoamérica y del Caribe.</description>
+      <description>&lt;p&gt;Presentación del proyecto GeoEtiquetas, en las &lt;a href=&#34;http://docs.gvsig.org/plone/community/events/jornadas-lac/2010/ponencias&#34;&gt;2das Jornadas de gvSIG Latinoamérica y del
+Caribe&lt;/a&gt;.&lt;/p&gt;
+
+
+
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/4791282&#34; width=&#34;100%&#34; height=&#34;480&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt;&lt;/div&gt;</description>
     </item>
-    
   </channel>
 </rss>

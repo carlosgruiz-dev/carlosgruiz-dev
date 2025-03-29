@@ -1,36 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>qt on Carlos Gustavo Ruiz</title>
+    <title>Qt on Carlos Gustavo Ruiz</title>
     <link>https://carlosgruiz.dev/tags/qt/</link>
-    <description>Recent content in qt on Carlos Gustavo Ruiz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Qt on Carlos Gustavo Ruiz</description>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Jan 2013 15:21:49 -0400</lastBuildDate><atom:link href="https://carlosgruiz.dev/tags/qt/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Mar 2015 14:31:00 -0400</lastBuildDate>
+    <atom:link href="https://carlosgruiz.dev/tags/qt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tutorial &#34;Introducción a la programacion Qt&#34; y otros hallazgos en la azotea</title>
       <link>https://carlosgruiz.dev/blog/tutorial-introduccion-a-la-programacion-qt-y-otros-hallazgos-en-la-azotea/</link>
       <pubDate>Fri, 25 Jan 2013 15:21:49 -0400</pubDate>
-      
       <guid>https://carlosgruiz.dev/blog/tutorial-introduccion-a-la-programacion-qt-y-otros-hallazgos-en-la-azotea/</guid>
       <description>&lt;p&gt;En fin, hoy limpiando la wiki que solía utilizar en mi web personal
 conseguí algunas curiosidades que valen la pena compartir.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Urumaco y los datos</title>
       <link>https://carlosgruiz.dev/blog/urumaco-y-los-datos/</link>
       <pubDate>Mon, 03 Dec 2012 08:26:45 -0400</pubDate>
-      
       <guid>https://carlosgruiz.dev/blog/urumaco-y-los-datos/</guid>
       <description>Urumaco es de esos proyectos donde comienzas a estudiar una tecnología y poco a poco te involucras en algo más grande. Además es un desarrollo al que le he tomado cariño.</description>
     </item>
-    
     <item>
       <title>Camelot</title>
       <link>https://carlosgruiz.dev/blog/camelot/</link>
       <pubDate>Wed, 09 Jun 2010 04:34:00 -0400</pubDate>
-      
       <guid>https://carlosgruiz.dev/blog/camelot/</guid>
       <description>&lt;p&gt;Hace un año más o menos me enteré de la existencia del proyecto Camelot,
 un proyecto para GUIs inspirado en las funcionalidades de Django. Algo
@@ -38,6 +34,5 @@ realmente ambicioso y por supuesto bienvenido para los programadores que
 como yo, habiendo conseguido un excelente Framework para la web,
 sentimos que faltaba en el mundo de las GUI.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

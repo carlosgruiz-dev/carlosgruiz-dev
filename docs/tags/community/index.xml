@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>community on Carlos Gustavo Ruiz</title>
+    <title>Community on Carlos Gustavo Ruiz</title>
     <link>https://carlosgruiz.dev/tags/community/</link>
-    <description>Recent content in community on Carlos Gustavo Ruiz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Community on Carlos Gustavo Ruiz</description>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Sep 2018 16:26:16 -0500</lastBuildDate><atom:link href="https://carlosgruiz.dev/tags/community/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Sep 2018 16:26:16 -0500</lastBuildDate>
+    <atom:link href="https://carlosgruiz.dev/tags/community/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Entrevista Python Venezuela</title>
       <link>https://carlosgruiz.dev/blog/entrevista-python-venezuela/</link>
       <pubDate>Fri, 21 Sep 2018 16:26:16 -0500</pubDate>
-      
       <guid>https://carlosgruiz.dev/blog/entrevista-python-venezuela/</guid>
       <description>&lt;p&gt;Jesús Gómez (&lt;a href=&#34;https://twitter.com/jgomo3&#34;&gt;@jgomo3&lt;/a&gt;) ha dado inicio a una
 serie de entrevistas a miembros de la comunidad de Python Venezuela, y bueno
@@ -19,12 +19,10 @@ tuve la fortuna de ser su primer invitado. Durante una hora estuvimos hablando
 de mis inicios como programador, cómo conocí y adopté a Python y finalmente un
 poco sobre el proyecto en el que trabajo actualmente.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Comunidades Tecnologicas 101</title>
       <link>https://carlosgruiz.dev/blog/comunidades-tecnologicas-101/</link>
       <pubDate>Wed, 30 Oct 2013 22:12:04 -0400</pubDate>
-      
       <guid>https://carlosgruiz.dev/blog/comunidades-tecnologicas-101/</guid>
       <description>&lt;p&gt;Durante mi visita al &lt;a href=&#34;http://es.wikipedia.org/wiki/Sucre_%28estado%29&#34;&gt;Estado Sucre&lt;/a&gt; tuve la
 oportunidad de compartir con un grupo de jóvenes entusiastas de la sede
@@ -35,12 +33,10 @@ hablamos de miles de cosas, desde la instalación de GNU/Linux, hasta
 estrategias para alcanzar objetivos, pasando incluso por los problemas
 de salud comunes para el mundo geek.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Pycon Venezuela 2012</title>
       <link>https://carlosgruiz.dev/blog/pycon-venezuela-2012/</link>
       <pubDate>Mon, 05 Nov 2012 16:27:31 -0400</pubDate>
-      
       <guid>https://carlosgruiz.dev/blog/pycon-venezuela-2012/</guid>
       <description>&lt;p&gt;La Conferencia de Usuarios Python de Venezuela (PyConVE) fue una jornada
 frenética. No solamente por las noches preparando el material sino por
@@ -51,6 +47,5 @@ BitBucket. Al final, luego de estos tres días de intensas jornadas creo
 que el objetivo, desde mi punto de vista, se cumplió por completo,
 consolidar la comunidad de Python en nuestro país.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
