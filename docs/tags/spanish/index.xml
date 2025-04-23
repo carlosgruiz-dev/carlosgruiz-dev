@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Spanish on Carlos Gustavo Ruiz</title>
-    <link>https://carlosgruiz.dev/tags/spanish/</link>
+    <link>http://localhost:1313/tags/spanish/</link>
     <description>Recent content in Spanish on Carlos Gustavo Ruiz</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo -- 0.146.5</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 May 2024 16:23:55 -0500</lastBuildDate>
-    <atom:link href="https://carlosgruiz.dev/tags/spanish/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/spanish/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Entrevista Python Venezuela</title>
-      <link>https://carlosgruiz.dev/blog/entrevista-python-venezuela/</link>
+      <link>http://localhost:1313/blog/entrevista-python-venezuela/</link>
       <pubDate>Fri, 21 Sep 2018 16:26:16 -0500</pubDate>
-      <guid>https://carlosgruiz.dev/blog/entrevista-python-venezuela/</guid>
+      <guid>http://localhost:1313/blog/entrevista-python-venezuela/</guid>
       <description>&lt;p&gt;Jesús Gómez (&lt;a href=&#34;https://twitter.com/jgomo3&#34;&gt;@jgomo3&lt;/a&gt;) ha dado inicio a una
 serie de entrevistas a miembros de la comunidad de Python Venezuela, y bueno
 tuve la fortuna de ser su primer invitado. Durante una hora estuvimos hablando
@@ -21,16 +21,16 @@ poco sobre el proyecto en el que trabajo actualmente.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Vim &#43; Python Mode</title>
-      <link>https://carlosgruiz.dev/blog/vim-python-mode/</link>
+      <link>http://localhost:1313/blog/vim-python-mode/</link>
       <pubDate>Fri, 22 Apr 2016 16:34:32 -0500</pubDate>
-      <guid>https://carlosgruiz.dev/blog/vim-python-mode/</guid>
+      <guid>http://localhost:1313/blog/vim-python-mode/</guid>
       <description>Presentación que realicé en el Día Python 2016 (1) en la Universidad Central de Venezuela. Comentando un poco de las herramientas que uso para mi trabajo.</description>
     </item>
     <item>
       <title>Manten tu documentacion a mano con Zeal</title>
-      <link>https://carlosgruiz.dev/blog/manten-tu-documentacion-a-mano-con-zeal/</link>
+      <link>http://localhost:1313/blog/manten-tu-documentacion-a-mano-con-zeal/</link>
       <pubDate>Fri, 13 Mar 2015 15:50:34 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/manten-tu-documentacion-a-mano-con-zeal/</guid>
+      <guid>http://localhost:1313/blog/manten-tu-documentacion-a-mano-con-zeal/</guid>
       <description>&lt;p&gt;Zeal es una herramienta para explorar la documentación de las API más
 populares en modo desconectado. Está inspirado en
 &lt;a href=&#34;http://kapeli.com/dash&#34;&gt;Dash&lt;/a&gt; y está disponible para GNU/Linux y MS
@@ -38,16 +38,16 @@ Windows.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Generador de archivos .gitignore</title>
-      <link>https://carlosgruiz.dev/blog/generador-de-archivos-gitignore/</link>
+      <link>http://localhost:1313/blog/generador-de-archivos-gitignore/</link>
       <pubDate>Mon, 22 Sep 2014 15:43:00 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/generador-de-archivos-gitignore/</guid>
+      <guid>http://localhost:1313/blog/generador-de-archivos-gitignore/</guid>
       <description>Util para crear archivos .gitignore para sus proyectos.</description>
     </item>
     <item>
       <title>Instalar Netbeans en Gentoo</title>
-      <link>https://carlosgruiz.dev/blog/instalar-netbeans-en-gentoo/</link>
+      <link>http://localhost:1313/blog/instalar-netbeans-en-gentoo/</link>
       <pubDate>Sun, 02 Feb 2014 21:41:00 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/instalar-netbeans-en-gentoo/</guid>
+      <guid>http://localhost:1313/blog/instalar-netbeans-en-gentoo/</guid>
       <description>&lt;p&gt;Esta entrada es una bitácora para mi instalación de Gentoo Linux, así
 que a lo que voy. Mi requerimiento era de una IDE que me ayudase a
 trabajar más cómodamente con unas tareas con PHP. Luego de buscar un
@@ -57,25 +57,25 @@ programación visual de la web.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Outrunning the Bear</title>
-      <link>https://carlosgruiz.dev/blog/outrunning-the-bear/</link>
+      <link>http://localhost:1313/blog/outrunning-the-bear/</link>
       <pubDate>Fri, 31 Jan 2014 03:11:00 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/outrunning-the-bear/</guid>
+      <guid>http://localhost:1313/blog/outrunning-the-bear/</guid>
       <description>&lt;p&gt;Hace algún tiempo me dio por comentar sobre una expresión de esas que
 rondan con frecuencia el mundo geek. Bueno acá va otra, &lt;strong&gt;&amp;ldquo;Outrunning the bear&amp;rdquo;&lt;/strong&gt;
 (o dejando atrás al oso).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bases de Datos Libres desde 40.000 pies de altura</title>
-      <link>https://carlosgruiz.dev/blog/bases-de-datos-libres-desde-40000-pies-de-altura/</link>
+      <link>http://localhost:1313/blog/bases-de-datos-libres-desde-40000-pies-de-altura/</link>
       <pubDate>Wed, 30 Oct 2013 23:27:00 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/bases-de-datos-libres-desde-40000-pies-de-altura/</guid>
+      <guid>http://localhost:1313/blog/bases-de-datos-libres-desde-40000-pies-de-altura/</guid>
       <description>El día 17 de octubre tuve la oportunidad durante la 1ra Cayapa Universitaria en la UPTOS CR (Cumaná, Estado Sucre, Venezuela) tuve la oportunidad de presentar la ponencia &amp;ldquo;Bases de Datos Libres desde 40.000 pies de altura&amp;rdquo; en representación del equipo de tubasededatoslibre.org. En este post se encuentra la presentación y el código utilizado durante esta jornada.</description>
     </item>
     <item>
       <title>Comunidades Tecnologicas 101</title>
-      <link>https://carlosgruiz.dev/blog/comunidades-tecnologicas-101/</link>
+      <link>http://localhost:1313/blog/comunidades-tecnologicas-101/</link>
       <pubDate>Wed, 30 Oct 2013 22:12:04 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/comunidades-tecnologicas-101/</guid>
+      <guid>http://localhost:1313/blog/comunidades-tecnologicas-101/</guid>
       <description>&lt;p&gt;Durante mi visita al &lt;a href=&#34;http://es.wikipedia.org/wiki/Sucre_%28estado%29&#34;&gt;Estado Sucre&lt;/a&gt; tuve la
 oportunidad de compartir con un grupo de jóvenes entusiastas de la sede
 Cariaco de la &lt;a href=&#34;http://www.uptos.edu.ve/&#34;&gt;Universidad Politécnica Territorial del Oeste de Sucre &amp;ldquo;Clodosbaldo Rusián&amp;rdquo;&lt;/a&gt; (en adelante la llamaré
@@ -87,9 +87,9 @@ de salud comunes para el mundo geek.&lt;/p&gt;</description>
     </item>
     <item>
       <title>¿Por qué hacemos persistencia de datos?</title>
-      <link>https://carlosgruiz.dev/blog/por-que-hacemos-persistencia-de-datos/</link>
+      <link>http://localhost:1313/blog/por-que-hacemos-persistencia-de-datos/</link>
       <pubDate>Fri, 06 Sep 2013 11:00:00 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/por-que-hacemos-persistencia-de-datos/</guid>
+      <guid>http://localhost:1313/blog/por-que-hacemos-persistencia-de-datos/</guid>
       <description>&lt;p&gt;El día 4 de septiembre estuve nuevamente con el equipo de
 &lt;a href=&#34;http://tubasededatoslibre.org&#34;&gt;tubasededatoslibre.org&lt;/a&gt; presentando
 algunas ideas sobre diversos el tema de base de datos y persistencia de
@@ -97,16 +97,16 @@ datos, esta vez en la &lt;strong&gt;“1ra sensibilización para la adopción de
     </item>
     <item>
       <title>Introducció a Pyramid</title>
-      <link>https://carlosgruiz.dev/blog/introduccion-a-pyramid/</link>
+      <link>http://localhost:1313/blog/introduccion-a-pyramid/</link>
       <pubDate>Tue, 20 Aug 2013 08:18:00 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/introduccion-a-pyramid/</guid>
+      <guid>http://localhost:1313/blog/introduccion-a-pyramid/</guid>
       <description>En el mundo de los Frameworks de Python para aplicaciones en la web por años han resaltado algunos nombres Django, Pylons, CherryPy, TurboGears, Flask y Bottle entre otros. En medio de este conjunto de excelentes herramientas surge del proyecto Pylons el desarrollo llamado Pyramid.</description>
     </item>
     <item>
       <title>Introduccion a ZODB</title>
-      <link>https://carlosgruiz.dev/blog/breve-introduccion-a-zodb/</link>
+      <link>http://localhost:1313/blog/breve-introduccion-a-zodb/</link>
       <pubDate>Fri, 26 Jul 2013 19:31:00 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/breve-introduccion-a-zodb/</guid>
+      <guid>http://localhost:1313/blog/breve-introduccion-a-zodb/</guid>
       <description>&lt;p&gt;En concreto ZODB (Zope Object Data Base) es un gestor de bases de datos
 orientado a objetos. Esto significa para el usuario nuevo en esta
 tecnología que a diferencia de las bases de datos de uso mas frecuente
@@ -116,16 +116,16 @@ Python.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Llena tu Windows de FOSS</title>
-      <link>https://carlosgruiz.dev/blog/llena-tu-windows-de-foss/</link>
+      <link>http://localhost:1313/blog/llena-tu-windows-de-foss/</link>
       <pubDate>Fri, 12 Jul 2013 01:47:24 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/llena-tu-windows-de-foss/</guid>
+      <guid>http://localhost:1313/blog/llena-tu-windows-de-foss/</guid>
       <description>El LP &lt;em&gt;Llena tu Cabeza de Rock&lt;/em&gt; es una imagen bien ochentera (y nada rockera) y con ella aprovecho de describir un poco lo que ha sido mi aventura de tener que retomar el uso de Windows y en el proceso no darme por vencido respecto al uso de las excelentes herramientas que me proporciona el OpenSource.</description>
     </item>
     <item>
       <title>Receta para hacer un mapa electoral simple</title>
-      <link>https://carlosgruiz.dev/blog/receta-para-hacer-un-mapa-electoral-simple/</link>
+      <link>http://localhost:1313/blog/receta-para-hacer-un-mapa-electoral-simple/</link>
       <pubDate>Thu, 18 Apr 2013 21:34:44 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/receta-para-hacer-un-mapa-electoral-simple/</guid>
+      <guid>http://localhost:1313/blog/receta-para-hacer-un-mapa-electoral-simple/</guid>
       <description>&lt;p&gt;Muchas veces me preguntan, sobre todo cerca de los resultados de unas
 elecciones cómo se puede hacer un mapa electoral. Como el tema electoral
 es complejo en sus análisis, supongo inmediatamente que lo que en
@@ -134,64 +134,64 @@ elección y generalmente tengo razón.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Migraciones a Software Libre (Parte 1)</title>
-      <link>https://carlosgruiz.dev/blog/migraciones-a-software-libre-parte-1/</link>
+      <link>http://localhost:1313/blog/migraciones-a-software-libre-parte-1/</link>
       <pubDate>Tue, 16 Apr 2013 15:03:33 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/migraciones-a-software-libre-parte-1/</guid>
+      <guid>http://localhost:1313/blog/migraciones-a-software-libre-parte-1/</guid>
       <description>Este grupo de artículos no pretende ser una guía exhaustiva de cómo hacer una migración a software libre, sin embargo es una serie de recomendaciones basadas en la experiencia como técnico y consultor.</description>
     </item>
     <item>
       <title>&#34;Hola PostgreSQL&#34; (con Python)</title>
-      <link>https://carlosgruiz.dev/blog/hola-postgresql-con-python/</link>
+      <link>http://localhost:1313/blog/hola-postgresql-con-python/</link>
       <pubDate>Mon, 18 Feb 2013 12:39:00 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/hola-postgresql-con-python/</guid>
+      <guid>http://localhost:1313/blog/hola-postgresql-con-python/</guid>
       <description>&lt;p&gt;Una de las tareas más frecuentes cuando iniciamos con las bases de datos
 es cómo conectamos las mismas con nuestros programas. En particular
 conectarse con PostgreSQL es una tarea bastante simple con Python.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Convertir repositorios Mercurial a git</title>
-      <link>https://carlosgruiz.dev/blog/convertir-repositorios-mercurial-a-git/</link>
+      <link>http://localhost:1313/blog/convertir-repositorios-mercurial-a-git/</link>
       <pubDate>Mon, 04 Feb 2013 16:04:00 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/convertir-repositorios-mercurial-a-git/</guid>
+      <guid>http://localhost:1313/blog/convertir-repositorios-mercurial-a-git/</guid>
       <description>Recientemente he comenzado una mudanza de los repositorios de mis proyectos abiertos en Bitbucket a GitHub, esto ha hecho necesario que migre algunos de ellos que se encuentran en Mercurial a git.</description>
     </item>
     <item>
       <title>Tutorial &#34;Introducción a la programacion Qt&#34; y otros hallazgos en la azotea</title>
-      <link>https://carlosgruiz.dev/blog/tutorial-introduccion-a-la-programacion-qt-y-otros-hallazgos-en-la-azotea/</link>
+      <link>http://localhost:1313/blog/tutorial-introduccion-a-la-programacion-qt-y-otros-hallazgos-en-la-azotea/</link>
       <pubDate>Fri, 25 Jan 2013 15:21:49 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/tutorial-introduccion-a-la-programacion-qt-y-otros-hallazgos-en-la-azotea/</guid>
+      <guid>http://localhost:1313/blog/tutorial-introduccion-a-la-programacion-qt-y-otros-hallazgos-en-la-azotea/</guid>
       <description>&lt;p&gt;En fin, hoy limpiando la wiki que solía utilizar en mi web personal
 conseguí algunas curiosidades que valen la pena compartir.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Geomatica Libre en Venezuela (Presentación a José Sosa - CNTI)</title>
-      <link>https://carlosgruiz.dev/blog/geomatica-libre-en-venezuela-presentacion-a-jose-sosa-cnti/</link>
+      <link>http://localhost:1313/blog/geomatica-libre-en-venezuela-presentacion-a-jose-sosa-cnti/</link>
       <pubDate>Tue, 11 Dec 2012 15:07:00 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/geomatica-libre-en-venezuela-presentacion-a-jose-sosa-cnti/</guid>
+      <guid>http://localhost:1313/blog/geomatica-libre-en-venezuela-presentacion-a-jose-sosa-cnti/</guid>
       <description>El día 10 de diciembre se concretó una reunión bien esperada para que junto con la Geog. Zaida Pinto y el Ing. Richard Hernandez conversar con José Sosa (Presidente del CNTI) sobre la Geomática Libre en nuestro país. La reunión fue todo menos aburrida, fue muy cordial y amena, además de sincera en los planteamientos y observaciones.</description>
     </item>
     <item>
       <title>Mini Taller de Base de Datos y PostgreSQL</title>
-      <link>https://carlosgruiz.dev/blog/mini-taller-de-base-de-datos-y-postgresql/</link>
+      <link>http://localhost:1313/blog/mini-taller-de-base-de-datos-y-postgresql/</link>
       <pubDate>Mon, 10 Dec 2012 15:50:30 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/mini-taller-de-base-de-datos-y-postgresql/</guid>
+      <guid>http://localhost:1313/blog/mini-taller-de-base-de-datos-y-postgresql/</guid>
       <description>Los días 5 y 6 de diciembre estuve junto con el equipo de TuBaseDeDatosLibre.org dictando un &amp;ldquo;Taller Introductorio de Bases de Datos y PostgreSQL&amp;rdquo; en las sedes de Corpoelec y el Ministerio de la Cultura.</description>
     </item>
     <item>
       <title>Urumaco y los datos</title>
-      <link>https://carlosgruiz.dev/blog/urumaco-y-los-datos/</link>
+      <link>http://localhost:1313/blog/urumaco-y-los-datos/</link>
       <pubDate>Mon, 03 Dec 2012 08:26:45 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/urumaco-y-los-datos/</guid>
+      <guid>http://localhost:1313/blog/urumaco-y-los-datos/</guid>
       <description>Urumaco es de esos proyectos donde comienzas a estudiar una tecnología y poco a poco te involucras en algo más grande. Además es un desarrollo al que le he tomado cariño.</description>
     </item>
     <item>
       <title>Integrando C&#43;&#43; con Python</title>
-      <link>https://carlosgruiz.dev/blog/integrando-cpp-con-python/</link>
+      <link>http://localhost:1313/blog/integrando-cpp-con-python/</link>
       <pubDate>Sun, 11 Nov 2012 13:32:23 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/integrando-cpp-con-python/</guid>
-      <description>&lt;p&gt;Durante el &lt;a href=&#34;https://carlosgruiz.dev/posts/pycon-venezuela-2012.html&#34;&gt;PyCon
+      <guid>http://localhost:1313/blog/integrando-cpp-con-python/</guid>
+      <description>&lt;p&gt;Durante el &lt;a href=&#34;http://localhost:1313/posts/pycon-venezuela-2012.html&#34;&gt;PyCon
 Venezuela&lt;/a&gt; hice una
-charla llamada &lt;a href=&#34;https://carlosgruiz.dev/talks/2012/Integrando-mis-librer%C3%ADas-C%2B%2B-con-Python.pdf&#34;&gt;Integrando mis librerías C++ con
+charla llamada &lt;a href=&#34;http://localhost:1313/talks/2012/Integrando-mis-librer%C3%ADas-C%2B%2B-con-Python.pdf&#34;&gt;Integrando mis librerías C++ con
 Python&lt;/a&gt;,
 sin embargo quedó pendiente la parte práctica de la misma. Es por ello
 que decidí convertir el taller en un post donde de muestre los ejemplos
@@ -199,16 +199,16 @@ prácticos con algunos comentarios.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Web Mapping con Django</title>
-      <link>https://carlosgruiz.dev/blog/web-mapping-con-django/</link>
+      <link>http://localhost:1313/blog/web-mapping-con-django/</link>
       <pubDate>Wed, 07 Nov 2012 15:08:14 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/web-mapping-con-django/</guid>
+      <guid>http://localhost:1313/blog/web-mapping-con-django/</guid>
       <description>Luego de 3 años tocando la puerta en distintos eventos de Geomática por fin tuve la oportunidad de presentar el taller de creación de aplicaciones web de mapas con Django. Las razones en cada caso fueron las mismas, protagonismos y antagonismos, pero al final tuvo que ser mi ambiente natural quien me abriese la puerta, el PyCon Venezuela 2012.</description>
     </item>
     <item>
       <title>Pycon Venezuela 2012</title>
-      <link>https://carlosgruiz.dev/blog/pycon-venezuela-2012/</link>
+      <link>http://localhost:1313/blog/pycon-venezuela-2012/</link>
       <pubDate>Mon, 05 Nov 2012 16:27:31 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/pycon-venezuela-2012/</guid>
+      <guid>http://localhost:1313/blog/pycon-venezuela-2012/</guid>
       <description>&lt;p&gt;La Conferencia de Usuarios Python de Venezuela (PyConVE) fue una jornada
 frenética. No solamente por las noches preparando el material sino por
 la cantidad de información que fluyó entre nosotros. Caras nuevas en
@@ -220,9 +220,9 @@ consolidar la comunidad de Python en nuestro país.&lt;/p&gt;</description>
     </item>
     <item>
       <title>OpenVE y los &#34;Kits de arranque&#34;</title>
-      <link>https://carlosgruiz.dev/blog/openve-y-los-kits-de-arranque/</link>
+      <link>http://localhost:1313/blog/openve-y-los-kits-de-arranque/</link>
       <pubDate>Sun, 28 Oct 2012 04:24:34 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/openve-y-los-kits-de-arranque/</guid>
+      <guid>http://localhost:1313/blog/openve-y-los-kits-de-arranque/</guid>
       <description>&lt;p&gt;Hace unas semanas &lt;a href=&#34;http://sadasant.com/&#34;&gt;Daniel Rodríguez&lt;/a&gt; y &lt;a href=&#34;http://osledybazo.com/&#34;&gt;Osledy
 Bazó&lt;/a&gt; me invitaron a participar en la iniciativa
 &lt;a href=&#34;http://openve.github.com/&#34;&gt;OpenVE&lt;/a&gt; luego de la entrevista que me
@@ -235,9 +235,9 @@ biblioteca de código abierto.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dogfooding</title>
-      <link>https://carlosgruiz.dev/blog/dogfooding/</link>
+      <link>http://localhost:1313/blog/dogfooding/</link>
       <pubDate>Thu, 18 Oct 2012 13:46:00 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/dogfooding/</guid>
+      <guid>http://localhost:1313/blog/dogfooding/</guid>
       <description>&lt;p&gt;Leyendo sobre un driver para &lt;a href=&#34;http://www.mongodb.org/&#34;&gt;MongoDB&lt;/a&gt; y
 &lt;a href=&#34;http://www.tornadoweb.org/&#34;&gt;Tornado&lt;/a&gt;
 (&lt;a href=&#34;http://emptysquare.net/blog/eating-your-own-hamster-food/&#34;&gt;aquí&lt;/a&gt; el
@@ -251,10 +251,10 @@ sobre alguna plataforma, programa o servicio.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Entrevista en echandocodigo.com</title>
-      <link>https://carlosgruiz.dev/blog/entrevista-en-echandocodigo-com/</link>
+      <link>http://localhost:1313/blog/entrevista-en-echandocodigo-com/</link>
       <pubDate>Mon, 15 Oct 2012 03:43:00 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/entrevista-en-echandocodigo-com/</guid>
-      <description>&lt;p&gt;&lt;img alt=&#34;echandocodigo.com&#34; loading=&#34;lazy&#34; src=&#34;https://carlosgruiz.dev/images/logo_echandocodigo.png&#34;&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/blog/entrevista-en-echandocodigo-com/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;echandocodigo.com&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/logo_echandocodigo.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Los amigos del podcast &lt;a href=&#34;http://echandocodigo.com/&#34;&gt;Echando Código&lt;/a&gt;,
 Osledy Bazó (&lt;a href=&#34;http://twitter.com/uokesita&#34;&gt;@uokesita&lt;/a&gt;) y Daniel
 Rodriguez (&lt;a href=&#34;http://twitter.com/sadasant&#34;&gt;@sadasant&lt;/a&gt;), me entrevistaron
@@ -272,16 +272,16 @@ conocimiento en bases de datos libres.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Taller de Geo Gobierno en Línea</title>
-      <link>https://carlosgruiz.dev/blog/taller-de-geo-gobierno-en-linea/</link>
+      <link>http://localhost:1313/blog/taller-de-geo-gobierno-en-linea/</link>
       <pubDate>Sun, 14 Oct 2012 12:00:00 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/taller-de-geo-gobierno-en-linea/</guid>
+      <guid>http://localhost:1313/blog/taller-de-geo-gobierno-en-linea/</guid>
       <description>En los días 10 y 11 de Octubre participé en lo que se llamó el &lt;strong&gt;2do Taller de Geo Gobierno en Línea&lt;/strong&gt;. Fue una actividad muy agradable pues involucró bastantes de las cosas en que he trabajado por algún tiempo. El Geoportal de la página Gobierno en Línea me fue encargada hace algún tiempo, y fue el inicio del proyecto de Geoportal que actualmente mantengo. En el mismo hice uso de varias tecnologías de mapas que valdría la pena nombrar en otra publicación.</description>
     </item>
     <item>
       <title>Requerimientos para PostgreSQL</title>
-      <link>https://carlosgruiz.dev/blog/requerimientos-para-postgresql/</link>
+      <link>http://localhost:1313/blog/requerimientos-para-postgresql/</link>
       <pubDate>Wed, 30 May 2012 23:15:00 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/requerimientos-para-postgresql/</guid>
+      <guid>http://localhost:1313/blog/requerimientos-para-postgresql/</guid>
       <description>&lt;p&gt;Presentación que realicé en el 3er Encuentro de Migración a Bases de
 Datos Libres, que se realizó el 04/05/2012 en la sede de CANTV
 organizado por el Centro Nacional de Tecnologías de Información.&lt;/p&gt;
@@ -292,30 +292,30 @@ organizado por el Centro Nacional de Tecnologías de Información.&lt;/p&gt;
     </item>
     <item>
       <title>Mi Distro de Linux</title>
-      <link>https://carlosgruiz.dev/blog/mi-distro-de-linux/</link>
+      <link>http://localhost:1313/blog/mi-distro-de-linux/</link>
       <pubDate>Tue, 10 Apr 2012 22:42:00 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/mi-distro-de-linux/</guid>
+      <guid>http://localhost:1313/blog/mi-distro-de-linux/</guid>
       <description>Hablar de preferencias de GNU/Linux es complicado, sobre todo porque puede lucir siempre como una oportunidad para hacer Troll. Así que para comenzar debo aclarar un par de cosas. Primero que estas son mis apreciaciones &lt;strong&gt;NO&lt;/strong&gt; técnicas, acá hablo de gustos, no de métricas, filosofía, contratos sociales, compiladores y demás blah blah, si quieren información de este tipo vean &lt;a href=&#34;http://distrowatch.com/&#34;&gt;Distrowatch&lt;/a&gt;.</description>
     </item>
     <item>
       <title>Frameworks de C&#43;&#43; para la web</title>
-      <link>https://carlosgruiz.dev/blog/frameworks-de-c-para-la-web/</link>
+      <link>http://localhost:1313/blog/frameworks-de-c-para-la-web/</link>
       <pubDate>Tue, 03 Apr 2012 03:34:14 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/frameworks-de-c-para-la-web/</guid>
+      <guid>http://localhost:1313/blog/frameworks-de-c-para-la-web/</guid>
       <description>Normalmente al pensar en la web inmediatamente viene a la mente los nombres de lenguajes como Python, PHP, Perl o Ruby, Sin embargo haciendo una pequeña investigación podemos hacer un desmentido de esta idea. No solamente hay herramientas potentes sino que las hay con paradigmas bien variados.</description>
     </item>
     <item>
       <title>Alta Disponibilidad con PostgreSQL</title>
-      <link>https://carlosgruiz.dev/blog/alta-disponibilidad-con-postgresql/</link>
+      <link>http://localhost:1313/blog/alta-disponibilidad-con-postgresql/</link>
       <pubDate>Tue, 29 Nov 2011 20:25:00 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/alta-disponibilidad-con-postgresql/</guid>
+      <guid>http://localhost:1313/blog/alta-disponibilidad-con-postgresql/</guid>
       <description>Participando con el equipo de TuBaseDeDatosLibre.org expuse algunas consideraciones para explicar lo que se entiende por Alta Disponibilidad desde el punto de vista de las Base de Datos, y en particular con PostgreSQL.</description>
     </item>
     <item>
       <title>Mejores Prácticas para la Migracion de Bases de Datos</title>
-      <link>https://carlosgruiz.dev/blog/mejores-practicas-para-la-migracion-de-bases-de-datos/</link>
+      <link>http://localhost:1313/blog/mejores-practicas-para-la-migracion-de-bases-de-datos/</link>
       <pubDate>Wed, 05 Oct 2011 22:20:00 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/mejores-practicas-para-la-migracion-de-bases-de-datos/</guid>
+      <guid>http://localhost:1313/blog/mejores-practicas-para-la-migracion-de-bases-de-datos/</guid>
       <description>&lt;p&gt;En el marco de las jornadas del 2do Encuentro de Migración de Bases de
 Datos Privativas a Tecnologías de Información Libres hice la siguiente
 presentación. En ella procuro explicar mayormente algunos aspectos no
@@ -324,16 +324,16 @@ sus bases de datos.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mapa Colaborativo de Venezuela con OpenStreetMap</title>
-      <link>https://carlosgruiz.dev/blog/mapa-colaborativo-de-venezuela-osm/</link>
+      <link>http://localhost:1313/blog/mapa-colaborativo-de-venezuela-osm/</link>
       <pubDate>Mon, 19 Sep 2011 19:07:00 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/mapa-colaborativo-de-venezuela-osm/</guid>
+      <guid>http://localhost:1313/blog/mapa-colaborativo-de-venezuela-osm/</guid>
       <description>&lt;p&gt;Durante las jornadas de &lt;a href=&#34;http://vivirviviendo.softwarelibre.gob.ve/&#34;&gt;tecnologías de información libres para vivir viviendo&lt;/a&gt; realicé esta presentación con el fin de mostrar las bondades del uso de &lt;a href=&#34;http://osm.org&#34;&gt;openstreetmap&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Python vs El Mundo</title>
-      <link>https://carlosgruiz.dev/blog/python-vs-el-mundo/</link>
+      <link>http://localhost:1313/blog/python-vs-el-mundo/</link>
       <pubDate>Tue, 10 May 2011 00:00:57 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/python-vs-el-mundo/</guid>
+      <guid>http://localhost:1313/blog/python-vs-el-mundo/</guid>
       <description>&lt;p&gt;Inspirado en la Película &lt;a href=&#34;http://www.imdb.com/title/tt0446029/&#34;&gt;Scott Pilgrim vs El
 Mundo&lt;/a&gt; y en ocasión del Día Python
 en Mayo de 2011, tuve la oportunidad de presentar la evaluación
@@ -346,9 +346,9 @@ Python para mi proyecto?.&lt;/p&gt;
     </item>
     <item>
       <title>Django vs Pylons</title>
-      <link>https://carlosgruiz.dev/blog/django-vs-pylons/</link>
+      <link>http://localhost:1313/blog/django-vs-pylons/</link>
       <pubDate>Sun, 15 Aug 2010 17:50:59 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/django-vs-pylons/</guid>
+      <guid>http://localhost:1313/blog/django-vs-pylons/</guid>
       <description>&lt;p&gt;s comparaciones suelen ser odiosas, destapar algún
 tipo de polémica o mostrar preferencias más allá del aspecto técnico y
 objetivo de una plataforma o programa. Sin embargo, debido a que me toca
@@ -358,9 +358,9 @@ que pudiesen apoyar mis actividades.&lt;/p&gt;</description>
     </item>
     <item>
       <title>GeoEtiquetas (Presentación en Jornadas gvSIG)</title>
-      <link>https://carlosgruiz.dev/blog/geoetiquetas-presentacion-en-jornadas-gvsig/</link>
+      <link>http://localhost:1313/blog/geoetiquetas-presentacion-en-jornadas-gvsig/</link>
       <pubDate>Mon, 19 Jul 2010 17:36:01 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/geoetiquetas-presentacion-en-jornadas-gvsig/</guid>
+      <guid>http://localhost:1313/blog/geoetiquetas-presentacion-en-jornadas-gvsig/</guid>
       <description>&lt;p&gt;Presentación del proyecto GeoEtiquetas, en las &lt;a href=&#34;http://docs.gvsig.org/plone/community/events/jornadas-lac/2010/ponencias&#34;&gt;2das Jornadas de gvSIG Latinoamérica y del
 Caribe&lt;/a&gt;.&lt;/p&gt;
 
@@ -370,9 +370,9 @@ Caribe&lt;/a&gt;.&lt;/p&gt;
     </item>
     <item>
       <title>Introduccion a Openlayers</title>
-      <link>https://carlosgruiz.dev/blog/introduccion-a-openlayers/</link>
+      <link>http://localhost:1313/blog/introduccion-a-openlayers/</link>
       <pubDate>Wed, 09 Jun 2010 23:49:35 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/introduccion-a-openlayers/</guid>
+      <guid>http://localhost:1313/blog/introduccion-a-openlayers/</guid>
       <description>&lt;p&gt;Una de las cosas con las que he trabajado últimamente es con
 &lt;a href=&#34;http://www.openlayers.org/&#34;&gt;OpenLayers&lt;/a&gt;. Este es una librería de
 JavaScript muy interesante para colocar mapas en una página web. Así que
@@ -381,9 +381,9 @@ el camino.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Camelot</title>
-      <link>https://carlosgruiz.dev/blog/camelot/</link>
+      <link>http://localhost:1313/blog/camelot/</link>
       <pubDate>Wed, 09 Jun 2010 04:34:00 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/camelot/</guid>
+      <guid>http://localhost:1313/blog/camelot/</guid>
       <description>&lt;p&gt;Hace un año más o menos me enteré de la existencia del proyecto Camelot,
 un proyecto para GUIs inspirado en las funcionalidades de Django. Algo
 realmente ambicioso y por supuesto bienvenido para los programadores que
@@ -392,9 +392,9 @@ sentimos que faltaba en el mundo de las GUI.&lt;/p&gt;</description>
     </item>
     <item>
       <title>El Lenguaje De Programacion Javascript</title>
-      <link>https://carlosgruiz.dev/blog/el-lenguaje-de-programacion-javascript/</link>
+      <link>http://localhost:1313/blog/el-lenguaje-de-programacion-javascript/</link>
       <pubDate>Mon, 03 Aug 2009 21:27:00 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/el-lenguaje-de-programacion-javascript/</guid>
+      <guid>http://localhost:1313/blog/el-lenguaje-de-programacion-javascript/</guid>
       <description>&lt;p&gt;Esta es una serie de videos donde se da una introducción al lenguaje de
 programación JavaScript. Las filminas (láminas/slides) se encuentran en
 esta dirección &lt;a href=&#34;http://yuiblog.com/assets/crockford/javascript.zip&#34;&gt;http://yuiblog.com/assets/crockford/javascript.zip&lt;/a&gt;. Si

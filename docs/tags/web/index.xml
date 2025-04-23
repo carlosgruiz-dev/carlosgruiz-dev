@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Web on Carlos Gustavo Ruiz</title>
-    <link>https://carlosgruiz.dev/tags/web/</link>
+    <link>http://localhost:1313/tags/web/</link>
     <description>Recent content in Web on Carlos Gustavo Ruiz</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo -- 0.146.5</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 03 Mar 2015 00:17:00 -0400</lastBuildDate>
-    <atom:link href="https://carlosgruiz.dev/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/web/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Frameworks de C&#43;&#43; para la web</title>
-      <link>https://carlosgruiz.dev/blog/frameworks-de-c-para-la-web/</link>
+      <link>http://localhost:1313/blog/frameworks-de-c-para-la-web/</link>
       <pubDate>Tue, 03 Apr 2012 03:34:14 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/frameworks-de-c-para-la-web/</guid>
+      <guid>http://localhost:1313/blog/frameworks-de-c-para-la-web/</guid>
       <description>Normalmente al pensar en la web inmediatamente viene a la mente los nombres de lenguajes como Python, PHP, Perl o Ruby, Sin embargo haciendo una pequeña investigación podemos hacer un desmentido de esta idea. No solamente hay herramientas potentes sino que las hay con paradigmas bien variados.</description>
     </item>
     <item>
       <title>Introduccion a Openlayers</title>
-      <link>https://carlosgruiz.dev/blog/introduccion-a-openlayers/</link>
+      <link>http://localhost:1313/blog/introduccion-a-openlayers/</link>
       <pubDate>Wed, 09 Jun 2010 23:49:35 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/introduccion-a-openlayers/</guid>
+      <guid>http://localhost:1313/blog/introduccion-a-openlayers/</guid>
       <description>&lt;p&gt;Una de las cosas con las que he trabajado últimamente es con
 &lt;a href=&#34;http://www.openlayers.org/&#34;&gt;OpenLayers&lt;/a&gt;. Este es una librería de
 JavaScript muy interesante para colocar mapas en una página web. Así que

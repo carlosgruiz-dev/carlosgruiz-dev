@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Open Source on Carlos Gustavo Ruiz</title>
-    <link>https://carlosgruiz.dev/tags/open-source/</link>
+    <link>http://localhost:1313/tags/open-source/</link>
     <description>Recent content in Open Source on Carlos Gustavo Ruiz</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo -- 0.146.5</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 04 Mar 2018 21:48:46 -0500</lastBuildDate>
-    <atom:link href="https://carlosgruiz.dev/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Starting a Haskell Project With Stack</title>
-      <link>https://carlosgruiz.dev/blog/starting-a-haskell-project-with-stack/</link>
+      <link>http://localhost:1313/blog/starting-a-haskell-project-with-stack/</link>
       <pubDate>Sun, 04 Mar 2018 21:48:46 -0500</pubDate>
-      <guid>https://carlosgruiz.dev/blog/starting-a-haskell-project-with-stack/</guid>
+      <guid>http://localhost:1313/blog/starting-a-haskell-project-with-stack/</guid>
       <description>&lt;p&gt;I was trying &lt;a href=&#34;https://asciinema.org&#34;&gt;asciinema&lt;/a&gt;, and to test it I recorded this
 video. If you want to try Haskell Stack just type this in your terminal&lt;/p&gt;</description>
     </item>
     <item>
       <title>Haskell Simple HTTP Server</title>
-      <link>https://carlosgruiz.dev/blog/haskell-simple-http-server/</link>
+      <link>http://localhost:1313/blog/haskell-simple-http-server/</link>
       <pubDate>Sun, 20 Aug 2017 19:00:24 -0500</pubDate>
-      <guid>https://carlosgruiz.dev/blog/haskell-simple-http-server/</guid>
+      <guid>http://localhost:1313/blog/haskell-simple-http-server/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m pushing myself to learn Haskell, but I realized that the best way to learn is
 to make things, broke them and build them again. So I decided to start a toy
 project to create a substitute for commands like &lt;code&gt;$ python3 -m http.server&lt;/code&gt; or
@@ -30,38 +30,38 @@ to log me and avoid procrastination.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Installing FreeBSD on Virtualbox</title>
-      <link>https://carlosgruiz.dev/blog/installing-freebsd-on-virtualbox/</link>
+      <link>http://localhost:1313/blog/installing-freebsd-on-virtualbox/</link>
       <pubDate>Sun, 21 Aug 2016 22:46:02 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/installing-freebsd-on-virtualbox/</guid>
+      <guid>http://localhost:1313/blog/installing-freebsd-on-virtualbox/</guid>
       <description>&lt;p&gt;Practicing with a FreeBSD installation as a guest operating system on
 VirtualBox I found a way to make a cool animated gif, take a look.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Vim &#43; Python Mode</title>
-      <link>https://carlosgruiz.dev/blog/vim-python-mode/</link>
+      <link>http://localhost:1313/blog/vim-python-mode/</link>
       <pubDate>Fri, 22 Apr 2016 16:34:32 -0500</pubDate>
-      <guid>https://carlosgruiz.dev/blog/vim-python-mode/</guid>
+      <guid>http://localhost:1313/blog/vim-python-mode/</guid>
       <description>Presentación que realicé en el Día Python 2016 (1) en la Universidad Central de Venezuela. Comentando un poco de las herramientas que uso para mi trabajo.</description>
     </item>
     <item>
       <title>Llena tu Windows de FOSS</title>
-      <link>https://carlosgruiz.dev/blog/llena-tu-windows-de-foss/</link>
+      <link>http://localhost:1313/blog/llena-tu-windows-de-foss/</link>
       <pubDate>Fri, 12 Jul 2013 01:47:24 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/llena-tu-windows-de-foss/</guid>
+      <guid>http://localhost:1313/blog/llena-tu-windows-de-foss/</guid>
       <description>El LP &lt;em&gt;Llena tu Cabeza de Rock&lt;/em&gt; es una imagen bien ochentera (y nada rockera) y con ella aprovecho de describir un poco lo que ha sido mi aventura de tener que retomar el uso de Windows y en el proceso no darme por vencido respecto al uso de las excelentes herramientas que me proporciona el OpenSource.</description>
     </item>
     <item>
       <title>Geomatica Libre en Venezuela (Presentación a José Sosa - CNTI)</title>
-      <link>https://carlosgruiz.dev/blog/geomatica-libre-en-venezuela-presentacion-a-jose-sosa-cnti/</link>
+      <link>http://localhost:1313/blog/geomatica-libre-en-venezuela-presentacion-a-jose-sosa-cnti/</link>
       <pubDate>Tue, 11 Dec 2012 15:07:00 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/geomatica-libre-en-venezuela-presentacion-a-jose-sosa-cnti/</guid>
+      <guid>http://localhost:1313/blog/geomatica-libre-en-venezuela-presentacion-a-jose-sosa-cnti/</guid>
       <description>El día 10 de diciembre se concretó una reunión bien esperada para que junto con la Geog. Zaida Pinto y el Ing. Richard Hernandez conversar con José Sosa (Presidente del CNTI) sobre la Geomática Libre en nuestro país. La reunión fue todo menos aburrida, fue muy cordial y amena, además de sincera en los planteamientos y observaciones.</description>
     </item>
     <item>
       <title>Mini Taller de Base de Datos y PostgreSQL</title>
-      <link>https://carlosgruiz.dev/blog/mini-taller-de-base-de-datos-y-postgresql/</link>
+      <link>http://localhost:1313/blog/mini-taller-de-base-de-datos-y-postgresql/</link>
       <pubDate>Mon, 10 Dec 2012 15:50:30 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/mini-taller-de-base-de-datos-y-postgresql/</guid>
+      <guid>http://localhost:1313/blog/mini-taller-de-base-de-datos-y-postgresql/</guid>
       <description>Los días 5 y 6 de diciembre estuve junto con el equipo de TuBaseDeDatosLibre.org dictando un &amp;ldquo;Taller Introductorio de Bases de Datos y PostgreSQL&amp;rdquo; en las sedes de Corpoelec y el Ministerio de la Cultura.</description>
     </item>
   </channel>

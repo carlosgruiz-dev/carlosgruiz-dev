@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>English on Carlos Gustavo Ruiz</title>
-    <link>https://carlosgruiz.dev/tags/english/</link>
+    <link>http://localhost:1313/tags/english/</link>
     <description>Recent content in English on Carlos Gustavo Ruiz</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo -- 0.146.5</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 04 Mar 2018 21:48:46 -0500</lastBuildDate>
-    <atom:link href="https://carlosgruiz.dev/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/english/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Starting a Haskell Project With Stack</title>
-      <link>https://carlosgruiz.dev/blog/starting-a-haskell-project-with-stack/</link>
+      <link>http://localhost:1313/blog/starting-a-haskell-project-with-stack/</link>
       <pubDate>Sun, 04 Mar 2018 21:48:46 -0500</pubDate>
-      <guid>https://carlosgruiz.dev/blog/starting-a-haskell-project-with-stack/</guid>
+      <guid>http://localhost:1313/blog/starting-a-haskell-project-with-stack/</guid>
       <description>&lt;p&gt;I was trying &lt;a href=&#34;https://asciinema.org&#34;&gt;asciinema&lt;/a&gt;, and to test it I recorded this
 video. If you want to try Haskell Stack just type this in your terminal&lt;/p&gt;</description>
     </item>
     <item>
       <title>Haskell Simple HTTP Server</title>
-      <link>https://carlosgruiz.dev/blog/haskell-simple-http-server/</link>
+      <link>http://localhost:1313/blog/haskell-simple-http-server/</link>
       <pubDate>Sun, 20 Aug 2017 19:00:24 -0500</pubDate>
-      <guid>https://carlosgruiz.dev/blog/haskell-simple-http-server/</guid>
+      <guid>http://localhost:1313/blog/haskell-simple-http-server/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m pushing myself to learn Haskell, but I realized that the best way to learn is
 to make things, broke them and build them again. So I decided to start a toy
 project to create a substitute for commands like &lt;code&gt;$ python3 -m http.server&lt;/code&gt; or
@@ -30,9 +30,9 @@ to log me and avoid procrastination.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Installing FreeBSD on Virtualbox</title>
-      <link>https://carlosgruiz.dev/blog/installing-freebsd-on-virtualbox/</link>
+      <link>http://localhost:1313/blog/installing-freebsd-on-virtualbox/</link>
       <pubDate>Sun, 21 Aug 2016 22:46:02 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/installing-freebsd-on-virtualbox/</guid>
+      <guid>http://localhost:1313/blog/installing-freebsd-on-virtualbox/</guid>
       <description>&lt;p&gt;Practicing with a FreeBSD installation as a guest operating system on
 VirtualBox I found a way to make a cool animated gif, take a look.&lt;/p&gt;</description>
     </item>

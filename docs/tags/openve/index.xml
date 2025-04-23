@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Openve on Carlos Gustavo Ruiz</title>
-    <link>https://carlosgruiz.dev/tags/openve/</link>
+    <link>http://localhost:1313/tags/openve/</link>
     <description>Recent content in Openve on Carlos Gustavo Ruiz</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo -- 0.146.5</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 05 Mar 2015 23:17:00 -0400</lastBuildDate>
-    <atom:link href="https://carlosgruiz.dev/tags/openve/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/openve/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OpenVE y los &#34;Kits de arranque&#34;</title>
-      <link>https://carlosgruiz.dev/blog/openve-y-los-kits-de-arranque/</link>
+      <link>http://localhost:1313/blog/openve-y-los-kits-de-arranque/</link>
       <pubDate>Sun, 28 Oct 2012 04:24:34 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/openve-y-los-kits-de-arranque/</guid>
+      <guid>http://localhost:1313/blog/openve-y-los-kits-de-arranque/</guid>
       <description>&lt;p&gt;Hace unas semanas &lt;a href=&#34;http://sadasant.com/&#34;&gt;Daniel Rodríguez&lt;/a&gt; y &lt;a href=&#34;http://osledybazo.com/&#34;&gt;Osledy
 Bazó&lt;/a&gt; me invitaron a participar en la iniciativa
 &lt;a href=&#34;http://openve.github.com/&#34;&gt;OpenVE&lt;/a&gt; luego de la entrevista que me

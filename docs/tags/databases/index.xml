@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Databases on Carlos Gustavo Ruiz</title>
-    <link>https://carlosgruiz.dev/tags/databases/</link>
+    <link>http://localhost:1313/tags/databases/</link>
     <description>Recent content in Databases on Carlos Gustavo Ruiz</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo -- 0.146.5</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 04 Mar 2015 20:00:00 -0400</lastBuildDate>
-    <atom:link href="https://carlosgruiz.dev/tags/databases/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/databases/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bases de Datos Libres desde 40.000 pies de altura</title>
-      <link>https://carlosgruiz.dev/blog/bases-de-datos-libres-desde-40000-pies-de-altura/</link>
+      <link>http://localhost:1313/blog/bases-de-datos-libres-desde-40000-pies-de-altura/</link>
       <pubDate>Wed, 30 Oct 2013 23:27:00 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/bases-de-datos-libres-desde-40000-pies-de-altura/</guid>
+      <guid>http://localhost:1313/blog/bases-de-datos-libres-desde-40000-pies-de-altura/</guid>
       <description>El día 17 de octubre tuve la oportunidad durante la 1ra Cayapa Universitaria en la UPTOS CR (Cumaná, Estado Sucre, Venezuela) tuve la oportunidad de presentar la ponencia &amp;ldquo;Bases de Datos Libres desde 40.000 pies de altura&amp;rdquo; en representación del equipo de tubasededatoslibre.org. En este post se encuentra la presentación y el código utilizado durante esta jornada.</description>
     </item>
     <item>
       <title>¿Por qué hacemos persistencia de datos?</title>
-      <link>https://carlosgruiz.dev/blog/por-que-hacemos-persistencia-de-datos/</link>
+      <link>http://localhost:1313/blog/por-que-hacemos-persistencia-de-datos/</link>
       <pubDate>Fri, 06 Sep 2013 11:00:00 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/por-que-hacemos-persistencia-de-datos/</guid>
+      <guid>http://localhost:1313/blog/por-que-hacemos-persistencia-de-datos/</guid>
       <description>&lt;p&gt;El día 4 de septiembre estuve nuevamente con el equipo de
 &lt;a href=&#34;http://tubasededatoslibre.org&#34;&gt;tubasededatoslibre.org&lt;/a&gt; presentando
 algunas ideas sobre diversos el tema de base de datos y persistencia de
@@ -27,9 +27,9 @@ datos, esta vez en la &lt;strong&gt;“1ra sensibilización para la adopción de
     </item>
     <item>
       <title>Introduccion a ZODB</title>
-      <link>https://carlosgruiz.dev/blog/breve-introduccion-a-zodb/</link>
+      <link>http://localhost:1313/blog/breve-introduccion-a-zodb/</link>
       <pubDate>Fri, 26 Jul 2013 19:31:00 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/breve-introduccion-a-zodb/</guid>
+      <guid>http://localhost:1313/blog/breve-introduccion-a-zodb/</guid>
       <description>&lt;p&gt;En concreto ZODB (Zope Object Data Base) es un gestor de bases de datos
 orientado a objetos. Esto significa para el usuario nuevo en esta
 tecnología que a diferencia de las bases de datos de uso mas frecuente
@@ -39,17 +39,17 @@ Python.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mini Taller de Base de Datos y PostgreSQL</title>
-      <link>https://carlosgruiz.dev/blog/mini-taller-de-base-de-datos-y-postgresql/</link>
+      <link>http://localhost:1313/blog/mini-taller-de-base-de-datos-y-postgresql/</link>
       <pubDate>Mon, 10 Dec 2012 15:50:30 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/mini-taller-de-base-de-datos-y-postgresql/</guid>
+      <guid>http://localhost:1313/blog/mini-taller-de-base-de-datos-y-postgresql/</guid>
       <description>Los días 5 y 6 de diciembre estuve junto con el equipo de TuBaseDeDatosLibre.org dictando un &amp;ldquo;Taller Introductorio de Bases de Datos y PostgreSQL&amp;rdquo; en las sedes de Corpoelec y el Ministerio de la Cultura.</description>
     </item>
     <item>
       <title>Entrevista en echandocodigo.com</title>
-      <link>https://carlosgruiz.dev/blog/entrevista-en-echandocodigo-com/</link>
+      <link>http://localhost:1313/blog/entrevista-en-echandocodigo-com/</link>
       <pubDate>Mon, 15 Oct 2012 03:43:00 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/entrevista-en-echandocodigo-com/</guid>
-      <description>&lt;p&gt;&lt;img alt=&#34;echandocodigo.com&#34; loading=&#34;lazy&#34; src=&#34;https://carlosgruiz.dev/images/logo_echandocodigo.png&#34;&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/blog/entrevista-en-echandocodigo-com/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;echandocodigo.com&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/logo_echandocodigo.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Los amigos del podcast &lt;a href=&#34;http://echandocodigo.com/&#34;&gt;Echando Código&lt;/a&gt;,
 Osledy Bazó (&lt;a href=&#34;http://twitter.com/uokesita&#34;&gt;@uokesita&lt;/a&gt;) y Daniel
 Rodriguez (&lt;a href=&#34;http://twitter.com/sadasant&#34;&gt;@sadasant&lt;/a&gt;), me entrevistaron
@@ -67,9 +67,9 @@ conocimiento en bases de datos libres.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Requerimientos para PostgreSQL</title>
-      <link>https://carlosgruiz.dev/blog/requerimientos-para-postgresql/</link>
+      <link>http://localhost:1313/blog/requerimientos-para-postgresql/</link>
       <pubDate>Wed, 30 May 2012 23:15:00 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/requerimientos-para-postgresql/</guid>
+      <guid>http://localhost:1313/blog/requerimientos-para-postgresql/</guid>
       <description>&lt;p&gt;Presentación que realicé en el 3er Encuentro de Migración a Bases de
 Datos Libres, que se realizó el 04/05/2012 en la sede de CANTV
 organizado por el Centro Nacional de Tecnologías de Información.&lt;/p&gt;
@@ -80,16 +80,16 @@ organizado por el Centro Nacional de Tecnologías de Información.&lt;/p&gt;
     </item>
     <item>
       <title>Alta Disponibilidad con PostgreSQL</title>
-      <link>https://carlosgruiz.dev/blog/alta-disponibilidad-con-postgresql/</link>
+      <link>http://localhost:1313/blog/alta-disponibilidad-con-postgresql/</link>
       <pubDate>Tue, 29 Nov 2011 20:25:00 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/alta-disponibilidad-con-postgresql/</guid>
+      <guid>http://localhost:1313/blog/alta-disponibilidad-con-postgresql/</guid>
       <description>Participando con el equipo de TuBaseDeDatosLibre.org expuse algunas consideraciones para explicar lo que se entiende por Alta Disponibilidad desde el punto de vista de las Base de Datos, y en particular con PostgreSQL.</description>
     </item>
     <item>
       <title>Mejores Prácticas para la Migracion de Bases de Datos</title>
-      <link>https://carlosgruiz.dev/blog/mejores-practicas-para-la-migracion-de-bases-de-datos/</link>
+      <link>http://localhost:1313/blog/mejores-practicas-para-la-migracion-de-bases-de-datos/</link>
       <pubDate>Wed, 05 Oct 2011 22:20:00 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/mejores-practicas-para-la-migracion-de-bases-de-datos/</guid>
+      <guid>http://localhost:1313/blog/mejores-practicas-para-la-migracion-de-bases-de-datos/</guid>
       <description>&lt;p&gt;En el marco de las jornadas del 2do Encuentro de Migración de Bases de
 Datos Privativas a Tecnologías de Información Libres hice la siguiente
 presentación. En ella procuro explicar mayormente algunos aspectos no

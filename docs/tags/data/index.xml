@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Data on Carlos Gustavo Ruiz</title>
-    <link>https://carlosgruiz.dev/tags/data/</link>
+    <link>http://localhost:1313/tags/data/</link>
     <description>Recent content in Data on Carlos Gustavo Ruiz</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo -- 0.146.5</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 26 Feb 2015 23:28:00 -0400</lastBuildDate>
-    <atom:link href="https://carlosgruiz.dev/tags/data/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/data/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Receta para hacer un mapa electoral simple</title>
-      <link>https://carlosgruiz.dev/blog/receta-para-hacer-un-mapa-electoral-simple/</link>
+      <link>http://localhost:1313/blog/receta-para-hacer-un-mapa-electoral-simple/</link>
       <pubDate>Thu, 18 Apr 2013 21:34:44 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/receta-para-hacer-un-mapa-electoral-simple/</guid>
+      <guid>http://localhost:1313/blog/receta-para-hacer-un-mapa-electoral-simple/</guid>
       <description>&lt;p&gt;Muchas veces me preguntan, sobre todo cerca de los resultados de unas
 elecciones cómo se puede hacer un mapa electoral. Como el tema electoral
 es complejo en sus análisis, supongo inmediatamente que lo que en
@@ -21,9 +21,9 @@ elección y generalmente tengo razón.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Urumaco y los datos</title>
-      <link>https://carlosgruiz.dev/blog/urumaco-y-los-datos/</link>
+      <link>http://localhost:1313/blog/urumaco-y-los-datos/</link>
       <pubDate>Mon, 03 Dec 2012 08:26:45 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/urumaco-y-los-datos/</guid>
+      <guid>http://localhost:1313/blog/urumaco-y-los-datos/</guid>
       <description>Urumaco es de esos proyectos donde comienzas a estudiar una tecnología y poco a poco te involucras en algo más grande. Además es un desarrollo al que le he tomado cariño.</description>
     </item>
   </channel>

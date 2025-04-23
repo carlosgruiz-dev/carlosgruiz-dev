@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Terms on Carlos Gustavo Ruiz</title>
-    <link>https://carlosgruiz.dev/tags/terms/</link>
+    <link>http://localhost:1313/tags/terms/</link>
     <description>Recent content in Terms on Carlos Gustavo Ruiz</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo -- 0.146.5</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 27 Feb 2015 23:59:00 -0400</lastBuildDate>
-    <atom:link href="https://carlosgruiz.dev/tags/terms/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/terms/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Outrunning the Bear</title>
-      <link>https://carlosgruiz.dev/blog/outrunning-the-bear/</link>
+      <link>http://localhost:1313/blog/outrunning-the-bear/</link>
       <pubDate>Fri, 31 Jan 2014 03:11:00 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/outrunning-the-bear/</guid>
+      <guid>http://localhost:1313/blog/outrunning-the-bear/</guid>
       <description>&lt;p&gt;Hace algún tiempo me dio por comentar sobre una expresión de esas que
 rondan con frecuencia el mundo geek. Bueno acá va otra, &lt;strong&gt;&amp;ldquo;Outrunning the bear&amp;rdquo;&lt;/strong&gt;
 (o dejando atrás al oso).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dogfooding</title>
-      <link>https://carlosgruiz.dev/blog/dogfooding/</link>
+      <link>http://localhost:1313/blog/dogfooding/</link>
       <pubDate>Thu, 18 Oct 2012 13:46:00 -0400</pubDate>
-      <guid>https://carlosgruiz.dev/blog/dogfooding/</guid>
+      <guid>http://localhost:1313/blog/dogfooding/</guid>
       <description>&lt;p&gt;Leyendo sobre un driver para &lt;a href=&#34;http://www.mongodb.org/&#34;&gt;MongoDB&lt;/a&gt; y
 &lt;a href=&#34;http://www.tornadoweb.org/&#34;&gt;Tornado&lt;/a&gt;
 (&lt;a href=&#34;http://emptysquare.net/blog/eating-your-own-hamster-food/&#34;&gt;aquí&lt;/a&gt; el
