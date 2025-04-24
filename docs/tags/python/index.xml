@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Python on Carlos Gustavo Ruiz</title>
-    <link>http://localhost:1313/tags/python/</link>
+    <link>https://carlosgruiz.dev/tags/python/</link>
     <description>Recent content in Python on Carlos Gustavo Ruiz</description>
-    <generator>Hugo -- 0.146.5</generator>
+    <generator>Hugo -- 0.146.7</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 May 2024 16:23:55 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://carlosgruiz.dev/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Entrevista Python Venezuela</title>
-      <link>http://localhost:1313/blog/entrevista-python-venezuela/</link>
+      <link>https://carlosgruiz.dev/blog/entrevista-python-venezuela/</link>
       <pubDate>Fri, 21 Sep 2018 16:26:16 -0500</pubDate>
-      <guid>http://localhost:1313/blog/entrevista-python-venezuela/</guid>
+      <guid>https://carlosgruiz.dev/blog/entrevista-python-venezuela/</guid>
       <description>&lt;p&gt;Jesús Gómez (&lt;a href=&#34;https://twitter.com/jgomo3&#34;&gt;@jgomo3&lt;/a&gt;) ha dado inicio a una
 serie de entrevistas a miembros de la comunidad de Python Venezuela, y bueno
 tuve la fortuna de ser su primer invitado. Durante una hora estuvimos hablando
@@ -21,23 +21,23 @@ poco sobre el proyecto en el que trabajo actualmente.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Vim &#43; Python Mode</title>
-      <link>http://localhost:1313/blog/vim-python-mode/</link>
+      <link>https://carlosgruiz.dev/blog/vim-python-mode/</link>
       <pubDate>Fri, 22 Apr 2016 16:34:32 -0500</pubDate>
-      <guid>http://localhost:1313/blog/vim-python-mode/</guid>
+      <guid>https://carlosgruiz.dev/blog/vim-python-mode/</guid>
       <description>Presentación que realicé en el Día Python 2016 (1) en la Universidad Central de Venezuela. Comentando un poco de las herramientas que uso para mi trabajo.</description>
     </item>
     <item>
       <title>Introducció a Pyramid</title>
-      <link>http://localhost:1313/blog/introduccion-a-pyramid/</link>
+      <link>https://carlosgruiz.dev/blog/introduccion-a-pyramid/</link>
       <pubDate>Tue, 20 Aug 2013 08:18:00 -0400</pubDate>
-      <guid>http://localhost:1313/blog/introduccion-a-pyramid/</guid>
+      <guid>https://carlosgruiz.dev/blog/introduccion-a-pyramid/</guid>
       <description>En el mundo de los Frameworks de Python para aplicaciones en la web por años han resaltado algunos nombres Django, Pylons, CherryPy, TurboGears, Flask y Bottle entre otros. En medio de este conjunto de excelentes herramientas surge del proyecto Pylons el desarrollo llamado Pyramid.</description>
     </item>
     <item>
       <title>Introduccion a ZODB</title>
-      <link>http://localhost:1313/blog/breve-introduccion-a-zodb/</link>
+      <link>https://carlosgruiz.dev/blog/breve-introduccion-a-zodb/</link>
       <pubDate>Fri, 26 Jul 2013 19:31:00 -0400</pubDate>
-      <guid>http://localhost:1313/blog/breve-introduccion-a-zodb/</guid>
+      <guid>https://carlosgruiz.dev/blog/breve-introduccion-a-zodb/</guid>
       <description>&lt;p&gt;En concreto ZODB (Zope Object Data Base) es un gestor de bases de datos
 orientado a objetos. Esto significa para el usuario nuevo en esta
 tecnología que a diferencia de las bases de datos de uso mas frecuente
@@ -47,29 +47,29 @@ Python.&lt;/p&gt;</description>
     </item>
     <item>
       <title>&#34;Hola PostgreSQL&#34; (con Python)</title>
-      <link>http://localhost:1313/blog/hola-postgresql-con-python/</link>
+      <link>https://carlosgruiz.dev/blog/hola-postgresql-con-python/</link>
       <pubDate>Mon, 18 Feb 2013 12:39:00 -0400</pubDate>
-      <guid>http://localhost:1313/blog/hola-postgresql-con-python/</guid>
+      <guid>https://carlosgruiz.dev/blog/hola-postgresql-con-python/</guid>
       <description>&lt;p&gt;Una de las tareas más frecuentes cuando iniciamos con las bases de datos
 es cómo conectamos las mismas con nuestros programas. En particular
 conectarse con PostgreSQL es una tarea bastante simple con Python.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tutorial &#34;Introducción a la programacion Qt&#34; y otros hallazgos en la azotea</title>
-      <link>http://localhost:1313/blog/tutorial-introduccion-a-la-programacion-qt-y-otros-hallazgos-en-la-azotea/</link>
+      <link>https://carlosgruiz.dev/blog/tutorial-introduccion-a-la-programacion-qt-y-otros-hallazgos-en-la-azotea/</link>
       <pubDate>Fri, 25 Jan 2013 15:21:49 -0400</pubDate>
-      <guid>http://localhost:1313/blog/tutorial-introduccion-a-la-programacion-qt-y-otros-hallazgos-en-la-azotea/</guid>
+      <guid>https://carlosgruiz.dev/blog/tutorial-introduccion-a-la-programacion-qt-y-otros-hallazgos-en-la-azotea/</guid>
       <description>&lt;p&gt;En fin, hoy limpiando la wiki que solía utilizar en mi web personal
 conseguí algunas curiosidades que valen la pena compartir.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Integrando C&#43;&#43; con Python</title>
-      <link>http://localhost:1313/blog/integrando-cpp-con-python/</link>
+      <link>https://carlosgruiz.dev/blog/integrando-cpp-con-python/</link>
       <pubDate>Sun, 11 Nov 2012 13:32:23 -0400</pubDate>
-      <guid>http://localhost:1313/blog/integrando-cpp-con-python/</guid>
-      <description>&lt;p&gt;Durante el &lt;a href=&#34;http://localhost:1313/posts/pycon-venezuela-2012.html&#34;&gt;PyCon
+      <guid>https://carlosgruiz.dev/blog/integrando-cpp-con-python/</guid>
+      <description>&lt;p&gt;Durante el &lt;a href=&#34;https://carlosgruiz.dev/posts/pycon-venezuela-2012.html&#34;&gt;PyCon
 Venezuela&lt;/a&gt; hice una
-charla llamada &lt;a href=&#34;http://localhost:1313/talks/2012/Integrando-mis-librer%C3%ADas-C%2B%2B-con-Python.pdf&#34;&gt;Integrando mis librerías C++ con
+charla llamada &lt;a href=&#34;https://carlosgruiz.dev/talks/2012/Integrando-mis-librer%C3%ADas-C%2B%2B-con-Python.pdf&#34;&gt;Integrando mis librerías C++ con
 Python&lt;/a&gt;,
 sin embargo quedó pendiente la parte práctica de la misma. Es por ello
 que decidí convertir el taller en un post donde de muestre los ejemplos
@@ -77,16 +77,16 @@ prácticos con algunos comentarios.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Web Mapping con Django</title>
-      <link>http://localhost:1313/blog/web-mapping-con-django/</link>
+      <link>https://carlosgruiz.dev/blog/web-mapping-con-django/</link>
       <pubDate>Wed, 07 Nov 2012 15:08:14 -0400</pubDate>
-      <guid>http://localhost:1313/blog/web-mapping-con-django/</guid>
+      <guid>https://carlosgruiz.dev/blog/web-mapping-con-django/</guid>
       <description>Luego de 3 años tocando la puerta en distintos eventos de Geomática por fin tuve la oportunidad de presentar el taller de creación de aplicaciones web de mapas con Django. Las razones en cada caso fueron las mismas, protagonismos y antagonismos, pero al final tuvo que ser mi ambiente natural quien me abriese la puerta, el PyCon Venezuela 2012.</description>
     </item>
     <item>
       <title>Pycon Venezuela 2012</title>
-      <link>http://localhost:1313/blog/pycon-venezuela-2012/</link>
+      <link>https://carlosgruiz.dev/blog/pycon-venezuela-2012/</link>
       <pubDate>Mon, 05 Nov 2012 16:27:31 -0400</pubDate>
-      <guid>http://localhost:1313/blog/pycon-venezuela-2012/</guid>
+      <guid>https://carlosgruiz.dev/blog/pycon-venezuela-2012/</guid>
       <description>&lt;p&gt;La Conferencia de Usuarios Python de Venezuela (PyConVE) fue una jornada
 frenética. No solamente por las noches preparando el material sino por
 la cantidad de información que fluyó entre nosotros. Caras nuevas en
@@ -98,9 +98,9 @@ consolidar la comunidad de Python en nuestro país.&lt;/p&gt;</description>
     </item>
     <item>
       <title>OpenVE y los &#34;Kits de arranque&#34;</title>
-      <link>http://localhost:1313/blog/openve-y-los-kits-de-arranque/</link>
+      <link>https://carlosgruiz.dev/blog/openve-y-los-kits-de-arranque/</link>
       <pubDate>Sun, 28 Oct 2012 04:24:34 -0400</pubDate>
-      <guid>http://localhost:1313/blog/openve-y-los-kits-de-arranque/</guid>
+      <guid>https://carlosgruiz.dev/blog/openve-y-los-kits-de-arranque/</guid>
       <description>&lt;p&gt;Hace unas semanas &lt;a href=&#34;http://sadasant.com/&#34;&gt;Daniel Rodríguez&lt;/a&gt; y &lt;a href=&#34;http://osledybazo.com/&#34;&gt;Osledy
 Bazó&lt;/a&gt; me invitaron a participar en la iniciativa
 &lt;a href=&#34;http://openve.github.com/&#34;&gt;OpenVE&lt;/a&gt; luego de la entrevista que me
@@ -113,9 +113,9 @@ biblioteca de código abierto.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Python vs El Mundo</title>
-      <link>http://localhost:1313/blog/python-vs-el-mundo/</link>
+      <link>https://carlosgruiz.dev/blog/python-vs-el-mundo/</link>
       <pubDate>Tue, 10 May 2011 00:00:57 -0400</pubDate>
-      <guid>http://localhost:1313/blog/python-vs-el-mundo/</guid>
+      <guid>https://carlosgruiz.dev/blog/python-vs-el-mundo/</guid>
       <description>&lt;p&gt;Inspirado en la Película &lt;a href=&#34;http://www.imdb.com/title/tt0446029/&#34;&gt;Scott Pilgrim vs El
 Mundo&lt;/a&gt; y en ocasión del Día Python
 en Mayo de 2011, tuve la oportunidad de presentar la evaluación
@@ -128,9 +128,9 @@ Python para mi proyecto?.&lt;/p&gt;
     </item>
     <item>
       <title>Django vs Pylons</title>
-      <link>http://localhost:1313/blog/django-vs-pylons/</link>
+      <link>https://carlosgruiz.dev/blog/django-vs-pylons/</link>
       <pubDate>Sun, 15 Aug 2010 17:50:59 -0400</pubDate>
-      <guid>http://localhost:1313/blog/django-vs-pylons/</guid>
+      <guid>https://carlosgruiz.dev/blog/django-vs-pylons/</guid>
       <description>&lt;p&gt;s comparaciones suelen ser odiosas, destapar algún
 tipo de polémica o mostrar preferencias más allá del aspecto técnico y
 objetivo de una plataforma o programa. Sin embargo, debido a que me toca
@@ -140,9 +140,9 @@ que pudiesen apoyar mis actividades.&lt;/p&gt;</description>
     </item>
     <item>
       <title>GeoEtiquetas (Presentación en Jornadas gvSIG)</title>
-      <link>http://localhost:1313/blog/geoetiquetas-presentacion-en-jornadas-gvsig/</link>
+      <link>https://carlosgruiz.dev/blog/geoetiquetas-presentacion-en-jornadas-gvsig/</link>
       <pubDate>Mon, 19 Jul 2010 17:36:01 -0400</pubDate>
-      <guid>http://localhost:1313/blog/geoetiquetas-presentacion-en-jornadas-gvsig/</guid>
+      <guid>https://carlosgruiz.dev/blog/geoetiquetas-presentacion-en-jornadas-gvsig/</guid>
       <description>&lt;p&gt;Presentación del proyecto GeoEtiquetas, en las &lt;a href=&#34;http://docs.gvsig.org/plone/community/events/jornadas-lac/2010/ponencias&#34;&gt;2das Jornadas de gvSIG Latinoamérica y del
 Caribe&lt;/a&gt;.&lt;/p&gt;
 
@@ -152,9 +152,9 @@ Caribe&lt;/a&gt;.&lt;/p&gt;
     </item>
     <item>
       <title>Camelot</title>
-      <link>http://localhost:1313/blog/camelot/</link>
+      <link>https://carlosgruiz.dev/blog/camelot/</link>
       <pubDate>Wed, 09 Jun 2010 04:34:00 -0400</pubDate>
-      <guid>http://localhost:1313/blog/camelot/</guid>
+      <guid>https://carlosgruiz.dev/blog/camelot/</guid>
       <description>&lt;p&gt;Hace un año más o menos me enteré de la existencia del proyecto Camelot,
 un proyecto para GUIs inspirado en las funcionalidades de Django. Algo
 realmente ambicioso y por supuesto bienvenido para los programadores que

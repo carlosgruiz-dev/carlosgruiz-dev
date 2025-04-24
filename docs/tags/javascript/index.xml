@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Javascript on Carlos Gustavo Ruiz</title>
-    <link>http://localhost:1313/tags/javascript/</link>
+    <link>https://carlosgruiz.dev/tags/javascript/</link>
     <description>Recent content in Javascript on Carlos Gustavo Ruiz</description>
-    <generator>Hugo -- 0.146.5</generator>
+    <generator>Hugo -- 0.146.7</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 28 Nov 2014 08:39:00 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://carlosgruiz.dev/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>El Lenguaje De Programacion Javascript</title>
-      <link>http://localhost:1313/blog/el-lenguaje-de-programacion-javascript/</link>
+      <link>https://carlosgruiz.dev/blog/el-lenguaje-de-programacion-javascript/</link>
       <pubDate>Mon, 03 Aug 2009 21:27:00 -0400</pubDate>
-      <guid>http://localhost:1313/blog/el-lenguaje-de-programacion-javascript/</guid>
+      <guid>https://carlosgruiz.dev/blog/el-lenguaje-de-programacion-javascript/</guid>
       <description>&lt;p&gt;Esta es una serie de videos donde se da una introducción al lenguaje de
 programación JavaScript. Las filminas (láminas/slides) se encuentran en
 esta dirección &lt;a href=&#34;http://yuiblog.com/assets/crockford/javascript.zip&#34;&gt;http://yuiblog.com/assets/crockford/javascript.zip&lt;/a&gt;. Si

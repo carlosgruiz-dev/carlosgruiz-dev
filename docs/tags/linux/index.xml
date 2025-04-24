@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Linux on Carlos Gustavo Ruiz</title>
-    <link>http://localhost:1313/tags/linux/</link>
+    <link>https://carlosgruiz.dev/tags/linux/</link>
     <description>Recent content in Linux on Carlos Gustavo Ruiz</description>
-    <generator>Hugo -- 0.146.5</generator>
+    <generator>Hugo -- 0.146.7</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 06 Mar 2015 00:02:00 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://carlosgruiz.dev/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mi Distro de Linux</title>
-      <link>http://localhost:1313/blog/mi-distro-de-linux/</link>
+      <link>https://carlosgruiz.dev/blog/mi-distro-de-linux/</link>
       <pubDate>Tue, 10 Apr 2012 22:42:00 -0400</pubDate>
-      <guid>http://localhost:1313/blog/mi-distro-de-linux/</guid>
+      <guid>https://carlosgruiz.dev/blog/mi-distro-de-linux/</guid>
       <description>Hablar de preferencias de GNU/Linux es complicado, sobre todo porque puede lucir siempre como una oportunidad para hacer Troll. Así que para comenzar debo aclarar un par de cosas. Primero que estas son mis apreciaciones &lt;strong&gt;NO&lt;/strong&gt; técnicas, acá hablo de gustos, no de métricas, filosofía, contratos sociales, compiladores y demás blah blah, si quieren información de este tipo vean &lt;a href=&#34;http://distrowatch.com/&#34;&gt;Distrowatch&lt;/a&gt;.</description>
     </item>
   </channel>

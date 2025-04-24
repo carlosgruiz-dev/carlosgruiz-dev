@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Openstreetmap on Carlos Gustavo Ruiz</title>
-    <link>http://localhost:1313/tags/openstreetmap/</link>
+    <link>https://carlosgruiz.dev/tags/openstreetmap/</link>
     <description>Recent content in Openstreetmap on Carlos Gustavo Ruiz</description>
-    <generator>Hugo -- 0.146.5</generator>
+    <generator>Hugo -- 0.146.7</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 01 Mar 2015 15:52:00 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/openstreetmap/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://carlosgruiz.dev/tags/openstreetmap/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Taller de Geo Gobierno en Línea</title>
-      <link>http://localhost:1313/blog/taller-de-geo-gobierno-en-linea/</link>
+      <link>https://carlosgruiz.dev/blog/taller-de-geo-gobierno-en-linea/</link>
       <pubDate>Sun, 14 Oct 2012 12:00:00 -0400</pubDate>
-      <guid>http://localhost:1313/blog/taller-de-geo-gobierno-en-linea/</guid>
+      <guid>https://carlosgruiz.dev/blog/taller-de-geo-gobierno-en-linea/</guid>
       <description>En los días 10 y 11 de Octubre participé en lo que se llamó el &lt;strong&gt;2do Taller de Geo Gobierno en Línea&lt;/strong&gt;. Fue una actividad muy agradable pues involucró bastantes de las cosas en que he trabajado por algún tiempo. El Geoportal de la página Gobierno en Línea me fue encargada hace algún tiempo, y fue el inicio del proyecto de Geoportal que actualmente mantengo. En el mismo hice uso de varias tecnologías de mapas que valdría la pena nombrar en otra publicación.</description>
     </item>
     <item>
       <title>Mapa Colaborativo de Venezuela con OpenStreetMap</title>
-      <link>http://localhost:1313/blog/mapa-colaborativo-de-venezuela-osm/</link>
+      <link>https://carlosgruiz.dev/blog/mapa-colaborativo-de-venezuela-osm/</link>
       <pubDate>Mon, 19 Sep 2011 19:07:00 -0400</pubDate>
-      <guid>http://localhost:1313/blog/mapa-colaborativo-de-venezuela-osm/</guid>
+      <guid>https://carlosgruiz.dev/blog/mapa-colaborativo-de-venezuela-osm/</guid>
       <description>&lt;p&gt;Durante las jornadas de &lt;a href=&#34;http://vivirviviendo.softwarelibre.gob.ve/&#34;&gt;tecnologías de información libres para vivir viviendo&lt;/a&gt; realicé esta presentación con el fin de mostrar las bondades del uso de &lt;a href=&#34;http://osm.org&#34;&gt;openstreetmap&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
   </channel>

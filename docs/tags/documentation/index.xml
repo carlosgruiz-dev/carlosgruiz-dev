@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Documentation on Carlos Gustavo Ruiz</title>
-    <link>http://localhost:1313/tags/documentation/</link>
+    <link>https://carlosgruiz.dev/tags/documentation/</link>
     <description>Recent content in Documentation on Carlos Gustavo Ruiz</description>
-    <generator>Hugo -- 0.146.5</generator>
+    <generator>Hugo -- 0.146.7</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 13 Mar 2015 15:50:34 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/documentation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://carlosgruiz.dev/tags/documentation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Manten tu documentacion a mano con Zeal</title>
-      <link>http://localhost:1313/blog/manten-tu-documentacion-a-mano-con-zeal/</link>
+      <link>https://carlosgruiz.dev/blog/manten-tu-documentacion-a-mano-con-zeal/</link>
       <pubDate>Fri, 13 Mar 2015 15:50:34 -0400</pubDate>
-      <guid>http://localhost:1313/blog/manten-tu-documentacion-a-mano-con-zeal/</guid>
+      <guid>https://carlosgruiz.dev/blog/manten-tu-documentacion-a-mano-con-zeal/</guid>
       <description>&lt;p&gt;Zeal es una herramienta para explorar la documentación de las API más
 populares en modo desconectado. Está inspirado en
 &lt;a href=&#34;http://kapeli.com/dash&#34;&gt;Dash&lt;/a&gt; y está disponible para GNU/Linux y MS

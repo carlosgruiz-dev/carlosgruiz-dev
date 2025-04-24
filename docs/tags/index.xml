@@ -2,339 +2,339 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Carlos Gustavo Ruiz</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://carlosgruiz.dev/tags/</link>
     <description>Recent content in Tags on Carlos Gustavo Ruiz</description>
-    <generator>Hugo -- 0.146.5</generator>
+    <generator>Hugo -- 0.146.7</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 May 2024 16:23:55 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://carlosgruiz.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Collaborations</title>
-      <link>http://localhost:1313/tags/collaborations/</link>
+      <link>https://carlosgruiz.dev/tags/collaborations/</link>
       <pubDate>Fri, 21 Sep 2018 16:26:16 -0500</pubDate>
-      <guid>http://localhost:1313/tags/collaborations/</guid>
+      <guid>https://carlosgruiz.dev/tags/collaborations/</guid>
       <description></description>
     </item>
     <item>
       <title>Community</title>
-      <link>http://localhost:1313/tags/community/</link>
+      <link>https://carlosgruiz.dev/tags/community/</link>
       <pubDate>Fri, 21 Sep 2018 16:26:16 -0500</pubDate>
-      <guid>http://localhost:1313/tags/community/</guid>
+      <guid>https://carlosgruiz.dev/tags/community/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>http://localhost:1313/tags/python/</link>
+      <link>https://carlosgruiz.dev/tags/python/</link>
       <pubDate>Fri, 21 Sep 2018 16:26:16 -0500</pubDate>
-      <guid>http://localhost:1313/tags/python/</guid>
+      <guid>https://carlosgruiz.dev/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>Spanish</title>
-      <link>http://localhost:1313/tags/spanish/</link>
+      <link>https://carlosgruiz.dev/tags/spanish/</link>
       <pubDate>Fri, 21 Sep 2018 16:26:16 -0500</pubDate>
-      <guid>http://localhost:1313/tags/spanish/</guid>
+      <guid>https://carlosgruiz.dev/tags/spanish/</guid>
       <description></description>
     </item>
     <item>
       <title>Video</title>
-      <link>http://localhost:1313/tags/video/</link>
+      <link>https://carlosgruiz.dev/tags/video/</link>
       <pubDate>Fri, 21 Sep 2018 16:26:16 -0500</pubDate>
-      <guid>http://localhost:1313/tags/video/</guid>
+      <guid>https://carlosgruiz.dev/tags/video/</guid>
       <description></description>
     </item>
     <item>
       <title>English</title>
-      <link>http://localhost:1313/tags/english/</link>
+      <link>https://carlosgruiz.dev/tags/english/</link>
       <pubDate>Sun, 04 Mar 2018 21:48:46 -0500</pubDate>
-      <guid>http://localhost:1313/tags/english/</guid>
+      <guid>https://carlosgruiz.dev/tags/english/</guid>
       <description></description>
     </item>
     <item>
       <title>Haskell</title>
-      <link>http://localhost:1313/tags/haskell/</link>
+      <link>https://carlosgruiz.dev/tags/haskell/</link>
       <pubDate>Sun, 04 Mar 2018 21:48:46 -0500</pubDate>
-      <guid>http://localhost:1313/tags/haskell/</guid>
+      <guid>https://carlosgruiz.dev/tags/haskell/</guid>
       <description></description>
     </item>
     <item>
       <title>Lab</title>
-      <link>http://localhost:1313/tags/lab/</link>
+      <link>https://carlosgruiz.dev/tags/lab/</link>
       <pubDate>Sun, 04 Mar 2018 21:48:46 -0500</pubDate>
-      <guid>http://localhost:1313/tags/lab/</guid>
+      <guid>https://carlosgruiz.dev/tags/lab/</guid>
       <description></description>
     </item>
     <item>
       <title>Open Source</title>
-      <link>http://localhost:1313/tags/open-source/</link>
+      <link>https://carlosgruiz.dev/tags/open-source/</link>
       <pubDate>Sun, 04 Mar 2018 21:48:46 -0500</pubDate>
-      <guid>http://localhost:1313/tags/open-source/</guid>
+      <guid>https://carlosgruiz.dev/tags/open-source/</guid>
       <description></description>
     </item>
     <item>
       <title>Dogfooding</title>
-      <link>http://localhost:1313/tags/dogfooding/</link>
+      <link>https://carlosgruiz.dev/tags/dogfooding/</link>
       <pubDate>Sun, 21 Aug 2016 22:46:02 -0400</pubDate>
-      <guid>http://localhost:1313/tags/dogfooding/</guid>
+      <guid>https://carlosgruiz.dev/tags/dogfooding/</guid>
       <description></description>
     </item>
     <item>
       <title>Freebsd</title>
-      <link>http://localhost:1313/tags/freebsd/</link>
+      <link>https://carlosgruiz.dev/tags/freebsd/</link>
       <pubDate>Sun, 21 Aug 2016 22:46:02 -0400</pubDate>
-      <guid>http://localhost:1313/tags/freebsd/</guid>
+      <guid>https://carlosgruiz.dev/tags/freebsd/</guid>
       <description></description>
     </item>
     <item>
       <title>Talks</title>
-      <link>http://localhost:1313/tags/talks/</link>
+      <link>https://carlosgruiz.dev/tags/talks/</link>
       <pubDate>Fri, 22 Apr 2016 16:34:32 -0500</pubDate>
-      <guid>http://localhost:1313/tags/talks/</guid>
+      <guid>https://carlosgruiz.dev/tags/talks/</guid>
       <description></description>
     </item>
     <item>
       <title>Vim</title>
-      <link>http://localhost:1313/tags/vim/</link>
+      <link>https://carlosgruiz.dev/tags/vim/</link>
       <pubDate>Fri, 22 Apr 2016 16:34:32 -0500</pubDate>
-      <guid>http://localhost:1313/tags/vim/</guid>
+      <guid>https://carlosgruiz.dev/tags/vim/</guid>
       <description></description>
     </item>
     <item>
       <title>Documentation</title>
-      <link>http://localhost:1313/tags/documentation/</link>
+      <link>https://carlosgruiz.dev/tags/documentation/</link>
       <pubDate>Fri, 13 Mar 2015 15:50:34 -0400</pubDate>
-      <guid>http://localhost:1313/tags/documentation/</guid>
+      <guid>https://carlosgruiz.dev/tags/documentation/</guid>
       <description></description>
     </item>
     <item>
       <title>Git</title>
-      <link>http://localhost:1313/tags/git/</link>
+      <link>https://carlosgruiz.dev/tags/git/</link>
       <pubDate>Mon, 22 Sep 2014 15:43:00 -0400</pubDate>
-      <guid>http://localhost:1313/tags/git/</guid>
+      <guid>https://carlosgruiz.dev/tags/git/</guid>
       <description></description>
     </item>
     <item>
       <title>Gentoo</title>
-      <link>http://localhost:1313/tags/gentoo/</link>
+      <link>https://carlosgruiz.dev/tags/gentoo/</link>
       <pubDate>Sun, 02 Feb 2014 21:41:00 -0400</pubDate>
-      <guid>http://localhost:1313/tags/gentoo/</guid>
+      <guid>https://carlosgruiz.dev/tags/gentoo/</guid>
       <description></description>
     </item>
     <item>
       <title>Guides</title>
-      <link>http://localhost:1313/tags/guides/</link>
+      <link>https://carlosgruiz.dev/tags/guides/</link>
       <pubDate>Sun, 02 Feb 2014 21:41:00 -0400</pubDate>
-      <guid>http://localhost:1313/tags/guides/</guid>
+      <guid>https://carlosgruiz.dev/tags/guides/</guid>
       <description></description>
     </item>
     <item>
       <title>Ide</title>
-      <link>http://localhost:1313/tags/ide/</link>
+      <link>https://carlosgruiz.dev/tags/ide/</link>
       <pubDate>Sun, 02 Feb 2014 21:41:00 -0400</pubDate>
-      <guid>http://localhost:1313/tags/ide/</guid>
+      <guid>https://carlosgruiz.dev/tags/ide/</guid>
       <description></description>
     </item>
     <item>
       <title>Terms</title>
-      <link>http://localhost:1313/tags/terms/</link>
+      <link>https://carlosgruiz.dev/tags/terms/</link>
       <pubDate>Fri, 31 Jan 2014 03:11:00 -0400</pubDate>
-      <guid>http://localhost:1313/tags/terms/</guid>
+      <guid>https://carlosgruiz.dev/tags/terms/</guid>
       <description></description>
     </item>
     <item>
       <title>Databases</title>
-      <link>http://localhost:1313/tags/databases/</link>
+      <link>https://carlosgruiz.dev/tags/databases/</link>
       <pubDate>Wed, 30 Oct 2013 23:27:00 -0400</pubDate>
-      <guid>http://localhost:1313/tags/databases/</guid>
+      <guid>https://carlosgruiz.dev/tags/databases/</guid>
       <description></description>
     </item>
     <item>
       <title>Memcached</title>
-      <link>http://localhost:1313/tags/memcached/</link>
+      <link>https://carlosgruiz.dev/tags/memcached/</link>
       <pubDate>Wed, 30 Oct 2013 23:27:00 -0400</pubDate>
-      <guid>http://localhost:1313/tags/memcached/</guid>
+      <guid>https://carlosgruiz.dev/tags/memcached/</guid>
       <description></description>
     </item>
     <item>
       <title>Mongodb</title>
-      <link>http://localhost:1313/tags/mongodb/</link>
+      <link>https://carlosgruiz.dev/tags/mongodb/</link>
       <pubDate>Wed, 30 Oct 2013 23:27:00 -0400</pubDate>
-      <guid>http://localhost:1313/tags/mongodb/</guid>
+      <guid>https://carlosgruiz.dev/tags/mongodb/</guid>
       <description></description>
     </item>
     <item>
       <title>Postgresql</title>
-      <link>http://localhost:1313/tags/postgresql/</link>
+      <link>https://carlosgruiz.dev/tags/postgresql/</link>
       <pubDate>Wed, 30 Oct 2013 23:27:00 -0400</pubDate>
-      <guid>http://localhost:1313/tags/postgresql/</guid>
+      <guid>https://carlosgruiz.dev/tags/postgresql/</guid>
       <description></description>
     </item>
     <item>
       <title>Redis</title>
-      <link>http://localhost:1313/tags/redis/</link>
+      <link>https://carlosgruiz.dev/tags/redis/</link>
       <pubDate>Wed, 30 Oct 2013 23:27:00 -0400</pubDate>
-      <guid>http://localhost:1313/tags/redis/</guid>
+      <guid>https://carlosgruiz.dev/tags/redis/</guid>
       <description></description>
     </item>
     <item>
       <title>Best Practices</title>
-      <link>http://localhost:1313/tags/best-practices/</link>
+      <link>https://carlosgruiz.dev/tags/best-practices/</link>
       <pubDate>Wed, 30 Oct 2013 22:12:04 -0400</pubDate>
-      <guid>http://localhost:1313/tags/best-practices/</guid>
+      <guid>https://carlosgruiz.dev/tags/best-practices/</guid>
       <description></description>
     </item>
     <item>
       <title>Tubasededatoslibre</title>
-      <link>http://localhost:1313/tags/tubasededatoslibre/</link>
+      <link>https://carlosgruiz.dev/tags/tubasededatoslibre/</link>
       <pubDate>Fri, 06 Sep 2013 11:00:00 -0400</pubDate>
-      <guid>http://localhost:1313/tags/tubasededatoslibre/</guid>
+      <guid>https://carlosgruiz.dev/tags/tubasededatoslibre/</guid>
       <description></description>
     </item>
     <item>
       <title>Framework</title>
-      <link>http://localhost:1313/tags/framework/</link>
+      <link>https://carlosgruiz.dev/tags/framework/</link>
       <pubDate>Tue, 20 Aug 2013 08:18:00 -0400</pubDate>
-      <guid>http://localhost:1313/tags/framework/</guid>
+      <guid>https://carlosgruiz.dev/tags/framework/</guid>
       <description></description>
     </item>
     <item>
       <title>Pyramid</title>
-      <link>http://localhost:1313/tags/pyramid/</link>
+      <link>https://carlosgruiz.dev/tags/pyramid/</link>
       <pubDate>Tue, 20 Aug 2013 08:18:00 -0400</pubDate>
-      <guid>http://localhost:1313/tags/pyramid/</guid>
+      <guid>https://carlosgruiz.dev/tags/pyramid/</guid>
       <description></description>
     </item>
     <item>
       <title>Sqlalchemy</title>
-      <link>http://localhost:1313/tags/sqlalchemy/</link>
+      <link>https://carlosgruiz.dev/tags/sqlalchemy/</link>
       <pubDate>Tue, 20 Aug 2013 08:18:00 -0400</pubDate>
-      <guid>http://localhost:1313/tags/sqlalchemy/</guid>
+      <guid>https://carlosgruiz.dev/tags/sqlalchemy/</guid>
       <description></description>
     </item>
     <item>
       <title>Tutorial</title>
-      <link>http://localhost:1313/tags/tutorial/</link>
+      <link>https://carlosgruiz.dev/tags/tutorial/</link>
       <pubDate>Tue, 20 Aug 2013 08:18:00 -0400</pubDate>
-      <guid>http://localhost:1313/tags/tutorial/</guid>
+      <guid>https://carlosgruiz.dev/tags/tutorial/</guid>
       <description></description>
     </item>
     <item>
       <title>Migration</title>
-      <link>http://localhost:1313/tags/migration/</link>
+      <link>https://carlosgruiz.dev/tags/migration/</link>
       <pubDate>Fri, 12 Jul 2013 01:47:24 -0400</pubDate>
-      <guid>http://localhost:1313/tags/migration/</guid>
+      <guid>https://carlosgruiz.dev/tags/migration/</guid>
       <description></description>
     </item>
     <item>
       <title>Data</title>
-      <link>http://localhost:1313/tags/data/</link>
+      <link>https://carlosgruiz.dev/tags/data/</link>
       <pubDate>Thu, 18 Apr 2013 21:34:44 -0400</pubDate>
-      <guid>http://localhost:1313/tags/data/</guid>
+      <guid>https://carlosgruiz.dev/tags/data/</guid>
       <description></description>
     </item>
     <item>
       <title>Geomatics</title>
-      <link>http://localhost:1313/tags/geomatics/</link>
+      <link>https://carlosgruiz.dev/tags/geomatics/</link>
       <pubDate>Thu, 18 Apr 2013 21:34:44 -0400</pubDate>
-      <guid>http://localhost:1313/tags/geomatics/</guid>
+      <guid>https://carlosgruiz.dev/tags/geomatics/</guid>
       <description></description>
     </item>
     <item>
       <title>Qgis</title>
-      <link>http://localhost:1313/tags/qgis/</link>
+      <link>https://carlosgruiz.dev/tags/qgis/</link>
       <pubDate>Thu, 18 Apr 2013 21:34:44 -0400</pubDate>
-      <guid>http://localhost:1313/tags/qgis/</guid>
+      <guid>https://carlosgruiz.dev/tags/qgis/</guid>
       <description></description>
     </item>
     <item>
       <title>Mercurial</title>
-      <link>http://localhost:1313/tags/mercurial/</link>
+      <link>https://carlosgruiz.dev/tags/mercurial/</link>
       <pubDate>Mon, 04 Feb 2013 16:04:00 -0400</pubDate>
-      <guid>http://localhost:1313/tags/mercurial/</guid>
+      <guid>https://carlosgruiz.dev/tags/mercurial/</guid>
       <description></description>
     </item>
     <item>
       <title>C&#43;&#43;</title>
-      <link>http://localhost:1313/tags/c&#43;&#43;/</link>
+      <link>https://carlosgruiz.dev/tags/c&#43;&#43;/</link>
       <pubDate>Fri, 25 Jan 2013 15:21:49 -0400</pubDate>
-      <guid>http://localhost:1313/tags/c&#43;&#43;/</guid>
+      <guid>https://carlosgruiz.dev/tags/c&#43;&#43;/</guid>
       <description></description>
     </item>
     <item>
       <title>Qt</title>
-      <link>http://localhost:1313/tags/qt/</link>
+      <link>https://carlosgruiz.dev/tags/qt/</link>
       <pubDate>Fri, 25 Jan 2013 15:21:49 -0400</pubDate>
-      <guid>http://localhost:1313/tags/qt/</guid>
+      <guid>https://carlosgruiz.dev/tags/qt/</guid>
       <description></description>
     </item>
     <item>
       <title>Pycon Venezuela</title>
-      <link>http://localhost:1313/tags/pycon-venezuela/</link>
+      <link>https://carlosgruiz.dev/tags/pycon-venezuela/</link>
       <pubDate>Sun, 11 Nov 2012 13:32:23 -0400</pubDate>
-      <guid>http://localhost:1313/tags/pycon-venezuela/</guid>
+      <guid>https://carlosgruiz.dev/tags/pycon-venezuela/</guid>
       <description></description>
     </item>
     <item>
       <title>Github</title>
-      <link>http://localhost:1313/tags/github/</link>
+      <link>https://carlosgruiz.dev/tags/github/</link>
       <pubDate>Sun, 28 Oct 2012 04:24:34 -0400</pubDate>
-      <guid>http://localhost:1313/tags/github/</guid>
+      <guid>https://carlosgruiz.dev/tags/github/</guid>
       <description></description>
     </item>
     <item>
       <title>Openve</title>
-      <link>http://localhost:1313/tags/openve/</link>
+      <link>https://carlosgruiz.dev/tags/openve/</link>
       <pubDate>Sun, 28 Oct 2012 04:24:34 -0400</pubDate>
-      <guid>http://localhost:1313/tags/openve/</guid>
+      <guid>https://carlosgruiz.dev/tags/openve/</guid>
       <description></description>
     </item>
     <item>
       <title>Best Prectices</title>
-      <link>http://localhost:1313/tags/best-prectices/</link>
+      <link>https://carlosgruiz.dev/tags/best-prectices/</link>
       <pubDate>Thu, 18 Oct 2012 13:46:00 -0400</pubDate>
-      <guid>http://localhost:1313/tags/best-prectices/</guid>
+      <guid>https://carlosgruiz.dev/tags/best-prectices/</guid>
       <description></description>
     </item>
     <item>
       <title>Openstreetmap</title>
-      <link>http://localhost:1313/tags/openstreetmap/</link>
+      <link>https://carlosgruiz.dev/tags/openstreetmap/</link>
       <pubDate>Sun, 14 Oct 2012 12:00:00 -0400</pubDate>
-      <guid>http://localhost:1313/tags/openstreetmap/</guid>
+      <guid>https://carlosgruiz.dev/tags/openstreetmap/</guid>
       <description></description>
     </item>
     <item>
       <title>Linux</title>
-      <link>http://localhost:1313/tags/linux/</link>
+      <link>https://carlosgruiz.dev/tags/linux/</link>
       <pubDate>Tue, 10 Apr 2012 22:42:00 -0400</pubDate>
-      <guid>http://localhost:1313/tags/linux/</guid>
+      <guid>https://carlosgruiz.dev/tags/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>Web</title>
-      <link>http://localhost:1313/tags/web/</link>
+      <link>https://carlosgruiz.dev/tags/web/</link>
       <pubDate>Tue, 03 Apr 2012 03:34:14 -0400</pubDate>
-      <guid>http://localhost:1313/tags/web/</guid>
+      <guid>https://carlosgruiz.dev/tags/web/</guid>
       <description></description>
     </item>
     <item>
       <title>Django</title>
-      <link>http://localhost:1313/tags/django/</link>
+      <link>https://carlosgruiz.dev/tags/django/</link>
       <pubDate>Mon, 19 Jul 2010 17:36:01 -0400</pubDate>
-      <guid>http://localhost:1313/tags/django/</guid>
+      <guid>https://carlosgruiz.dev/tags/django/</guid>
       <description></description>
     </item>
     <item>
       <title>Openlayers</title>
-      <link>http://localhost:1313/tags/openlayers/</link>
+      <link>https://carlosgruiz.dev/tags/openlayers/</link>
       <pubDate>Wed, 09 Jun 2010 23:49:35 -0400</pubDate>
-      <guid>http://localhost:1313/tags/openlayers/</guid>
+      <guid>https://carlosgruiz.dev/tags/openlayers/</guid>
       <description></description>
     </item>
     <item>
       <title>Javascript</title>
-      <link>http://localhost:1313/tags/javascript/</link>
+      <link>https://carlosgruiz.dev/tags/javascript/</link>
       <pubDate>Mon, 03 Aug 2009 21:27:00 -0400</pubDate>
-      <guid>http://localhost:1313/tags/javascript/</guid>
+      <guid>https://carlosgruiz.dev/tags/javascript/</guid>
       <description></description>
     </item>
   </channel>

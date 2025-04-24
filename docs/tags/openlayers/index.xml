@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Openlayers on Carlos Gustavo Ruiz</title>
-    <link>http://localhost:1313/tags/openlayers/</link>
+    <link>https://carlosgruiz.dev/tags/openlayers/</link>
     <description>Recent content in Openlayers on Carlos Gustavo Ruiz</description>
-    <generator>Hugo -- 0.146.5</generator>
+    <generator>Hugo -- 0.146.7</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 13 Dec 2014 14:35:35 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/openlayers/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://carlosgruiz.dev/tags/openlayers/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduccion a Openlayers</title>
-      <link>http://localhost:1313/blog/introduccion-a-openlayers/</link>
+      <link>https://carlosgruiz.dev/blog/introduccion-a-openlayers/</link>
       <pubDate>Wed, 09 Jun 2010 23:49:35 -0400</pubDate>
-      <guid>http://localhost:1313/blog/introduccion-a-openlayers/</guid>
+      <guid>https://carlosgruiz.dev/blog/introduccion-a-openlayers/</guid>
       <description>&lt;p&gt;Una de las cosas con las que he trabajado últimamente es con
 &lt;a href=&#34;http://www.openlayers.org/&#34;&gt;OpenLayers&lt;/a&gt;. Este es una librería de
 JavaScript muy interesante para colocar mapas en una página web. Así que

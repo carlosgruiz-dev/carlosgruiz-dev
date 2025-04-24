@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Geomatics on Carlos Gustavo Ruiz</title>
-    <link>http://localhost:1313/tags/geomatics/</link>
+    <link>https://carlosgruiz.dev/tags/geomatics/</link>
     <description>Recent content in Geomatics on Carlos Gustavo Ruiz</description>
-    <generator>Hugo -- 0.146.5</generator>
+    <generator>Hugo -- 0.146.7</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 01 Mar 2015 15:52:00 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/geomatics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://carlosgruiz.dev/tags/geomatics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Receta para hacer un mapa electoral simple</title>
-      <link>http://localhost:1313/blog/receta-para-hacer-un-mapa-electoral-simple/</link>
+      <link>https://carlosgruiz.dev/blog/receta-para-hacer-un-mapa-electoral-simple/</link>
       <pubDate>Thu, 18 Apr 2013 21:34:44 -0400</pubDate>
-      <guid>http://localhost:1313/blog/receta-para-hacer-un-mapa-electoral-simple/</guid>
+      <guid>https://carlosgruiz.dev/blog/receta-para-hacer-un-mapa-electoral-simple/</guid>
       <description>&lt;p&gt;Muchas veces me preguntan, sobre todo cerca de los resultados de unas
 elecciones cómo se puede hacer un mapa electoral. Como el tema electoral
 es complejo en sus análisis, supongo inmediatamente que lo que en
@@ -21,44 +21,44 @@ elección y generalmente tengo razón.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Geomatica Libre en Venezuela (Presentación a José Sosa - CNTI)</title>
-      <link>http://localhost:1313/blog/geomatica-libre-en-venezuela-presentacion-a-jose-sosa-cnti/</link>
+      <link>https://carlosgruiz.dev/blog/geomatica-libre-en-venezuela-presentacion-a-jose-sosa-cnti/</link>
       <pubDate>Tue, 11 Dec 2012 15:07:00 -0400</pubDate>
-      <guid>http://localhost:1313/blog/geomatica-libre-en-venezuela-presentacion-a-jose-sosa-cnti/</guid>
+      <guid>https://carlosgruiz.dev/blog/geomatica-libre-en-venezuela-presentacion-a-jose-sosa-cnti/</guid>
       <description>El día 10 de diciembre se concretó una reunión bien esperada para que junto con la Geog. Zaida Pinto y el Ing. Richard Hernandez conversar con José Sosa (Presidente del CNTI) sobre la Geomática Libre en nuestro país. La reunión fue todo menos aburrida, fue muy cordial y amena, además de sincera en los planteamientos y observaciones.</description>
     </item>
     <item>
       <title>Urumaco y los datos</title>
-      <link>http://localhost:1313/blog/urumaco-y-los-datos/</link>
+      <link>https://carlosgruiz.dev/blog/urumaco-y-los-datos/</link>
       <pubDate>Mon, 03 Dec 2012 08:26:45 -0400</pubDate>
-      <guid>http://localhost:1313/blog/urumaco-y-los-datos/</guid>
+      <guid>https://carlosgruiz.dev/blog/urumaco-y-los-datos/</guid>
       <description>Urumaco es de esos proyectos donde comienzas a estudiar una tecnología y poco a poco te involucras en algo más grande. Además es un desarrollo al que le he tomado cariño.</description>
     </item>
     <item>
       <title>Web Mapping con Django</title>
-      <link>http://localhost:1313/blog/web-mapping-con-django/</link>
+      <link>https://carlosgruiz.dev/blog/web-mapping-con-django/</link>
       <pubDate>Wed, 07 Nov 2012 15:08:14 -0400</pubDate>
-      <guid>http://localhost:1313/blog/web-mapping-con-django/</guid>
+      <guid>https://carlosgruiz.dev/blog/web-mapping-con-django/</guid>
       <description>Luego de 3 años tocando la puerta en distintos eventos de Geomática por fin tuve la oportunidad de presentar el taller de creación de aplicaciones web de mapas con Django. Las razones en cada caso fueron las mismas, protagonismos y antagonismos, pero al final tuvo que ser mi ambiente natural quien me abriese la puerta, el PyCon Venezuela 2012.</description>
     </item>
     <item>
       <title>Taller de Geo Gobierno en Línea</title>
-      <link>http://localhost:1313/blog/taller-de-geo-gobierno-en-linea/</link>
+      <link>https://carlosgruiz.dev/blog/taller-de-geo-gobierno-en-linea/</link>
       <pubDate>Sun, 14 Oct 2012 12:00:00 -0400</pubDate>
-      <guid>http://localhost:1313/blog/taller-de-geo-gobierno-en-linea/</guid>
+      <guid>https://carlosgruiz.dev/blog/taller-de-geo-gobierno-en-linea/</guid>
       <description>En los días 10 y 11 de Octubre participé en lo que se llamó el &lt;strong&gt;2do Taller de Geo Gobierno en Línea&lt;/strong&gt;. Fue una actividad muy agradable pues involucró bastantes de las cosas en que he trabajado por algún tiempo. El Geoportal de la página Gobierno en Línea me fue encargada hace algún tiempo, y fue el inicio del proyecto de Geoportal que actualmente mantengo. En el mismo hice uso de varias tecnologías de mapas que valdría la pena nombrar en otra publicación.</description>
     </item>
     <item>
       <title>Mapa Colaborativo de Venezuela con OpenStreetMap</title>
-      <link>http://localhost:1313/blog/mapa-colaborativo-de-venezuela-osm/</link>
+      <link>https://carlosgruiz.dev/blog/mapa-colaborativo-de-venezuela-osm/</link>
       <pubDate>Mon, 19 Sep 2011 19:07:00 -0400</pubDate>
-      <guid>http://localhost:1313/blog/mapa-colaborativo-de-venezuela-osm/</guid>
+      <guid>https://carlosgruiz.dev/blog/mapa-colaborativo-de-venezuela-osm/</guid>
       <description>&lt;p&gt;Durante las jornadas de &lt;a href=&#34;http://vivirviviendo.softwarelibre.gob.ve/&#34;&gt;tecnologías de información libres para vivir viviendo&lt;/a&gt; realicé esta presentación con el fin de mostrar las bondades del uso de &lt;a href=&#34;http://osm.org&#34;&gt;openstreetmap&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>GeoEtiquetas (Presentación en Jornadas gvSIG)</title>
-      <link>http://localhost:1313/blog/geoetiquetas-presentacion-en-jornadas-gvsig/</link>
+      <link>https://carlosgruiz.dev/blog/geoetiquetas-presentacion-en-jornadas-gvsig/</link>
       <pubDate>Mon, 19 Jul 2010 17:36:01 -0400</pubDate>
-      <guid>http://localhost:1313/blog/geoetiquetas-presentacion-en-jornadas-gvsig/</guid>
+      <guid>https://carlosgruiz.dev/blog/geoetiquetas-presentacion-en-jornadas-gvsig/</guid>
       <description>&lt;p&gt;Presentación del proyecto GeoEtiquetas, en las &lt;a href=&#34;http://docs.gvsig.org/plone/community/events/jornadas-lac/2010/ponencias&#34;&gt;2das Jornadas de gvSIG Latinoamérica y del
 Caribe&lt;/a&gt;.&lt;/p&gt;
 
@@ -68,9 +68,9 @@ Caribe&lt;/a&gt;.&lt;/p&gt;
     </item>
     <item>
       <title>Introduccion a Openlayers</title>
-      <link>http://localhost:1313/blog/introduccion-a-openlayers/</link>
+      <link>https://carlosgruiz.dev/blog/introduccion-a-openlayers/</link>
       <pubDate>Wed, 09 Jun 2010 23:49:35 -0400</pubDate>
-      <guid>http://localhost:1313/blog/introduccion-a-openlayers/</guid>
+      <guid>https://carlosgruiz.dev/blog/introduccion-a-openlayers/</guid>
       <description>&lt;p&gt;Una de las cosas con las que he trabajado últimamente es con
 &lt;a href=&#34;http://www.openlayers.org/&#34;&gt;OpenLayers&lt;/a&gt;. Este es una librería de
 JavaScript muy interesante para colocar mapas en una página web. Así que

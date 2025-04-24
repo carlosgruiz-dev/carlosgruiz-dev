@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Lab on Carlos Gustavo Ruiz</title>
-    <link>http://localhost:1313/tags/lab/</link>
+    <link>https://carlosgruiz.dev/tags/lab/</link>
     <description>Recent content in Lab on Carlos Gustavo Ruiz</description>
-    <generator>Hugo -- 0.146.5</generator>
+    <generator>Hugo -- 0.146.7</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 04 Mar 2018 21:48:46 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/lab/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://carlosgruiz.dev/tags/lab/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Starting a Haskell Project With Stack</title>
-      <link>http://localhost:1313/blog/starting-a-haskell-project-with-stack/</link>
+      <link>https://carlosgruiz.dev/blog/starting-a-haskell-project-with-stack/</link>
       <pubDate>Sun, 04 Mar 2018 21:48:46 -0500</pubDate>
-      <guid>http://localhost:1313/blog/starting-a-haskell-project-with-stack/</guid>
+      <guid>https://carlosgruiz.dev/blog/starting-a-haskell-project-with-stack/</guid>
       <description>&lt;p&gt;I was trying &lt;a href=&#34;https://asciinema.org&#34;&gt;asciinema&lt;/a&gt;, and to test it I recorded this
 video. If you want to try Haskell Stack just type this in your terminal&lt;/p&gt;</description>
     </item>
     <item>
       <title>Haskell Simple HTTP Server</title>
-      <link>http://localhost:1313/blog/haskell-simple-http-server/</link>
+      <link>https://carlosgruiz.dev/blog/haskell-simple-http-server/</link>
       <pubDate>Sun, 20 Aug 2017 19:00:24 -0500</pubDate>
-      <guid>http://localhost:1313/blog/haskell-simple-http-server/</guid>
+      <guid>https://carlosgruiz.dev/blog/haskell-simple-http-server/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m pushing myself to learn Haskell, but I realized that the best way to learn is
 to make things, broke them and build them again. So I decided to start a toy
 project to create a substitute for commands like &lt;code&gt;$ python3 -m http.server&lt;/code&gt; or
@@ -30,17 +30,17 @@ to log me and avoid procrastination.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Installing FreeBSD on Virtualbox</title>
-      <link>http://localhost:1313/blog/installing-freebsd-on-virtualbox/</link>
+      <link>https://carlosgruiz.dev/blog/installing-freebsd-on-virtualbox/</link>
       <pubDate>Sun, 21 Aug 2016 22:46:02 -0400</pubDate>
-      <guid>http://localhost:1313/blog/installing-freebsd-on-virtualbox/</guid>
+      <guid>https://carlosgruiz.dev/blog/installing-freebsd-on-virtualbox/</guid>
       <description>&lt;p&gt;Practicing with a FreeBSD installation as a guest operating system on
 VirtualBox I found a way to make a cool animated gif, take a look.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Introduccion a ZODB</title>
-      <link>http://localhost:1313/blog/breve-introduccion-a-zodb/</link>
+      <link>https://carlosgruiz.dev/blog/breve-introduccion-a-zodb/</link>
       <pubDate>Fri, 26 Jul 2013 19:31:00 -0400</pubDate>
-      <guid>http://localhost:1313/blog/breve-introduccion-a-zodb/</guid>
+      <guid>https://carlosgruiz.dev/blog/breve-introduccion-a-zodb/</guid>
       <description>&lt;p&gt;En concreto ZODB (Zope Object Data Base) es un gestor de bases de datos
 orientado a objetos. Esto significa para el usuario nuevo en esta
 tecnología que a diferencia de las bases de datos de uso mas frecuente
@@ -50,16 +50,16 @@ Python.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Urumaco y los datos</title>
-      <link>http://localhost:1313/blog/urumaco-y-los-datos/</link>
+      <link>https://carlosgruiz.dev/blog/urumaco-y-los-datos/</link>
       <pubDate>Mon, 03 Dec 2012 08:26:45 -0400</pubDate>
-      <guid>http://localhost:1313/blog/urumaco-y-los-datos/</guid>
+      <guid>https://carlosgruiz.dev/blog/urumaco-y-los-datos/</guid>
       <description>Urumaco es de esos proyectos donde comienzas a estudiar una tecnología y poco a poco te involucras en algo más grande. Además es un desarrollo al que le he tomado cariño.</description>
     </item>
     <item>
       <title>Dogfooding</title>
-      <link>http://localhost:1313/blog/dogfooding/</link>
+      <link>https://carlosgruiz.dev/blog/dogfooding/</link>
       <pubDate>Thu, 18 Oct 2012 13:46:00 -0400</pubDate>
-      <guid>http://localhost:1313/blog/dogfooding/</guid>
+      <guid>https://carlosgruiz.dev/blog/dogfooding/</guid>
       <description>&lt;p&gt;Leyendo sobre un driver para &lt;a href=&#34;http://www.mongodb.org/&#34;&gt;MongoDB&lt;/a&gt; y
 &lt;a href=&#34;http://www.tornadoweb.org/&#34;&gt;Tornado&lt;/a&gt;
 (&lt;a href=&#34;http://emptysquare.net/blog/eating-your-own-hamster-food/&#34;&gt;aquí&lt;/a&gt; el
@@ -73,23 +73,23 @@ sobre alguna plataforma, programa o servicio.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mi Distro de Linux</title>
-      <link>http://localhost:1313/blog/mi-distro-de-linux/</link>
+      <link>https://carlosgruiz.dev/blog/mi-distro-de-linux/</link>
       <pubDate>Tue, 10 Apr 2012 22:42:00 -0400</pubDate>
-      <guid>http://localhost:1313/blog/mi-distro-de-linux/</guid>
+      <guid>https://carlosgruiz.dev/blog/mi-distro-de-linux/</guid>
       <description>Hablar de preferencias de GNU/Linux es complicado, sobre todo porque puede lucir siempre como una oportunidad para hacer Troll. Así que para comenzar debo aclarar un par de cosas. Primero que estas son mis apreciaciones &lt;strong&gt;NO&lt;/strong&gt; técnicas, acá hablo de gustos, no de métricas, filosofía, contratos sociales, compiladores y demás blah blah, si quieren información de este tipo vean &lt;a href=&#34;http://distrowatch.com/&#34;&gt;Distrowatch&lt;/a&gt;.</description>
     </item>
     <item>
       <title>Frameworks de C&#43;&#43; para la web</title>
-      <link>http://localhost:1313/blog/frameworks-de-c-para-la-web/</link>
+      <link>https://carlosgruiz.dev/blog/frameworks-de-c-para-la-web/</link>
       <pubDate>Tue, 03 Apr 2012 03:34:14 -0400</pubDate>
-      <guid>http://localhost:1313/blog/frameworks-de-c-para-la-web/</guid>
+      <guid>https://carlosgruiz.dev/blog/frameworks-de-c-para-la-web/</guid>
       <description>Normalmente al pensar en la web inmediatamente viene a la mente los nombres de lenguajes como Python, PHP, Perl o Ruby, Sin embargo haciendo una pequeña investigación podemos hacer un desmentido de esta idea. No solamente hay herramientas potentes sino que las hay con paradigmas bien variados.</description>
     </item>
     <item>
       <title>Django vs Pylons</title>
-      <link>http://localhost:1313/blog/django-vs-pylons/</link>
+      <link>https://carlosgruiz.dev/blog/django-vs-pylons/</link>
       <pubDate>Sun, 15 Aug 2010 17:50:59 -0400</pubDate>
-      <guid>http://localhost:1313/blog/django-vs-pylons/</guid>
+      <guid>https://carlosgruiz.dev/blog/django-vs-pylons/</guid>
       <description>&lt;p&gt;s comparaciones suelen ser odiosas, destapar algún
 tipo de polémica o mostrar preferencias más allá del aspecto técnico y
 objetivo de una plataforma o programa. Sin embargo, debido a que me toca
@@ -99,9 +99,9 @@ que pudiesen apoyar mis actividades.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Introduccion a Openlayers</title>
-      <link>http://localhost:1313/blog/introduccion-a-openlayers/</link>
+      <link>https://carlosgruiz.dev/blog/introduccion-a-openlayers/</link>
       <pubDate>Wed, 09 Jun 2010 23:49:35 -0400</pubDate>
-      <guid>http://localhost:1313/blog/introduccion-a-openlayers/</guid>
+      <guid>https://carlosgruiz.dev/blog/introduccion-a-openlayers/</guid>
       <description>&lt;p&gt;Una de las cosas con las que he trabajado últimamente es con
 &lt;a href=&#34;http://www.openlayers.org/&#34;&gt;OpenLayers&lt;/a&gt;. Este es una librería de
 JavaScript muy interesante para colocar mapas en una página web. Así que
@@ -110,9 +110,9 @@ el camino.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Camelot</title>
-      <link>http://localhost:1313/blog/camelot/</link>
+      <link>https://carlosgruiz.dev/blog/camelot/</link>
       <pubDate>Wed, 09 Jun 2010 04:34:00 -0400</pubDate>
-      <guid>http://localhost:1313/blog/camelot/</guid>
+      <guid>https://carlosgruiz.dev/blog/camelot/</guid>
       <description>&lt;p&gt;Hace un año más o menos me enteré de la existencia del proyecto Camelot,
 un proyecto para GUIs inspirado en las funcionalidades de Django. Algo
 realmente ambicioso y por supuesto bienvenido para los programadores que
@@ -121,9 +121,9 @@ sentimos que faltaba en el mundo de las GUI.&lt;/p&gt;</description>
     </item>
     <item>
       <title>El Lenguaje De Programacion Javascript</title>
-      <link>http://localhost:1313/blog/el-lenguaje-de-programacion-javascript/</link>
+      <link>https://carlosgruiz.dev/blog/el-lenguaje-de-programacion-javascript/</link>
       <pubDate>Mon, 03 Aug 2009 21:27:00 -0400</pubDate>
-      <guid>http://localhost:1313/blog/el-lenguaje-de-programacion-javascript/</guid>
+      <guid>https://carlosgruiz.dev/blog/el-lenguaje-de-programacion-javascript/</guid>
       <description>&lt;p&gt;Esta es una serie de videos donde se da una introducción al lenguaje de
 programación JavaScript. Las filminas (láminas/slides) se encuentran en
 esta dirección &lt;a href=&#34;http://yuiblog.com/assets/crockford/javascript.zip&#34;&gt;http://yuiblog.com/assets/crockford/javascript.zip&lt;/a&gt;. Si

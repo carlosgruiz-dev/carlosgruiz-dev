@@ -2,288 +2,288 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://carlosgruiz.dev/</loc>
     <lastmod>2024-05-15T16:23:55-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/now/</loc>
+    <loc>https://carlosgruiz.dev/now/</loc>
     <lastmod>2023-03-05T23:14:32+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/talks/</loc>
+    <loc>https://carlosgruiz.dev/talks/</loc>
     <lastmod>2022-03-04T05:11:27+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/</loc>
+    <loc>https://carlosgruiz.dev/blog/</loc>
     <lastmod>2024-05-15T16:23:55-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/collaborations/</loc>
+    <loc>https://carlosgruiz.dev/tags/collaborations/</loc>
     <lastmod>2018-09-21T16:26:16-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/community/</loc>
+    <loc>https://carlosgruiz.dev/tags/community/</loc>
     <lastmod>2018-09-21T16:26:16-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/entrevista-python-venezuela/</loc>
+    <loc>https://carlosgruiz.dev/blog/entrevista-python-venezuela/</loc>
     <lastmod>2018-09-21T16:26:16-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/python/</loc>
+    <loc>https://carlosgruiz.dev/tags/python/</loc>
     <lastmod>2024-05-15T16:23:55-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/spanish/</loc>
+    <loc>https://carlosgruiz.dev/tags/spanish/</loc>
     <lastmod>2024-05-15T16:23:55-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://carlosgruiz.dev/tags/</loc>
     <lastmod>2024-05-15T16:23:55-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/video/</loc>
+    <loc>https://carlosgruiz.dev/tags/video/</loc>
     <lastmod>2018-09-21T16:26:16-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/english/</loc>
+    <loc>https://carlosgruiz.dev/tags/english/</loc>
     <lastmod>2018-03-04T21:48:46-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/haskell/</loc>
+    <loc>https://carlosgruiz.dev/tags/haskell/</loc>
     <lastmod>2018-03-04T21:48:46-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/lab/</loc>
+    <loc>https://carlosgruiz.dev/tags/lab/</loc>
     <lastmod>2018-03-04T21:48:46-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/open-source/</loc>
+    <loc>https://carlosgruiz.dev/tags/open-source/</loc>
     <lastmod>2018-03-04T21:48:46-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/starting-a-haskell-project-with-stack/</loc>
+    <loc>https://carlosgruiz.dev/blog/starting-a-haskell-project-with-stack/</loc>
     <lastmod>2018-03-04T21:48:46-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/haskell-simple-http-server/</loc>
+    <loc>https://carlosgruiz.dev/blog/haskell-simple-http-server/</loc>
     <lastmod>2017-08-20T20:00:00-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/dogfooding/</loc>
+    <loc>https://carlosgruiz.dev/tags/dogfooding/</loc>
     <lastmod>2016-08-21T22:46:02-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/freebsd/</loc>
+    <loc>https://carlosgruiz.dev/tags/freebsd/</loc>
     <lastmod>2016-08-21T22:46:02-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/installing-freebsd-on-virtualbox/</loc>
+    <loc>https://carlosgruiz.dev/blog/installing-freebsd-on-virtualbox/</loc>
     <lastmod>2016-08-21T22:46:02-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/talks/</loc>
+    <loc>https://carlosgruiz.dev/tags/talks/</loc>
     <lastmod>2016-04-22T16:34:32-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/vim/</loc>
+    <loc>https://carlosgruiz.dev/tags/vim/</loc>
     <lastmod>2016-04-22T16:34:32-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/vim-python-mode/</loc>
+    <loc>https://carlosgruiz.dev/blog/vim-python-mode/</loc>
     <lastmod>2016-04-22T16:34:32-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/documentation/</loc>
+    <loc>https://carlosgruiz.dev/tags/documentation/</loc>
     <lastmod>2015-03-13T15:50:34-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/manten-tu-documentacion-a-mano-con-zeal/</loc>
+    <loc>https://carlosgruiz.dev/blog/manten-tu-documentacion-a-mano-con-zeal/</loc>
     <lastmod>2015-03-13T15:50:34-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/generador-de-archivos-gitignore/</loc>
+    <loc>https://carlosgruiz.dev/blog/generador-de-archivos-gitignore/</loc>
     <lastmod>2014-09-22T15:43:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/git/</loc>
+    <loc>https://carlosgruiz.dev/tags/git/</loc>
     <lastmod>2014-12-22T12:25:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/gentoo/</loc>
+    <loc>https://carlosgruiz.dev/tags/gentoo/</loc>
     <lastmod>2014-02-02T21:41:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/guides/</loc>
+    <loc>https://carlosgruiz.dev/tags/guides/</loc>
     <lastmod>2024-05-15T16:23:55-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ide/</loc>
+    <loc>https://carlosgruiz.dev/tags/ide/</loc>
     <lastmod>2014-02-02T21:41:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/instalar-netbeans-en-gentoo/</loc>
+    <loc>https://carlosgruiz.dev/blog/instalar-netbeans-en-gentoo/</loc>
     <lastmod>2014-02-02T21:41:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/outrunning-the-bear/</loc>
+    <loc>https://carlosgruiz.dev/blog/outrunning-the-bear/</loc>
     <lastmod>2014-01-31T03:11:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/terms/</loc>
+    <loc>https://carlosgruiz.dev/tags/terms/</loc>
     <lastmod>2015-02-27T23:59:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/bases-de-datos-libres-desde-40000-pies-de-altura/</loc>
+    <loc>https://carlosgruiz.dev/blog/bases-de-datos-libres-desde-40000-pies-de-altura/</loc>
     <lastmod>2013-10-30T23:27:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/databases/</loc>
+    <loc>https://carlosgruiz.dev/tags/databases/</loc>
     <lastmod>2015-03-04T20:00:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/memcached/</loc>
+    <loc>https://carlosgruiz.dev/tags/memcached/</loc>
     <lastmod>2013-10-30T23:27:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/mongodb/</loc>
+    <loc>https://carlosgruiz.dev/tags/mongodb/</loc>
     <lastmod>2013-10-30T23:27:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/postgresql/</loc>
+    <loc>https://carlosgruiz.dev/tags/postgresql/</loc>
     <lastmod>2024-05-15T16:23:55-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/redis/</loc>
+    <loc>https://carlosgruiz.dev/tags/redis/</loc>
     <lastmod>2013-10-30T23:27:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/best-practices/</loc>
+    <loc>https://carlosgruiz.dev/tags/best-practices/</loc>
     <lastmod>2013-10-30T22:12:04-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/comunidades-tecnologicas-101/</loc>
+    <loc>https://carlosgruiz.dev/blog/comunidades-tecnologicas-101/</loc>
     <lastmod>2013-10-30T22:12:04-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/por-que-hacemos-persistencia-de-datos/</loc>
+    <loc>https://carlosgruiz.dev/blog/por-que-hacemos-persistencia-de-datos/</loc>
     <lastmod>2014-12-12T16:03:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/tubasededatoslibre/</loc>
+    <loc>https://carlosgruiz.dev/tags/tubasededatoslibre/</loc>
     <lastmod>2024-05-15T16:23:55-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/framework/</loc>
+    <loc>https://carlosgruiz.dev/tags/framework/</loc>
     <lastmod>2015-03-03T00:17:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/introduccion-a-pyramid/</loc>
+    <loc>https://carlosgruiz.dev/blog/introduccion-a-pyramid/</loc>
     <lastmod>2014-12-12T16:14:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/pyramid/</loc>
+    <loc>https://carlosgruiz.dev/tags/pyramid/</loc>
     <lastmod>2014-12-12T16:14:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/sqlalchemy/</loc>
+    <loc>https://carlosgruiz.dev/tags/sqlalchemy/</loc>
     <lastmod>2014-12-12T16:14:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/tutorial/</loc>
+    <loc>https://carlosgruiz.dev/tags/tutorial/</loc>
     <lastmod>2024-05-15T16:23:55-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/breve-introduccion-a-zodb/</loc>
+    <loc>https://carlosgruiz.dev/blog/breve-introduccion-a-zodb/</loc>
     <lastmod>2015-03-04T20:00:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/llena-tu-windows-de-foss/</loc>
+    <loc>https://carlosgruiz.dev/blog/llena-tu-windows-de-foss/</loc>
     <lastmod>2015-03-01T21:48:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/migration/</loc>
+    <loc>https://carlosgruiz.dev/tags/migration/</loc>
     <lastmod>2015-03-01T21:48:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/data/</loc>
+    <loc>https://carlosgruiz.dev/tags/data/</loc>
     <lastmod>2015-02-26T23:28:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/geomatics/</loc>
+    <loc>https://carlosgruiz.dev/tags/geomatics/</loc>
     <lastmod>2015-03-01T15:52:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/qgis/</loc>
+    <loc>https://carlosgruiz.dev/tags/qgis/</loc>
     <lastmod>2013-04-18T21:34:44-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/receta-para-hacer-un-mapa-electoral-simple/</loc>
+    <loc>https://carlosgruiz.dev/blog/receta-para-hacer-un-mapa-electoral-simple/</loc>
     <lastmod>2013-04-18T21:34:44-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/migraciones-a-software-libre-parte-1/</loc>
+    <loc>https://carlosgruiz.dev/blog/migraciones-a-software-libre-parte-1/</loc>
     <lastmod>2013-04-16T15:03:33-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/hola-postgresql-con-python/</loc>
+    <loc>https://carlosgruiz.dev/blog/hola-postgresql-con-python/</loc>
     <lastmod>2024-05-15T16:23:55-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/convertir-repositorios-mercurial-a-git/</loc>
+    <loc>https://carlosgruiz.dev/blog/convertir-repositorios-mercurial-a-git/</loc>
     <lastmod>2014-12-22T12:25:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/mercurial/</loc>
+    <loc>https://carlosgruiz.dev/tags/mercurial/</loc>
     <lastmod>2015-03-07T14:31:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/c&#43;&#43;/</loc>
+    <loc>https://carlosgruiz.dev/tags/c&#43;&#43;/</loc>
     <lastmod>2015-03-07T14:31:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/qt/</loc>
+    <loc>https://carlosgruiz.dev/tags/qt/</loc>
     <lastmod>2015-03-07T14:31:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tutorial-introduccion-a-la-programacion-qt-y-otros-hallazgos-en-la-azotea/</loc>
+    <loc>https://carlosgruiz.dev/blog/tutorial-introduccion-a-la-programacion-qt-y-otros-hallazgos-en-la-azotea/</loc>
     <lastmod>2015-03-07T14:31:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/geomatica-libre-en-venezuela-presentacion-a-jose-sosa-cnti/</loc>
+    <loc>https://carlosgruiz.dev/blog/geomatica-libre-en-venezuela-presentacion-a-jose-sosa-cnti/</loc>
     <lastmod>2014-12-17T22:56:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/mini-taller-de-base-de-datos-y-postgresql/</loc>
+    <loc>https://carlosgruiz.dev/blog/mini-taller-de-base-de-datos-y-postgresql/</loc>
     <lastmod>2014-12-17T23:14:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/urumaco-y-los-datos/</loc>
+    <loc>https://carlosgruiz.dev/blog/urumaco-y-los-datos/</loc>
     <lastmod>2015-02-26T23:28:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/integrando-cpp-con-python/</loc>
+    <loc>https://carlosgruiz.dev/blog/integrando-cpp-con-python/</loc>
     <lastmod>2014-12-22T00:28:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/pycon-venezuela/</loc>
+    <loc>https://carlosgruiz.dev/tags/pycon-venezuela/</loc>
     <lastmod>2014-12-22T00:28:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/web-mapping-con-django/</loc>
+    <loc>https://carlosgruiz.dev/blog/web-mapping-con-django/</loc>
     <lastmod>2014-12-17T23:27:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/pycon-venezuela-2012/</loc>
+    <loc>https://carlosgruiz.dev/blog/pycon-venezuela-2012/</loc>
     <lastmod>2014-12-19T09:30:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/github/</loc>
+    <loc>https://carlosgruiz.dev/tags/github/</loc>
     <lastmod>2015-03-05T23:17:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/openve/</loc>
+    <loc>https://carlosgruiz.dev/tags/openve/</loc>
     <lastmod>2015-03-05T23:17:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/openve-y-los-kits-de-arranque/</loc>
+    <loc>https://carlosgruiz.dev/blog/openve-y-los-kits-de-arranque/</loc>
     <lastmod>2015-03-05T23:17:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/best-prectices/</loc>
+    <loc>https://carlosgruiz.dev/tags/best-prectices/</loc>
     <lastmod>2015-02-27T23:59:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/dogfooding/</loc>
+    <loc>https://carlosgruiz.dev/blog/dogfooding/</loc>
     <lastmod>2015-02-27T23:59:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/entrevista-en-echandocodigo-com/</loc>
+    <loc>https://carlosgruiz.dev/blog/entrevista-en-echandocodigo-com/</loc>
     <lastmod>2015-03-01T01:07:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/openstreetmap/</loc>
+    <loc>https://carlosgruiz.dev/tags/openstreetmap/</loc>
     <lastmod>2015-03-01T15:52:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/taller-de-geo-gobierno-en-linea/</loc>
+    <loc>https://carlosgruiz.dev/blog/taller-de-geo-gobierno-en-linea/</loc>
     <lastmod>2015-03-01T15:52:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/requerimientos-para-postgresql/</loc>
+    <loc>https://carlosgruiz.dev/blog/requerimientos-para-postgresql/</loc>
     <lastmod>2014-12-16T13:18:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/linux/</loc>
+    <loc>https://carlosgruiz.dev/tags/linux/</loc>
     <lastmod>2015-03-06T00:02:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/mi-distro-de-linux/</loc>
+    <loc>https://carlosgruiz.dev/blog/mi-distro-de-linux/</loc>
     <lastmod>2015-03-06T00:02:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/frameworks-de-c-para-la-web/</loc>
+    <loc>https://carlosgruiz.dev/blog/frameworks-de-c-para-la-web/</loc>
     <lastmod>2015-03-03T00:17:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/web/</loc>
+    <loc>https://carlosgruiz.dev/tags/web/</loc>
     <lastmod>2015-03-03T00:17:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/alta-disponibilidad-con-postgresql/</loc>
+    <loc>https://carlosgruiz.dev/blog/alta-disponibilidad-con-postgresql/</loc>
     <lastmod>2014-12-22T00:13:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/mejores-practicas-para-la-migracion-de-bases-de-datos/</loc>
+    <loc>https://carlosgruiz.dev/blog/mejores-practicas-para-la-migracion-de-bases-de-datos/</loc>
     <lastmod>2014-12-22T00:03:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/mapa-colaborativo-de-venezuela-osm/</loc>
+    <loc>https://carlosgruiz.dev/blog/mapa-colaborativo-de-venezuela-osm/</loc>
     <lastmod>2014-12-21T23:55:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/python-vs-el-mundo/</loc>
+    <loc>https://carlosgruiz.dev/blog/python-vs-el-mundo/</loc>
     <lastmod>2014-12-16T23:01:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/django-vs-pylons/</loc>
+    <loc>https://carlosgruiz.dev/blog/django-vs-pylons/</loc>
     <lastmod>2014-12-16T23:26:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/django/</loc>
+    <loc>https://carlosgruiz.dev/tags/django/</loc>
     <lastmod>2014-12-13T14:50:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/geoetiquetas-presentacion-en-jornadas-gvsig/</loc>
+    <loc>https://carlosgruiz.dev/blog/geoetiquetas-presentacion-en-jornadas-gvsig/</loc>
     <lastmod>2014-12-13T14:50:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/introduccion-a-openlayers/</loc>
+    <loc>https://carlosgruiz.dev/blog/introduccion-a-openlayers/</loc>
     <lastmod>2014-12-13T14:35:35-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/openlayers/</loc>
+    <loc>https://carlosgruiz.dev/tags/openlayers/</loc>
     <lastmod>2014-12-13T14:35:35-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/camelot/</loc>
+    <loc>https://carlosgruiz.dev/blog/camelot/</loc>
     <lastmod>2010-06-09T04:34:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/el-lenguaje-de-programacion-javascript/</loc>
+    <loc>https://carlosgruiz.dev/blog/el-lenguaje-de-programacion-javascript/</loc>
     <lastmod>2014-11-28T08:39:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/javascript/</loc>
+    <loc>https://carlosgruiz.dev/tags/javascript/</loc>
     <lastmod>2014-11-28T08:39:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://carlosgruiz.dev/categories/</loc>
   </url>
 </urlset>

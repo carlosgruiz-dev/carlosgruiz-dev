@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Gentoo on Carlos Gustavo Ruiz</title>
-    <link>http://localhost:1313/tags/gentoo/</link>
+    <link>https://carlosgruiz.dev/tags/gentoo/</link>
     <description>Recent content in Gentoo on Carlos Gustavo Ruiz</description>
-    <generator>Hugo -- 0.146.5</generator>
+    <generator>Hugo -- 0.146.7</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 02 Feb 2014 21:41:00 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/gentoo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://carlosgruiz.dev/tags/gentoo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Instalar Netbeans en Gentoo</title>
-      <link>http://localhost:1313/blog/instalar-netbeans-en-gentoo/</link>
+      <link>https://carlosgruiz.dev/blog/instalar-netbeans-en-gentoo/</link>
       <pubDate>Sun, 02 Feb 2014 21:41:00 -0400</pubDate>
-      <guid>http://localhost:1313/blog/instalar-netbeans-en-gentoo/</guid>
+      <guid>https://carlosgruiz.dev/blog/instalar-netbeans-en-gentoo/</guid>
       <description>&lt;p&gt;Esta entrada es una bitácora para mi instalación de Gentoo Linux, así
 que a lo que voy. Mi requerimiento era de una IDE que me ayudase a
 trabajar más cómodamente con unas tareas con PHP. Luego de buscar un
