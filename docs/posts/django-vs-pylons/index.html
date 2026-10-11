@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+
+<!-- Prevent flash of unstyled content for dark mode -->
+<script>
+  const savedTheme = localStorage.getItem('darkMode');
+  const isDark = savedTheme !== null
+    ? savedTheme === 'true'
+    : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (isDark) {
+    document.documentElement.classList.add('dark');
+  }
+</script>
+
+
+
+  <!-- SEO TITLE -->
+  
+  <title>Django vs Pylons - Carlos Gustavo Ruiz</title>
+  <meta property="og:title" content="Django vs Pylons" />
+  <meta name="twitter:title" content="Django vs Pylons">
+  <meta property="og:site_name" content="Carlos Gustavo Ruiz">
+  <!-- SEO DESCRIPTION -->
+  <meta name="description" content="Comparación entre Django y Pylons como frameworks web en Python: popularidad, administración, documentación, plantillas, URLs y flexibilidad.">
+  <meta property="og:description" content="Comparación entre Django y Pylons como frameworks web en Python: popularidad, administración, documentación, plantillas, URLs y flexibilidad." />
+  <meta name="twitter:description" content="Comparación entre Django y Pylons como frameworks web en Python: popularidad, administración, documentación, plantillas, URLs y flexibilidad.">
+  <!-- SEO AUTHOR -->
+  <meta property="article:author" content="carlosgruiz" />
+  <meta name="author" content="carlosgruiz" />
+
+  <!-- SEO URL -->
+  <link rel="canonical" href="https://carlosgruiz.dev/posts/django-vs-pylons/" />
+  <meta property="og:url" content="https://carlosgruiz.dev/posts/django-vs-pylons/" />
+  <meta name="twitter:url" content="https://carlosgruiz.dev/posts/django-vs-pylons/">
+
+  <!-- SEO TYPE -->
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="2010-08-15T00:00-05:00[America/Panama]" />
+
+  <!-- SEO IMAGE -->
+  <meta name="twitter:card" content="summary">
+  <!-- SEO COLLECTION PAGES -->
+  <link rel="prev" href="https://carlosgruiz.dev/posts/python-vs-el-mundo/" />
+  <link rel="next" href="https://carlosgruiz.dev/posts/geoetiquetas-presentacion-en-jornadas-gvsig/" />
+  <!-- SEO LOCALE -->
+  <meta property="og:locale" content="en_PA" />
+  <!-- SEO GENERATOR -->
+  <meta name="generator" content="Quarkus Roq v2.1.9" />
+
+<link rel="alternate" type="application/rss+xml" title="Carlos Gustavo Ruiz" href="https://carlosgruiz.dev/rss.xml"/>
+<!-- Favicon -->
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/images/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+<base href="/posts/django-vs-pylons/">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="theme-color" content="#1e1e2e">
+<meta name="msapplication-navbutton-color" content="#1e1e2e">
+<meta name="apple-mobile-web-app-status-bar-style" content="#1e1e2e">
+
+
+    <script type="module" src="/static/bundle/app-BNJCCHZQ.js"></script>
+      <link rel="stylesheet" href="/static/bundle/app-O2IDU56U.css" />
+
+<script type="module" src="/static/bundle/search.js?id=0d3b83cf-9dd0-4763-946e-b7ddccf42bd6"></script>
+<script type="module" nonce="01KJ2EZHMFP32C2GYZ01SS3DG3">
+  setupSearch({
+    url: '/search-index.json'
+  });
+</script>
+<link rel="stylesheet" href="/static/bundle/search.css?id=0d3b83cf-9dd0-4763-946e-b7ddccf42bd6"></head>
+<body >
+
+
+
+<div class="wrapper default">
+
+
+
+<aside class="sidebar main">
+  <header>
+<!-- Theme configuration: https://iamroq.dev/theme/default/#site-data -->
+<section class="about">
+  <div class="site-logo">
+    <a href="/"><img src="/images/logo-carlos-web.png" alt="Carlos Gustavo Ruiz"></a>
+  </div>
+  <div class="site-name">Carlos Gustavo Ruiz</div>
+  <p>Systems Engineer · code, data &amp; maps</p>
+</section><button type="button" id="search-button" class="search-button" aria-label="Search"></button>
+<section class="menu">
+  <h3 class="section-title menu-title">MENU</h3>
+  <ul>
+    <li><a class="" href="/" ><i class="fa-solid fa-house"></i>Home</a> </li>
+    <li><a class="" href="/posts" ><i class="fa-regular fa-newspaper"></i>Posts</a> </li>
+    <li><a class="" href="/tags" ><i class="fa-solid fa-tags"></i>Tags</a> </li>
+    <li><a class="" href="https://github.com/carlosgruiz-dev/carlosgruiz-dev/wiki" target="_blank"><i class="fa-solid fa-pen-clip"></i>Wiki</a> </li>
+    <li><a class="" href="/talks" ><i class="fa fa-chalkboard"></i>Talks</a> </li>
+    <li><a class="" href="/arts" ><i class="fa-solid fa-seedling"></i>Arts</a> </li>
+    <li><a class="" href="/now" ><i class="fa fa-calendar-day"></i>Now</a> </li>
+  </ul>
+</section>
+  </header> <!-- End Header -->
+  <footer>
+<section class="contact">
+    <h3 class="section-title contact-title">Contact me</h3>
+    <ul>
+        <li>
+            <a href="https://in.linkedin.com/in/carlosgruiz-dev" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://instagram.com/carlosgruiz_dev" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/carlosgruiz-dev" target="_blank" rel="noopener noreferrer" aria-label="github">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</section><section class="copyright">
+  <p>2026 &copy; Carlos Ruiz</p>
+</section>
+
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<!-- Dark Mode Toggle - Fixed top-right for all screen sizes -->
+<button class="dark-mode-toggle" aria-label="Toggle dark mode">
+  <i class="fas fa-moon"></i>
+</button>
+<main class="main-content">
+
+<div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Search" aria-hidden="true">
+  <div class="search-overlay-content">
+    <button class="search-close" id="search-close" aria-label="Close search">&times;</button>
+    <div id="search-field">
+      <input
+        type="search"
+        class="search-input"
+        id="search-input"
+        placeholder="Search..."
+        aria-label="Search"
+        autocomplete="off"
+        autofocus
+      />
+    </div>
+    <div class="search-results" id="search-results" role="region" aria-live="polite" aria-label="Search results">
+      <!-- Search results will be dynamically inserted here -->
+    </div>
+  </div>
+</div>
+
+
+<article class="article-page" xmlns="http://www.w3.org/1999/html">
+  <section class="page-content">
+    <section class="wrap-content">
+
+<section class="page-header">
+  <h1 class="page-title">Django vs Pylons</h1>
+  <div class="page-header-date"><span>Aug 15, 2010</span></div>
+  <p class="page-header-intro">
+    Comparación entre Django y Pylons como frameworks web en Python: popularidad, administración, documentación, plantillas, URLs y flexibilidad.
+  </p>
+</section>      <section class="content-prose">
+<p>Las comparaciones suelen ser odiosas, destapar algún tipo de polémica o mostrar preferencias más allá del aspecto técnico y objetivo de una plataforma o programa. Sin embargo, debido a que me toca hacer una evaluación tecnológica para un proyecto me vi en la necesidad de poner tratar de comparar las plataformas web disponibles en Python que pudiesen apoyar mis actividades.</p>
+<p><img src="/posts/django-vs-pylons/django-logo.png" alt="Logo de Django" /></p>
+<p>Ante todo aclaro que mi herramienta natural suele ser Django, que junto con las herramientas de Python es lo que doy a conocer como mi &quot;navaja suiza&quot; para resolver problemas. Pero al momento de una selección tecnológica creo que esta selección por default puede no ser la mejor, por ello me puse a revisar en la web los comentarios sobre las comparaciones de estos dos web frameworks.</p>
+<p><img src="/posts/django-vs-pylons/pylons-logo2.gif" alt="Logo de Pylons" /></p>
+<p>He aquí la comparación y mis comentarios;</p>
+<ol>
+<li><strong>Otros Frameworks</strong>: La primera consideración es por qué no incluir TurboGears dentro de mi evaluación. Si lo hice, sin embargo su forma de trabajo me resultó algo irritante. La versión 2.0 de TG está construida sobre Pylons, que si bien mejora la experiencia, aun no me convence. Y por qué no CherryPy? aunque no lo evalué a profundidad, me parece que le faltan herramientas para una comparación adecuada.</li>
+<li><strong>Popularidad</strong>: La primera conclusión obvia es que Django tiene una comunidad muuucho mayor que Pylons. Incluso cuando van a los Google Trends, Django tiene 8 o 9 veces más tráfico. Sin embargo esto lo que indica es popularidad, lo que no quiere decir que sirva para mi app.</li>
+<li><strong>Interfaces Administrativas</strong>: Django tiene mucha magia, y lo que me hace muchas veces llorar de alegría es el admin. En verdad pensé que me vería indefenso en este sentido con Pylons, pero la buena noticia es que hay un equivalente que, si bien no se ve tan pulido será de mucha utilidad (ver <a href="http://docs.formalchemy.org/current/ext/pylons.html#administration-interface">http://docs.formalchemy.org/current/ext/pylons.html#administration-interface</a><i class="fa-solid fa-link-slash roq-broken-link" aria-hidden="true" title="Broken link"></i>).</li>
+<li><strong>Codificación</strong>: Al comparar los demos y tutoriales de Django y Pylons salta a la vista que generalmente se observa más código en Pylons. Ello sin embargo es resultado a 2 razones; primero que los tutoriales no tienen comparación, los de Pylons suelen ser ejemplos más ambiciosos que los de Django; por otro lado, si.. en Pylons se escribe un poco más porque Django hace muchas cosas por nosotros y las damos por sentado.</li>
+<li><strong>Documentación y libros</strong>: La documentación de Django es más compacta y en cuanto a libros hay más, aun así Pylons tiene no solamente la documentación propia sino generalmente una buena documentación de los programas que lo componen. En todo caso los primeros libros recomendados, además de la documentación oficial son, <a href="https://www.djangobook.com/">https://www.djangobook.com/</a> y <a href="https://pylonsbook.com/">https://pylonsbook.com/</a></li>
+<li><strong>Diseño</strong>: Hay que tener en cuenta que Django y Pylons aun cuando se diseñaron con el mismo paradigma (MVC aun cuando Django lo renombra MTV), ambos responden a visiones distintas, en el primer caso viene a ser un método de publicación eficiente de contenidos web, y en el segundo caso poner en la web aplicaciones. Esta diferencia redundará en cómo se aborda el desarrollo de las apps.</li>
+<li><strong>Reusabilidad</strong>: Django tiene aplicaciones reusables (aunque algunas de ellas no son reusables en absoluto). Esto viene de la estrategia de hacer plugable las aplicaciones dentro del Framework. En Pylons el acercamiento es otro y la reutilización viene como implementaciones dentro de la aplicación en la que se esté trabajando.</li>
+<li><strong>Opciones y Newbies</strong>: Definitivamente en este punto Pylons tiene mucho que decir, tiene muchas opciones, tantas que una persona iniciándose puede sentir que tiene mucho que aprender, de hecho la curva de aprendizaje es algo más pronunciada que en Django. Django por otro lado guía la selección del programador a sus herramientas con lo bueno y malo que puedan tener, aprender django puede resultar una experiencia gratificante por los rápidos resultados que muestra, pero a la hora de buscar opciones para incorporar más poder a las apps puede resultar engorroso y en algunos casos una camisa de fuerza. Pylons es más flexible en este sentido.</li>
+<li><strong>Plantillas</strong>: Las plantillas en Django son realmente algo muy bueno, sin embargo opciones dentro de Pylons como Mako pueden resultar muy útiles. Mako se asemeja más a una función de Vista y permite introducir código Python dentro de las mismas. (aunque siempre que veamos mucho código python en una plantilla puede indicarnos que estamos colocando cosas donde no van)</li>
+<li><strong>URL's</strong>: no estoy familiarizado con Route (programa usado por Pylons para el direccionamiento de las URLs) por lo que no comentaré mucho más que funciona bien out-of-the-box. Las URLs en Django, lucen un tanto más legibles, funcionan bien y con un poco de expresiones regulares uno puede hacer cualquier cosa.</li>
+<li><strong>Magia</strong>: Django tiene vistas genéricas, un amplio conjuntos de aplicaciones en django.contrib y buenos atajos en django.shortcuts, sin nombrar a los decorators que nos facilitan la vida. El interfaz de admin realmente es una herramienta de lujo. Pylons no tiene muchas de estas cosas.</li>
+</ol>
+<p>Cual usar? dependerá ahora de los requerimientos que tengan.. ;-) yo en particular uso ambos, pues resuelven adecuadamente distintos problemas. así que según sea el caso, uso uno u otro.</p>
+<p>Para más información les dejaré estos links para el debate.</p>
+<ul>
+<li><a href="https://stackoverflow.com/questions/48681/pros-cons-of-django-vs-pylons">https://stackoverflow.com/questions/48681/pros-cons-of-django-vs-pylons</a></li>
+<li><a href="https://stackoverflow.com/questions/1344824/django-vs-pylons">https://stackoverflow.com/questions/1344824/django-vs-pylons</a></li>
+<li><a href="http://www.noise-media.com/blog/pylons-vs-django/">http://www.noise-media.com/blog/pylons-vs-django/</a><i class="fa-solid fa-link-slash roq-broken-link" aria-hidden="true" title="Broken link"></i></li>
+<li><a href="https://www.mutualinformation.org/2010/03/why-i-switched-to-pylons-after-using-django-for-six-months/">https://www.mutualinformation.org/2010/03/why-i-switched-to-pylons-after-using-django-for-six-months/</a></li>
+<li><a href="http://jordanovski.com/django-vs-pylons">http://jordanovski.com/django-vs-pylons</a><i class="fa-solid fa-link-slash roq-broken-link" aria-hidden="true" title="Broken link"></i></li>
+</ul>
+<p>Anímense a probar ambos Frameworks, realmente son excelentes herramientas.</p>
+      </section>
+      <div class="page-footer">
+        <div class="footer-links">
+          <div class="page-share">
+            <a href="https://twitter.com/intent/tweet?text=Django vs Pylons&url=https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fdjango-vs-pylons%2F" title="Share on Twitter"
+              rel="nofollow noopener noreferrer"  target="_blank">Twitter</a>
+            <a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fdjango-vs-pylons%2F" title="Share on Facebook" rel="nofollow noopener noreferrer"
+              target="_blank">Facebook</a>
+            <a href="https://bsky.app/intent/compose?text=Django vs Pylons%0ACheck%20it%20out%20https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fdjango-vs-pylons%2F"
+              title="Share on Bluesky" rel="nofollow noopener noreferrer" target="_blank">Bluesky</a>
+          </div>
+          <div class="page-tag">
+            <a href="/posts/tag/lab" class="tag">&#35; lab</a>
+            <a href="/posts/tag/python" class="tag">&#35; python</a>
+            <a href="/posts/tag/framework" class="tag">&#35; framework</a>
+            <a href="/posts/tag/spanish" class="tag">&#35; spanish</a>
+          </div>
+
+        </div>
+        <div class="author">
+    <img src="/images/logo-carlos-web.png" alt="author-carlosgruiz" />
+
+  <div class="author-data">
+    <a target="_blank" rel="noopener noreferrer" href="https://carlosgruiz.dev/" class="author-name">Carlos Gustavo Ruiz</a>
+    <span class="author-job-title">Pizza lover 🍕 · Web creature 💻 · Curious nerd 🤓 · Amateur musician 🎸</span>
+  </div>
+</div>
+
+      </div>
+    </section> <!-- End Wrap Content -->
+  </section> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+
+
+</main>
+
+
+
+</div>
+
+</body>
+</html>

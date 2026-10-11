@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+
+<!-- Prevent flash of unstyled content for dark mode -->
+<script>
+  const savedTheme = localStorage.getItem('darkMode');
+  const isDark = savedTheme !== null
+    ? savedTheme === 'true'
+    : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (isDark) {
+    document.documentElement.classList.add('dark');
+  }
+</script>
+
+
+
+  <!-- SEO TITLE -->
+  
+  <title>Mi Distro de Linux - Carlos Gustavo Ruiz</title>
+  <meta property="og:title" content="Mi Distro de Linux" />
+  <meta name="twitter:title" content="Mi Distro de Linux">
+  <meta property="og:site_name" content="Carlos Gustavo Ruiz">
+  <!-- SEO DESCRIPTION -->
+  <meta name="description" content="Impresiones no técnicas sobre las distribuciones de GNU/Linux que he usado: Fedora, Gentoo, Sabayon, (x)Ubuntu, Canaima, Debian, Mint y Suse.">
+  <meta property="og:description" content="Impresiones no técnicas sobre las distribuciones de GNU/Linux que he usado: Fedora, Gentoo, Sabayon, (x)Ubuntu, Canaima, Debian, Mint y Suse." />
+  <meta name="twitter:description" content="Impresiones no técnicas sobre las distribuciones de GNU/Linux que he usado: Fedora, Gentoo, Sabayon, (x)Ubuntu, Canaima, Debian, Mint y Suse.">
+  <!-- SEO AUTHOR -->
+  <meta property="article:author" content="carlosgruiz" />
+  <meta name="author" content="carlosgruiz" />
+
+  <!-- SEO URL -->
+  <link rel="canonical" href="https://carlosgruiz.dev/posts/mi-distro-de-linux/" />
+  <meta property="og:url" content="https://carlosgruiz.dev/posts/mi-distro-de-linux/" />
+  <meta name="twitter:url" content="https://carlosgruiz.dev/posts/mi-distro-de-linux/">
+
+  <!-- SEO TYPE -->
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="2012-04-10T00:00-05:00[America/Panama]" />
+
+  <!-- SEO IMAGE -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image:src" content="https://carlosgruiz.dev/posts/mi-distro-de-linux/linux-inside-logo.gif" />
+  <meta property="og:image" content="https://carlosgruiz.dev/posts/mi-distro-de-linux/linux-inside-logo.gif" />
+  <!-- SEO COLLECTION PAGES -->
+  <link rel="prev" href="https://carlosgruiz.dev/posts/requerimientos-para-postgresql/" />
+  <link rel="next" href="https://carlosgruiz.dev/posts/frameworks-de-cpp-para-la-web/" />
+  <!-- SEO LOCALE -->
+  <meta property="og:locale" content="en_PA" />
+  <!-- SEO GENERATOR -->
+  <meta name="generator" content="Quarkus Roq v2.1.9" />
+
+<link rel="alternate" type="application/rss+xml" title="Carlos Gustavo Ruiz" href="https://carlosgruiz.dev/rss.xml"/>
+<!-- Favicon -->
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/images/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+<base href="/posts/mi-distro-de-linux/">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="theme-color" content="#1e1e2e">
+<meta name="msapplication-navbutton-color" content="#1e1e2e">
+<meta name="apple-mobile-web-app-status-bar-style" content="#1e1e2e">
+
+
+    <script type="module" src="/static/bundle/app-BNJCCHZQ.js"></script>
+      <link rel="stylesheet" href="/static/bundle/app-O2IDU56U.css" />
+
+<script type="module" src="/static/bundle/search.js?id=0d3b83cf-9dd0-4763-946e-b7ddccf42bd6"></script>
+<script type="module" nonce="01KJ2EZHMFP32C2GYZ01SS3DG3">
+  setupSearch({
+    url: '/search-index.json'
+  });
+</script>
+<link rel="stylesheet" href="/static/bundle/search.css?id=0d3b83cf-9dd0-4763-946e-b7ddccf42bd6"></head>
+<body >
+
+
+
+<div class="wrapper default">
+
+
+
+<aside class="sidebar main">
+  <header>
+<!-- Theme configuration: https://iamroq.dev/theme/default/#site-data -->
+<section class="about">
+  <div class="site-logo">
+    <a href="/"><img src="/images/logo-carlos-web.png" alt="Carlos Gustavo Ruiz"></a>
+  </div>
+  <div class="site-name">Carlos Gustavo Ruiz</div>
+  <p>Systems Engineer · code, data &amp; maps</p>
+</section><button type="button" id="search-button" class="search-button" aria-label="Search"></button>
+<section class="menu">
+  <h3 class="section-title menu-title">MENU</h3>
+  <ul>
+    <li><a class="" href="/" ><i class="fa-solid fa-house"></i>Home</a> </li>
+    <li><a class="" href="/posts" ><i class="fa-regular fa-newspaper"></i>Posts</a> </li>
+    <li><a class="" href="/tags" ><i class="fa-solid fa-tags"></i>Tags</a> </li>
+    <li><a class="" href="https://github.com/carlosgruiz-dev/carlosgruiz-dev/wiki" target="_blank"><i class="fa-solid fa-pen-clip"></i>Wiki</a> </li>
+    <li><a class="" href="/talks" ><i class="fa fa-chalkboard"></i>Talks</a> </li>
+    <li><a class="" href="/arts" ><i class="fa-solid fa-seedling"></i>Arts</a> </li>
+    <li><a class="" href="/now" ><i class="fa fa-calendar-day"></i>Now</a> </li>
+  </ul>
+</section>
+  </header> <!-- End Header -->
+  <footer>
+<section class="contact">
+    <h3 class="section-title contact-title">Contact me</h3>
+    <ul>
+        <li>
+            <a href="https://in.linkedin.com/in/carlosgruiz-dev" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://instagram.com/carlosgruiz_dev" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/carlosgruiz-dev" target="_blank" rel="noopener noreferrer" aria-label="github">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</section><section class="copyright">
+  <p>2026 &copy; Carlos Ruiz</p>
+</section>
+
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<!-- Dark Mode Toggle - Fixed top-right for all screen sizes -->
+<button class="dark-mode-toggle" aria-label="Toggle dark mode">
+  <i class="fas fa-moon"></i>
+</button>
+<main class="main-content">
+
+<div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Search" aria-hidden="true">
+  <div class="search-overlay-content">
+    <button class="search-close" id="search-close" aria-label="Close search">&times;</button>
+    <div id="search-field">
+      <input
+        type="search"
+        class="search-input"
+        id="search-input"
+        placeholder="Search..."
+        aria-label="Search"
+        autocomplete="off"
+        autofocus
+      />
+    </div>
+    <div class="search-results" id="search-results" role="region" aria-live="polite" aria-label="Search results">
+      <!-- Search results will be dynamically inserted here -->
+    </div>
+  </div>
+</div>
+
+
+<article class="article-page" xmlns="http://www.w3.org/1999/html">
+  <section class="page-content">
+    <div class="page-cover-image">
+      <figure>
+        <img class="page-image" src="/posts/mi-distro-de-linux/linux-inside-logo.gif" alt="Mi Distro de Linux">
+      </figure>
+    </div> <!-- End Page Cover Image -->
+    <section class="wrap-content">
+
+<section class="page-header">
+  <h1 class="page-title">Mi Distro de Linux</h1>
+  <div class="page-header-date"><span>Apr 10, 2012</span></div>
+  <p class="page-header-intro">
+    Impresiones no técnicas sobre las distribuciones de GNU/Linux que he usado: Fedora, Gentoo, Sabayon, (x)Ubuntu, Canaima, Debian, Mint y Suse.
+  </p>
+</section>      <section class="content-prose">
+<p>Hablar de preferencias de GNU/Linux es complicado, sobre todo porque puede lucir siempre como una oportunidad para hacer Troll. Así que para comenzar debo aclarar un par de cosas. Primero que estas son mis apreciaciones <strong>NO</strong> técnicas, acá hablo de gustos, no de métricas, filosofía, contratos sociales, compiladores y demás blah blah, si quieren información de este tipo vean <a href="https://distrowatch.com/">Distrowatch</a>. Lo segundo es que Linux o GNU/Linux, según sea su gusto, es el sistema operativo que utilizo con mayor frecuencia, pero con el tiempo me he convertido un poco en algo parecido a un agnóstico de las distribuciones. ¿Qué quiero decir con esto? bueno, un poco que me da casi igual cual utilizar, siempre que me permita hacer mi trabajo de forma confortable. Un poco de mi opinión sobre las distros que he utilizado o me han gustado.</p>
+<p><a href="https://fedoraproject.org/">Fedora</a>: He sido usuario por muchos años, me parece una distro muy, muy, muy cómoda y poco invasiva en mi estilo de trabajo, algunos programas no vienen de paquete por aquello de las licencias pero con uno o dos repos más queda hermoso.</p>
+<p><a href="https://www.gentoo.org/">Gentoo</a>: Sin duda la distro más interesante que he utilizado, pero por lejos. Sin embargo mi trabajo diario luce en algunos aspectos incompatible con esta distro, pero si es posible desarrollar amor por una distro, debo decir que esta es la mía.</p>
+<p><a href="http://www.sabayon.org/">Sabayon</a><i class="fa-solid fa-link-slash roq-broken-link" aria-hidden="true" title="Broken link"></i>: Bueno, para mi esto es lo más cercano a una distro perfecta, un Gentoo con alternativas de Paquetes, además de un todo incluido desde la instalación (incluidos paquetes no libres). Seh, se que Arch tiene mucho de eso, pero Arch no lo he probado aun y la verdad no es tan coqueto jejeje.. Sin embargo no todo es oro, pues una distro con pretensiones de todo incluido tiene dos problemas principales, incluir de más o no funcionar algunos casos. Pero cuando va bien, brilla.</p>
+<p><a href="https://xubuntu.org/">(x)Ubuntu</a>: Es mi &quot;distro of choice&quot; por varias razones, trabajo debianitas, canaimeros y ubunteros en estos momentos así que acoplarme a ellos desde fedora luce un poco complicado. Por otro lado ni gnome3, ni unity me resultan cómodos, la verdad simplemente me parecen recargados. Esta distro tiene algunas ventajas de usabilidad y un poco menos de dogmatismos, así que al estar en un escritorio distinto a los ubunteros fastidiosos y semi religiosos pierden el interés en discutir sobre las bondades de Unity vs Gnome3.. eso me hace feliz. jajajaja..</p>
+<p><a href="https://canaima.softwarelibre.gob.ve/">Canaima</a>: Para mi es la cenicienta de las distros, es muy bonita y llena de buenas intenciones, el trabajo con ella es confortable, sin embargo algunos drivers, versiones de programas y las actualizaciones pueden ser un dolor de cabeza, a menos que se &quot;debianice&quot; a través de los repositorios. Generalmente la uso sobre una máquina virtual para probar algunas cosas para la administración pública.</p>
+<p><a href="https://www.debian.org/">Debian</a>: Es tal vez, junto con la FSF, uno de los nichos de mayores controversias en el mundo del software libre. Admito que tiene muchas cosas buenas, pero de todas todas me parece una opción siempre poco terminada, siempre orientada a un &quot;experto en lo incómodo&quot; y he llegado a pensar que sienten cierto placer morboso por escribir en los archivos de configuración con vi o emacs. La uso por compatibilidad con servidores de la administración pública y poco más que eso. Está demostrado que si quieres un ambiente &quot;Estable&quot; a fuego no necesitas software viejo sino software bueno.</p>
+<p><a href="https://linuxmint.com/">Mint</a>: Es como la cuña del <a href="http://www.toyota.com.ve/cars/new_cars/yaris_sedan/">Yaris Belta</a>, grande, bonito, redondito. No lo he usado mucho, pues no soy un tipo de fijarme mucho en las interfaces gráficas, pero por lejos es una de las que más atención ha prestado a este respecto. La alternativa de Mint con Debian y <a href="https://en.wikipedia.org/wiki/Rolling_release">Rolling Release</a> me ha abierto el apetito para probarla, quien sabe si esta será la vía de reconciliarme con Debian.</p>
+<p><a href="https://www.opensuse.org/es/">Suse</a>: Debo decir que es la primera distro que instalé (allá por los años hum hum hum, cuando estaban en su versión 5.algo) fue una experiencia completa buscando cómo carrizo configurarle el video para mi laptop de entonces, una Pentium 100 con poco disco y mucho menos RAM. Mucha agua ha pasado bajo el puente desde entonces, y debido a su administración mediante el yast, no me sentí cómodo con los años. Sin embargo hay ahora algo que me gusta de Suse, se llama <a href="http://susestudio.com/">SuseStudio</a><i class="fa-solid fa-link-slash roq-broken-link" aria-hidden="true" title="Broken link"></i>.</p>
+<p>Es así como luego de hacer unas versiones de Ubuntu con <a href="https://www.remastersys.com/">Remastersys</a> y de Fedora con <a href="https://fedoraproject.org/wiki/How_to_create_and_use_Fedora_Live_CD">Revisor</a> mi problema era poder distribuir mis experimentos sin comprometer mi espacio en disco. Vi en estos días un artículo donde decían que permitían crear su propio sabor de Linux por 5US$ jejeje y recordé que SuseStudio te lo permitía hacer de gratis.</p>
+<p>Así que para curiosos o fastidiados les presento, <a href="http://susestudio.com/a/F6CPEQ/problem-linux">&quot;Problem! Linux&quot;</a><i class="fa-solid fa-link-slash roq-broken-link" aria-hidden="true" title="Broken link"></i> jajaja.. espero lo disfruten. Por cierto si no saben de donde salió el logo vean esta dirección <a href="https://knowyourmeme.com/memes/trollface-coolface-problem">[problem?]</a>.</p>
+<p><img src="/posts/mi-distro-de-linux/trollface.png" alt="Problem! Linux Trolls?" /></p>
+      </section>
+      <div class="page-footer">
+        <div class="footer-links">
+          <div class="page-share">
+            <a href="https://twitter.com/intent/tweet?text=Mi Distro de Linux&url=https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fmi-distro-de-linux%2F" title="Share on Twitter"
+              rel="nofollow noopener noreferrer"  target="_blank">Twitter</a>
+            <a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fmi-distro-de-linux%2F" title="Share on Facebook" rel="nofollow noopener noreferrer"
+              target="_blank">Facebook</a>
+            <a href="https://bsky.app/intent/compose?text=Mi Distro de Linux%0ACheck%20it%20out%20https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fmi-distro-de-linux%2F"
+              title="Share on Bluesky" rel="nofollow noopener noreferrer" target="_blank">Bluesky</a>
+          </div>
+          <div class="page-tag">
+            <a href="/posts/tag/lab" class="tag">&#35; lab</a>
+            <a href="/posts/tag/linux" class="tag">&#35; linux</a>
+            <a href="/posts/tag/spanish" class="tag">&#35; spanish</a>
+          </div>
+
+        </div>
+        <div class="author">
+    <img src="/images/logo-carlos-web.png" alt="author-carlosgruiz" />
+
+  <div class="author-data">
+    <a target="_blank" rel="noopener noreferrer" href="https://carlosgruiz.dev/" class="author-name">Carlos Gustavo Ruiz</a>
+    <span class="author-job-title">Pizza lover 🍕 · Web creature 💻 · Curious nerd 🤓 · Amateur musician 🎸</span>
+  </div>
+</div>
+
+      </div>
+    </section> <!-- End Wrap Content -->
+  </section> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+
+
+</main>
+
+
+
+</div>
+
+</body>
+</html>

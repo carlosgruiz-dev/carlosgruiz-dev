@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+
+<!-- Prevent flash of unstyled content for dark mode -->
+<script>
+  const savedTheme = localStorage.getItem('darkMode');
+  const isDark = savedTheme !== null
+    ? savedTheme === 'true'
+    : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (isDark) {
+    document.documentElement.classList.add('dark');
+  }
+</script>
+
+
+
+  <!-- SEO TITLE -->
+  
+  <title>Migraciones a Software Libre (Parte 1) - Carlos Gustavo Ruiz</title>
+  <meta property="og:title" content="Migraciones a Software Libre (Parte 1)" />
+  <meta name="twitter:title" content="Migraciones a Software Libre (Parte 1)">
+  <meta property="og:site_name" content="Carlos Gustavo Ruiz">
+  <!-- SEO DESCRIPTION -->
+  <meta name="description" content="Recomendaciones sobre migración a software libre basadas en la experiencia: antecedentes en Venezuela, las leyes de Newton del cambio y la direccionalidad de la migración.">
+  <meta property="og:description" content="Recomendaciones sobre migración a software libre basadas en la experiencia: antecedentes en Venezuela, las leyes de Newton del cambio y la direccionalidad de la migración." />
+  <meta name="twitter:description" content="Recomendaciones sobre migración a software libre basadas en la experiencia: antecedentes en Venezuela, las leyes de Newton del cambio y la direccionalidad de la migración.">
+  <!-- SEO AUTHOR -->
+  <meta property="article:author" content="carlosgruiz" />
+  <meta name="author" content="carlosgruiz" />
+
+  <!-- SEO URL -->
+  <link rel="canonical" href="https://carlosgruiz.dev/posts/migraciones-a-software-libre-parte-1/" />
+  <meta property="og:url" content="https://carlosgruiz.dev/posts/migraciones-a-software-libre-parte-1/" />
+  <meta name="twitter:url" content="https://carlosgruiz.dev/posts/migraciones-a-software-libre-parte-1/">
+
+  <!-- SEO TYPE -->
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="2013-04-16T00:00-05:00[America/Panama]" />
+
+  <!-- SEO IMAGE -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image:src" content="https://carlosgruiz.dev/posts/migraciones-a-software-libre-parte-1/Alleppey_-_Kollam_6847451428.jpg" />
+  <meta property="og:image" content="https://carlosgruiz.dev/posts/migraciones-a-software-libre-parte-1/Alleppey_-_Kollam_6847451428.jpg" />
+  <!-- SEO COLLECTION PAGES -->
+  <link rel="prev" href="https://carlosgruiz.dev/posts/receta-para-hacer-un-mapa-electoral-simple/" />
+  <link rel="next" href="https://carlosgruiz.dev/posts/hola-postgresql-con-python/" />
+  <!-- SEO LOCALE -->
+  <meta property="og:locale" content="en_PA" />
+  <!-- SEO GENERATOR -->
+  <meta name="generator" content="Quarkus Roq v2.1.9" />
+
+<link rel="alternate" type="application/rss+xml" title="Carlos Gustavo Ruiz" href="https://carlosgruiz.dev/rss.xml"/>
+<!-- Favicon -->
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/images/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+<base href="/posts/migraciones-a-software-libre-parte-1/">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="theme-color" content="#1e1e2e">
+<meta name="msapplication-navbutton-color" content="#1e1e2e">
+<meta name="apple-mobile-web-app-status-bar-style" content="#1e1e2e">
+
+
+    <script type="module" src="/static/bundle/app-BNJCCHZQ.js"></script>
+      <link rel="stylesheet" href="/static/bundle/app-O2IDU56U.css" />
+
+<script type="module" src="/static/bundle/search.js?id=0d3b83cf-9dd0-4763-946e-b7ddccf42bd6"></script>
+<script type="module" nonce="01KJ2EZHMFP32C2GYZ01SS3DG3">
+  setupSearch({
+    url: '/search-index.json'
+  });
+</script>
+<link rel="stylesheet" href="/static/bundle/search.css?id=0d3b83cf-9dd0-4763-946e-b7ddccf42bd6"></head>
+<body >
+
+
+
+<div class="wrapper default">
+
+
+
+<aside class="sidebar main">
+  <header>
+<!-- Theme configuration: https://iamroq.dev/theme/default/#site-data -->
+<section class="about">
+  <div class="site-logo">
+    <a href="/"><img src="/images/logo-carlos-web.png" alt="Carlos Gustavo Ruiz"></a>
+  </div>
+  <div class="site-name">Carlos Gustavo Ruiz</div>
+  <p>Systems Engineer · code, data &amp; maps</p>
+</section><button type="button" id="search-button" class="search-button" aria-label="Search"></button>
+<section class="menu">
+  <h3 class="section-title menu-title">MENU</h3>
+  <ul>
+    <li><a class="" href="/" ><i class="fa-solid fa-house"></i>Home</a> </li>
+    <li><a class="" href="/posts" ><i class="fa-regular fa-newspaper"></i>Posts</a> </li>
+    <li><a class="" href="/tags" ><i class="fa-solid fa-tags"></i>Tags</a> </li>
+    <li><a class="" href="https://github.com/carlosgruiz-dev/carlosgruiz-dev/wiki" target="_blank"><i class="fa-solid fa-pen-clip"></i>Wiki</a> </li>
+    <li><a class="" href="/talks" ><i class="fa fa-chalkboard"></i>Talks</a> </li>
+    <li><a class="" href="/arts" ><i class="fa-solid fa-seedling"></i>Arts</a> </li>
+    <li><a class="" href="/now" ><i class="fa fa-calendar-day"></i>Now</a> </li>
+  </ul>
+</section>
+  </header> <!-- End Header -->
+  <footer>
+<section class="contact">
+    <h3 class="section-title contact-title">Contact me</h3>
+    <ul>
+        <li>
+            <a href="https://in.linkedin.com/in/carlosgruiz-dev" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://instagram.com/carlosgruiz_dev" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/carlosgruiz-dev" target="_blank" rel="noopener noreferrer" aria-label="github">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</section><section class="copyright">
+  <p>2026 &copy; Carlos Ruiz</p>
+</section>
+
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<!-- Dark Mode Toggle - Fixed top-right for all screen sizes -->
+<button class="dark-mode-toggle" aria-label="Toggle dark mode">
+  <i class="fas fa-moon"></i>
+</button>
+<main class="main-content">
+
+<div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Search" aria-hidden="true">
+  <div class="search-overlay-content">
+    <button class="search-close" id="search-close" aria-label="Close search">&times;</button>
+    <div id="search-field">
+      <input
+        type="search"
+        class="search-input"
+        id="search-input"
+        placeholder="Search..."
+        aria-label="Search"
+        autocomplete="off"
+        autofocus
+      />
+    </div>
+    <div class="search-results" id="search-results" role="region" aria-live="polite" aria-label="Search results">
+      <!-- Search results will be dynamically inserted here -->
+    </div>
+  </div>
+</div>
+
+
+<article class="article-page" xmlns="http://www.w3.org/1999/html">
+  <section class="page-content">
+    <div class="page-cover-image">
+      <figure>
+        <img class="page-image" src="/posts/migraciones-a-software-libre-parte-1/Alleppey_-_Kollam_6847451428.jpg" alt="Migraciones a Software Libre (Parte 1)">
+      </figure>
+    </div> <!-- End Page Cover Image -->
+    <section class="wrap-content">
+
+<section class="page-header">
+  <h1 class="page-title">Migraciones a Software Libre (Parte 1)</h1>
+  <div class="page-header-date"><span>Apr 16, 2013</span></div>
+  <p class="page-header-intro">
+    Recomendaciones sobre migración a software libre basadas en la experiencia: antecedentes en Venezuela, las leyes de Newton del cambio y la direccionalidad de la migración.
+  </p>
+</section>      <section class="content-prose">
+<p>Este grupo de artículos no pretende ser una guía exhaustiva de cómo hacer una migración a software libre, sin embargo es una serie de recomendaciones basadas en la experiencia como técnico y consultor. Adicionalmente cualquier aporte será bienvenido y apreciado.</p>
+<h2 id="antecedentes">Antecedentes</h2>
+<p><img src="/posts/migraciones-a-software-libre-parte-1/Alleppey_-_Kollam_6847451428.jpg" alt="Antecedentes" /></p>
+<p>En Venezuela ha habido por muchos años una inquietud creciente por el uso de las tecnologías libres. Algunos inicialmente lo vimos como el retorno triunfal de UNIX adaptado para PC, pero luego de un rato metido de cabeza con Linux al menos yo comprendí que el tema de la libertad del software tiene un peso fundamental en este éxito. Linux había aterrizado en mi país, ya un banco lo había usado para una implantación de su internet banking y <a href="https://es.wikipedia.org/wiki/SUSE_Linux">SUSE Linux</a> dominaba el mercado nacional y el <a href="https://es.wikipedia.org/wiki/Red_Hat_Linux">Red Hat Linux</a> 6.0 se había convertido en la marca favorita de los hackers. Poco a poco las Tecnologías de Información demostraron su primacía en el desarrollo de los acontecimientos del país, y muy en particular, luego de que se viese comprometida su principal industria (petróleo), debido en parte, a una cadena de errores en el manejo de la gerencia de las TI y de la información sensible para los procesos y funcionamiento de la misma. Bien sea como reacción o como producto de la maduración de las iniciativas libres previas surge lo que sería el terreno fértil para la sorpresa del día como regalo de navidad. El <a href="/extras/Libro_Amarillo_del_Software_Libre._Uso_y_Desarrollo_en_la_Administracion_Publica.pdf">Libro Amarillo del Software Libre</a> y el <a href="/extras/decreto3390.pdf">Decreto Precidencial N.º 3.390</a> son los referentes de esas épocas. En fin esa es la historia y desde entonces ha habido una avalancha de migraciones pequeñas, medianas y grandes, exitosas y otras no tanto.</p>
+<h2 id="leyes-de-newton-en-una-migración">Leyes de Newton en una Migración</h2>
+<p><img src="/posts/migraciones-a-software-libre-parte-1/Gluhlampe_explodiert.jpg" alt="bombillo" /></p>
+<p>A veces es complicado explicar todo esto de la migración a software libre mediante esquemas y recuadros. Es más sencillo tal vez recurrir a cosas conocidas como las Leyes de Newton, que todos vemos en bachillerato y que pertenecen a nuestra comunicación diaria, incluso a veces sin saberlo.</p>
+<p>El cambio para muchos es un problema, pues en general, las organizaciones suelen generar una inercia que actúa exactamente igual que la <a href="https://es.wikipedia.org/wiki/Leyes_de_Newton#Primera_ley_de_Newton_o_Ley_de_la_inercia">Primera ley de Newton</a>, parafraseando a Newton podemos decir que <strong>una organización en reposo o en movimiento uniforme y rectilíneo (sin cambio), preserva su estado a menos que sea obligado a cambiar mediante una fuerza que actúe sobre ella</strong>. Esto significa en otras palabras que las migraciones no se hacen solas, una organización que cambia responde a una necesidad práctica (que puede estar o no asociada a costos) o una obligación legal generalmente producto de un marco jurídico distinto, y la conducción de dicho cambio. Esto último debe llevarlo a cabo alguien con la visión clara además de contar con la energía, el compromiso y la autoridad suficiente cumplir con los objetivos planteados. Esos son los motores que impulsan la fuerza que puede cambiar la inercia de una organización y conducirla en un cambio cultural a nivel de Tecnologías de Información a Tecnologías Libres.</p>
+<p>Así mismo, parafraseando esta vez la <a href="https://es.wikipedia.org/wiki/Leyes_de_Newton#Segunda_ley_de_Newton_o_Ley_de_fuerza">Segunda ley de Newton</a>, podemos decir que <strong>el cambio observado en una organización es proporcional a la fuerza aplicada y el cambió irá en el sentido de la fuerza que se imprima</strong>. Es por ello que podemos inferir muchas veces que los resultados pobres en una migración a software libre se deben, bajo la premisa de que el marco jurídico es el mismo para todos, a causa de problemas relacionados con:</p>
+<ul>
+<li>
+<p><strong>el liderazgo</strong>: muchas veces los planes de migración se ven truncados por un liderazgo ineficiente, falto de autoridad o simplemente inexistente. Por ello es necesario que el liderazgo del cambio se lleve a cabo desde dos áreas principales: la dirección de la organización (Presidencia, Dirección, etc) y la dirección técnica de la organización (Oficina, Departamento o Coordinación de TIC o su equivalente), pero apoyado y apalancado por las unidades que dirigen el valor de la organización. Es natural que el liderazgo relacionado con la migración a software libre compita con otros liderazgos e intereses dentro de la organización. Es común que la ingenuidad de algunos entusiastas de las TIL choque con el muro de estas realidades y les genera frustración, sin embargo saber reconocer estos liderazgos en pugna permite establecer la estrategia más adecuada para cada caso y sortear estas dificultades. Hay que recordar que los liderazgos en pugna modifican de hecho la dirección que lleve la organización, tanto en lo técnico como en los rendimientos respecto a otros objetivos.</p>
+</li>
+<li>
+<p><strong>la visión</strong>: una de las dudas que surge a la hora de migrar a software libre es qué se espera de la misma. Obviamente el sustituir una suite ofimática no reviste mayor dificultad, de hecho es una tarea bastante simple. Sin embargo aquellas aplicaciones que no técnico-operativas sino especializadas o inmersas dentro del flujo de trabajo de valor de la organización es otra historia. Por lo tanto la visión de la organización postmigración es un elemento central pues una migración completa a software libre reviste también una revisión de los procedimientos y adecuación del “Saber Como” de la organización. Es oportuno plantear la migración como el momento idóneo para hacer cambios que aumenten la productividad, la eficiencia y la renovación de la cultura organizacional hacia modelos más adecuados con los nuevos tiempos.</p>
+</li>
+<li>
+<p><strong>el compromiso</strong>: otros de los sospechosos habituales cuando un proceso de migración presenta fallas es la falta de compromiso con el proceso de cambio. Usualmente evidencia problemas en la dirección y gerencia de las instituciones, lo que constituye sin duda un llamado a la revisión interna. Una organización con personal poco motivado o con empleados poco identificados con los fines de la misma presentan un gran reto para la migración. Realizar un cambio sobre algo que no es un tema de nuestro interés es simplemente una causa de tedio constante, poca dedicación y finalmente abandono. Una de las estrategias para generar compromiso con el proceso de migración es forme parte de los objetivos operativos de los trabajadores, debe explotar su motivación mediante ventanas de oportunidad para hacer de esta eventualidad un motivo para aumentar la cohesión de la organización. Sin embargo es importante señalar que muchas veces se confunde la retorica y perorata con la motivación real de los trabajadores. Por ejemplo, de nada sirve seminarios y talleres si lo que requieren los trabajadores son soluciones que les facilite su trabajo o cursos de formación en las nuevas tecnologías.</p>
+</li>
+<li>
+<p><strong>la estructura de la organización</strong>: Lamentablemente no son pocas las organizaciones que parecen diseñadas por un sastre con la intensión de fallar. En general se ha construido la organización de muchas instituciones y en particular las públicas respondiendo más a un software que a su finalidad. Es vez de adaptar la herramienta a la tarea, adaptamos las tareas a la herramienta. Es así como las organizaciones se han <strong>[Nombre una Marca]</strong>-tizado con el agravante de conocer de forma limitada la herramienta, lo que conlleva en algunos casos a que no se implementen soluciones óptimas por desconocimiento, incompetencia o simplemente debido a que la institución está atada a los planes de negocios de los revendedores de software. Esto es grave a la hora de planificar una migración a sistemas libres, pues en pocas palabras, requerirá una reingeniería de sus procesos.</p>
+</li>
+<li>
+<p><strong>las capacidades técnicas</strong>: una debilidad de muchas organizaciones es no poder “retener” el tiempo suficiente al personal técnicamente capacitado. No es un problema local pues incluso Silicon Valley tienen este inconveniente, pues buena parte de los técnicos especializados no se comportan como un empleado común sino como un personal flexible, trasladable y que además de un buen ingreso toma en cuenta si el trabajo le resulta estimulante. A esto hay que sumarle el déficit generalizado de informáticos a nivel mundial por lo que sus opciones serán más diversas que las de un abogado, por nombrar otra profesión. No pocas veces se forma un personal dentro de la organización y cosecha los beneficios otras instituciones e incluso el campo laboral internacional. Es por ello que el conocimiento que se requiere dentro de la organización para realizar la migración muchas veces queda fragmentado e incompleto pues durante el proceso pudo haber sucedido una fuga de los talentos internos, que son los llamados al final del día a operar y mantener los nuevos sistemas. Otras veces el problema de las capacidades técnicas es distinto, es el caso en que el personal actual no tiene las competencias necesarias por lo que puede actuar como resistencia a la migración y en el mejor de los casos requerirá solamente de formación en las nuevas tecnologías para poderlas comprender y aplicarlas.</p>
+</li>
+</ul>
+<p>Finalmente la <a href="https://es.wikipedia.org/wiki/Leyes_de_Newton#Tercera_ley_de_Newton_o_Ley_de_acci.C3.B3n_y_reacci.C3.B3n">Tercera ley de Newton</a> nos abre el camino lo que puede ser una premisa para establecer las estrategias a emplear en la migración a software libre. También conocida como la Ley de Acción y Reacción, podemos asociarla a la respuesta que se obtiene de las fuerzas ejercidas dentro de la organización. Parafraseando nuevamente las leyes físicas vemos que <strong>toda fuerza que se aplique sobre la organización generará una reacción equivalente con la misma magnitud en sentido contrario</strong>. En otras palabras esta ley nos pone de manifiesto por un lado la resistencia al cambio dentro de las organizaciones. La resistencia al cambio es necesario administrarla y convertir ese impulso en algo positivo.</p>
+<h2 id="direccionalidad-del-cambio">Direccionalidad del Cambio</h2>
+<p>He tenido varias veces la discusión de en qué sentido debe ir la migración a software libre. Hay quienes argumentan que debe ser una orden presidencial (de la presidencia de la República para ser más precisos) y como contraparte en un mundo de blanco y negro hay quienes promulgan que el cambio debe venir de la gente, desde la comunidad. En mi opinión si lo ves en blanco y negro estás mal, muy mal. Tomando en cuenta lo observado hasta ahora, es razonable estimar que en mejor de los casos de cada conjunto de ordenes presidenciales solo se instrumenten alrededor de un 30-40% lo que nos deja un buen chance a que una normativa que venga en ese sentido caiga en el 60-70% que se convierte en sal y agua.</p>
+<p>Por otro lado las comunidades de software no es un cuerpo colegiado, cohesionado y consistente, nada más lejos de eso. Incluso es fácil ver, a través de las listas de correos, que abundan sectarismos muy marcados e incluso una suerte de competencia de personalismos y afanes de protagonismos. No ahondaré en detalles de la farándula del software libre, cualquier cosa que se diga en este punto es candidato a un “flame”. Esta característica impide que la comunidad como cuerpo pueda conducir iniciativas más allá de objetivos muy específicos, como desarrollo de una distro de linux, una adaptación de un programa a la legislación o gustos nacionales, en algunos casos incluso programas y sistemas. En lo anterior no se incluyen las iniciativas llevadas a cabo por encargo, pues esto no hace comunidades, son proyectos que generalmente pierden su continuidad cuando desaparece el patrocinante público o privado.</p>
+<p>El cambio debe venir, en mi opinión de un apoyo concertado desde las iniciativas gubernamentales con los intereses legítimos de las comunidades de conocimiento. Ello asegura mantener el interés de un grupo de técnicos especializados interesados en un tema en particular, que con el apoyo adecuado pueden rendir buenos frutos para el resto de la sociedad apoyándose en las iniciativas de los entes públicos. Un tema especialmente delicado es cuando el Estado prioriza los temas de interés para el desarrollo nacional, pues generalmente la comunidad llega después que las empresas han explotado parte del nicho de negocio y no pocas veces erosionando el terreno para iniciativas más sanas para el país. Es prioridad entonces que desde el Estado exista una claridad en cuanto a la relevancia de la figura de la comunidad puesto que las contrataciones vienen y van al ritmo de la disponibilidad presupuestaria, pero solamente con gente del lugar, con intereses nacionales legítimos, con competencias probadas en la práctica, es posible construir un cambio efectivo más allá de las vicisitudes económicas.</p>
+<p><strong>(Fin de la parte 1)</strong></p>
+<p>Próximamente en la parte 2:</p>
+<ul>
+<li>
+<p>Etapas de la Migración a Software Libre</p>
+</li>
+<li>
+<p>Tipos de Migración</p>
+</li>
+<li>
+<p>Estratégias de Migración</p>
+</li>
+</ul>
+<p>(<strong>nota</strong>: Artículo publicado originalmente en <a href="http://tubasededatoslibre.org">TuBaseDeDatosLibre.org</a><i class="fa-solid fa-link-slash roq-broken-link" aria-hidden="true" title="Broken link"></i>)</p>
+      </section>
+      <div class="page-footer">
+        <div class="footer-links">
+          <div class="page-share">
+            <a href="https://twitter.com/intent/tweet?text=Migraciones a Software Libre (Parte 1)&url=https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fmigraciones-a-software-libre-parte-1%2F" title="Share on Twitter"
+              rel="nofollow noopener noreferrer"  target="_blank">Twitter</a>
+            <a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fmigraciones-a-software-libre-parte-1%2F" title="Share on Facebook" rel="nofollow noopener noreferrer"
+              target="_blank">Facebook</a>
+            <a href="https://bsky.app/intent/compose?text=Migraciones a Software Libre (Parte 1)%0ACheck%20it%20out%20https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fmigraciones-a-software-libre-parte-1%2F"
+              title="Share on Bluesky" rel="nofollow noopener noreferrer" target="_blank">Bluesky</a>
+          </div>
+          <div class="page-tag">
+            <a href="/posts/tag/collaborations" class="tag">&#35; collaborations</a>
+            <a href="/posts/tag/migration" class="tag">&#35; migration</a>
+            <a href="/posts/tag/tubasededatoslibre" class="tag">&#35; tubasededatoslibre</a>
+            <a href="/posts/tag/spanish" class="tag">&#35; spanish</a>
+          </div>
+
+        </div>
+        <div class="author">
+    <img src="/images/logo-carlos-web.png" alt="author-carlosgruiz" />
+
+  <div class="author-data">
+    <a target="_blank" rel="noopener noreferrer" href="https://carlosgruiz.dev/" class="author-name">Carlos Gustavo Ruiz</a>
+    <span class="author-job-title">Pizza lover 🍕 · Web creature 💻 · Curious nerd 🤓 · Amateur musician 🎸</span>
+  </div>
+</div>
+
+      </div>
+    </section> <!-- End Wrap Content -->
+  </section> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+
+
+</main>
+
+
+
+</div>
+
+</body>
+</html>

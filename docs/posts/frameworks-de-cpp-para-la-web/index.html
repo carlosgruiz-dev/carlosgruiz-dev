@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+
+<!-- Prevent flash of unstyled content for dark mode -->
+<script>
+  const savedTheme = localStorage.getItem('darkMode');
+  const isDark = savedTheme !== null
+    ? savedTheme === 'true'
+    : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (isDark) {
+    document.documentElement.classList.add('dark');
+  }
+</script>
+
+
+
+  <!-- SEO TITLE -->
+  
+  <title>Frameworks de C++ para la web - Carlos Gustavo Ruiz</title>
+  <meta property="og:title" content="Frameworks de C++ para la web" />
+  <meta name="twitter:title" content="Frameworks de C++ para la web">
+  <meta property="og:site_name" content="Carlos Gustavo Ruiz">
+  <!-- SEO DESCRIPTION -->
+  <meta name="description" content="Un repaso de frameworks y toolkits para desarrollar para la web con C++: tntnet, TreeFrog Framework, Wt y CppCMS.">
+  <meta property="og:description" content="Un repaso de frameworks y toolkits para desarrollar para la web con C++: tntnet, TreeFrog Framework, Wt y CppCMS." />
+  <meta name="twitter:description" content="Un repaso de frameworks y toolkits para desarrollar para la web con C++: tntnet, TreeFrog Framework, Wt y CppCMS.">
+  <!-- SEO AUTHOR -->
+  <meta property="article:author" content="carlosgruiz" />
+  <meta name="author" content="carlosgruiz" />
+
+  <!-- SEO URL -->
+  <link rel="canonical" href="https://carlosgruiz.dev/posts/frameworks-de-cpp-para-la-web/" />
+  <meta property="og:url" content="https://carlosgruiz.dev/posts/frameworks-de-cpp-para-la-web/" />
+  <meta name="twitter:url" content="https://carlosgruiz.dev/posts/frameworks-de-cpp-para-la-web/">
+
+  <!-- SEO TYPE -->
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="2012-04-03T00:00-05:00[America/Panama]" />
+
+  <!-- SEO IMAGE -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image:src" content="https://carlosgruiz.dev/posts/frameworks-de-cpp-para-la-web/c-cpp.jpg" />
+  <meta property="og:image" content="https://carlosgruiz.dev/posts/frameworks-de-cpp-para-la-web/c-cpp.jpg" />
+  <!-- SEO COLLECTION PAGES -->
+  <link rel="prev" href="https://carlosgruiz.dev/posts/mi-distro-de-linux/" />
+  <link rel="next" href="https://carlosgruiz.dev/posts/alta-disponibilidad-con-postgresql/" />
+  <!-- SEO LOCALE -->
+  <meta property="og:locale" content="en_PA" />
+  <!-- SEO GENERATOR -->
+  <meta name="generator" content="Quarkus Roq v2.1.9" />
+
+<link rel="alternate" type="application/rss+xml" title="Carlos Gustavo Ruiz" href="https://carlosgruiz.dev/rss.xml"/>
+<!-- Favicon -->
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/images/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+<base href="/posts/frameworks-de-cpp-para-la-web/">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="theme-color" content="#1e1e2e">
+<meta name="msapplication-navbutton-color" content="#1e1e2e">
+<meta name="apple-mobile-web-app-status-bar-style" content="#1e1e2e">
+
+
+    <script type="module" src="/static/bundle/app-BNJCCHZQ.js"></script>
+      <link rel="stylesheet" href="/static/bundle/app-O2IDU56U.css" />
+
+<script type="module" src="/static/bundle/search.js?id=0d3b83cf-9dd0-4763-946e-b7ddccf42bd6"></script>
+<script type="module" nonce="01KJ2EZHMFP32C2GYZ01SS3DG3">
+  setupSearch({
+    url: '/search-index.json'
+  });
+</script>
+<link rel="stylesheet" href="/static/bundle/search.css?id=0d3b83cf-9dd0-4763-946e-b7ddccf42bd6"></head>
+<body >
+
+
+
+<div class="wrapper default">
+
+
+
+<aside class="sidebar main">
+  <header>
+<!-- Theme configuration: https://iamroq.dev/theme/default/#site-data -->
+<section class="about">
+  <div class="site-logo">
+    <a href="/"><img src="/images/logo-carlos-web.png" alt="Carlos Gustavo Ruiz"></a>
+  </div>
+  <div class="site-name">Carlos Gustavo Ruiz</div>
+  <p>Systems Engineer · code, data &amp; maps</p>
+</section><button type="button" id="search-button" class="search-button" aria-label="Search"></button>
+<section class="menu">
+  <h3 class="section-title menu-title">MENU</h3>
+  <ul>
+    <li><a class="" href="/" ><i class="fa-solid fa-house"></i>Home</a> </li>
+    <li><a class="" href="/posts" ><i class="fa-regular fa-newspaper"></i>Posts</a> </li>
+    <li><a class="" href="/tags" ><i class="fa-solid fa-tags"></i>Tags</a> </li>
+    <li><a class="" href="https://github.com/carlosgruiz-dev/carlosgruiz-dev/wiki" target="_blank"><i class="fa-solid fa-pen-clip"></i>Wiki</a> </li>
+    <li><a class="" href="/talks" ><i class="fa fa-chalkboard"></i>Talks</a> </li>
+    <li><a class="" href="/arts" ><i class="fa-solid fa-seedling"></i>Arts</a> </li>
+    <li><a class="" href="/now" ><i class="fa fa-calendar-day"></i>Now</a> </li>
+  </ul>
+</section>
+  </header> <!-- End Header -->
+  <footer>
+<section class="contact">
+    <h3 class="section-title contact-title">Contact me</h3>
+    <ul>
+        <li>
+            <a href="https://in.linkedin.com/in/carlosgruiz-dev" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://instagram.com/carlosgruiz_dev" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/carlosgruiz-dev" target="_blank" rel="noopener noreferrer" aria-label="github">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</section><section class="copyright">
+  <p>2026 &copy; Carlos Ruiz</p>
+</section>
+
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<!-- Dark Mode Toggle - Fixed top-right for all screen sizes -->
+<button class="dark-mode-toggle" aria-label="Toggle dark mode">
+  <i class="fas fa-moon"></i>
+</button>
+<main class="main-content">
+
+<div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Search" aria-hidden="true">
+  <div class="search-overlay-content">
+    <button class="search-close" id="search-close" aria-label="Close search">&times;</button>
+    <div id="search-field">
+      <input
+        type="search"
+        class="search-input"
+        id="search-input"
+        placeholder="Search..."
+        aria-label="Search"
+        autocomplete="off"
+        autofocus
+      />
+    </div>
+    <div class="search-results" id="search-results" role="region" aria-live="polite" aria-label="Search results">
+      <!-- Search results will be dynamically inserted here -->
+    </div>
+  </div>
+</div>
+
+
+<article class="article-page" xmlns="http://www.w3.org/1999/html">
+  <section class="page-content">
+    <div class="page-cover-image">
+      <figure>
+        <img class="page-image" src="/posts/frameworks-de-cpp-para-la-web/c-cpp.jpg" alt="Frameworks de C++ para la web">
+      </figure>
+    </div> <!-- End Page Cover Image -->
+    <section class="wrap-content">
+
+<section class="page-header">
+  <h1 class="page-title">Frameworks de C++ para la web</h1>
+  <div class="page-header-date"><span>Apr 3, 2012</span></div>
+  <p class="page-header-intro">
+    Un repaso de frameworks y toolkits para desarrollar para la web con C++: tntnet, TreeFrog Framework, Wt y CppCMS.
+  </p>
+</section>      <section class="content-prose">
+<p>Normalmente al pensar en la web inmediatamente vienen a nuestra mente los nombres de lenguajes interpretados, <a href="https://es.wikipedia.org/wiki/Python">Python</a>, <a href="https://es.wikipedia.org/wiki/PHP">PHP</a>, <a href="https://es.wikipedia.org/wiki/Perl">Perl</a> o <a href="https://es.wikipedia.org/wiki/Ruby">Ruby</a>, en otros casos los &quot;semi-compilados&quot; como <a href="https://es.wikipedia.org/wiki/Java_(lenguaje_de_programaci%C3%B3n)">Java</a> o <a href="https://es.wikipedia.org/wiki/.NET">.NET</a>, en ese contexto se ha creado un prejuicio según el cual <a href="https://es.wikipedia.org/wiki/Lenguaje_de_programaci%C3%B3n_C">C</a>/<a href="https://es.wikipedia.org/wiki/C%2B%2B">C++</a> como soluciones para servicios mediante <a href="https://es.wikipedia.org/wiki/Interfaz_de_entrada_com%C3%BAn">CGI</a>. Sin embargo haciendo una pequeña investigación podemos hacer un desmentido de esta idea. No solamente hay herramientas potentes sino que las hay con paradigmas bien variados. El fin de este artículo es más a modo informativo que de prueba de cada tecnología, lo que no quiere decir que a posteriori no desarrolle algunas de ellas en la wiki, sino que de momento listaré las que consideré relevantes y sobre todo alternativas vivas. Otra consideración es que a fin de facilitar la comprensión compararé las soluciones con otras tecnologías existentes.</p>
+<h2 id="al-estilo-php-jsp-asp-y-otros-terminados-en-p">Al estilo PHP, JSP, ASP y otros terminados en P</h2>
+<p><img src="/posts/frameworks-de-cpp-para-la-web/tntnet-logo.png" alt="tntnet" /></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nombre</td>
+<td>tntnet</td>
+</tr>
+<tr>
+<td>Website</td>
+<td><a href="http://www.tntnet.org/">http://www.tntnet.org/</a><i class="fa-solid fa-link-slash roq-broken-link" aria-hidden="true" title="Broken link"></i></td>
+</tr>
+<tr>
+<td>Licencia</td>
+<td>LGPL</td>
+</tr>
+<tr>
+<td>Comenzar con</td>
+<td><a href="http://www.tntnet.org/download/quick-start-guide.pdf">http://www.tntnet.org/download/quick-start-guide.pdf</a><i class="fa-solid fa-link-slash roq-broken-link" aria-hidden="true" title="Broken link"></i></td>
+</tr>
+<tr>
+<td>Paquetes Ubuntu</td>
+<td>tntnet, tntnet-demos, tntnet-doc, tntnet-runtime</td>
+</tr>
+</tbody>
+</table>
+<p>Es un concepto interesante pues es replicar la experiencia exitosa de lenguajes que en plantillas HTML embeben código del lenguaje de programación, aun cuando la diferencia fundamental en este caso es que el C++ Server Pages permite (al compilar nativamente las páginas) evitar la presencia del código fuente en el servidor. Adicionalmente, y probablemente uno de los atractivos de usar C++ es incorporar la variedad de librerías de esta plataforma a nuestras páginas, ello es posible con todas las tecnologías que se nombran acá. Un detalle interesante es que aun cuando no incluye un manejador para conexión a base de datos ofrece un layer de abstracción que puede resultar conveniente.</p>
+<p>Una de las razones para desarrollar esta solución es pues que es un estilo de programación web, permitiendo que los elementos programados de la páginas se incorporen al diseño visual que alguien haya hecho previamente. En general es una plataforma interesante y al menos en apariencia bastante sencilla para incorporar el poder de C++ a sus páginas web.</p>
+<h2 id="si-lo-quieres-como-mvc-también-hay-quien-te-lo-de">Si lo quieres como MVC también hay quien te lo de</h2>
+<p><img src="/posts/frameworks-de-cpp-para-la-web/tff-logo.jpg" alt="TreeFrog Framework" /></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nombre</td>
+<td>TreeFrog Framework</td>
+</tr>
+<tr>
+<td>Website</td>
+<td><a href="https://www.treefrogframework.org/">https://www.treefrogframework.org/</a></td>
+</tr>
+<tr>
+<td>Licencia</td>
+<td>BSD</td>
+</tr>
+<tr>
+<td>Comenzar con</td>
+<td><a href="http://www.treefrogframework.org/documents/tutorial">http://www.treefrogframework.org/documents/tutorial</a><i class="fa-solid fa-link-slash roq-broken-link" aria-hidden="true" title="Broken link"></i></td>
+</tr>
+<tr>
+<td>Paquetes Ubuntu</td>
+<td>no disponibles</td>
+</tr>
+</tbody>
+</table>
+<p>Una de las cosas que me gustó de este Framework es su concepto MVC, que luce muy al estilo de <a href="https://es.wikipedia.org/wiki/Ruby_on_Rails">Ruby on Rails</a>, tiene un demo bastante decente de como hacer un blog y su web está bastante bien, salvo por el hecho que se requiere que Google Chrome se haga cargo de las secciones que aun se encuentran sin traducir desde el japonés. Aun así es muy interesante el concepto y tal vez haga falta esperar a que madure un poco.</p>
+<p>Al mejor estilo de Rails tiene la generación del CRUD para las tablas de su base de datos, detalle coqueto y que sin duda endulza el paladar de más de uno. Por cierto, ¿comenté que está basado en Qt? pues si, lo que facilita el trabajo en aspectos como el acceso a las bases de datos pues simplemente hace falta habituarse al uso del módulo QtSQL que está muy bien documentado. Comparativamente tiene algunas ventajas pues al replicar las estrategias de otros Frameworks ofrece una solución bastante completa (del tipo Full Stack). Aunque me parece promisorio en muchos sentidos aun no diré que probarlo es comprarlo.</p>
+<h2 id="toolkit-para-guis-web-también-hay">Toolkit para GUI's web, también hay</h2>
+<p><img src="/posts/frameworks-de-cpp-para-la-web/wt-logo.png" alt="Wt" /></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nombre</td>
+<td>Wt (se pronuncia witty)</td>
+</tr>
+<tr>
+<td>Website</td>
+<td><a href="https://www.webtoolkit.eu/">https://www.webtoolkit.eu/</a></td>
+</tr>
+<tr>
+<td>Licencia</td>
+<td>Dual (posee licencia GPL y también una Licencia Comercial)</td>
+</tr>
+<tr>
+<td>Comenzar con</td>
+<td><a href="https://www.webtoolkit.eu/wt/doc/tutorial/wt.html">https://www.webtoolkit.eu/wt/doc/tutorial/wt.html</a></td>
+</tr>
+<tr>
+<td>Paquetes Ubuntu</td>
+<td>witty, witty-dbg, witty-dev, witty-doc, witty-examples</td>
+</tr>
+</tbody>
+</table>
+<p>Confieso que este acercamiento al desarrollo web desde C++ me gustó, les explico por qué. En primera instancia se parece mucho más al paradigma de programación de interfaces de usuarios implementado generalmente en C++. Normalmente un programador en esta plataforma delega una buena parte de la GUI a la librería encargada de eso y se concentra en el que hace el programa, por lo que dedicar mucho tiempo a integraciones JavaScript y otros vericuetos luce como un dolor de cabeza adicional. Un Framework (en este caso un Toolkit) que se encargue de eso se agradece mucho. Esto permite que su aplicación programada originalmente con otra GUI, digamos Qt o GTK+, pueda ser portada con mayor facilidad a la web. En otras palabras convertir el desarrollo web en una tarea similar al desarrollo de GUI's es un acercamiento deseable.</p>
+<p>Uno de los detalles interesantes también es que una vez desarrollada la solución se implementa mediante <a href="https://es.wikipedia.org/wiki/FastCGI">FastCGI</a>, lo cual luce sumamente conveniente. Incluso su website está programado con el Toolkit y es uno de los ejemplos incluídos. Finalmente, es uno de los pocos que incluye una descripción extensa del proceso de implantación (ver <a href="https://redmine.webtoolkit.eu/projects/wt/wiki/Wt_Deployment">link</a>). Para ver la galería de Widgets con los que cuenta este toolkit basta con mirar el siguiente <a href="https://www.webtoolkit.eu/widgets/">ejemplo</a>. En fin, de las herramientas examinadas hasta el momento es quizá la solución más completa.</p>
+<h2 id="pensado-en-altas-cargas-de-trabajo">Pensado en altas cargas de trabajo..</h2>
+<p><img src="/posts/frameworks-de-cpp-para-la-web/cpp-cms-logo.png" alt="CppCMS" /></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nombre</td>
+<td>CppCMS</td>
+</tr>
+<tr>
+<td>Website</td>
+<td><a href="https://cppcms.com/">https://cppcms.com/</a></td>
+</tr>
+<tr>
+<td>Licencia</td>
+<td>Dual (posee licencia LGPL y también una Licencia Comercial)</td>
+</tr>
+<tr>
+<td>Comenzar con</td>
+<td><a href="https://cppcms.com/wikipp/en/page/cppcms_1x#Tutorials">https://cppcms.com/wikipp/en/page/cppcms_1x#Tutorials</a></td>
+</tr>
+<tr>
+<td>Paquetes Ubuntu</td>
+<td>a través del repositorio <a href="https://cppcms.com/wikipp/en/page/apt">https://cppcms.com/wikipp/en/page/apt</a></td>
+</tr>
+</tbody>
+</table>
+<p>Curiosamente el nombre de este Framework es confuso pues pudiese pensarse que corresponde a un <a href="https://es.wikipedia.org/wiki/Sistema_de_gesti%C3%B3n_de_contenidos">CMS</a>, sin embargo se define como una plataforma para abordar grandes volúmenes de trabajo, incluso animan a quienes no tienen una plataforma estresada por cargas de trabajo que utilicen herramientas como <a href="https://es.wikipedia.org/wiki/Django">Django</a> o <a href="https://es.wikipedia.org/wiki/Drupal">Drupal</a> (ver <a href="https://cppcms.com/wikipp/en/page/rationale">rationale</a>, los <a href="https://cppcms.com/wikipp/en/page/benchmarks_all">benchmark</a> y la <a href="https://cppcms.com/wikipp/en/page/benchmarks_php">comparación de desempeño</a>). La escalabilidad del servicio con esta plataforma es uno de sus grandes valores, pues permite que en vez de crecer en granjas de servidores o soluciones, un cambio tecnológico permita sacar mejor provecho de los recursos disponibles.</p>
+<p>Es del estilo de entornos MVC, sin embargo no es tan a lo Rails como TreeFrog. Es un Framework rico en detalles, sin embargo sus opciones no son guiadas por herramientas que &quot;hacen todo&quot; sino más bien dando libertad a los programadores de desarrollar la solución más adecuada para su problema. Una ventaja comparativa es que posee un par de proyectos desarrollados con CppCMS, <a href="https://cppcms.com/wikipp/en/page/install_wikipp">Wiki++</a> y <a href="https://cppcms.com/wikipp/en/page/install_cppblog">CppBlog</a> que en casos de alta demanda pueden ser soluciones muy prácticas. En fin, una alternativa más con un objetivo particular.</p>
+<h2 id="notas-finales">Notas Finales</h2>
+<p>Al escribir este artículo se me presentó la idea que tal vez no lucen muchas alternativas para C++ ante la avalancha que puedan mostrarse con PHP o Python por solamente nombrar dos. Sin embargo, debo aclarar que sólo incluí aquellos que me parecieron pertinentes y relevantes, pues al igual que pasa con los demás lenguajes siempre habrá un referente para estas tecnologías dentro de cada uno (<a href="https://es.wikipedia.org/wiki/Ruby_on_Rails">Rails</a> en Ruby, Django en Python, <a href="https://es.wikipedia.org/wiki/Symfony">Symfony</a> en PHP). En todo caso queda a sus necesidades y curiosidad el que pueda usar alguno de estos frameworks o no. Salud!</p>
+      </section>
+      <div class="page-footer">
+        <div class="footer-links">
+          <div class="page-share">
+            <a href="https://twitter.com/intent/tweet?text=Frameworks de C++ para la web&url=https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fframeworks-de-cpp-para-la-web%2F" title="Share on Twitter"
+              rel="nofollow noopener noreferrer"  target="_blank">Twitter</a>
+            <a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fframeworks-de-cpp-para-la-web%2F" title="Share on Facebook" rel="nofollow noopener noreferrer"
+              target="_blank">Facebook</a>
+            <a href="https://bsky.app/intent/compose?text=Frameworks de C++ para la web%0ACheck%20it%20out%20https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fframeworks-de-cpp-para-la-web%2F"
+              title="Share on Bluesky" rel="nofollow noopener noreferrer" target="_blank">Bluesky</a>
+          </div>
+          <div class="page-tag">
+            <a href="/posts/tag/lab" class="tag">&#35; lab</a>
+            <a href="/posts/tag/cpp" class="tag">&#35; cpp</a>
+            <a href="/posts/tag/web" class="tag">&#35; web</a>
+            <a href="/posts/tag/framework" class="tag">&#35; framework</a>
+            <a href="/posts/tag/spanish" class="tag">&#35; spanish</a>
+          </div>
+
+        </div>
+        <div class="author">
+    <img src="/images/logo-carlos-web.png" alt="author-carlosgruiz" />
+
+  <div class="author-data">
+    <a target="_blank" rel="noopener noreferrer" href="https://carlosgruiz.dev/" class="author-name">Carlos Gustavo Ruiz</a>
+    <span class="author-job-title">Pizza lover 🍕 · Web creature 💻 · Curious nerd 🤓 · Amateur musician 🎸</span>
+  </div>
+</div>
+
+      </div>
+    </section> <!-- End Wrap Content -->
+  </section> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+
+
+</main>
+
+
+
+</div>
+
+</body>
+</html>

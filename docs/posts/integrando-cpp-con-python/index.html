@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+
+<!-- Prevent flash of unstyled content for dark mode -->
+<script>
+  const savedTheme = localStorage.getItem('darkMode');
+  const isDark = savedTheme !== null
+    ? savedTheme === 'true'
+    : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (isDark) {
+    document.documentElement.classList.add('dark');
+  }
+</script>
+
+
+
+  <!-- SEO TITLE -->
+  
+  <title>Integrando C++ con Python - Carlos Gustavo Ruiz</title>
+  <meta property="og:title" content="Integrando C++ con Python" />
+  <meta name="twitter:title" content="Integrando C++ con Python">
+  <meta property="og:site_name" content="Carlos Gustavo Ruiz">
+  <!-- SEO DESCRIPTION -->
+  <meta name="description" content="Ejemplos prácticos de la charla del PyCon Venezuela 2012 para integrar Python y C++: incrustar Python, Swig y Boost.">
+  <meta property="og:description" content="Ejemplos prácticos de la charla del PyCon Venezuela 2012 para integrar Python y C++: incrustar Python, Swig y Boost." />
+  <meta name="twitter:description" content="Ejemplos prácticos de la charla del PyCon Venezuela 2012 para integrar Python y C++: incrustar Python, Swig y Boost.">
+  <!-- SEO AUTHOR -->
+  <meta property="article:author" content="carlosgruiz" />
+  <meta name="author" content="carlosgruiz" />
+
+  <!-- SEO URL -->
+  <link rel="canonical" href="https://carlosgruiz.dev/posts/integrando-cpp-con-python/" />
+  <meta property="og:url" content="https://carlosgruiz.dev/posts/integrando-cpp-con-python/" />
+  <meta name="twitter:url" content="https://carlosgruiz.dev/posts/integrando-cpp-con-python/">
+
+  <!-- SEO TYPE -->
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="2012-11-11T00:00-05:00[America/Panama]" />
+
+  <!-- SEO IMAGE -->
+  <meta name="twitter:card" content="summary">
+  <!-- SEO COLLECTION PAGES -->
+  <link rel="prev" href="https://carlosgruiz.dev/posts/urumaco-y-los-datos/" />
+  <link rel="next" href="https://carlosgruiz.dev/posts/web-mapping-con-django/" />
+  <!-- SEO LOCALE -->
+  <meta property="og:locale" content="en_PA" />
+  <!-- SEO GENERATOR -->
+  <meta name="generator" content="Quarkus Roq v2.1.9" />
+
+<link rel="alternate" type="application/rss+xml" title="Carlos Gustavo Ruiz" href="https://carlosgruiz.dev/rss.xml"/>
+<!-- Favicon -->
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/images/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+<base href="/posts/integrando-cpp-con-python/">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="theme-color" content="#1e1e2e">
+<meta name="msapplication-navbutton-color" content="#1e1e2e">
+<meta name="apple-mobile-web-app-status-bar-style" content="#1e1e2e">
+
+
+    <script type="module" src="/static/bundle/app-BNJCCHZQ.js"></script>
+      <link rel="stylesheet" href="/static/bundle/app-O2IDU56U.css" />
+
+<script type="module" src="/static/bundle/search.js?id=0d3b83cf-9dd0-4763-946e-b7ddccf42bd6"></script>
+<script type="module" nonce="01KJ2EZHMFP32C2GYZ01SS3DG3">
+  setupSearch({
+    url: '/search-index.json'
+  });
+</script>
+<link rel="stylesheet" href="/static/bundle/search.css?id=0d3b83cf-9dd0-4763-946e-b7ddccf42bd6"></head>
+<body >
+
+
+
+<div class="wrapper default">
+
+
+
+<aside class="sidebar main">
+  <header>
+<!-- Theme configuration: https://iamroq.dev/theme/default/#site-data -->
+<section class="about">
+  <div class="site-logo">
+    <a href="/"><img src="/images/logo-carlos-web.png" alt="Carlos Gustavo Ruiz"></a>
+  </div>
+  <div class="site-name">Carlos Gustavo Ruiz</div>
+  <p>Systems Engineer · code, data &amp; maps</p>
+</section><button type="button" id="search-button" class="search-button" aria-label="Search"></button>
+<section class="menu">
+  <h3 class="section-title menu-title">MENU</h3>
+  <ul>
+    <li><a class="" href="/" ><i class="fa-solid fa-house"></i>Home</a> </li>
+    <li><a class="" href="/posts" ><i class="fa-regular fa-newspaper"></i>Posts</a> </li>
+    <li><a class="" href="/tags" ><i class="fa-solid fa-tags"></i>Tags</a> </li>
+    <li><a class="" href="https://github.com/carlosgruiz-dev/carlosgruiz-dev/wiki" target="_blank"><i class="fa-solid fa-pen-clip"></i>Wiki</a> </li>
+    <li><a class="" href="/talks" ><i class="fa fa-chalkboard"></i>Talks</a> </li>
+    <li><a class="" href="/arts" ><i class="fa-solid fa-seedling"></i>Arts</a> </li>
+    <li><a class="" href="/now" ><i class="fa fa-calendar-day"></i>Now</a> </li>
+  </ul>
+</section>
+  </header> <!-- End Header -->
+  <footer>
+<section class="contact">
+    <h3 class="section-title contact-title">Contact me</h3>
+    <ul>
+        <li>
+            <a href="https://in.linkedin.com/in/carlosgruiz-dev" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://instagram.com/carlosgruiz_dev" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/carlosgruiz-dev" target="_blank" rel="noopener noreferrer" aria-label="github">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</section><section class="copyright">
+  <p>2026 &copy; Carlos Ruiz</p>
+</section>
+
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<!-- Dark Mode Toggle - Fixed top-right for all screen sizes -->
+<button class="dark-mode-toggle" aria-label="Toggle dark mode">
+  <i class="fas fa-moon"></i>
+</button>
+<main class="main-content">
+
+<div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Search" aria-hidden="true">
+  <div class="search-overlay-content">
+    <button class="search-close" id="search-close" aria-label="Close search">&times;</button>
+    <div id="search-field">
+      <input
+        type="search"
+        class="search-input"
+        id="search-input"
+        placeholder="Search..."
+        aria-label="Search"
+        autocomplete="off"
+        autofocus
+      />
+    </div>
+    <div class="search-results" id="search-results" role="region" aria-live="polite" aria-label="Search results">
+      <!-- Search results will be dynamically inserted here -->
+    </div>
+  </div>
+</div>
+
+
+<article class="article-page" xmlns="http://www.w3.org/1999/html">
+  <section class="page-content">
+    <section class="wrap-content">
+
+<section class="page-header">
+  <h1 class="page-title">Integrando C++ con Python</h1>
+  <div class="page-header-date"><span>Nov 11, 2012</span></div>
+  <p class="page-header-intro">
+    Ejemplos prácticos de la charla del PyCon Venezuela 2012 para integrar Python y C++: incrustar Python, Swig y Boost.
+  </p>
+</section>      <section class="content-prose">
+<p>Durante el <a href="/posts/pycon-venezuela-2012/">PyCon Venezuela</a> hice una charla llamada <a href="/talks/2012/integrando-mis-librerias-cpp-con-python.pdf">Integrando mis librerías C++ con Python</a>, sin embargo quedó pendiente la parte práctica de la misma. Es por ello que decidí convertir el taller en un post donde de muestre los ejemplos prácticos con algunos comentarios.</p>
+<h2 id="la-presentación">La Presentación</h2>
+<p>La idea básica a presentar es el típico problema del <strong>“Performance vs. Productivity”</strong>, que aparece de cuando en cuando en las listas de correo de los distintos lenguajes de programación. Sin ahondar en el por qué de estas discusiones, me centro en que mi apuesta tecnológica es tomar lo mejor de ambos mundos y asegurarme que se puedan juntar. La <a href="https://en.wikipedia.org/wiki/C%2B%2B_Standard_Library">Biblioteca Estándar de C++</a> y la <a href="https://en.wikipedia.org/wiki/Standard_Template_Library">STL</a> tienen implementados muchas herramientas que con la correcta integración entre ambos lenguajes permiten sacar el mejor provecho de ambos mundos. Python provee la versatilidad y rapidez de desarrollo, C++ provee el poder y el control, balancear lo mejor de ambos en favor de una aplicación es aconsejable y deseable. En fin, les sugiero vean la presentación:</p>
+<div class="video-wrapper">
+<iframe src="https://www.slideshare.net/slideshow/embed_code/15042059" width="100%" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #ccc;border-width:1px;margin-bottom:5px;max-width:100%;" allowfullscreen title="Integrando mis librerías C++ con Python"></iframe>
+</div>
+<h2 id="la-práctica">La Práctica</h2>
+<p>A continuación una serie de cuatro ejemplos de integración Python-C++ comenzando por incrustar Python dentro de C++ a alto nivel, el uso de <a href="https://swig.org/">Swig</a> y un par de casos con <a href="https://www.boost.org/">Boost</a>. En cada caso se incluyen los listados de los fuentes y los comandos para su compilación y ejecución. Igualmente puede descargar la <a href="/talks/2012/integrando-cpp-python.tar.gz">guía de ejercicios</a> si así lo desea. Estos ejercicios fueron probados en <a href="https://www.debian.org/releases/squeeze/">Debian 6.0 Estable</a>, haga los ajustes en caso de tener otra plataforma en su computador. Finalmente recuerde tener instalados los paquetes para el compilador gcc, g++, la biblioteca libboost, el programa swig y el paquete python-dev o equivalentes de su plataforma.</p>
+<h3 id="incrustando-python-en-c">Incrustando Python en C++</h3>
+<p>Ejemplo sencillo de C++ ejecutando intrucciones Python, este tipo de incrustación es de alto nivel, desde C++ es posible acceder a elementos muchos más detallados dentro de Python.</p>
+<pre><code class="language-c++">/* archivo: ejemplo.cpp */
+
+#include &lt;Python.h&gt;
+int main(int argc, char *argv[]) {
+    Py_Initialize();
+    PyRun_SimpleString(&quot;print 'Epale Sonia!!'&quot;);
+    Py_Finalize();
+    return 0;
+}
+</code></pre>
+<p>Construyendo el programa con Python incrustado</p>
+<pre><code class="language-bash">$ g++ ejemplo.cpp -o ejemplo -I /usr/include/python2.6 -pthread -lm -ldl -lutil -lpython2.6
+</code></pre>
+<p>Probando el programa</p>
+<pre><code class="language-bash">$ ./ejemplo
+Epale Sonia!!
+$
+</code></pre>
+<h3 id="extendiendo-python-con-c-y-swig">Extendiendo Python con C y Swig</h3>
+<p>Ejemplo sencillo de Swig con C y Python, que aunque no es C++ es extensible a este lenguaje.</p>
+<pre><code class="language-c">/* archivo: ejemplo.c */
+
+/* variable */
+double mi_variable = 3.0;
+
+
+/* calcula el factorial de n */
+int fact(int n) {
+    if (n &gt;= 1)
+        return 1;
+    else
+        return n*fact(n-1);
+}
+
+/* calcula n mod M */
+int mi_mod(int n, int m) {
+    return(n % m);
+};
+</code></pre>
+<p>y</p>
+<pre><code>/* archivo: ejemplo.i */
+
+%module ejemplo
+%{
+    /* colocar encabezados y otras declaraciones aqui */
+    extern double mi_variable;
+    extern int fact(int);
+    extern int
+
+    mi_mod(int n, int m);
+%}
+extern double mi_variable;
+extern int fact(int);
+extern int mi_mod(int n, int m);
+</code></pre>
+<p>Construyendo un módulo de Python</p>
+<pre><code class="language-bash">$ swig -python ejemplo.i
+$ gcc -c -fpic ejemplo.c ejemplo_wrap.c -I/usr/include/python2.6
+$ gcc -shared ejemplo.o ejemplo_wrap.o -o _ejemplo.so
+</code></pre>
+<p>Probando el módulo</p>
+<pre><code class="language-bash">$ python
+Python 2.6.6 (r266:84292, Dec 27 2010, 00:02:40)
+[GCC 4.4.5] on linux2
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; import ejemplo
+&gt;&gt;&gt; ejemplo.fact(4)
+24
+&gt;&gt;&gt; ejemplo.mi_mod(8, 3)
+2
+&gt;&gt;&gt;
+</code></pre>
+<h3 id="extendiendo-python-con-c-y-boost-funciones">Extendiendo Python con C++ y Boost (Funciones)</h3>
+<p>La integración de C++ con Python mediante Boost es limpia y transparente. En este ejemplo se observa con cierta simplicidad el proceso de extender Python.</p>
+<pre><code class="language-c++">/* archivo: ejemplo.cpp */
+
+#include &lt;boost/python/module.hpp&gt;;
+#include &lt;boost/python/def.hpp&gt;;
+
+char const* saluda() {
+    return &quot;Epale Sonia!!&quot;;
+}
+
+BOOST_PYTHON_MODULE(ejemplo_ext) {
+    using namespace boost::python; def(&quot;saluda&quot;, saluda);
+}
+</code></pre>
+<p>Construyendo un módulo de Python</p>
+<pre><code class="language-bash">$ g++ -I/usr/local/include -I/usr/include/python2.6 -fpic -c -o ejemplo_ext.o ejemplo.cpp
+$ g++ -shared -Wl,-soname,&quot;ejemplo_ext.so&quot; -L/usr/local/lib ejemplo_ext.o -lboost_python -fpic -o ejemplo_ext.so
+</code></pre>
+<p>Probando el módulo de Python</p>
+<pre><code>Python 2.6.6 (r266:84292, Dec 27 2010, 00:02:40)
+[GCC 4.4.5] on linux2
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; import ejemplo_ext
+&gt;&gt;&gt; ejemplo_ext.saluda()
+'Epale Sonia!!'
+&gt;&gt;&gt;
+</code></pre>
+<h3 id="extendiendo-python-con-c-y-boost-clases">Extendiendo Python con C++ y Boost (Clases)</h3>
+<p>Claro que el atractivo de trabajar con C++ sigue siendo en gran medida trabajar con elementos de programación orientada a objetos desde un lenguaje que permita bajar al control y poder crudo del computador. Desde allí podemos integrar ambas plataformas.</p>
+<p>ejemplo.cpp</p>
+<pre><code class="language-c++">/* archivo: ejemplo.cpp */
+
+#include &lt;boost/python.hpp&gt;;
+
+using namespace boost::python;
+
+struct Saludo {
+    void set(std::string msg) { this-&gt;msg = msg; }
+    std::string saluda() { return msg; }
+    std::string msg;
+};
+
+
+BOOST_PYTHON_MODULE(ejemplo_ext) {
+    class_&lt;Saludo&gt;(&quot;Saludo&quot;)
+        .def(&quot;saluda&quot;, &amp;Saludo::saluda)
+        .def(&quot;set&quot;, &amp;Saludo::set)
+    ;
+}
+</code></pre>
+<p>Construyendo un módulo de Python</p>
+<pre><code class="language-bash">$ g++ -I/usr/local/include -I/usr/include/python2.6 -fpic -c -o ejemplo_ext.o ejemplo.cpp
+$ g++ -shared -Wl,-soname,&quot;ejemplo_ext.so&quot; -L/usr/local/lib ejemplo_ext.o -lboost_python -fpic -o ejemplo_ext.so
+</code></pre>
+<p>Probando el módulo de Python</p>
+<pre><code class="language-bash">Python 2.6.6 (r266:84292, Dec 27 2010, 00:02:40)
+[GCC 4.4.5] on linux2
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; import ejemplo_ext
+&gt;&gt;&gt; Sonia = ejemplo_ext.Saludo()
+&gt;&gt;&gt; Sonia.set(&quot;Epale&quot;)
+&gt;&gt;&gt; Sonia.saluda()
+'Epale'
+&gt;&gt;&gt;
+</code></pre>
+<h2 id="a-modo-de-cierre">A modo de cierre</h2>
+<p>A pesar que estos ejemplos son adaptaciones de la documentación oficial de Python, Swig y Boost es notable lo ilustrativo que resulta verlos juntos. Integrar Python y C++ resulta una tarea de definir los elementos que se desean compartir entre ambas plataformas, sin embargo luce interesante las bondades para pruebas y prototipos así como para optimizaciones de módulos Python a través de una implementación en C++.</p>
+<p>Desde mi punto de vista, la apuesta tecnológica de Python y C++ como lenguajes de Productividad y Desempeño respectivamente, junto la llegada de los estándares Python3 y C++11 anuncia tiempos de muchos beneficios para los programadores. Permitiendo trabajar con estas dos plataformas de alto nivel para desarrollar de forma veloz y potente, además con alternativas sólidas para su integración.</p>
+      </section>
+      <div class="page-footer">
+        <div class="footer-links">
+          <div class="page-share">
+            <a href="https://twitter.com/intent/tweet?text=Integrando C++ con Python&url=https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fintegrando-cpp-con-python%2F" title="Share on Twitter"
+              rel="nofollow noopener noreferrer"  target="_blank">Twitter</a>
+            <a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fintegrando-cpp-con-python%2F" title="Share on Facebook" rel="nofollow noopener noreferrer"
+              target="_blank">Facebook</a>
+            <a href="https://bsky.app/intent/compose?text=Integrando C++ con Python%0ACheck%20it%20out%20https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fintegrando-cpp-con-python%2F"
+              title="Share on Bluesky" rel="nofollow noopener noreferrer" target="_blank">Bluesky</a>
+          </div>
+          <div class="page-tag">
+            <a href="/posts/tag/talks" class="tag">&#35; talks</a>
+            <a href="/posts/tag/cpp" class="tag">&#35; cpp</a>
+            <a href="/posts/tag/pycon-venezuela" class="tag">&#35; pycon-venezuela</a>
+            <a href="/posts/tag/python" class="tag">&#35; python</a>
+            <a href="/posts/tag/spanish" class="tag">&#35; spanish</a>
+          </div>
+
+        </div>
+        <div class="author">
+    <img src="/images/logo-carlos-web.png" alt="author-carlosgruiz" />
+
+  <div class="author-data">
+    <a target="_blank" rel="noopener noreferrer" href="https://carlosgruiz.dev/" class="author-name">Carlos Gustavo Ruiz</a>
+    <span class="author-job-title">Pizza lover 🍕 · Web creature 💻 · Curious nerd 🤓 · Amateur musician 🎸</span>
+  </div>
+</div>
+
+      </div>
+    </section> <!-- End Wrap Content -->
+  </section> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+
+
+</main>
+
+
+
+</div>
+
+</body>
+</html>

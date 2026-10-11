@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+
+<!-- Prevent flash of unstyled content for dark mode -->
+<script>
+  const savedTheme = localStorage.getItem('darkMode');
+  const isDark = savedTheme !== null
+    ? savedTheme === 'true'
+    : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (isDark) {
+    document.documentElement.classList.add('dark');
+  }
+</script>
+
+
+
+  <!-- SEO TITLE -->
+  
+  <title>Introduccion a Openlayers - Carlos Gustavo Ruiz</title>
+  <meta property="og:title" content="Introduccion a Openlayers" />
+  <meta name="twitter:title" content="Introduccion a Openlayers">
+  <meta property="og:site_name" content="Carlos Gustavo Ruiz">
+  <!-- SEO DESCRIPTION -->
+  <meta name="description" content="Introducción a OpenLayers, la librería JavaScript para colocar mapas en una página web, con un ejemplo paso a paso.">
+  <meta property="og:description" content="Introducción a OpenLayers, la librería JavaScript para colocar mapas en una página web, con un ejemplo paso a paso." />
+  <meta name="twitter:description" content="Introducción a OpenLayers, la librería JavaScript para colocar mapas en una página web, con un ejemplo paso a paso.">
+  <!-- SEO AUTHOR -->
+  <meta property="article:author" content="carlosgruiz" />
+  <meta name="author" content="carlosgruiz" />
+
+  <!-- SEO URL -->
+  <link rel="canonical" href="https://carlosgruiz.dev/posts/introduccion-a-openlayers/" />
+  <meta property="og:url" content="https://carlosgruiz.dev/posts/introduccion-a-openlayers/" />
+  <meta name="twitter:url" content="https://carlosgruiz.dev/posts/introduccion-a-openlayers/">
+
+  <!-- SEO TYPE -->
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="2010-06-09T00:00-05:00[America/Panama]" />
+
+  <!-- SEO IMAGE -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image:src" content="https://carlosgruiz.dev/posts/introduccion-a-openlayers/OL.png" />
+  <meta property="og:image" content="https://carlosgruiz.dev/posts/introduccion-a-openlayers/OL.png" />
+  <!-- SEO COLLECTION PAGES -->
+  <link rel="prev" href="https://carlosgruiz.dev/posts/camelot/" />
+  <link rel="next" href="https://carlosgruiz.dev/posts/el-lenguaje-de-programacion-javascript/" />
+  <!-- SEO LOCALE -->
+  <meta property="og:locale" content="en_PA" />
+  <!-- SEO GENERATOR -->
+  <meta name="generator" content="Quarkus Roq v2.1.9" />
+
+<link rel="alternate" type="application/rss+xml" title="Carlos Gustavo Ruiz" href="https://carlosgruiz.dev/rss.xml"/>
+<!-- Favicon -->
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/images/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+<base href="/posts/introduccion-a-openlayers/">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="theme-color" content="#1e1e2e">
+<meta name="msapplication-navbutton-color" content="#1e1e2e">
+<meta name="apple-mobile-web-app-status-bar-style" content="#1e1e2e">
+
+
+    <script type="module" src="/static/bundle/app-BNJCCHZQ.js"></script>
+      <link rel="stylesheet" href="/static/bundle/app-O2IDU56U.css" />
+
+<script type="module" src="/static/bundle/search.js?id=0d3b83cf-9dd0-4763-946e-b7ddccf42bd6"></script>
+<script type="module" nonce="01KJ2EZHMFP32C2GYZ01SS3DG3">
+  setupSearch({
+    url: '/search-index.json'
+  });
+</script>
+<link rel="stylesheet" href="/static/bundle/search.css?id=0d3b83cf-9dd0-4763-946e-b7ddccf42bd6"></head>
+<body >
+
+
+
+<div class="wrapper default">
+
+
+
+<aside class="sidebar main">
+  <header>
+<!-- Theme configuration: https://iamroq.dev/theme/default/#site-data -->
+<section class="about">
+  <div class="site-logo">
+    <a href="/"><img src="/images/logo-carlos-web.png" alt="Carlos Gustavo Ruiz"></a>
+  </div>
+  <div class="site-name">Carlos Gustavo Ruiz</div>
+  <p>Systems Engineer · code, data &amp; maps</p>
+</section><button type="button" id="search-button" class="search-button" aria-label="Search"></button>
+<section class="menu">
+  <h3 class="section-title menu-title">MENU</h3>
+  <ul>
+    <li><a class="" href="/" ><i class="fa-solid fa-house"></i>Home</a> </li>
+    <li><a class="" href="/posts" ><i class="fa-regular fa-newspaper"></i>Posts</a> </li>
+    <li><a class="" href="/tags" ><i class="fa-solid fa-tags"></i>Tags</a> </li>
+    <li><a class="" href="https://github.com/carlosgruiz-dev/carlosgruiz-dev/wiki" target="_blank"><i class="fa-solid fa-pen-clip"></i>Wiki</a> </li>
+    <li><a class="" href="/talks" ><i class="fa fa-chalkboard"></i>Talks</a> </li>
+    <li><a class="" href="/arts" ><i class="fa-solid fa-seedling"></i>Arts</a> </li>
+    <li><a class="" href="/now" ><i class="fa fa-calendar-day"></i>Now</a> </li>
+  </ul>
+</section>
+  </header> <!-- End Header -->
+  <footer>
+<section class="contact">
+    <h3 class="section-title contact-title">Contact me</h3>
+    <ul>
+        <li>
+            <a href="https://in.linkedin.com/in/carlosgruiz-dev" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://instagram.com/carlosgruiz_dev" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/carlosgruiz-dev" target="_blank" rel="noopener noreferrer" aria-label="github">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</section><section class="copyright">
+  <p>2026 &copy; Carlos Ruiz</p>
+</section>
+
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<!-- Dark Mode Toggle - Fixed top-right for all screen sizes -->
+<button class="dark-mode-toggle" aria-label="Toggle dark mode">
+  <i class="fas fa-moon"></i>
+</button>
+<main class="main-content">
+
+<div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Search" aria-hidden="true">
+  <div class="search-overlay-content">
+    <button class="search-close" id="search-close" aria-label="Close search">&times;</button>
+    <div id="search-field">
+      <input
+        type="search"
+        class="search-input"
+        id="search-input"
+        placeholder="Search..."
+        aria-label="Search"
+        autocomplete="off"
+        autofocus
+      />
+    </div>
+    <div class="search-results" id="search-results" role="region" aria-live="polite" aria-label="Search results">
+      <!-- Search results will be dynamically inserted here -->
+    </div>
+  </div>
+</div>
+
+
+<article class="article-page" xmlns="http://www.w3.org/1999/html">
+  <section class="page-content">
+    <div class="page-cover-image">
+      <figure>
+        <img class="page-image" src="/posts/introduccion-a-openlayers/OL.png" alt="Introduccion a Openlayers">
+      </figure>
+    </div> <!-- End Page Cover Image -->
+    <section class="wrap-content">
+
+<section class="page-header">
+  <h1 class="page-title">Introduccion a Openlayers</h1>
+  <div class="page-header-date"><span>Jun 9, 2010</span></div>
+  <p class="page-header-intro">
+    Introducción a OpenLayers, la librería JavaScript para colocar mapas en una página web, con un ejemplo paso a paso.
+  </p>
+</section>      <section class="content-prose">
+<p>Una de las cosas con las que he trabajado últimamente es con <a href="https://openlayers.org/">OpenLayers</a>. Este es una librería de JavaScript muy interesante para colocar mapas en una página web. Así que pues qué más simpático que compartir poco a poco lo que he aprendido en el camino.</p>
+<p>Primero que todo hay que comprender que pues lo mejor para iniciarse con <a href="https://www.openlayers.org/">OpenLayers</a> es ver un poco los ejemplos, tratar de ver donde calza dentro de la aplicación que estamos desarrollando, leer un poco de formatos SIG (GIS en inglés) y manos a la obra. Para ver los ejemplos haga click <a href="https://openlayers.org/en/latest/examples/">aquí</a>.</p>
+<p>Lo primero que hay que entender para trabajar con OpenLayers es el concepto de capas dentro de un mapa. Esto se refiere a que tenemos capas superpuestas una sobre otra como un cuaderno de papel cebolla y ello nos permitirá visualizar o esconder información dentro del mapa. Estas capas pueden venir en múltiples formatos (servicios OGC, datos de GoogleMaps, Yahoo! Maps, Bing Maps, formatos vectoriales como KML, GML entre otros). Cuando incrustamos dentro de nuestra web un mapa lo que estamos haciendo es llamar a estas capas de información y visualizarlas en el widget de mapas que nos provee OpenLayers.</p>
+<p>Hagamos un ejemplo sencillo.</p>
+<p>Lo primero es crear un archivo HTML vacío para ir completando</p>
+<pre><code class="language-html">&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Mi Primer Mapa con OpenLayers&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Luego agreguemos OpenLayers a nuestra página, para ello incluimos dentro de la etiqueta <strong>head</strong> las siguientes líneas para declarar el estilo que define el tamaño del widget y el llamado a la api de OpenLayers desde su web (en caso de querer colocar el archivo OpenLayers.js en su servidor simplemente descargue el paquete comprimido).</p>
+<pre><code class="language-html">&lt;style type=&quot;text/css&quot;&gt;
+  #map {
+  width: 700px;
+  height: 500px;
+  border: 1px solid #ccc;
+  }
+&lt;/style&gt;
+&lt;script src=&quot;http://www.openlayers.org/api/OpenLayers.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>A continuación pongamos una etiqueta <strong>div</strong> dentro del cuerpo del HTML para agregar el widget de mapas.</p>
+<pre><code class="language-html">&lt;div id=&quot;map&quot; class=&quot;map&quot;&gt;&lt;/div&gt;
+</code></pre>
+<p>Ya tenemos listo nuestro HTML, solo basta decirle a OpenLayers que cargue una capa dentro de el widget de mapas y decirlo que arranque al iniciar la página. Para ello agregamos el siguiente código:</p>
+<pre><code class="language-html">&lt;script&gt;
+  var map, wms;
+  function init() {
+      map = new OpenLayers.Map(&quot;map&quot;);
+      wms = new OpenLayers.Layer.WMS(
+            &quot;Capa Base&quot;,
+            &quot;http://labs.metacarta.com/wms/wmap0&quot;,
+             {layers: &quot;basic&quot;});
+      map.addLayer(wms);
+      map.addControl(new OpenLayers.Control.LayerSwitcher());
+      map.zoomToMaxExtent();
+  }
+&lt;/script&gt;
+</code></pre>
+<p>y</p>
+<pre><code class="language-html">&lt;body onload=&quot;init()&quot;&gt;
+</code></pre>
+<p>para que el código se vea así..</p>
+<pre><code class="language-html">&lt;html&gt;
+  &lt;head&gt;
+      &lt;style type=&quot;text/css&quot;&gt;
+          #map {
+          width: 700px;
+          height: 500px;
+          border: 1px solid #ccc;
+          }
+      &lt;/style&gt;
+      &lt;script src=&quot;http://www.openlayers.org/api/OpenLayers.js&quot;&gt;&lt;/script&gt;
+      &lt;title&gt;Mi Primer Mapa con OpenLayers&lt;/title&gt;
+      &lt;script&gt;
+          var map, wms;
+          function init() {
+              map = new OpenLayers.Map(&quot;map&quot;);
+              wms = new OpenLayers.Layer.WMS(
+                  &quot;Capa Base&quot;,
+                  &quot;http://labs.metacarta.com/wms/wmap0&quot;,
+                  {layers: &quot;basic&quot;});
+              map.addLayer(wms);
+              map.addControl(new OpenLayers.Control.LayerSwitcher());
+              map.zoomToMaxExtent();
+          }
+      &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body onload=&quot;init()&quot;&gt;
+      &lt;div id=&quot;map&quot; class=&quot;map&quot;&gt;&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>y al abrirlo en tu navegador se verá así..</p>
+<p><img src="/posts/introduccion-a-openlayers/OL.png" alt="Ejercicio Completado" /></p>
+      </section>
+      <div class="page-footer">
+        <div class="footer-links">
+          <div class="page-share">
+            <a href="https://twitter.com/intent/tweet?text=Introduccion a Openlayers&url=https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fintroduccion-a-openlayers%2F" title="Share on Twitter"
+              rel="nofollow noopener noreferrer"  target="_blank">Twitter</a>
+            <a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fintroduccion-a-openlayers%2F" title="Share on Facebook" rel="nofollow noopener noreferrer"
+              target="_blank">Facebook</a>
+            <a href="https://bsky.app/intent/compose?text=Introduccion a Openlayers%0ACheck%20it%20out%20https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fintroduccion-a-openlayers%2F"
+              title="Share on Bluesky" rel="nofollow noopener noreferrer" target="_blank">Bluesky</a>
+          </div>
+          <div class="page-tag">
+            <a href="/posts/tag/lab" class="tag">&#35; lab</a>
+            <a href="/posts/tag/geomatics" class="tag">&#35; geomatics</a>
+            <a href="/posts/tag/openlayers" class="tag">&#35; openlayers</a>
+            <a href="/posts/tag/web" class="tag">&#35; web</a>
+            <a href="/posts/tag/spanish" class="tag">&#35; spanish</a>
+          </div>
+
+        </div>
+        <div class="author">
+    <img src="/images/logo-carlos-web.png" alt="author-carlosgruiz" />
+
+  <div class="author-data">
+    <a target="_blank" rel="noopener noreferrer" href="https://carlosgruiz.dev/" class="author-name">Carlos Gustavo Ruiz</a>
+    <span class="author-job-title">Pizza lover 🍕 · Web creature 💻 · Curious nerd 🤓 · Amateur musician 🎸</span>
+  </div>
+</div>
+
+      </div>
+    </section> <!-- End Wrap Content -->
+  </section> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+
+
+</main>
+
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+
+<!-- Prevent flash of unstyled content for dark mode -->
+<script>
+  const savedTheme = localStorage.getItem('darkMode');
+  const isDark = savedTheme !== null
+    ? savedTheme === 'true'
+    : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (isDark) {
+    document.documentElement.classList.add('dark');
+  }
+</script>
+
+
+
+  <!-- SEO TITLE -->
+  
+  <title>La Luna y El Mar - Carlos Gustavo Ruiz</title>
+  <meta property="og:title" content="La Luna y El Mar" />
+  <meta name="twitter:title" content="La Luna y El Mar">
+  <meta property="og:site_name" content="Carlos Gustavo Ruiz">
+  <!-- SEO DESCRIPTION -->
+  <meta name="description" content="Systems Engineer · code, data &amp; maps">
+  <meta property="og:description" content="Systems Engineer · code, data &amp; maps" />
+  <meta name="twitter:description" content="Systems Engineer · code, data &amp; maps">
+
+  <!-- SEO URL -->
+  <link rel="canonical" href="https://carlosgruiz.dev/writing/la-luna-y-el-mar/" />
+  <meta property="og:url" content="https://carlosgruiz.dev/writing/la-luna-y-el-mar/" />
+  <meta name="twitter:url" content="https://carlosgruiz.dev/writing/la-luna-y-el-mar/">
+
+  <!-- SEO TYPE -->
+  <meta property="og:type" content="website" />
+
+  <!-- SEO IMAGE -->
+  <meta name="twitter:card" content="summary">
+  <!-- SEO LOCALE -->
+  <meta property="og:locale" content="en_PA" />
+  <!-- SEO GENERATOR -->
+  <meta name="generator" content="Quarkus Roq v2.1.9" />
+
+<link rel="alternate" type="application/rss+xml" title="Carlos Gustavo Ruiz" href="https://carlosgruiz.dev/rss.xml"/>
+<!-- Favicon -->
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/images/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+<base href="/writing/la-luna-y-el-mar/">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="theme-color" content="#1e1e2e">
+<meta name="msapplication-navbutton-color" content="#1e1e2e">
+<meta name="apple-mobile-web-app-status-bar-style" content="#1e1e2e">
+
+
+    <script type="module" src="/static/bundle/app-BNJCCHZQ.js"></script>
+      <link rel="stylesheet" href="/static/bundle/app-O2IDU56U.css" />
+
+</head>
+<body >
+
+
+
+<div class="wrapper default">
+
+
+
+<aside class="sidebar main">
+  <header>
+<!-- Theme configuration: https://iamroq.dev/theme/default/#site-data -->
+<section class="about">
+  <div class="site-logo">
+    <a href="/"><img src="/images/logo-carlos-web.png" alt="Carlos Gustavo Ruiz"></a>
+  </div>
+  <div class="site-name">Carlos Gustavo Ruiz</div>
+  <p>Systems Engineer · code, data &amp; maps</p>
+</section><button type="button" id="search-button" class="search-button" aria-label="Search"></button>
+<section class="menu">
+  <h3 class="section-title menu-title">MENU</h3>
+  <ul>
+    <li><a class="" href="/" ><i class="fa-solid fa-house"></i>Home</a> </li>
+    <li><a class="" href="/posts" ><i class="fa-regular fa-newspaper"></i>Posts</a> </li>
+    <li><a class="" href="/tags" ><i class="fa-solid fa-tags"></i>Tags</a> </li>
+    <li><a class="" href="https://github.com/carlosgruiz-dev/carlosgruiz-dev/wiki" target="_blank"><i class="fa-solid fa-pen-clip"></i>Wiki</a> </li>
+    <li><a class="" href="/talks" ><i class="fa fa-chalkboard"></i>Talks</a> </li>
+    <li><a class="" href="/arts" ><i class="fa-solid fa-seedling"></i>Arts</a> </li>
+    <li><a class="" href="/now" ><i class="fa fa-calendar-day"></i>Now</a> </li>
+  </ul>
+</section>
+  </header> <!-- End Header -->
+  <footer>
+<section class="contact">
+    <h3 class="section-title contact-title">Contact me</h3>
+    <ul>
+        <li>
+            <a href="https://in.linkedin.com/in/carlosgruiz-dev" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://instagram.com/carlosgruiz_dev" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/carlosgruiz-dev" target="_blank" rel="noopener noreferrer" aria-label="github">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</section><section class="copyright">
+  <p>2026 &copy; Carlos Ruiz</p>
+</section>
+
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<!-- Dark Mode Toggle - Fixed top-right for all screen sizes -->
+<button class="dark-mode-toggle" aria-label="Toggle dark mode">
+  <i class="fas fa-moon"></i>
+</button>
+<main class="main-content">
+
+<div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Search" aria-hidden="true">
+  <div class="search-overlay-content">
+    <button class="search-close" id="search-close" aria-label="Close search">&times;</button>
+    <div id="search-field">
+      <input
+        type="search"
+        class="search-input"
+        id="search-input"
+        placeholder="Search..."
+        aria-label="Search"
+        autocomplete="off"
+        autofocus
+      />
+    </div>
+    <div class="search-results" id="search-results" role="region" aria-live="polite" aria-label="Search results">
+      <!-- Search results will be dynamically inserted here -->
+    </div>
+  </div>
+</div>
+<article class="page-content">
+
+  <section class="content-main">
+
+<section class="page-header">
+  <h1 class="page-title">La Luna y El Mar</h1>
+</section>    <div class="content-prose">
+<p>La luna abre su sonrisa, da una carcajada y sigue riendo para volver a comenzar. La luna cuando llora, lo hace oculta en el mar. Cuenta la antigua leyenda que el mar guarda celoso los rayos del sol, y cuando la luna aparece le ilumina su rostro para dejar ver su hermosa sonrisa en todo su esplendor. No la ata, no la desea, sólo le da su amor, pues está más allá de su alcance, de su vastedad y su poder. El mar ama a la luna, su brillo y su corazón.</p>
+<p>Cada cierto tiempo la luna oculta su mirada, desaparece, se va al lado de las aguas y la sal. Extensión de lágrimas por siglos, testigo silencioso de su dolor, llora inconsolable por un día o dos. El mar guarda silencio, le abraza con todo su calor hasta quedar frío de nuevo como muestra de su sentimiento. El le escucha de nuevo, su triste historia de amor.</p>
+<p>Recoge sus lágrimas una a una, tesoro de blanco color, gotas de cristal que ya no alimentarán más su dolor. -Luna arregla tu vestido -le dice el mar- vas a salir hoy, llegará el momento en que el eclipse te coloque de nuevo tu corona, reinarás de nuevo por un día y te adorarán como lo hago yo. Aquí te espero dulce niña, anda, ve feliz mi corazón, no ocultes tu belleza, ni prives a otros de adorarte como lo hago yo-. Ella sale con una sonrisa tímida, renovada y reconfortada. Sabe que el la extraña desde ese mismo instante, que la esperará, que la acompaña donde esté, durante su paseo estará para darle luz, cariño y amor.</p>
+<p>La luna sabe que el mar inmenso, grande, calmo y feroz, no la dejará sola, estará allí para ella aunque para el no sea su amor. La luna quiere al mar, pero su corazón es para el sol. La luna y el mar pueden amarse mil veces, el puede calmarla por toda la eternidad, el puede soñar con ella todas las noches, el puede dedicarse a contemplarla, pero jamás será su gran amor.</p>
+<p>El hombre vio a la mujer, impresionado por su belleza y por su brillo, tomó un pincel y la dibujó. Cada trazo fue simplemente perfecto, y con su mano describió lo que quemaba en su pecho. Sintió amor, deseo, pasión. Sintió brisa fresca, pureza, luz. Sintió su alma tocar a Dios. En un beso entregó su vida, al abrazarla al destino se entregó, quería todo, quería nada, no pensaba, pleno estaba su corazón. En un instante cambió su vida, cuando convertidos en uno comprendió. <em>-Soy el mar y ella es la luna, estoy perdido, Oh! que será de mi, oh! Señor.-</em></p>
+<p>El hombre despertó de pronto, era un poeta en japón. Tomó su pincel y papel, y escribió estas palabras;</p>
+<blockquote>
+<p><em>te conocí en un sueño,</em><br />
+<em>de haber sabido que dormía,</em><br />
+<em>jamás hubiese querido despertar,</em></p>
+<p><em>te extraño</em></p>
+</blockquote>
+<section class="roq-section">
+  <h2>Carlos Gustavo Ruiz</h2>
+  <p>sábado, 7 de agosto de 2010</p>
+</section>
+    </div>
+  </section>
+</article>
+
+
+
+
+
+</main>
+
+
+
+</div>
+
+</body>
+</html>

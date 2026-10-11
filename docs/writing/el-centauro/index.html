@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+
+<!-- Prevent flash of unstyled content for dark mode -->
+<script>
+  const savedTheme = localStorage.getItem('darkMode');
+  const isDark = savedTheme !== null
+    ? savedTheme === 'true'
+    : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (isDark) {
+    document.documentElement.classList.add('dark');
+  }
+</script>
+
+
+
+  <!-- SEO TITLE -->
+  
+  <title>El Centauro - Carlos Gustavo Ruiz</title>
+  <meta property="og:title" content="El Centauro" />
+  <meta name="twitter:title" content="El Centauro">
+  <meta property="og:site_name" content="Carlos Gustavo Ruiz">
+  <!-- SEO DESCRIPTION -->
+  <meta name="description" content="Systems Engineer · code, data &amp; maps">
+  <meta property="og:description" content="Systems Engineer · code, data &amp; maps" />
+  <meta name="twitter:description" content="Systems Engineer · code, data &amp; maps">
+
+  <!-- SEO URL -->
+  <link rel="canonical" href="https://carlosgruiz.dev/writing/el-centauro/" />
+  <meta property="og:url" content="https://carlosgruiz.dev/writing/el-centauro/" />
+  <meta name="twitter:url" content="https://carlosgruiz.dev/writing/el-centauro/">
+
+  <!-- SEO TYPE -->
+  <meta property="og:type" content="website" />
+
+  <!-- SEO IMAGE -->
+  <meta name="twitter:card" content="summary">
+  <!-- SEO LOCALE -->
+  <meta property="og:locale" content="en_PA" />
+  <!-- SEO GENERATOR -->
+  <meta name="generator" content="Quarkus Roq v2.1.9" />
+
+<link rel="alternate" type="application/rss+xml" title="Carlos Gustavo Ruiz" href="https://carlosgruiz.dev/rss.xml"/>
+<!-- Favicon -->
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/images/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+<base href="/writing/el-centauro/">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="theme-color" content="#1e1e2e">
+<meta name="msapplication-navbutton-color" content="#1e1e2e">
+<meta name="apple-mobile-web-app-status-bar-style" content="#1e1e2e">
+
+
+    <script type="module" src="/static/bundle/app-BNJCCHZQ.js"></script>
+      <link rel="stylesheet" href="/static/bundle/app-O2IDU56U.css" />
+
+</head>
+<body >
+
+
+
+<div class="wrapper default">
+
+
+
+<aside class="sidebar main">
+  <header>
+<!-- Theme configuration: https://iamroq.dev/theme/default/#site-data -->
+<section class="about">
+  <div class="site-logo">
+    <a href="/"><img src="/images/logo-carlos-web.png" alt="Carlos Gustavo Ruiz"></a>
+  </div>
+  <div class="site-name">Carlos Gustavo Ruiz</div>
+  <p>Systems Engineer · code, data &amp; maps</p>
+</section><button type="button" id="search-button" class="search-button" aria-label="Search"></button>
+<section class="menu">
+  <h3 class="section-title menu-title">MENU</h3>
+  <ul>
+    <li><a class="" href="/" ><i class="fa-solid fa-house"></i>Home</a> </li>
+    <li><a class="" href="/posts" ><i class="fa-regular fa-newspaper"></i>Posts</a> </li>
+    <li><a class="" href="/tags" ><i class="fa-solid fa-tags"></i>Tags</a> </li>
+    <li><a class="" href="https://github.com/carlosgruiz-dev/carlosgruiz-dev/wiki" target="_blank"><i class="fa-solid fa-pen-clip"></i>Wiki</a> </li>
+    <li><a class="" href="/talks" ><i class="fa fa-chalkboard"></i>Talks</a> </li>
+    <li><a class="" href="/arts" ><i class="fa-solid fa-seedling"></i>Arts</a> </li>
+    <li><a class="" href="/now" ><i class="fa fa-calendar-day"></i>Now</a> </li>
+  </ul>
+</section>
+  </header> <!-- End Header -->
+  <footer>
+<section class="contact">
+    <h3 class="section-title contact-title">Contact me</h3>
+    <ul>
+        <li>
+            <a href="https://in.linkedin.com/in/carlosgruiz-dev" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://instagram.com/carlosgruiz_dev" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/carlosgruiz-dev" target="_blank" rel="noopener noreferrer" aria-label="github">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</section><section class="copyright">
+  <p>2026 &copy; Carlos Ruiz</p>
+</section>
+
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<!-- Dark Mode Toggle - Fixed top-right for all screen sizes -->
+<button class="dark-mode-toggle" aria-label="Toggle dark mode">
+  <i class="fas fa-moon"></i>
+</button>
+<main class="main-content">
+
+<div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Search" aria-hidden="true">
+  <div class="search-overlay-content">
+    <button class="search-close" id="search-close" aria-label="Close search">&times;</button>
+    <div id="search-field">
+      <input
+        type="search"
+        class="search-input"
+        id="search-input"
+        placeholder="Search..."
+        aria-label="Search"
+        autocomplete="off"
+        autofocus
+      />
+    </div>
+    <div class="search-results" id="search-results" role="region" aria-live="polite" aria-label="Search results">
+      <!-- Search results will be dynamically inserted here -->
+    </div>
+  </div>
+</div>
+<article class="page-content">
+
+  <section class="content-main">
+
+<section class="page-header">
+  <h1 class="page-title">El Centauro</h1>
+</section>    <div class="content-prose">
+<p>Finalizada la batalla queda un campo esteril y las heridas producidas en el encuentro. Es imposible decir que se ha ganado algo más que la experiencia, nadie gana todo cuando se desata la guerra. Sin embargo me he hecho de nuevas tierras, riquezas y esclavos. Veo mis nuevos dominios desde lo alto del cerro del este, con el sol del amanecer a mi espalda contemplo mi nuevo reino. Justificar por qué la lucha es de necios, se pelea, se gana o se cae muerto.</p>
+<p>Alguna vez fuí joven y viváz, creyente en un mundo justo, seguro y bello, hoy después de algo de tiempo se que no es más que una ilusión, que el mundo se construye a base de luchas, trabajo y fuerza. Nunca quise ser guerrero, no es al clan que pertenezco, soy de naturaleza cazador, unicamente me interesaba el sustento. Cómo saber que depara el destino, pues me he convertido en un guerrero, en el arte de las armas un maestro, en las luchas de poder un señor de señores, en los ojos de mi pueblo un dios que bajó de los cielos. Soy el amo de todo lo que hoy veo.</p>
+<p>Comenzaba mis días con una correría por los bosques de mis ancestros, seguro y confiado de su protección. Recuerdo como parte de lo más hermoso de mi vida pasear entre los árboles, sentir la lluvia en mi cabeza y espalda, hacer amigos entre los mios y extraños, escuchar el canto de las aves, correr junto al rio, los mimos y cocina de mi madre, crecer y aprender de mi padre. Fue durante ese tiempo de infinita paz y tranquilidad cultivé mis artes, así como lo hicieron los que vivieron antes de mi. Estudio, contemplación, trabajo, generosidad y gratitud, como lo hicieron antes de mi, como lo harán los reyes que rijan estas montañas y este valle.</p>
+<p>Aun así hoy en mi corazón reina el silencio, el silencio que se gana sólo cuando se acallan los gritos de los hoy ya muertos. Ni el trinar de las aves, ni la risa de mis pequeños, ni canto de los rios, ni las olas, ni las caricias, ni los besos de mi mujer pueden callar al frio silencio. Algunos interpretan mi silencio como serenidad, como realeza o simplemente leen en mi rostro y mis pasos el hielo. La sangre que hoy corre por mis venas ya no es la de un Centauro Cazador, sino la del Real Señor de la Guerra, que habla con el sable, que canta con la pica que atravieza carne, almas y cuerpos, que baila sobre los caídos para gloria de los suyos, para infierno de sus enemigos. Centauro de Hielo, vestido de Fuego y Sangre, el nuevo Hades de los vencidos, el nuevo Marte de los que van a la batalla, el nuevo Sol de los que están conmigo.</p>
+<p>¿Honor? Salvado está desde el mismo momento en que mis flechas dejaron de cazar alimento para el cuerpo para cazar alimento de mi espíritu, como esos que equivocadamente comenzaron la lucha desleal contra mi, contra mi pueblo. ¿Piedad? Palabra odiosa que nos indica que debemos dejar vivos y en gracia a aquellos que nos quisieron matar, destruir y esclavizar, hoy no son tan fuertes como ayer, ¿tuvieron ellos esa misma palabra antes de comenzar?. ¿Odio? Soy lo que soy, instrumento de las circunstancias y de lo que los otros dioses dispusieron para que el destino me entrone hoy. No puedo odiar mi destino, lo acepto, lo vivo y le soy fiel. Mis enemigos son el empedrado de la calle de mi destino, los piso para llegar a mi Trono en los Cielos, no los odio, son eso, un camino. ¿Amor? Qué otra muestra de Amor puedo dar si no cambiar mi espiritu libre por el de un gerrero imbatible, dar a los míos la certeza que los Amo más que a mi vida, cambiar la ternura de un tierno ser del bosque por el silencio y el hielo de la guerra en nombre de aquellos que Amo más que a mi Alma. ¿Dios? Me convertí en uno, Centauro en el Cielo, un Dios que fue Cazador, en el día soy el Sol, en la noche, observa las estrellas, ¿ves? Allí estoy yo.</p>
+<section class="roq-section">
+  <h2>Carlos Gustavo Ruiz</h2>
+  <p>domingo, 10 de mayo de 2009</p>
+</section>
+    </div>
+  </section>
+</article>
+
+
+
+
+
+</main>
+
+
+
+</div>
+
+</body>
+</html>

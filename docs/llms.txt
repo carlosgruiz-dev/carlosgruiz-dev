@@ -1,0 +1,143 @@
+# Carlos Gustavo Ruiz
+
+> Systems Engineer · code, data &amp; maps
+
+## Posts
+
+- [The First Roq!](/posts/the-first-roq/): This is my first article ever made with Quarkus Roq
+- [Entrevista Python Venezuela](/posts/entrevista-python-venezuela/): Entrevista con Jesús Gómez del proyecto Python Venezuela sobre mis inicios como programador, Python y el proyecto en el que trabajo.
+- [Starting a Haskell Project With Stack](/posts/starting-a-haskell-project-with-stack/): Cómo empezar un proyecto de Haskell con Stack, usando plantillas para crear nuevos proyectos.
+- [Haskell Simple HTTP Server](/posts/haskell-simple-http-server/): Un proyecto para crear un servidor HTTP simple en Haskell, comparando sockets, Wai y una referencia en Node.js.
+- [Installing FreeBSD on Virtualbox](/posts/installing-freebsd-on-virtualbox/): Practicing with a FreeBSD installation as a guest OS on VirtualBox, and how to make your own animated gif with ImageMagick.
+- [Vim + Python Mode](/posts/vim-python-mode/): Presentación de mi primera charla sobre vim en el PyDay Caracas 2016.
+- [Manten tu documentacion a mano con Zeal](/posts/manten-tu-documentacion-a-mano-con-zeal/): Zeal, una herramienta para explorar la documentación de las APIs más populares en modo desconectado: instalación, docsets e integraciones.
+- [Generador de archivos .gitignore](/posts/generador-de-archivos-gitignore/): gitignore.io, un generador de archivos .gitignore para sus proyectos.
+- [Instalar Netbeans en Gentoo](/posts/instalar-netbeans-en-gentoo/): Bitácora para instalar NetBeans en Gentoo Linux seleccionando los módulos deseados mediante la variable NETBEANS_MODULES.
+- [Outrunning the Bear](/posts/outrunning-the-bear/): Sobre la expresión &#39;outrunning the bear&#39; (o dejar atrás al oso) y cómo enfocar las energías hacia los competidores directos.
+- [Bases de Datos Libres desde 40.000 pies de altura](/posts/bases-de-datos-libres-desde-40000-pies-de-altura/): Ponencia sobre bases de datos libres presentada en la 1ra Cayapa Universitaria de la UPTOS-CR, en representación de TuBaseDeDatosLibre.org.
+- [Comunidades Tecnologicas 101](/posts/comunidades-tecnologicas-101/): Mi experiencia sobre cómo iniciar y mantener una comunidad tecnológica, a propósito de la visita a los jóvenes de la UPTOS-CR en Cariaco.
+- [¿Por qué hacemos persistencia de datos?](/posts/por-que-hacemos-persistencia-de-datos/): Presentación sobre bases de datos y persistencia de datos en la 1ra sensibilización para la adopción de bases de datos libres del CNTI.
+- [Introducción a Pyramid](/posts/introduccion-a-pyramid/): Introducción a Pyramid, un framework ligero para desarrollo web en Python: principios, instalación, primeras aplicaciones y el uso de armazones con SQLAlchemy.
+- [Introducción a ZODB](/posts/breve-introduccion-a-zodb/): Introducción a ZODB (Zope Object Data Base), un gestor de bases de datos orientado a objetos para Python: instalación, ejemplos y almacenes disponibles.
+- [Llena tu Windows de FOSS](/posts/llena-tu-windows-de-foss/): Mi set de herramientas libres y de código abierto para trabajar en Windows: programas, un terminal bash con Cygwin, y lo que decidí no instalar.
+- [Receta para hacer un mapa electoral simple](/posts/receta-para-hacer-un-mapa-electoral-simple/): Receta para elaborar un mapa electoral con los resultados de una elección usando Quantum GIS: ingredientes y procedimiento paso a paso.
+- [Migraciones a Software Libre (Parte 1)](/posts/migraciones-a-software-libre-parte-1/): Recomendaciones sobre migración a software libre basadas en la experiencia: antecedentes en Venezuela, las leyes de Newton del cambio y la direccionalidad de la migración.
+- [“Hola PostgreSQL” (con Python)](/posts/hola-postgresql-con-python/): Cómo conectar Python con PostgreSQL usando psycopg2 y la DB API 2.0 (PEP-249): instalación, conexión y un pequeño script.
+- [Convertir repositorios Mercurial a git](/posts/convertir-repositorios-mercurial-a-git/): Cómo migrar repositorios Mercurial a git usando fast-export: el paso a paso.
+- [Tutorial “Introducción a la programacion Qt” y otros hallazgos en la azotea](/posts/tutorial-introduccion-a-la-programacion-qt-y-otros-hallazgos-en-la-azotea/): Pasos resueltos del tutorial &#39;Getting Started Programming with Qt&#39; y otros trucos: unir repositorios Mercurial, eliminar espacios en nombres y mover una base PostgreSQL.
+- [Geomatica Libre en Venezuela (Presentación a José Sosa - CNTI)](/posts/geomatica-libre-en-venezuela-presentacion-a-jose-sosa-cnti/): Presentación sobre Geomática Libre en Venezuela ante José Sosa, presidente del CNTI, junto a Zaida Pinto y Richard Hernandez.
+- [Mini Taller de Base de Datos y PostgreSQL](/posts/mini-taller-de-base-de-datos-y-postgresql/): Material del taller introductorio de bases de datos y PostgreSQL dictado con TuBaseDeDatosLibre.org en Corpoelec y el Ministerio de la Cultura.
+- [Urumaco y los datos](/posts/urumaco-y-los-datos/): Sobre Urumaco, un visualizador cartográfico educativo, y los retos de conseguir datos geográficos abiertos en Venezuela.
+- [Integrando C++ con Python](/posts/integrando-cpp-con-python/): Ejemplos prácticos de la charla del PyCon Venezuela 2012 para integrar Python y C++: incrustar Python, Swig y Boost.
+- [Web Mapping con Django](/posts/web-mapping-con-django/): Material del taller de aplicaciones web de mapas con Django presentado en el PyCon Venezuela 2012: presentación paso a paso y ejercicios resueltos.
+- [Pycon Venezuela 2012](/posts/pycon-venezuela-2012/): Crónica del PyCon Venezuela 2012: tres días que consolidaron la comunidad Python del país, con Pygouts, PyDays y nuevas ediciones en camino.
+- [OpenVE y los “Kits de arranque”](/posts/openve-y-los-kits-de-arranque/): Kits de arranque para OpenVE: guías que permiten en 15 minutos tomarle el gusto a un lenguaje, y el esqueleto estándar que las compone.
+- [Dogfooding](/posts/dogfooding/): El concepto de comer la propia comida (eating your own dog food) para desmontar mitos tecnológicos y tomar mejores decisiones al adoptar tecnologías.
+- [Entrevista en echandocodigo.com](/posts/entrevista-en-echandocodigo-com/): Entrevista con Osledy Bazó y Daniel Rodríguez del podcast Echando Código sobre TuBaseDeDatosLibre.org y la experiencia como programador.
+- [Taller de Geo Gobierno en Línea](/posts/taller-de-geo-gobierno-en-linea/): Crónica del 2do Taller de Geo Gobierno en Línea: OpenStreetMap, el Mapa Colaborativo de Venezuela y la geomática libre.
+- [Requerimientos para PostgreSQL](/posts/requerimientos-para-postgresql/): Presentación sobre los requerimientos para PostgreSQL, realizada en el 3er Encuentro de Migración a Bases de Datos Libres (CANTV, 2012).
+- [Mi Distro de Linux](/posts/mi-distro-de-linux/): Impresiones no técnicas sobre las distribuciones de GNU/Linux que he usado: Fedora, Gentoo, Sabayon, (x)Ubuntu, Canaima, Debian, Mint y Suse.
+- [Frameworks de C++ para la web](/posts/frameworks-de-cpp-para-la-web/): Un repaso de frameworks y toolkits para desarrollar para la web con C++: tntnet, TreeFrog Framework, Wt y CppCMS.
+- [Alta Disponibilidad con PostgreSQL](/posts/alta-disponibilidad-con-postgresql/): Consideraciones sobre lo que se entiende por Alta Disponibilidad desde el punto de vista de las bases de datos, y en particular con PostgreSQL.
+- [Mejores Prácticas para la Migracion de Bases de Datos](/posts/mejores-practicas-para-la-migracion-de-bases-de-datos/): Presentación sobre los aspectos no meramente técnicos a tomar en cuenta al migrar bases de datos, en el 2do Encuentro de Migración de Bases de Datos Privativas a Tecnologías de Información Libres.
+- [Mapa Colaborativo de Venezuela con OpenStreetMap](/posts/mapa-colaborativo-de-venezuela-osm/): Presentación sobre las bondades del uso de OpenStreetMap, realizada en las jornadas de tecnologías de información libres para vivir viviendo.
+- [Python vs El Mundo](/posts/python-vs-el-mundo/): Inspirado en Scott Pilgrim vs El Mundo y en el Día Python de mayo de 2011, una presentación sobre por qué usar Python para tu proyecto.
+- [Django vs Pylons](/posts/django-vs-pylons/): Comparación entre Django y Pylons como frameworks web en Python: popularidad, administración, documentación, plantillas, URLs y flexibilidad.
+- [GeoEtiquetas (Presentación en Jornadas gvSIG)](/posts/geoetiquetas-presentacion-en-jornadas-gvsig/): Presentación del proyecto GeoEtiquetas, en las 2das Jornadas de gvSIG Latinoamérica y del Caribe.
+- [Camelot](/posts/camelot/): Sobre Camelot, un proyecto para GUIs en Python inspirado en Django, con la presentación de FOSDEM 2009.
+- [Introduccion a Openlayers](/posts/introduccion-a-openlayers/): Introducción a OpenLayers, la librería JavaScript para colocar mapas en una página web, con un ejemplo paso a paso.
+- [El Lenguaje De Programacion Javascript](/posts/el-lenguaje-de-programacion-javascript/): Una serie de videos que introducen el lenguaje de programación JavaScript, con las filminas de Douglas Crockford.
+
+## Pages
+
+- [A Callar](/writing/a-callar/)
+- [El Baile](/writing/el-baile/)
+- [El Beso](/writing/el-beso/)
+- [El Centauro](/writing/el-centauro/)
+- [El Gris](/writing/el-gris/)
+- [En el aire](/writing/en-el-aire/)
+- [Gracias por romperme el corazón](/writing/gracias-por-romperme-el-corazon/)
+- [La Hydra](/writing/la-hydra/)
+- [La Luna y El Mar](/writing/la-luna-y-el-mar/)
+- [Mi Despedida](/writing/mi-despedida/)
+- [¿Qué te puedo regalar?](/writing/que-te-puedo-regalar/)
+- [Querer](/writing/querer/)
+- [writing/reflexion/index.md](/writing/reflexion/)
+- [Soñar y Volar](/writing/sonar-y-volar/)
+- [Creative Corner](/arts/): Because life is more than bits and bytes.
+- [Now](/now/): What have I been up to lately?
+- [Tags](/tags/): All the tags used across the blog.
+- [Talks](/talks/): Time to time I give talks about things I find interesting.
+- [Cassadiego: la otra voz..](/writing/cassadiego-la-otra-voz/): Comprende los escritos publicados desde abril de 2009 hasta enero de 2015.
+- [Posts](/posts/): Code, data and maps — plus the occasional story.
+- [Posts](/posts/page2/): Code, data and maps — plus the occasional story.
+- [Posts](/posts/page3/): Code, data and maps — plus the occasional story.
+- [Posts](/posts/page4/): Code, data and maps — plus the occasional story.
+- [Posts](/posts/page5/): Code, data and maps — plus the occasional story.
+- [#memcached](/posts/tag/memcached/)
+- [#gentoo](/posts/tag/gentoo/)
+- [#data](/posts/tag/data/)
+- [#freebsd](/posts/tag/freebsd/)
+- [#collaborations](/posts/tag/collaborations/)
+- [#collaborations](/posts/tag/collaborations/page2/)
+- [#best-practices](/posts/tag/best-practices/)
+- [#geomatics](/posts/tag/geomatics/)
+- [#geomatics](/posts/tag/geomatics/page2/)
+- [#video](/posts/tag/video/)
+- [#lab](/posts/tag/lab/)
+- [#lab](/posts/tag/lab/page2/)
+- [#lab](/posts/tag/lab/page3/)
+- [#redis](/posts/tag/redis/)
+- [#guides](/posts/tag/guides/)
+- [#git](/posts/tag/git/)
+- [#openstreetmap](/posts/tag/openstreetmap/)
+- [#postgresql](/posts/tag/postgresql/)
+- [#postgresql](/posts/tag/postgresql/page2/)
+- [#terms](/posts/tag/terms/)
+- [#web](/posts/tag/web/)
+- [#linux](/posts/tag/linux/)
+- [#talks](/posts/tag/talks/)
+- [#talks](/posts/tag/talks/page2/)
+- [#talks](/posts/tag/talks/page3/)
+- [#english](/posts/tag/english/)
+- [#vim](/posts/tag/vim/)
+- [#tutorial](/posts/tag/tutorial/)
+- [#mongodb](/posts/tag/mongodb/)
+- [#haskell](/posts/tag/haskell/)
+- [#databases](/posts/tag/databases/)
+- [#databases](/posts/tag/databases/page2/)
+- [#spanish](/posts/tag/spanish/)
+- [#spanish](/posts/tag/spanish/page2/)
+- [#spanish](/posts/tag/spanish/page3/)
+- [#spanish](/posts/tag/spanish/page4/)
+- [#spanish](/posts/tag/spanish/page5/)
+- [#spanish](/posts/tag/spanish/page6/)
+- [#spanish](/posts/tag/spanish/page7/)
+- [#spanish](/posts/tag/spanish/page8/)
+- [#github](/posts/tag/github/)
+- [#cpp](/posts/tag/cpp/)
+- [#python](/posts/tag/python/)
+- [#python](/posts/tag/python/page2/)
+- [#python](/posts/tag/python/page3/)
+- [#qt](/posts/tag/qt/)
+- [#blogging](/posts/tag/blogging/)
+- [#documentation](/posts/tag/documentation/)
+- [#open-source](/posts/tag/open-source/)
+- [#open-source](/posts/tag/open-source/page2/)
+- [#ide](/posts/tag/ide/)
+- [#openlayers](/posts/tag/openlayers/)
+- [#pycon-venezuela](/posts/tag/pycon-venezuela/)
+- [#community](/posts/tag/community/)
+- [#sqlalchemy](/posts/tag/sqlalchemy/)
+- [#dogfooding](/posts/tag/dogfooding/)
+- [#dogfooding](/posts/tag/dogfooding/page2/)
+- [#javascript](/posts/tag/javascript/)
+- [#framework](/posts/tag/framework/)
+- [#django](/posts/tag/django/)
+- [#qgis](/posts/tag/qgis/)
+- [#tubasededatoslibre](/posts/tag/tubasededatoslibre/)
+- [#tubasededatoslibre](/posts/tag/tubasededatoslibre/page2/)
+- [#pyramid](/posts/tag/pyramid/)
+- [#mercurial](/posts/tag/mercurial/)
+- [#migration](/posts/tag/migration/)
+- [#openve](/posts/tag/openve/)

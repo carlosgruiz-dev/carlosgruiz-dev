@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+
+<!-- Prevent flash of unstyled content for dark mode -->
+<script>
+  const savedTheme = localStorage.getItem('darkMode');
+  const isDark = savedTheme !== null
+    ? savedTheme === 'true'
+    : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (isDark) {
+    document.documentElement.classList.add('dark');
+  }
+</script>
+
+
+
+  <!-- SEO TITLE -->
+  
+  <title>Pycon Venezuela 2012 - Carlos Gustavo Ruiz</title>
+  <meta property="og:title" content="Pycon Venezuela 2012" />
+  <meta name="twitter:title" content="Pycon Venezuela 2012">
+  <meta property="og:site_name" content="Carlos Gustavo Ruiz">
+  <!-- SEO DESCRIPTION -->
+  <meta name="description" content="Crónica del PyCon Venezuela 2012: tres días que consolidaron la comunidad Python del país, con Pygouts, PyDays y nuevas ediciones en camino.">
+  <meta property="og:description" content="Crónica del PyCon Venezuela 2012: tres días que consolidaron la comunidad Python del país, con Pygouts, PyDays y nuevas ediciones en camino." />
+  <meta name="twitter:description" content="Crónica del PyCon Venezuela 2012: tres días que consolidaron la comunidad Python del país, con Pygouts, PyDays y nuevas ediciones en camino.">
+  <!-- SEO AUTHOR -->
+  <meta property="article:author" content="carlosgruiz" />
+  <meta name="author" content="carlosgruiz" />
+
+  <!-- SEO URL -->
+  <link rel="canonical" href="https://carlosgruiz.dev/posts/pycon-venezuela-2012/" />
+  <meta property="og:url" content="https://carlosgruiz.dev/posts/pycon-venezuela-2012/" />
+  <meta name="twitter:url" content="https://carlosgruiz.dev/posts/pycon-venezuela-2012/">
+
+  <!-- SEO TYPE -->
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="2012-11-05T00:00-05:00[America/Panama]" />
+
+  <!-- SEO IMAGE -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image:src" content="https://carlosgruiz.dev/posts/pycon-venezuela-2012/pyconve2012.jpg" />
+  <meta property="og:image" content="https://carlosgruiz.dev/posts/pycon-venezuela-2012/pyconve2012.jpg" />
+  <!-- SEO COLLECTION PAGES -->
+  <link rel="prev" href="https://carlosgruiz.dev/posts/web-mapping-con-django/" />
+  <link rel="next" href="https://carlosgruiz.dev/posts/openve-y-los-kits-de-arranque/" />
+  <!-- SEO LOCALE -->
+  <meta property="og:locale" content="en_PA" />
+  <!-- SEO GENERATOR -->
+  <meta name="generator" content="Quarkus Roq v2.1.9" />
+
+<link rel="alternate" type="application/rss+xml" title="Carlos Gustavo Ruiz" href="https://carlosgruiz.dev/rss.xml"/>
+<!-- Favicon -->
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/images/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+<base href="/posts/pycon-venezuela-2012/">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="theme-color" content="#1e1e2e">
+<meta name="msapplication-navbutton-color" content="#1e1e2e">
+<meta name="apple-mobile-web-app-status-bar-style" content="#1e1e2e">
+
+
+    <script type="module" src="/static/bundle/app-BNJCCHZQ.js"></script>
+      <link rel="stylesheet" href="/static/bundle/app-O2IDU56U.css" />
+
+<script type="module" src="/static/bundle/search.js?id=0d3b83cf-9dd0-4763-946e-b7ddccf42bd6"></script>
+<script type="module" nonce="01KJ2EZHMFP32C2GYZ01SS3DG3">
+  setupSearch({
+    url: '/search-index.json'
+  });
+</script>
+<link rel="stylesheet" href="/static/bundle/search.css?id=0d3b83cf-9dd0-4763-946e-b7ddccf42bd6"></head>
+<body >
+
+
+
+<div class="wrapper default">
+
+
+
+<aside class="sidebar main">
+  <header>
+<!-- Theme configuration: https://iamroq.dev/theme/default/#site-data -->
+<section class="about">
+  <div class="site-logo">
+    <a href="/"><img src="/images/logo-carlos-web.png" alt="Carlos Gustavo Ruiz"></a>
+  </div>
+  <div class="site-name">Carlos Gustavo Ruiz</div>
+  <p>Systems Engineer · code, data &amp; maps</p>
+</section><button type="button" id="search-button" class="search-button" aria-label="Search"></button>
+<section class="menu">
+  <h3 class="section-title menu-title">MENU</h3>
+  <ul>
+    <li><a class="" href="/" ><i class="fa-solid fa-house"></i>Home</a> </li>
+    <li><a class="" href="/posts" ><i class="fa-regular fa-newspaper"></i>Posts</a> </li>
+    <li><a class="" href="/tags" ><i class="fa-solid fa-tags"></i>Tags</a> </li>
+    <li><a class="" href="https://github.com/carlosgruiz-dev/carlosgruiz-dev/wiki" target="_blank"><i class="fa-solid fa-pen-clip"></i>Wiki</a> </li>
+    <li><a class="" href="/talks" ><i class="fa fa-chalkboard"></i>Talks</a> </li>
+    <li><a class="" href="/arts" ><i class="fa-solid fa-seedling"></i>Arts</a> </li>
+    <li><a class="" href="/now" ><i class="fa fa-calendar-day"></i>Now</a> </li>
+  </ul>
+</section>
+  </header> <!-- End Header -->
+  <footer>
+<section class="contact">
+    <h3 class="section-title contact-title">Contact me</h3>
+    <ul>
+        <li>
+            <a href="https://in.linkedin.com/in/carlosgruiz-dev" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://instagram.com/carlosgruiz_dev" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/carlosgruiz-dev" target="_blank" rel="noopener noreferrer" aria-label="github">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</section><section class="copyright">
+  <p>2026 &copy; Carlos Ruiz</p>
+</section>
+
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<!-- Dark Mode Toggle - Fixed top-right for all screen sizes -->
+<button class="dark-mode-toggle" aria-label="Toggle dark mode">
+  <i class="fas fa-moon"></i>
+</button>
+<main class="main-content">
+
+<div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Search" aria-hidden="true">
+  <div class="search-overlay-content">
+    <button class="search-close" id="search-close" aria-label="Close search">&times;</button>
+    <div id="search-field">
+      <input
+        type="search"
+        class="search-input"
+        id="search-input"
+        placeholder="Search..."
+        aria-label="Search"
+        autocomplete="off"
+        autofocus
+      />
+    </div>
+    <div class="search-results" id="search-results" role="region" aria-live="polite" aria-label="Search results">
+      <!-- Search results will be dynamically inserted here -->
+    </div>
+  </div>
+</div>
+
+
+<article class="article-page" xmlns="http://www.w3.org/1999/html">
+  <section class="page-content">
+    <div class="page-cover-image">
+      <figure>
+        <img class="page-image" src="/posts/pycon-venezuela-2012/pyconve2012.jpg" alt="Pycon Venezuela 2012">
+      </figure>
+    </div> <!-- End Page Cover Image -->
+    <section class="wrap-content">
+
+<section class="page-header">
+  <h1 class="page-title">Pycon Venezuela 2012</h1>
+  <div class="page-header-date"><span>Nov 5, 2012</span></div>
+  <p class="page-header-intro">
+    Crónica del PyCon Venezuela 2012: tres días que consolidaron la comunidad Python del país, con Pygouts, PyDays y nuevas ediciones en camino.
+  </p>
+</section>      <section class="content-prose">
+<p>La Conferencia de Usuarios Python de Venezuela (PyConVE) fue una jornada frenética. No solamente por las noches preparando el material sino por la cantidad de información que fluyó entre nosotros. Caras nuevas en nombres conocidos, fue una oportunidad de conocer personalmente a amigos a quienes conozco principalmente por sus perfiles en Twitter, GitHub o BitBucket. Al final, luego de estos tres días de intensas jornadas creo que el objetivo, desde mi punto de vista, se cumplió por completo, consolidar la comunidad de Python en nuestro país.</p>
+<p>Las charlas versaron de todo un poco. En todas ellas Python brilló como la estrella que es, pero por sobre todos los detalles técnicos que pudiesen conseguirse en algún manual o búsqueda por la Internet, creo que el gran valor de escucharnos hablando de lo que más nos apasiona fue conocer las vivencias. No estamos solos en el mundo y en mi caso particular darme cuenta que todos pasamos más o menos por los mismos predicamentos, que ser Pythonista en Venezuela es como es, muy satisfactorio en medio de las dificultades propias de nuestra realidad particular.</p>
+<p><img src="/posts/pycon-venezuela-2012/pyconve2012.jpg" alt="PyCon Venezuela 2012" /></p>
+<p>A pesar del trajín que implicó participar y apoyar aunque fuese en poco me siento feliz, renovado en energías y decidido a seguir como activista Python desde mi modesta trinchera. La comunidad ha dado un salto gigantesco, ya está en proceso de preparación la nueva edición de <a href="http://ve.pycon.org/">PyConVE</a><i class="fa-solid fa-link-slash roq-broken-link" aria-hidden="true" title="Broken link"></i>, en uso la nueva <a href="https://groups.google.com/forum/#!forum/python-venezuela">lista unificada de Python Venezuela</a>, en lista de nuevas charlas los <a href="https://pygouts-smag.rhcloud.com/">Pygouts</a><i class="fa-solid fa-link-slash roq-broken-link" aria-hidden="true" title="Broken link"></i> y propuestas para PyDays en varias partes del país y muchas cosas más. Se ven germinar semillas desde el primer día después del PyCon Venezuela. Esto es señores, oro en polvo.</p>
+<p>Finalmente no quiero dejar de hacer un reconocimiento público a mis amigos <a href="https://twitter.com/iferminm">@iferminm</a><i class="fa-solid fa-link-slash roq-broken-link" aria-hidden="true" title="Broken link"></i>, <a href="https://twitter.com/mapologo">@mapologo</a>, <a href="https://twitter.com/nhomar">@nhomar</a>, <a href="https://twitter.com/sebasmagri">@sebasmagri</a>, <a href="https://twitter.com/jackboot7">@jackboot7</a> y todos los amigos que participaron en el PyCon Venezuela por hacer de este evento único y decididamente el mejor de este año. Así mismo los muy buenos amigos <a href="https://twitter.com/ericof">@ericof</a> y <a href="https://twitter.com/facundobatista">@facundobatista</a><i class="fa-solid fa-link-slash roq-broken-link" aria-hidden="true" title="Broken link"></i> por acompañarnos y compartir sus experiencia técnica y vivencial de ser Pythonsitas en el mundo. No queda más que decir que, nos vemos en el próximo PyConVE y en los próximos Pygouts y PyDays.</p>
+      </section>
+      <div class="page-footer">
+        <div class="footer-links">
+          <div class="page-share">
+            <a href="https://twitter.com/intent/tweet?text=Pycon Venezuela 2012&url=https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fpycon-venezuela-2012%2F" title="Share on Twitter"
+              rel="nofollow noopener noreferrer"  target="_blank">Twitter</a>
+            <a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fpycon-venezuela-2012%2F" title="Share on Facebook" rel="nofollow noopener noreferrer"
+              target="_blank">Facebook</a>
+            <a href="https://bsky.app/intent/compose?text=Pycon Venezuela 2012%0ACheck%20it%20out%20https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fpycon-venezuela-2012%2F"
+              title="Share on Bluesky" rel="nofollow noopener noreferrer" target="_blank">Bluesky</a>
+          </div>
+          <div class="page-tag">
+            <a href="/posts/tag/collaborations" class="tag">&#35; collaborations</a>
+            <a href="/posts/tag/python" class="tag">&#35; python</a>
+            <a href="/posts/tag/community" class="tag">&#35; community</a>
+            <a href="/posts/tag/pycon-venezuela" class="tag">&#35; pycon-venezuela</a>
+            <a href="/posts/tag/spanish" class="tag">&#35; spanish</a>
+          </div>
+
+        </div>
+        <div class="author">
+    <img src="/images/logo-carlos-web.png" alt="author-carlosgruiz" />
+
+  <div class="author-data">
+    <a target="_blank" rel="noopener noreferrer" href="https://carlosgruiz.dev/" class="author-name">Carlos Gustavo Ruiz</a>
+    <span class="author-job-title">Pizza lover 🍕 · Web creature 💻 · Curious nerd 🤓 · Amateur musician 🎸</span>
+  </div>
+</div>
+
+      </div>
+    </section> <!-- End Wrap Content -->
+  </section> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+
+
+</main>
+
+
+
+</div>
+
+</body>
+</html>

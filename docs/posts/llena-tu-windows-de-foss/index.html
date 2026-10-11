@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+
+<!-- Prevent flash of unstyled content for dark mode -->
+<script>
+  const savedTheme = localStorage.getItem('darkMode');
+  const isDark = savedTheme !== null
+    ? savedTheme === 'true'
+    : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (isDark) {
+    document.documentElement.classList.add('dark');
+  }
+</script>
+
+
+
+  <!-- SEO TITLE -->
+  
+  <title>Llena tu Windows de FOSS - Carlos Gustavo Ruiz</title>
+  <meta property="og:title" content="Llena tu Windows de FOSS" />
+  <meta name="twitter:title" content="Llena tu Windows de FOSS">
+  <meta property="og:site_name" content="Carlos Gustavo Ruiz">
+  <!-- SEO DESCRIPTION -->
+  <meta name="description" content="Mi set de herramientas libres y de código abierto para trabajar en Windows: programas, un terminal bash con Cygwin, y lo que decidí no instalar.">
+  <meta property="og:description" content="Mi set de herramientas libres y de código abierto para trabajar en Windows: programas, un terminal bash con Cygwin, y lo que decidí no instalar." />
+  <meta name="twitter:description" content="Mi set de herramientas libres y de código abierto para trabajar en Windows: programas, un terminal bash con Cygwin, y lo que decidí no instalar.">
+  <!-- SEO AUTHOR -->
+  <meta property="article:author" content="carlosgruiz" />
+  <meta name="author" content="carlosgruiz" />
+
+  <!-- SEO URL -->
+  <link rel="canonical" href="https://carlosgruiz.dev/posts/llena-tu-windows-de-foss/" />
+  <meta property="og:url" content="https://carlosgruiz.dev/posts/llena-tu-windows-de-foss/" />
+  <meta name="twitter:url" content="https://carlosgruiz.dev/posts/llena-tu-windows-de-foss/">
+
+  <!-- SEO TYPE -->
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="2013-07-12T00:00-05:00[America/Panama]" />
+
+  <!-- SEO IMAGE -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image:src" content="https://carlosgruiz.dev/posts/llena-tu-windows-de-foss/LLENA-TU-CABEZA-DE-ROCK-84-1.jpg" />
+  <meta property="og:image" content="https://carlosgruiz.dev/posts/llena-tu-windows-de-foss/LLENA-TU-CABEZA-DE-ROCK-84-1.jpg" />
+  <!-- SEO COLLECTION PAGES -->
+  <link rel="prev" href="https://carlosgruiz.dev/posts/breve-introduccion-a-zodb/" />
+  <link rel="next" href="https://carlosgruiz.dev/posts/receta-para-hacer-un-mapa-electoral-simple/" />
+  <!-- SEO LOCALE -->
+  <meta property="og:locale" content="en_PA" />
+  <!-- SEO GENERATOR -->
+  <meta name="generator" content="Quarkus Roq v2.1.9" />
+
+<link rel="alternate" type="application/rss+xml" title="Carlos Gustavo Ruiz" href="https://carlosgruiz.dev/rss.xml"/>
+<!-- Favicon -->
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/images/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+<base href="/posts/llena-tu-windows-de-foss/">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="theme-color" content="#1e1e2e">
+<meta name="msapplication-navbutton-color" content="#1e1e2e">
+<meta name="apple-mobile-web-app-status-bar-style" content="#1e1e2e">
+
+
+    <script type="module" src="/static/bundle/app-BNJCCHZQ.js"></script>
+      <link rel="stylesheet" href="/static/bundle/app-O2IDU56U.css" />
+
+<script type="module" src="/static/bundle/search.js?id=0d3b83cf-9dd0-4763-946e-b7ddccf42bd6"></script>
+<script type="module" nonce="01KJ2EZHMFP32C2GYZ01SS3DG3">
+  setupSearch({
+    url: '/search-index.json'
+  });
+</script>
+<link rel="stylesheet" href="/static/bundle/search.css?id=0d3b83cf-9dd0-4763-946e-b7ddccf42bd6"></head>
+<body >
+
+
+
+<div class="wrapper default">
+
+
+
+<aside class="sidebar main">
+  <header>
+<!-- Theme configuration: https://iamroq.dev/theme/default/#site-data -->
+<section class="about">
+  <div class="site-logo">
+    <a href="/"><img src="/images/logo-carlos-web.png" alt="Carlos Gustavo Ruiz"></a>
+  </div>
+  <div class="site-name">Carlos Gustavo Ruiz</div>
+  <p>Systems Engineer · code, data &amp; maps</p>
+</section><button type="button" id="search-button" class="search-button" aria-label="Search"></button>
+<section class="menu">
+  <h3 class="section-title menu-title">MENU</h3>
+  <ul>
+    <li><a class="" href="/" ><i class="fa-solid fa-house"></i>Home</a> </li>
+    <li><a class="" href="/posts" ><i class="fa-regular fa-newspaper"></i>Posts</a> </li>
+    <li><a class="" href="/tags" ><i class="fa-solid fa-tags"></i>Tags</a> </li>
+    <li><a class="" href="https://github.com/carlosgruiz-dev/carlosgruiz-dev/wiki" target="_blank"><i class="fa-solid fa-pen-clip"></i>Wiki</a> </li>
+    <li><a class="" href="/talks" ><i class="fa fa-chalkboard"></i>Talks</a> </li>
+    <li><a class="" href="/arts" ><i class="fa-solid fa-seedling"></i>Arts</a> </li>
+    <li><a class="" href="/now" ><i class="fa fa-calendar-day"></i>Now</a> </li>
+  </ul>
+</section>
+  </header> <!-- End Header -->
+  <footer>
+<section class="contact">
+    <h3 class="section-title contact-title">Contact me</h3>
+    <ul>
+        <li>
+            <a href="https://in.linkedin.com/in/carlosgruiz-dev" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://instagram.com/carlosgruiz_dev" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/carlosgruiz-dev" target="_blank" rel="noopener noreferrer" aria-label="github">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</section><section class="copyright">
+  <p>2026 &copy; Carlos Ruiz</p>
+</section>
+
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<!-- Dark Mode Toggle - Fixed top-right for all screen sizes -->
+<button class="dark-mode-toggle" aria-label="Toggle dark mode">
+  <i class="fas fa-moon"></i>
+</button>
+<main class="main-content">
+
+<div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Search" aria-hidden="true">
+  <div class="search-overlay-content">
+    <button class="search-close" id="search-close" aria-label="Close search">&times;</button>
+    <div id="search-field">
+      <input
+        type="search"
+        class="search-input"
+        id="search-input"
+        placeholder="Search..."
+        aria-label="Search"
+        autocomplete="off"
+        autofocus
+      />
+    </div>
+    <div class="search-results" id="search-results" role="region" aria-live="polite" aria-label="Search results">
+      <!-- Search results will be dynamically inserted here -->
+    </div>
+  </div>
+</div>
+
+
+<article class="article-page" xmlns="http://www.w3.org/1999/html">
+  <section class="page-content">
+    <div class="page-cover-image">
+      <figure>
+        <img class="page-image" src="/posts/llena-tu-windows-de-foss/LLENA-TU-CABEZA-DE-ROCK-84-1.jpg" alt="Llena tu Windows de FOSS">
+      </figure>
+    </div> <!-- End Page Cover Image -->
+    <section class="wrap-content">
+
+<section class="page-header">
+  <h1 class="page-title">Llena tu Windows de FOSS</h1>
+  <div class="page-header-date"><span>Jul 12, 2013</span></div>
+  <p class="page-header-intro">
+    Mi set de herramientas libres y de código abierto para trabajar en Windows: programas, un terminal bash con Cygwin, y lo que decidí no instalar.
+  </p>
+</section>      <section class="content-prose">
+<p><em>Llena tu Cabeza de Rock</em> Con esta foto muy ochentera (y nada rockera) describo un poco lo que ha sido mi aventura de tener que retomar el uso de Windows y en el proceso no darme por vencido respecto al uso de las excelentes (y económicas) herramientas que me proporciona el Open Source y el Software Libre. Es decir, cómo hacer aparecer mis herramientas abiertas y libres dentro del sombrero de un equipo Windows. ¿La razón de hacer esto? me vi forzado por razones laborales a dejar de usar exclusivamente GNU/Linux y retomar el uso de este otro Sistema Operativo. En fin, hay en la red muchas buenas listas de Software Libre para usar en Windows, ¿Cuál es mi criterio de selección? son herramientas me han resultado o simplemente me gustan, así de simple.</p>
+<h2 id="algunos-programas-para-descargar-e-instalar">Algunos Programas para Descargar e Instalar</h2>
+<ul>
+<li>
+<p><strong>LibreOffice</strong>: porque se necesita una suite ofimática para poder hacer lo que hacen los mortales en sus computadores. Es una muy buena herramienta y excelente sustituto de cualquier otra suite de su preferencia. Para descargarlo pueden hacerlo desde su página web <a href="https://es.libreoffice.org/">libreoffice.org</a>.</p>
+</li>
+<li>
+<p><strong>Mozilla Firefox</strong>: seamos francos, Internet Explorer no es un buen browser, así que aunque no seas fanático del Software Abierto seguramente querrás tener instalado este navegador. Su página para descargas y opciones <a href="https://www.mozilla.org/es-ES/firefox/new/">mozilla.org</a>.</p>
+</li>
+<li>
+<p><strong>GIMP</strong>: aclaro que no soy un usuario con grandes fortalezas en la edición fotográfica o maipulación de imágenes, sin embargo se que GIMP es una excelente herramienta. Si quieren saber hasta donde llegar con este programa es probable que <a href="https://meetthegimp.org/">meetthegimp.org</a> sea uno de los recursos en línea que más valorará. Para instalar GIMP en Windows visite <a href="http://gimp-win.sourceforge.net/stable.html">gimp-win.sourceforge.net</a><i class="fa-solid fa-link-slash roq-broken-link" aria-hidden="true" title="Broken link"></i>.</p>
+</li>
+<li>
+<p><strong>Inkscape</strong>: si bien GIMP brilla en cuanto a imágenes, Inkscape es la solución para dibujo vectorial. He probado otros programas para este fin y siempre regreso a este, así que creo que a estas alturas puedo recomendarlo. Para descargar inkscape visite <a href="https://inkscape.org/download/?lang=es">inkscape.org</a>.</p>
+</li>
+<li>
+<p><strong>Blender</strong>: este es de los programas que uso con poca frecuencia pero cuando lo hago le dedico horas. Es un programa para diseño 3D muy maduro, adicionalmente es un proyecto de Software Libre muy interesante con una comunidad realmente ejemplar. Una muestra de lo que se logra con este programa es este corto animado, y para descargar Blender visita <a href="https://www.blender.org/download/get-blender/">blender.org</a>.</p>
+</li>
+<li>
+<p><strong>VLC</strong>: atrás quedaron los días de no tener software (libre) para ver videos, películas o simplemente escuchar música. Este es un excelente programa para manejo de fuentes multimedia. Si, estoy conciente que Windows tiene su reproductor de videos, pero este tiene ventajas en cuanto al uso de recursos, y bueno, realmente me gusta más. Para instalar este programa visite <a href="https://www.videolan.org/vlc/">videolan.org</a>.</p>
+</li>
+<li>
+<p><strong>7-zip</strong>: en cuanto a herramientas de compresión normalmente los usuarios Windows tienden a preferir WinRAR usado como shareware, y al igual que con WinZip en su época, obligando a prometer a cada rato que comprará una licencia en algún momento. Listo, sin mensajes molestos y adecuado para descomprimir múltiples formatos puede instalarlo desde <a href="https://www.7-zip.org">7-zip.org</a>.</p>
+</li>
+<li>
+<p><strong>Notepad++</strong>: una de mis facetas es la de programador, pero no soy muy dado a encajar dentro de un IDE por mucho tiempo. Es por ello que tener un editor de texto a la mano siempre será importante para mi. Con este programa realmente veo complicado justificar el pago de una licencia de UltraEdit. Para descargar Notepad++ visite <a href="https://www.notepad-plus-plus.org">notepad-plus-plus.org</a>.</p>
+</li>
+<li>
+<p><strong>NetBeans</strong>: como les decía no soy muy dado a los IDEs, sin embargo no por ello dejo de usarlos cuando es necesario. NetBeans tiene excelentes herramientas para proyectos Java, C/C++, Python y HTML5. Para probarlo visite <a href="https://www.netbeans.org/">netbeans.org</a>.</p>
+</li>
+<li>
+<p><strong>CodeBlocks</strong>: en el caso de C/C++ este IDE realmente es muy bueno. A diferencia de NetBeans se dedica a un solo lenguaje y es un poco más ligero. Si vas a programar en C o C++ este es el un buen candidato. Página <a href="https://www.codeblocks.org/">codeblocks.org</a>.</p>
+</li>
+<li>
+<p><strong>Git</strong>: si estás en el mundo de la programación y no conoces este programa entonces es hora que pares de leer y visites <a href="https://git-scm.com/">git-scm.com</a>. Si por el contrario no conoces git y no eres programador entonces ve a esa dirección al terminar de leer este artículo, pues te será muy útil para mantener tus documentos bajo control cuando trabajes con versiones (como en una tesis o trabajo de grado). ¿Que es git? un sistema de gestión de control de versiones. Visita git-scm.com, o mejor comienza de una vez viendo estos videos que aparecen en su página.</p>
+</li>
+<li>
+<p><strong>TortoiseHg</strong>: antes de usar Git llevaba el control de versiones de diversos proyectos en <a href="http://mercurial.selenic.com/">Mercurial</a><i class="fa-solid fa-link-slash roq-broken-link" aria-hidden="true" title="Broken link"></i>. Es un excelente gestor de control de versiones, bastante simple de aprender y comprender. Si por alguna razón Git no es lo tuyo entonces prueba Mercurial. Para instalar TortoiseHg visita <a href="http://tortoisehg.bitbucket.org/">tortoisehg.bitbucket.org</a><i class="fa-solid fa-link-slash roq-broken-link" aria-hidden="true" title="Broken link"></i>.</p>
+</li>
+<li>
+<p><strong>KDiff3</strong>: cuando trabajamos con múltiples versiones de documentos siempre queda la duda en saber qué ha cambiado de un documento a otro. Esto se resuelve con herramientas <a href="https://es.wikipedia.org/wiki/Diff">diff</a>. Para comparar documentos este es el programa <a href="https://kdiff3.sourceforge.net/">kdiff3.sourceforge.net</a>.</p>
+</li>
+<li>
+<p><strong>WinSCP</strong>: este programa permite transferir archivos a servidores remotos utilizando un interfaz gráfico mediante <a href="https://es.wikipedia.org/wiki/Secure_Shell">SSH</a> (Secure Shell) con los protocolos <a href="https://es.wikipedia.org/wiki/SSH_File_Transfer_Protocol">SFTP</a> o <a href="https://es.wikipedia.org/wiki/Secure_Copy">SCP</a>. Para más información visite <a href="https://winscp.net/">winscp.net</a>.</p>
+</li>
+<li>
+<p><strong>PuTTY</strong>: este programa es un cliente Telnet y SSH, así que para conexiones remotas a un shell es una alternativa decente. Para instalar PuTTY visite <a href="https://www.putty.org/">putty.org</a>.</p>
+</li>
+<li>
+<p><strong>Python</strong>: en palabras simples, Python es lo mejor que han inventado después del Nestea. Python es un lenguaje de programación que recomiendo para todo aquel que quiera sacar provecho a su computador. Potente, simple y con baterías incluidas. Para ver más de Python visite <a href="https://python.org/">python.org</a>.</p>
+</li>
+<li>
+<p><strong>Ruby</strong>: si usted no es de esas personas que les gusta Python, entonces pruebe Ruby. Particularmente no lo uso mucho pero tiene un público fiel gracias a <a href="https://rubyonrails.org/">Rails</a>. Para saber más de Ruby visite <a href="https://www.ruby-lang.org/">ruby-lang.org</a>.</p>
+</li>
+<li>
+<p><strong>Qt SDK</strong>: una de las plataformas de desarrollo más maduras en el mundo del OpenSource es sin duda Qt, no me extenderé mucho acá y le invito a visitar <a href="https://www.qt.io/">qt-project.org</a> para que sea esta solución la que hable por si sola.</p>
+</li>
+<li>
+<p><strong>pgAdmin3</strong>: al utilizar de forma intensiva PostgreSQL en mi trabajo diario requiero un cliente para acceder, pgAdmin es una muy buena herramienta aunque simple para los acostumbrados a asistentes y entornos gráficos. Puede descargarlo de <a href="https://www.pgadmin.org">www.pgadmin.org</a>.</p>
+</li>
+<li>
+<p><strong>OSGeo4W</strong>: si usted desea tener a la mano excelentes programas libres para Sistemas de Información Geográfica este programa le resultará la manera mas fácil de instalarlos. Podrá instalar fácilmente programas como, <a href="https://qgis.org/">Quantum GIS</a>, <a href="https://grass.osgeo.org/">GRASS</a>, <a href="https://mapserver.org/">MapServer</a> y <a href="http://udig.refractions.net/">uDig</a> entre otros. Para descargar el instalador visite <a href="https://trac.osgeo.org/osgeo4w/">trac.osgeo.org/osgeo4w/</a>. Otro de los programas populares de los SIG en Software Libre es gvSIG, puede descargarlo desde <a href="http://www.gvsig.com/">gvsig.org</a>.</p>
+</li>
+</ul>
+<h2 id="sacando-un-terminal-bash-de-la-chistera">Sacando un Terminal Bash de la Chistera</h2>
+<p>¿Entonces ya podría decirse que tengo completo mi set de herramientas? Mmm.. no, aun falta una herramienta indispensable para un usuario que trabaje intensamente con GNU/Linux. Falta una línea de comandos decente. Confieso que no me gusta <em>cmd</em> con sus nombres recortados con virgulillas (el símbolo de rabo de cochino ~) y ventanas de ancho y alto incómodamente predefinidos. <a href="https://es.wikipedia.org/wiki/Windows_PowerShell">PowerShell</a> ha sido una mejora considerablemente, pero aun con sus alias para comandos *NIX es un poco tedioso, sumado a que un poco lento.</p>
+<p>Dicho de otro modo, necesito tener bash. Así que la mejor mejor manera es buscar uno que funcione bien en Windows. <a href="https://es.wikipedia.org/wiki/Cygwin">Cygwin</a> luce como la solución ideal, pues su biblioteca cygwin1.dll se encarga de linuxear un entorno de trabajo, incluidas algunas aplicaciones sobre X server. Además su instalador es una alternativa gráfica eficiente comparable a <a href="https://es.wikipedia.org/wiki/Synaptic">Synaptic</a> o <a href="https://www.yumex.dk/">yumex</a>. Aquí comparto unos pantallazos del proceso de instalación.</p>
+<p><img src="/posts/llena-tu-windows-de-foss/cygwin.gif" alt="Cygwin GIF" /></p>
+<p><img src="/posts/llena-tu-windows-de-foss/cygwin_terminal.png" alt="Cygwin Terminal" /></p>
+<h2 id="programas-que-no-instalo-en-windows">Programas que NO instalo en Windows</h2>
+<p>Por tema de rendimiento de mi netbook, no instalo programas y lenguajes que me hubiese gustado tener a la mano. Sin embargo los mantengo en mis equipos con GNU/Linux en caso de requerirlos. Uno de los criterios es no instalar ningún gestor de bases de datos, pues requieren un poco más de memoria y no es viable hacer un uso decente de las mismas. Es así como no instalé <a href="https://www.postgresql.org/">PostgreSQL</a>, <a href="https://mariadb.org/">MariaDB</a>, <a href="https://www.mongodb.org/">MongoDB</a> o <a href="https://couchdb.apache.org/">CouchDB</a>, simplemente no tengo recursos para soportarlos adecuadamente en mi equipo, y francamente nadie con suficiente criterio las pondría en producción desde Windows. Por la misma razón no instalé un servidor de páginas web como <a href="https://httpd.apache.org/">Apache</a> (ni el IIS). Los demás que no instalé fueron los lenguajes <a href="https://www.haskell.org/">Haskell</a>, <a href="https://www.erlang.org/">Erlang</a> y <a href="https://php.net/">PHP</a>, que los uso poco y prefiero seguirlos manteniendo en GNU/Linux.</p>
+<h2 id="software-gratis-pero-no-foss">Software Gratis pero No FOSS</h2>
+<p><img src="/posts/llena-tu-windows-de-foss/2009-02-09-foss-windows.png" alt="FOSS Windows" /></p>
+<p>Soy del pensar que hay programas útiles en todos lados. Así que no me da comezón utilizar algún programa que me facilite la vida siempre que lo pueda usar de forma legal, y si es gratuito cuanto mejor. Algunos de los programas de este tipo que creo son útiles son:</p>
+<ul>
+<li>
+<p><strong>Chrome</strong>: Navegador de la gente de Google. <a href="https://www.google.com/chrome">chrome.google.com</a>.</p>
+</li>
+<li>
+<p><strong>TeamViewer</strong>: Administrador remoto de computadores <a href="https://www.teamviewer.com/">teamviewer.com</a>.</p>
+</li>
+<li>
+<p><strong>Komodo Edit</strong>: Otro editor de texto excelente, no es libre pero tiene un plugin para edición de mapfiles de MapServer que se agraedce. <a href="http://www.activestate.com/komodo-edit">activestate.com</a><i class="fa-solid fa-link-slash roq-broken-link" aria-hidden="true" title="Broken link"></i>.</p>
+</li>
+<li>
+<p><strong>Dropbox</strong> y <strong>Box</strong>: Servicios de almacenamiento en red, ofrecen espacio gratuito si te inscribes. <a href="https://www.dropbox.com/">dropbox.com</a> y <a href="https://www.box.com/">box.com</a>.</p>
+</li>
+<li>
+<p><strong>GitHub</strong>: Si eres usuario Git y tienes tus repositorios en GitHub, cuando trabajes en Windows esto será de mucha utilidad. <a href="https://windows.github.com/">windows.github.com</a></p>
+</li>
+<li>
+<p><strong>Skype</strong>: Servicio de llamadas por Internet muy popular. <a href="https://www.skype.com/">skype.com</a></p>
+</li>
+<li>
+<p><strong>Hangouts</strong>: A efectos prácticos es lo mismo que el Skype (videollamadas y chat), sin embargo si vas a grabar una videoconferencia es bastante útil. <a href="https://www.google.com/hangouts/">google.com/hangouts/</a>.</p>
+</li>
+</ul>
+<h2 id="otros-recursos">Otros Recursos</h2>
+<p>Obviamente todo lo que está acá responde a mis necesidades particulares, sin embargo hay un proyecto llamado CD Libre que se ha dado a la tarea de recopilar información de Software Libre para todo uso. Para descargar alguna de sus recopilaciones visite <a href="https://www.cdlibre.org/descargar/index.html">cdlibre.org</a>.</p>
+      </section>
+      <div class="page-footer">
+        <div class="footer-links">
+          <div class="page-share">
+            <a href="https://twitter.com/intent/tweet?text=Llena tu Windows de FOSS&url=https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fllena-tu-windows-de-foss%2F" title="Share on Twitter"
+              rel="nofollow noopener noreferrer"  target="_blank">Twitter</a>
+            <a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fllena-tu-windows-de-foss%2F" title="Share on Facebook" rel="nofollow noopener noreferrer"
+              target="_blank">Facebook</a>
+            <a href="https://bsky.app/intent/compose?text=Llena tu Windows de FOSS%0ACheck%20it%20out%20https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fllena-tu-windows-de-foss%2F"
+              title="Share on Bluesky" rel="nofollow noopener noreferrer" target="_blank">Bluesky</a>
+          </div>
+          <div class="page-tag">
+            <a href="/posts/tag/dogfooding" class="tag">&#35; dogfooding</a>
+            <a href="/posts/tag/migration" class="tag">&#35; migration</a>
+            <a href="/posts/tag/open-source" class="tag">&#35; open-source</a>
+            <a href="/posts/tag/spanish" class="tag">&#35; spanish</a>
+          </div>
+
+        </div>
+        <div class="author">
+    <img src="/images/logo-carlos-web.png" alt="author-carlosgruiz" />
+
+  <div class="author-data">
+    <a target="_blank" rel="noopener noreferrer" href="https://carlosgruiz.dev/" class="author-name">Carlos Gustavo Ruiz</a>
+    <span class="author-job-title">Pizza lover 🍕 · Web creature 💻 · Curious nerd 🤓 · Amateur musician 🎸</span>
+  </div>
+</div>
+
+      </div>
+    </section> <!-- End Wrap Content -->
+  </section> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+
+
+</main>
+
+
+
+</div>
+
+</body>
+</html>

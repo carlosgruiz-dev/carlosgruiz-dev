@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+
+<!-- Prevent flash of unstyled content for dark mode -->
+<script>
+  const savedTheme = localStorage.getItem('darkMode');
+  const isDark = savedTheme !== null
+    ? savedTheme === 'true'
+    : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (isDark) {
+    document.documentElement.classList.add('dark');
+  }
+</script>
+
+
+
+  <!-- SEO TITLE -->
+  
+  <title>#best-practices - Carlos Gustavo Ruiz</title>
+  <meta property="og:title" content="#best-practices" />
+  <meta name="twitter:title" content="#best-practices">
+  <meta property="og:site_name" content="Carlos Gustavo Ruiz">
+  <!-- SEO DESCRIPTION -->
+  <meta name="description" content="Systems Engineer · code, data &amp; maps">
+  <meta property="og:description" content="Systems Engineer · code, data &amp; maps" />
+  <meta name="twitter:description" content="Systems Engineer · code, data &amp; maps">
+
+  <!-- SEO URL -->
+  <link rel="canonical" href="https://carlosgruiz.dev/posts/tag/best-practices/" />
+  <meta property="og:url" content="https://carlosgruiz.dev/posts/tag/best-practices/" />
+  <meta name="twitter:url" content="https://carlosgruiz.dev/posts/tag/best-practices/">
+
+  <!-- SEO TYPE -->
+  <meta property="og:type" content="website" />
+
+  <!-- SEO IMAGE -->
+  <meta name="twitter:card" content="summary">
+  <!-- SEO PAGINATOR -->
+  <!-- SEO LOCALE -->
+  <meta property="og:locale" content="en_PA" />
+  <!-- SEO GENERATOR -->
+  <meta name="generator" content="Quarkus Roq v2.1.9" />
+
+<link rel="alternate" type="application/rss+xml" title="Carlos Gustavo Ruiz" href="https://carlosgruiz.dev/rss.xml"/>
+<!-- Favicon -->
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/images/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+<base href="/posts/tag/best-practices/">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="theme-color" content="#1e1e2e">
+<meta name="msapplication-navbutton-color" content="#1e1e2e">
+<meta name="apple-mobile-web-app-status-bar-style" content="#1e1e2e">
+
+
+    <script type="module" src="/static/bundle/app-BNJCCHZQ.js"></script>
+      <link rel="stylesheet" href="/static/bundle/app-O2IDU56U.css" />
+
+<script type="module" src="/static/bundle/search.js?id=0d3b83cf-9dd0-4763-946e-b7ddccf42bd6"></script>
+<script type="module" nonce="01KJ2EZHMFP32C2GYZ01SS3DG3">
+  setupSearch({
+    url: '/search-index.json'
+  });
+</script>
+<link rel="stylesheet" href="/static/bundle/search.css?id=0d3b83cf-9dd0-4763-946e-b7ddccf42bd6"></head>
+<body >
+
+
+
+<div class="wrapper tag-page">
+
+
+
+<aside class="sidebar main">
+  <header>
+<!-- Theme configuration: https://iamroq.dev/theme/default/#site-data -->
+<section class="about">
+  <div class="site-logo">
+    <a href="/"><img src="/images/logo-carlos-web.png" alt="Carlos Gustavo Ruiz"></a>
+  </div>
+  <div class="site-name">Carlos Gustavo Ruiz</div>
+  <p>Systems Engineer · code, data &amp; maps</p>
+</section><button type="button" id="search-button" class="search-button" aria-label="Search"></button>
+<section class="menu">
+  <h3 class="section-title menu-title">MENU</h3>
+  <ul>
+    <li><a class="" href="/" ><i class="fa-solid fa-house"></i>Home</a> </li>
+    <li><a class="" href="/posts" ><i class="fa-regular fa-newspaper"></i>Posts</a> </li>
+    <li><a class="" href="/tags" ><i class="fa-solid fa-tags"></i>Tags</a> </li>
+    <li><a class="" href="https://github.com/carlosgruiz-dev/carlosgruiz-dev/wiki" target="_blank"><i class="fa-solid fa-pen-clip"></i>Wiki</a> </li>
+    <li><a class="" href="/talks" ><i class="fa fa-chalkboard"></i>Talks</a> </li>
+    <li><a class="" href="/arts" ><i class="fa-solid fa-seedling"></i>Arts</a> </li>
+    <li><a class="" href="/now" ><i class="fa fa-calendar-day"></i>Now</a> </li>
+  </ul>
+</section>
+  </header> <!-- End Header -->
+  <footer>
+<section class="contact">
+    <h3 class="section-title contact-title">Contact me</h3>
+    <ul>
+        <li>
+            <a href="https://in.linkedin.com/in/carlosgruiz-dev" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://instagram.com/carlosgruiz_dev" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/carlosgruiz-dev" target="_blank" rel="noopener noreferrer" aria-label="github">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</section><section class="copyright">
+  <p>2026 &copy; Carlos Ruiz</p>
+</section>
+
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<!-- Dark Mode Toggle - Fixed top-right for all screen sizes -->
+<button class="dark-mode-toggle" aria-label="Toggle dark mode">
+  <i class="fas fa-moon"></i>
+</button>
+<main class="main-content">
+
+<div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Search" aria-hidden="true">
+  <div class="search-overlay-content">
+    <button class="search-close" id="search-close" aria-label="Close search">&times;</button>
+    <div id="search-field">
+      <input
+        type="search"
+        class="search-input"
+        id="search-input"
+        placeholder="Search..."
+        aria-label="Search"
+        autocomplete="off"
+        autofocus
+      />
+    </div>
+    <div class="search-results" id="search-results" role="region" aria-live="polite" aria-label="Search results">
+      <!-- Search results will be dynamically inserted here -->
+    </div>
+  </div>
+</div>
+<article class="page-content page-alt page-wide">
+
+  <section class="content-main">
+<section class="page-header">
+  <h1 class="page-title">best-practices</h1>
+</section>    <div class="content-prose">
+
+
+
+
+<div class="posts-list">
+<article class="card post">
+  <a class="post-thumbnail" style='background-image: url("/posts/comunidades-tecnologicas-101/2013-10-18_visita_cariaco-1024x768.jpg")' href="/posts/comunidades-tecnologicas-101/" aria-label="Comunidades Tecnologicas 101"></a>
+  <div class="post-content">
+    <h2 class="post-title"><a href="/posts/comunidades-tecnologicas-101/">Comunidades Tecnologicas 101</a></h2>
+    <p>Mi experiencia sobre cómo iniciar y mantener una comunidad tecnológica, a propósito de la visita a los jóvenes de la UPTOS-CR en Cariaco.</p>
+    <span class="post-date">Oct 30, 2013&nbsp;&nbsp;&nbsp;—&nbsp;</span>
+    <span class="post-words">
+    6 minute(s) read
+  </span>
+  </div>
+</article><article class="card post">
+  <a class="post-thumbnail" style='background-image: url("/posts/dogfooding/dog_food_bowl.jpg")' href="/posts/dogfooding/" aria-label="Dogfooding"></a>
+  <div class="post-content">
+    <h2 class="post-title"><a href="/posts/dogfooding/">Dogfooding</a></h2>
+    <p>El concepto de comer la propia comida (eating your own dog food) para desmontar mitos tecnológicos y tomar mejores decisiones al adoptar tecnologías.</p>
+    <span class="post-date">Oct 18, 2012&nbsp;&nbsp;&nbsp;—&nbsp;</span>
+    <span class="post-words">
+    3 minute(s) read
+  </span>
+  </div>
+</article></div>
+
+<div class="container">
+
+  <nav class="pagination" role="navigation">
+    <ul>
+
+
+    </ul>
+  </nav>
+
+</div>    </div>
+  </section>
+</article>
+
+
+
+
+
+</main>
+
+
+
+</div>
+
+</body>
+</html>

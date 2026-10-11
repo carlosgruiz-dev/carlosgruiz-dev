@@ -1,0 +1,354 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title><![CDATA[ Carlos Gustavo Ruiz ]]></title>
+    <description><![CDATA[ Systems Engineer · code, data & maps ]]></description>
+    <link>https://carlosgruiz.dev/</link>
+    <atom:link href="https://carlosgruiz.dev/rss.xml" rel="self" type="application/rss+xml"/>
+    <generator>Quarkus Roq</generator>
+    <lastBuildDate>Sun, 13 Oct 2024 00:00:00 -0500</lastBuildDate>
+      <item>
+        <title><![CDATA[The First Roq!]]></title>
+        <link>https://carlosgruiz.dev/posts/the-first-roq/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/the-first-roq/</guid>
+        <pubDate>Sun, 13 Oct 2024 00:00:00 -0500</pubDate>
+        <description><![CDATA[This is my first article ever made with Quarkus Roq]]></description>
+        <content:encoded><![CDATA[<p>This is my first article ever made with Quarkus Roq</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/the-first-roq/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Entrevista Python Venezuela]]></title>
+        <link>https://carlosgruiz.dev/posts/entrevista-python-venezuela/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/entrevista-python-venezuela/</guid>
+        <pubDate>Fri, 21 Sep 2018 00:00:00 -0500</pubDate>
+        <description><![CDATA[Entrevista con Jesús Gómez del proyecto Python Venezuela sobre mis inicios como programador, Python y el proyecto en el que trabajo.]]></description>
+        <content:encoded><![CDATA[<p>Entrevista con Jesús Gómez del proyecto Python Venezuela sobre mis inicios como programador, Python y el proyecto en el que trabajo.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/entrevista-python-venezuela/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Starting a Haskell Project With Stack]]></title>
+        <link>https://carlosgruiz.dev/posts/starting-a-haskell-project-with-stack/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/starting-a-haskell-project-with-stack/</guid>
+        <pubDate>Sun, 04 Mar 2018 00:00:00 -0500</pubDate>
+        <description><![CDATA[Cómo empezar un proyecto de Haskell con Stack, usando plantillas para crear nuevos proyectos.]]></description>
+        <content:encoded><![CDATA[<p>Cómo empezar un proyecto de Haskell con Stack, usando plantillas para crear nuevos proyectos.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/starting-a-haskell-project-with-stack/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Haskell Simple HTTP Server]]></title>
+        <link>https://carlosgruiz.dev/posts/haskell-simple-http-server/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/haskell-simple-http-server/</guid>
+        <pubDate>Sun, 20 Aug 2017 00:00:00 -0500</pubDate>
+        <description><![CDATA[Un proyecto para crear un servidor HTTP simple en Haskell, comparando sockets, Wai y una referencia en Node.js.]]></description>
+        <content:encoded><![CDATA[<p>Un proyecto para crear un servidor HTTP simple en Haskell, comparando sockets, Wai y una referencia en Node.js.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/haskell-simple-http-server/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Installing FreeBSD on Virtualbox]]></title>
+        <link>https://carlosgruiz.dev/posts/installing-freebsd-on-virtualbox/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/installing-freebsd-on-virtualbox/</guid>
+        <pubDate>Sun, 21 Aug 2016 00:00:00 -0500</pubDate>
+        <description><![CDATA[Practicing with a FreeBSD installation as a guest OS on VirtualBox, and how to make your own animated gif with ImageMagick.]]></description>
+        <content:encoded><![CDATA[<p>Practicing with a FreeBSD installation as a guest OS on VirtualBox, and how to make your own animated gif with ImageMagick.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/installing-freebsd-on-virtualbox/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Vim + Python Mode]]></title>
+        <link>https://carlosgruiz.dev/posts/vim-python-mode/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/vim-python-mode/</guid>
+        <pubDate>Fri, 22 Apr 2016 00:00:00 -0500</pubDate>
+        <description><![CDATA[Presentación de mi primera charla sobre vim en el PyDay Caracas 2016.]]></description>
+        <content:encoded><![CDATA[<p>Presentación de mi primera charla sobre vim en el PyDay Caracas 2016.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/vim-python-mode/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Manten tu documentacion a mano con Zeal]]></title>
+        <link>https://carlosgruiz.dev/posts/manten-tu-documentacion-a-mano-con-zeal/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/manten-tu-documentacion-a-mano-con-zeal/</guid>
+        <pubDate>Fri, 13 Mar 2015 00:00:00 -0500</pubDate>
+        <description><![CDATA[Zeal, una herramienta para explorar la documentación de las APIs más populares en modo desconectado: instalación, docsets e integraciones.]]></description>
+        <content:encoded><![CDATA[<p>Zeal, una herramienta para explorar la documentación de las APIs más populares en modo desconectado: instalación, docsets e integraciones.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/manten-tu-documentacion-a-mano-con-zeal/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Generador de archivos .gitignore]]></title>
+        <link>https://carlosgruiz.dev/posts/generador-de-archivos-gitignore/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/generador-de-archivos-gitignore/</guid>
+        <pubDate>Mon, 22 Sep 2014 00:00:00 -0500</pubDate>
+        <description><![CDATA[gitignore.io, un generador de archivos .gitignore para sus proyectos.]]></description>
+        <content:encoded><![CDATA[<p>gitignore.io, un generador de archivos .gitignore para sus proyectos.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/generador-de-archivos-gitignore/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Instalar Netbeans en Gentoo]]></title>
+        <link>https://carlosgruiz.dev/posts/instalar-netbeans-en-gentoo/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/instalar-netbeans-en-gentoo/</guid>
+        <pubDate>Sun, 02 Feb 2014 00:00:00 -0500</pubDate>
+        <description><![CDATA[Bitácora para instalar NetBeans en Gentoo Linux seleccionando los módulos deseados mediante la variable NETBEANS_MODULES.]]></description>
+        <content:encoded><![CDATA[<p>Bitácora para instalar NetBeans en Gentoo Linux seleccionando los módulos deseados mediante la variable NETBEANS_MODULES.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/instalar-netbeans-en-gentoo/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Outrunning the Bear]]></title>
+        <link>https://carlosgruiz.dev/posts/outrunning-the-bear/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/outrunning-the-bear/</guid>
+        <pubDate>Fri, 31 Jan 2014 00:00:00 -0500</pubDate>
+        <description><![CDATA[Sobre la expresión 'outrunning the bear' (o dejar atrás al oso) y cómo enfocar las energías hacia los competidores directos.]]></description>
+        <content:encoded><![CDATA[<p>Sobre la expresión 'outrunning the bear' (o dejar atrás al oso) y cómo enfocar las energías hacia los competidores directos.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/outrunning-the-bear/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Bases de Datos Libres desde 40.000 pies de altura]]></title>
+        <link>https://carlosgruiz.dev/posts/bases-de-datos-libres-desde-40000-pies-de-altura/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/bases-de-datos-libres-desde-40000-pies-de-altura/</guid>
+        <pubDate>Wed, 30 Oct 2013 00:00:00 -0500</pubDate>
+        <description><![CDATA[Ponencia sobre bases de datos libres presentada en la 1ra Cayapa Universitaria de la UPTOS-CR, en representación de TuBaseDeDatosLibre.org.]]></description>
+        <content:encoded><![CDATA[<p>Ponencia sobre bases de datos libres presentada en la 1ra Cayapa Universitaria de la UPTOS-CR, en representación de TuBaseDeDatosLibre.org.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/bases-de-datos-libres-desde-40000-pies-de-altura/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Comunidades Tecnologicas 101]]></title>
+        <link>https://carlosgruiz.dev/posts/comunidades-tecnologicas-101/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/comunidades-tecnologicas-101/</guid>
+        <pubDate>Wed, 30 Oct 2013 00:00:00 -0500</pubDate>
+        <description><![CDATA[Mi experiencia sobre cómo iniciar y mantener una comunidad tecnológica, a propósito de la visita a los jóvenes de la UPTOS-CR en Cariaco.]]></description>
+        <content:encoded><![CDATA[<p>Mi experiencia sobre cómo iniciar y mantener una comunidad tecnológica, a propósito de la visita a los jóvenes de la UPTOS-CR en Cariaco.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/comunidades-tecnologicas-101/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[¿Por qué hacemos persistencia de datos?]]></title>
+        <link>https://carlosgruiz.dev/posts/por-que-hacemos-persistencia-de-datos/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/por-que-hacemos-persistencia-de-datos/</guid>
+        <pubDate>Fri, 06 Sep 2013 00:00:00 -0500</pubDate>
+        <description><![CDATA[Presentación sobre bases de datos y persistencia de datos en la 1ra sensibilización para la adopción de bases de datos libres del CNTI.]]></description>
+        <content:encoded><![CDATA[<p>Presentación sobre bases de datos y persistencia de datos en la 1ra sensibilización para la adopción de bases de datos libres del CNTI.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/por-que-hacemos-persistencia-de-datos/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Introducción a Pyramid]]></title>
+        <link>https://carlosgruiz.dev/posts/introduccion-a-pyramid/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/introduccion-a-pyramid/</guid>
+        <pubDate>Tue, 20 Aug 2013 00:00:00 -0500</pubDate>
+        <description><![CDATA[Introducción a Pyramid, un framework ligero para desarrollo web en Python: principios, instalación, primeras aplicaciones y el uso de armazones con SQLAlchemy.]]></description>
+        <content:encoded><![CDATA[<p>Introducción a Pyramid, un framework ligero para desarrollo web en Python: principios, instalación, primeras aplicaciones y el uso de armazones con SQLAlchemy.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/introduccion-a-pyramid/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Introducción a ZODB]]></title>
+        <link>https://carlosgruiz.dev/posts/breve-introduccion-a-zodb/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/breve-introduccion-a-zodb/</guid>
+        <pubDate>Fri, 26 Jul 2013 00:00:00 -0500</pubDate>
+        <description><![CDATA[Introducción a ZODB (Zope Object Data Base), un gestor de bases de datos orientado a objetos para Python: instalación, ejemplos y almacenes disponibles.]]></description>
+        <content:encoded><![CDATA[<p>Introducción a ZODB (Zope Object Data Base), un gestor de bases de datos orientado a objetos para Python: instalación, ejemplos y almacenes disponibles.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/breve-introduccion-a-zodb/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Llena tu Windows de FOSS]]></title>
+        <link>https://carlosgruiz.dev/posts/llena-tu-windows-de-foss/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/llena-tu-windows-de-foss/</guid>
+        <pubDate>Fri, 12 Jul 2013 00:00:00 -0500</pubDate>
+        <description><![CDATA[Mi set de herramientas libres y de código abierto para trabajar en Windows: programas, un terminal bash con Cygwin, y lo que decidí no instalar.]]></description>
+        <content:encoded><![CDATA[<p>Mi set de herramientas libres y de código abierto para trabajar en Windows: programas, un terminal bash con Cygwin, y lo que decidí no instalar.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/llena-tu-windows-de-foss/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Receta para hacer un mapa electoral simple]]></title>
+        <link>https://carlosgruiz.dev/posts/receta-para-hacer-un-mapa-electoral-simple/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/receta-para-hacer-un-mapa-electoral-simple/</guid>
+        <pubDate>Thu, 18 Apr 2013 00:00:00 -0500</pubDate>
+        <description><![CDATA[Receta para elaborar un mapa electoral con los resultados de una elección usando Quantum GIS: ingredientes y procedimiento paso a paso.]]></description>
+        <content:encoded><![CDATA[<p>Receta para elaborar un mapa electoral con los resultados de una elección usando Quantum GIS: ingredientes y procedimiento paso a paso.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/receta-para-hacer-un-mapa-electoral-simple/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Migraciones a Software Libre (Parte 1)]]></title>
+        <link>https://carlosgruiz.dev/posts/migraciones-a-software-libre-parte-1/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/migraciones-a-software-libre-parte-1/</guid>
+        <pubDate>Tue, 16 Apr 2013 00:00:00 -0500</pubDate>
+        <description><![CDATA[Recomendaciones sobre migración a software libre basadas en la experiencia: antecedentes en Venezuela, las leyes de Newton del cambio y la direccionalidad de la migración.]]></description>
+        <content:encoded><![CDATA[<p>Recomendaciones sobre migración a software libre basadas en la experiencia: antecedentes en Venezuela, las leyes de Newton del cambio y la direccionalidad de la migración.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/migraciones-a-software-libre-parte-1/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[“Hola PostgreSQL” (con Python)]]></title>
+        <link>https://carlosgruiz.dev/posts/hola-postgresql-con-python/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/hola-postgresql-con-python/</guid>
+        <pubDate>Mon, 18 Feb 2013 00:00:00 -0500</pubDate>
+        <description><![CDATA[Cómo conectar Python con PostgreSQL usando psycopg2 y la DB API 2.0 (PEP-249): instalación, conexión y un pequeño script.]]></description>
+        <content:encoded><![CDATA[<p>Cómo conectar Python con PostgreSQL usando psycopg2 y la DB API 2.0 (PEP-249): instalación, conexión y un pequeño script.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/hola-postgresql-con-python/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Convertir repositorios Mercurial a git]]></title>
+        <link>https://carlosgruiz.dev/posts/convertir-repositorios-mercurial-a-git/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/convertir-repositorios-mercurial-a-git/</guid>
+        <pubDate>Mon, 04 Feb 2013 00:00:00 -0500</pubDate>
+        <description><![CDATA[Cómo migrar repositorios Mercurial a git usando fast-export: el paso a paso.]]></description>
+        <content:encoded><![CDATA[<p>Cómo migrar repositorios Mercurial a git usando fast-export: el paso a paso.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/convertir-repositorios-mercurial-a-git/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Tutorial “Introducción a la programacion Qt” y otros hallazgos en la azotea]]></title>
+        <link>https://carlosgruiz.dev/posts/tutorial-introduccion-a-la-programacion-qt-y-otros-hallazgos-en-la-azotea/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/tutorial-introduccion-a-la-programacion-qt-y-otros-hallazgos-en-la-azotea/</guid>
+        <pubDate>Fri, 25 Jan 2013 00:00:00 -0500</pubDate>
+        <description><![CDATA[Pasos resueltos del tutorial 'Getting Started Programming with Qt' y otros trucos: unir repositorios Mercurial, eliminar espacios en nombres y mover una base PostgreSQL.]]></description>
+        <content:encoded><![CDATA[<p>Pasos resueltos del tutorial 'Getting Started Programming with Qt' y otros trucos: unir repositorios Mercurial, eliminar espacios en nombres y mover una base PostgreSQL.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/tutorial-introduccion-a-la-programacion-qt-y-otros-hallazgos-en-la-azotea/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Geomatica Libre en Venezuela (Presentación a José Sosa - CNTI)]]></title>
+        <link>https://carlosgruiz.dev/posts/geomatica-libre-en-venezuela-presentacion-a-jose-sosa-cnti/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/geomatica-libre-en-venezuela-presentacion-a-jose-sosa-cnti/</guid>
+        <pubDate>Tue, 11 Dec 2012 00:00:00 -0500</pubDate>
+        <description><![CDATA[Presentación sobre Geomática Libre en Venezuela ante José Sosa, presidente del CNTI, junto a Zaida Pinto y Richard Hernandez.]]></description>
+        <content:encoded><![CDATA[<p>Presentación sobre Geomática Libre en Venezuela ante José Sosa, presidente del CNTI, junto a Zaida Pinto y Richard Hernandez.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/geomatica-libre-en-venezuela-presentacion-a-jose-sosa-cnti/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Mini Taller de Base de Datos y PostgreSQL]]></title>
+        <link>https://carlosgruiz.dev/posts/mini-taller-de-base-de-datos-y-postgresql/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/mini-taller-de-base-de-datos-y-postgresql/</guid>
+        <pubDate>Mon, 10 Dec 2012 00:00:00 -0500</pubDate>
+        <description><![CDATA[Material del taller introductorio de bases de datos y PostgreSQL dictado con TuBaseDeDatosLibre.org en Corpoelec y el Ministerio de la Cultura.]]></description>
+        <content:encoded><![CDATA[<p>Material del taller introductorio de bases de datos y PostgreSQL dictado con TuBaseDeDatosLibre.org en Corpoelec y el Ministerio de la Cultura.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/mini-taller-de-base-de-datos-y-postgresql/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Urumaco y los datos]]></title>
+        <link>https://carlosgruiz.dev/posts/urumaco-y-los-datos/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/urumaco-y-los-datos/</guid>
+        <pubDate>Mon, 03 Dec 2012 00:00:00 -0500</pubDate>
+        <description><![CDATA[Sobre Urumaco, un visualizador cartográfico educativo, y los retos de conseguir datos geográficos abiertos en Venezuela.]]></description>
+        <content:encoded><![CDATA[<p>Sobre Urumaco, un visualizador cartográfico educativo, y los retos de conseguir datos geográficos abiertos en Venezuela.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/urumaco-y-los-datos/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Integrando C++ con Python]]></title>
+        <link>https://carlosgruiz.dev/posts/integrando-cpp-con-python/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/integrando-cpp-con-python/</guid>
+        <pubDate>Sun, 11 Nov 2012 00:00:00 -0500</pubDate>
+        <description><![CDATA[Ejemplos prácticos de la charla del PyCon Venezuela 2012 para integrar Python y C++: incrustar Python, Swig y Boost.]]></description>
+        <content:encoded><![CDATA[<p>Ejemplos prácticos de la charla del PyCon Venezuela 2012 para integrar Python y C++: incrustar Python, Swig y Boost.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/integrando-cpp-con-python/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Web Mapping con Django]]></title>
+        <link>https://carlosgruiz.dev/posts/web-mapping-con-django/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/web-mapping-con-django/</guid>
+        <pubDate>Wed, 07 Nov 2012 00:00:00 -0500</pubDate>
+        <description><![CDATA[Material del taller de aplicaciones web de mapas con Django presentado en el PyCon Venezuela 2012: presentación paso a paso y ejercicios resueltos.]]></description>
+        <content:encoded><![CDATA[<p>Material del taller de aplicaciones web de mapas con Django presentado en el PyCon Venezuela 2012: presentación paso a paso y ejercicios resueltos.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/web-mapping-con-django/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Pycon Venezuela 2012]]></title>
+        <link>https://carlosgruiz.dev/posts/pycon-venezuela-2012/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/pycon-venezuela-2012/</guid>
+        <pubDate>Mon, 05 Nov 2012 00:00:00 -0500</pubDate>
+        <description><![CDATA[Crónica del PyCon Venezuela 2012: tres días que consolidaron la comunidad Python del país, con Pygouts, PyDays y nuevas ediciones en camino.]]></description>
+        <content:encoded><![CDATA[<p>Crónica del PyCon Venezuela 2012: tres días que consolidaron la comunidad Python del país, con Pygouts, PyDays y nuevas ediciones en camino.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/pycon-venezuela-2012/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[OpenVE y los “Kits de arranque”]]></title>
+        <link>https://carlosgruiz.dev/posts/openve-y-los-kits-de-arranque/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/openve-y-los-kits-de-arranque/</guid>
+        <pubDate>Sun, 28 Oct 2012 00:00:00 -0500</pubDate>
+        <description><![CDATA[Kits de arranque para OpenVE: guías que permiten en 15 minutos tomarle el gusto a un lenguaje, y el esqueleto estándar que las compone.]]></description>
+        <content:encoded><![CDATA[<p>Kits de arranque para OpenVE: guías que permiten en 15 minutos tomarle el gusto a un lenguaje, y el esqueleto estándar que las compone.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/openve-y-los-kits-de-arranque/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Dogfooding]]></title>
+        <link>https://carlosgruiz.dev/posts/dogfooding/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/dogfooding/</guid>
+        <pubDate>Thu, 18 Oct 2012 00:00:00 -0500</pubDate>
+        <description><![CDATA[El concepto de comer la propia comida (eating your own dog food) para desmontar mitos tecnológicos y tomar mejores decisiones al adoptar tecnologías.]]></description>
+        <content:encoded><![CDATA[<p>El concepto de comer la propia comida (eating your own dog food) para desmontar mitos tecnológicos y tomar mejores decisiones al adoptar tecnologías.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/dogfooding/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Entrevista en echandocodigo.com]]></title>
+        <link>https://carlosgruiz.dev/posts/entrevista-en-echandocodigo-com/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/entrevista-en-echandocodigo-com/</guid>
+        <pubDate>Mon, 15 Oct 2012 00:00:00 -0500</pubDate>
+        <description><![CDATA[Entrevista con Osledy Bazó y Daniel Rodríguez del podcast Echando Código sobre TuBaseDeDatosLibre.org y la experiencia como programador.]]></description>
+        <content:encoded><![CDATA[<p>Entrevista con Osledy Bazó y Daniel Rodríguez del podcast Echando Código sobre TuBaseDeDatosLibre.org y la experiencia como programador.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/entrevista-en-echandocodigo-com/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Taller de Geo Gobierno en Línea]]></title>
+        <link>https://carlosgruiz.dev/posts/taller-de-geo-gobierno-en-linea/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/taller-de-geo-gobierno-en-linea/</guid>
+        <pubDate>Sun, 14 Oct 2012 00:00:00 -0500</pubDate>
+        <description><![CDATA[Crónica del 2do Taller de Geo Gobierno en Línea: OpenStreetMap, el Mapa Colaborativo de Venezuela y la geomática libre.]]></description>
+        <content:encoded><![CDATA[<p>Crónica del 2do Taller de Geo Gobierno en Línea: OpenStreetMap, el Mapa Colaborativo de Venezuela y la geomática libre.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/taller-de-geo-gobierno-en-linea/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Requerimientos para PostgreSQL]]></title>
+        <link>https://carlosgruiz.dev/posts/requerimientos-para-postgresql/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/requerimientos-para-postgresql/</guid>
+        <pubDate>Wed, 30 May 2012 00:00:00 -0500</pubDate>
+        <description><![CDATA[Presentación sobre los requerimientos para PostgreSQL, realizada en el 3er Encuentro de Migración a Bases de Datos Libres (CANTV, 2012).]]></description>
+        <content:encoded><![CDATA[<p>Presentación sobre los requerimientos para PostgreSQL, realizada en el 3er Encuentro de Migración a Bases de Datos Libres (CANTV, 2012).</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/requerimientos-para-postgresql/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Mi Distro de Linux]]></title>
+        <link>https://carlosgruiz.dev/posts/mi-distro-de-linux/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/mi-distro-de-linux/</guid>
+        <pubDate>Tue, 10 Apr 2012 00:00:00 -0500</pubDate>
+        <description><![CDATA[Impresiones no técnicas sobre las distribuciones de GNU/Linux que he usado: Fedora, Gentoo, Sabayon, (x)Ubuntu, Canaima, Debian, Mint y Suse.]]></description>
+        <content:encoded><![CDATA[<p>Impresiones no técnicas sobre las distribuciones de GNU/Linux que he usado: Fedora, Gentoo, Sabayon, (x)Ubuntu, Canaima, Debian, Mint y Suse.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/mi-distro-de-linux/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Frameworks de C++ para la web]]></title>
+        <link>https://carlosgruiz.dev/posts/frameworks-de-cpp-para-la-web/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/frameworks-de-cpp-para-la-web/</guid>
+        <pubDate>Tue, 03 Apr 2012 00:00:00 -0500</pubDate>
+        <description><![CDATA[Un repaso de frameworks y toolkits para desarrollar para la web con C++: tntnet, TreeFrog Framework, Wt y CppCMS.]]></description>
+        <content:encoded><![CDATA[<p>Un repaso de frameworks y toolkits para desarrollar para la web con C++: tntnet, TreeFrog Framework, Wt y CppCMS.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/frameworks-de-cpp-para-la-web/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Alta Disponibilidad con PostgreSQL]]></title>
+        <link>https://carlosgruiz.dev/posts/alta-disponibilidad-con-postgresql/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/alta-disponibilidad-con-postgresql/</guid>
+        <pubDate>Tue, 29 Nov 2011 00:00:00 -0500</pubDate>
+        <description><![CDATA[Consideraciones sobre lo que se entiende por Alta Disponibilidad desde el punto de vista de las bases de datos, y en particular con PostgreSQL.]]></description>
+        <content:encoded><![CDATA[<p>Consideraciones sobre lo que se entiende por Alta Disponibilidad desde el punto de vista de las bases de datos, y en particular con PostgreSQL.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/alta-disponibilidad-con-postgresql/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Mejores Prácticas para la Migracion de Bases de Datos]]></title>
+        <link>https://carlosgruiz.dev/posts/mejores-practicas-para-la-migracion-de-bases-de-datos/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/mejores-practicas-para-la-migracion-de-bases-de-datos/</guid>
+        <pubDate>Wed, 05 Oct 2011 00:00:00 -0500</pubDate>
+        <description><![CDATA[Presentación sobre los aspectos no meramente técnicos a tomar en cuenta al migrar bases de datos, en el 2do Encuentro de Migración de Bases de Datos Privativas a Tecnologías de Información Libres.]]></description>
+        <content:encoded><![CDATA[<p>Presentación sobre los aspectos no meramente técnicos a tomar en cuenta al migrar bases de datos, en el 2do Encuentro de Migración de Bases de Datos Privativas a Tecnologías de Información Libres.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/mejores-practicas-para-la-migracion-de-bases-de-datos/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Mapa Colaborativo de Venezuela con OpenStreetMap]]></title>
+        <link>https://carlosgruiz.dev/posts/mapa-colaborativo-de-venezuela-osm/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/mapa-colaborativo-de-venezuela-osm/</guid>
+        <pubDate>Mon, 19 Sep 2011 00:00:00 -0500</pubDate>
+        <description><![CDATA[Presentación sobre las bondades del uso de OpenStreetMap, realizada en las jornadas de tecnologías de información libres para vivir viviendo.]]></description>
+        <content:encoded><![CDATA[<p>Presentación sobre las bondades del uso de OpenStreetMap, realizada en las jornadas de tecnologías de información libres para vivir viviendo.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/mapa-colaborativo-de-venezuela-osm/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Python vs El Mundo]]></title>
+        <link>https://carlosgruiz.dev/posts/python-vs-el-mundo/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/python-vs-el-mundo/</guid>
+        <pubDate>Tue, 10 May 2011 00:00:00 -0500</pubDate>
+        <description><![CDATA[Inspirado en Scott Pilgrim vs El Mundo y en el Día Python de mayo de 2011, una presentación sobre por qué usar Python para tu proyecto.]]></description>
+        <content:encoded><![CDATA[<p>Inspirado en Scott Pilgrim vs El Mundo y en el Día Python de mayo de 2011, una presentación sobre por qué usar Python para tu proyecto.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/python-vs-el-mundo/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Django vs Pylons]]></title>
+        <link>https://carlosgruiz.dev/posts/django-vs-pylons/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/django-vs-pylons/</guid>
+        <pubDate>Sun, 15 Aug 2010 00:00:00 -0500</pubDate>
+        <description><![CDATA[Comparación entre Django y Pylons como frameworks web en Python: popularidad, administración, documentación, plantillas, URLs y flexibilidad.]]></description>
+        <content:encoded><![CDATA[<p>Comparación entre Django y Pylons como frameworks web en Python: popularidad, administración, documentación, plantillas, URLs y flexibilidad.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/django-vs-pylons/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[GeoEtiquetas (Presentación en Jornadas gvSIG)]]></title>
+        <link>https://carlosgruiz.dev/posts/geoetiquetas-presentacion-en-jornadas-gvsig/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/geoetiquetas-presentacion-en-jornadas-gvsig/</guid>
+        <pubDate>Mon, 19 Jul 2010 00:00:00 -0500</pubDate>
+        <description><![CDATA[Presentación del proyecto GeoEtiquetas, en las 2das Jornadas de gvSIG Latinoamérica y del Caribe.]]></description>
+        <content:encoded><![CDATA[<p>Presentación del proyecto GeoEtiquetas, en las 2das Jornadas de gvSIG Latinoamérica y del Caribe.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/geoetiquetas-presentacion-en-jornadas-gvsig/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Camelot]]></title>
+        <link>https://carlosgruiz.dev/posts/camelot/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/camelot/</guid>
+        <pubDate>Wed, 09 Jun 2010 00:00:00 -0500</pubDate>
+        <description><![CDATA[Sobre Camelot, un proyecto para GUIs en Python inspirado en Django, con la presentación de FOSDEM 2009.]]></description>
+        <content:encoded><![CDATA[<p>Sobre Camelot, un proyecto para GUIs en Python inspirado en Django, con la presentación de FOSDEM 2009.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/camelot/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[Introduccion a Openlayers]]></title>
+        <link>https://carlosgruiz.dev/posts/introduccion-a-openlayers/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/introduccion-a-openlayers/</guid>
+        <pubDate>Wed, 09 Jun 2010 00:00:00 -0500</pubDate>
+        <description><![CDATA[Introducción a OpenLayers, la librería JavaScript para colocar mapas en una página web, con un ejemplo paso a paso.]]></description>
+        <content:encoded><![CDATA[<p>Introducción a OpenLayers, la librería JavaScript para colocar mapas en una página web, con un ejemplo paso a paso.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/introduccion-a-openlayers/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+      <item>
+        <title><![CDATA[El Lenguaje De Programacion Javascript]]></title>
+        <link>https://carlosgruiz.dev/posts/el-lenguaje-de-programacion-javascript/</link>
+        <guid isPermaLink="false">https://carlosgruiz.dev/posts/el-lenguaje-de-programacion-javascript/</guid>
+        <pubDate>Mon, 03 Aug 2009 00:00:00 -0500</pubDate>
+        <description><![CDATA[Una serie de videos que introducen el lenguaje de programación JavaScript, con las filminas de Douglas Crockford.]]></description>
+        <content:encoded><![CDATA[<p>Una serie de videos que introducen el lenguaje de programación JavaScript, con las filminas de Douglas Crockford.</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/el-lenguaje-de-programacion-javascript/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
+      </item>
+  </channel>
+</rss>

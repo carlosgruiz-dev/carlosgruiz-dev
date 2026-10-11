@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+
+<!-- Prevent flash of unstyled content for dark mode -->
+<script>
+  const savedTheme = localStorage.getItem('darkMode');
+  const isDark = savedTheme !== null
+    ? savedTheme === 'true'
+    : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (isDark) {
+    document.documentElement.classList.add('dark');
+  }
+</script>
+
+
+
+  <!-- SEO TITLE -->
+  
+  <title>“Hola PostgreSQL” (con Python) - Carlos Gustavo Ruiz</title>
+  <meta property="og:title" content="“Hola PostgreSQL” (con Python)" />
+  <meta name="twitter:title" content="“Hola PostgreSQL” (con Python)">
+  <meta property="og:site_name" content="Carlos Gustavo Ruiz">
+  <!-- SEO DESCRIPTION -->
+  <meta name="description" content="Cómo conectar Python con PostgreSQL usando psycopg2 y la DB API 2.0 (PEP-249): instalación, conexión y un pequeño script.">
+  <meta property="og:description" content="Cómo conectar Python con PostgreSQL usando psycopg2 y la DB API 2.0 (PEP-249): instalación, conexión y un pequeño script." />
+  <meta name="twitter:description" content="Cómo conectar Python con PostgreSQL usando psycopg2 y la DB API 2.0 (PEP-249): instalación, conexión y un pequeño script.">
+  <!-- SEO AUTHOR -->
+  <meta property="article:author" content="carlosgruiz" />
+  <meta name="author" content="carlosgruiz" />
+
+  <!-- SEO URL -->
+  <link rel="canonical" href="https://carlosgruiz.dev/posts/hola-postgresql-con-python/" />
+  <meta property="og:url" content="https://carlosgruiz.dev/posts/hola-postgresql-con-python/" />
+  <meta name="twitter:url" content="https://carlosgruiz.dev/posts/hola-postgresql-con-python/">
+
+  <!-- SEO TYPE -->
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="2013-02-18T00:00-05:00[America/Panama]" />
+
+  <!-- SEO IMAGE -->
+  <meta name="twitter:card" content="summary">
+  <!-- SEO COLLECTION PAGES -->
+  <link rel="prev" href="https://carlosgruiz.dev/posts/migraciones-a-software-libre-parte-1/" />
+  <link rel="next" href="https://carlosgruiz.dev/posts/convertir-repositorios-mercurial-a-git/" />
+  <!-- SEO LOCALE -->
+  <meta property="og:locale" content="en_PA" />
+  <!-- SEO GENERATOR -->
+  <meta name="generator" content="Quarkus Roq v2.1.9" />
+
+<link rel="alternate" type="application/rss+xml" title="Carlos Gustavo Ruiz" href="https://carlosgruiz.dev/rss.xml"/>
+<!-- Favicon -->
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/images/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+<base href="/posts/hola-postgresql-con-python/">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="theme-color" content="#1e1e2e">
+<meta name="msapplication-navbutton-color" content="#1e1e2e">
+<meta name="apple-mobile-web-app-status-bar-style" content="#1e1e2e">
+
+
+    <script type="module" src="/static/bundle/app-BNJCCHZQ.js"></script>
+      <link rel="stylesheet" href="/static/bundle/app-O2IDU56U.css" />
+
+<script type="module" src="/static/bundle/search.js?id=0d3b83cf-9dd0-4763-946e-b7ddccf42bd6"></script>
+<script type="module" nonce="01KJ2EZHMFP32C2GYZ01SS3DG3">
+  setupSearch({
+    url: '/search-index.json'
+  });
+</script>
+<link rel="stylesheet" href="/static/bundle/search.css?id=0d3b83cf-9dd0-4763-946e-b7ddccf42bd6"></head>
+<body >
+
+
+
+<div class="wrapper default">
+
+
+
+<aside class="sidebar main">
+  <header>
+<!-- Theme configuration: https://iamroq.dev/theme/default/#site-data -->
+<section class="about">
+  <div class="site-logo">
+    <a href="/"><img src="/images/logo-carlos-web.png" alt="Carlos Gustavo Ruiz"></a>
+  </div>
+  <div class="site-name">Carlos Gustavo Ruiz</div>
+  <p>Systems Engineer · code, data &amp; maps</p>
+</section><button type="button" id="search-button" class="search-button" aria-label="Search"></button>
+<section class="menu">
+  <h3 class="section-title menu-title">MENU</h3>
+  <ul>
+    <li><a class="" href="/" ><i class="fa-solid fa-house"></i>Home</a> </li>
+    <li><a class="" href="/posts" ><i class="fa-regular fa-newspaper"></i>Posts</a> </li>
+    <li><a class="" href="/tags" ><i class="fa-solid fa-tags"></i>Tags</a> </li>
+    <li><a class="" href="https://github.com/carlosgruiz-dev/carlosgruiz-dev/wiki" target="_blank"><i class="fa-solid fa-pen-clip"></i>Wiki</a> </li>
+    <li><a class="" href="/talks" ><i class="fa fa-chalkboard"></i>Talks</a> </li>
+    <li><a class="" href="/arts" ><i class="fa-solid fa-seedling"></i>Arts</a> </li>
+    <li><a class="" href="/now" ><i class="fa fa-calendar-day"></i>Now</a> </li>
+  </ul>
+</section>
+  </header> <!-- End Header -->
+  <footer>
+<section class="contact">
+    <h3 class="section-title contact-title">Contact me</h3>
+    <ul>
+        <li>
+            <a href="https://in.linkedin.com/in/carlosgruiz-dev" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://instagram.com/carlosgruiz_dev" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/carlosgruiz-dev" target="_blank" rel="noopener noreferrer" aria-label="github">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</section><section class="copyright">
+  <p>2026 &copy; Carlos Ruiz</p>
+</section>
+
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<!-- Dark Mode Toggle - Fixed top-right for all screen sizes -->
+<button class="dark-mode-toggle" aria-label="Toggle dark mode">
+  <i class="fas fa-moon"></i>
+</button>
+<main class="main-content">
+
+<div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Search" aria-hidden="true">
+  <div class="search-overlay-content">
+    <button class="search-close" id="search-close" aria-label="Close search">&times;</button>
+    <div id="search-field">
+      <input
+        type="search"
+        class="search-input"
+        id="search-input"
+        placeholder="Search..."
+        aria-label="Search"
+        autocomplete="off"
+        autofocus
+      />
+    </div>
+    <div class="search-results" id="search-results" role="region" aria-live="polite" aria-label="Search results">
+      <!-- Search results will be dynamically inserted here -->
+    </div>
+  </div>
+</div>
+
+
+<article class="article-page" xmlns="http://www.w3.org/1999/html">
+  <section class="page-content">
+    <section class="wrap-content">
+
+<section class="page-header">
+  <h1 class="page-title">“Hola PostgreSQL” (con Python)</h1>
+  <div class="page-header-date"><span>Feb 18, 2013</span></div>
+  <p class="page-header-intro">
+    Cómo conectar Python con PostgreSQL usando psycopg2 y la DB API 2.0 (PEP-249): instalación, conexión y un pequeño script.
+  </p>
+</section>      <section class="content-prose">
+<p>Una de las tareas más frecuentes cuando iniciamos con las bases de datos es cómo conectamos las mismas con nuestros programas. En particular conectarse con PostgreSQL es una tarea bastante simple con Python.</p>
+<p>Como sabrá en Python buena parte de los elementos del lenguaje se encuentran en las <a href="https://www.python.org/dev/peps/">PEP</a> (Python Enhancement Proposals), y en cuanto a las bases de datos esto no es la excepción y la <a href="https://www.python.org/dev/peps/pep-0249/">DB API 2.0</a> se especifica en la PEP-249, siga el vínculo para conocer los detalles. Una de las consecuencias directas de esta normalización del lenguaje es que muy probablemente lo que use para PostgreSQL con este tutorial sea válido para otro gestor de base de datos relacional cuyo conector implemente esta API.</p>
+<h2 id="instalando-psycopg2">Instalando Psycopg2</h2>
+<p>Si utiliza Linux prefiera instalar la versión de psycopg2 correspondiente a su distribución, por ejemplo para <a href="https://fedoraproject.org/">Fedora</a> sería:</p>
+<pre><code class="language-bash">yum install python-psycopg2
+</code></pre>
+<p>y para <a href="https://www.debian.org/">Debian</a> sería:</p>
+<pre><code class="language-bash">aptitude install python-psycopg2
+</code></pre>
+<p>Sin embargo, también puede hacer uso del instalador de Python llamado <a href="http://www.pip-installer.org/en/latest/">pip</a>. Este instalador es muy potente, pero debido a que psycopg2 necesitará compilar unos fuentes durante la instalación asegúrese que su computador tenga instaladas las bibliotecas de desarrollo de PostgreSQL y obviamente un compilador. Si todo está bien y tiene los permisos adecuados, bastará escribir en su terminal:</p>
+<pre><code class="language-bash">$ pip install psycopg2
+Collecting psycopg2
+  Downloading psycopg2-...
+</code></pre>
+<p>Si utiliza Windows descargue la versión correspondiente para la versión de su Sistema Operativo, su Python y de su PostgreSQL en la página de <a href="http://www.stickpeople.com/projects/python/win-psycopg/">win-psycopg</a><i class="fa-solid fa-link-slash roq-broken-link" aria-hidden="true" title="Broken link"></i>.</p>
+<h2 id="conectando-python-con-postgresql">Conectando Python con PostgreSQL</h2>
+<p>Si todo fue bien con la instalación entonces será sencillo comunicarse con PostgreSQL. Para probar la instalación y la conexión con su gestor de base de datos escriba lo que sigue en su terminal:</p>
+<pre><code class="language-bash">$ python
+Python 2.7.3 (default, Jan 2 2013, 16:53:07)
+[GCC 4.7.2] on linux2
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; import psycopg2
+&gt;&gt;&gt; exit()
+$
+</code></pre>
+<p>En caso de no haber ningun mensaje de error entonces ha instalado correctamente psycopg2. El siguiente paso será conectar con su base de datos, para ello crearemos una base de datos para pruebas.</p>
+<pre><code class="language-bash">$ su - postgres
+#
+# createdb prueba
+# exit
+</code></pre>
+<p>y luego procedemos a conectar con PostgreSQL desde Python:</p>
+<pre><code class="language-bash">$ python
+Python 2.7.3 (default, Jan 2 2013, 16:53:07)
+[GCC 4.7.2] on linux2
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; import psycopg2
+&gt;&gt;&gt; conexion = psycopg2.connect(&quot;dbname=prueba user=postgres&quot;)
+&gt;&gt;&gt; conexion.close()
+&gt;&gt;&gt;
+</code></pre>
+<p>Recuerde hacer de su string de conexión (o dsn) adecuado para su configuración: los parámetros de conexión aceptados son: <code>dbname</code>, <code>user</code>, <code>password</code>, <code>host</code> y <code>port</code>, para más detalles ver: <a href="http://pythonhosted.org/psycopg2/module.html#psycopg2.connect">psycopg2.connect</a><i class="fa-solid fa-link-slash roq-broken-link" aria-hidden="true" title="Broken link"></i>. En caso de recibir algún error, verifique con su cliente PostgreSQL que la configuración que utilizó para Python esté correcta.</p>
+<h2 id="conversando-con-postgresql-al-estilo-python">Conversando con PostgreSQL al estilo Python</h2>
+<p>Dado por sentado que no tuvo problemas de conexión entonces retomamos la sesión interactiva y pasaremos a crear una tabla y llenarla con datos, de modo de mostrar cómo se envían instrucciones mediante la DB API 2.0 de Python al gestor de base de datos:</p>
+<pre><code class="language-python">&gt;&gt;&gt; conexion = psycopg2.connect(&quot;dbname=prueba user=postgres&quot;) # se crea la conexión
+&gt;&gt;&gt; cursor = conexion.cursor() # se crea un cursor
+&gt;&gt;&gt; query1 = &quot;&quot;&quot;CREATE TABLE la_vinotinto (id serial primary key, goles integer,
+                    nombres varchar(100), apellidos varchar(100));&quot;&quot;&quot; # consulta para crear la tabla
+&gt;&gt;&gt; cursor.execute(query1)
+&gt;&gt;&gt; query2 = &quot;INSERT INTO la_vinotinto(goles, nombres, apellidos) VALUES (%, %, %)&quot;
+&gt;&gt;&gt; cursor.execute(query2, (22, &quot;Giancarlo&quot;, &quot;Maldonado&quot;))
+&gt;&gt;&gt; cursor.execute(query2, (21, &quot;Juan&quot;, &quot;Arango&quot;))
+&gt;&gt;&gt; cursor.execute(query2, (14, &quot;Ruberth&quot;, &quot;Moran&quot;))
+&gt;&gt;&gt; cursor.execute(query2, (11, &quot;Jose Manuel&quot;, &quot;Rey&quot;))
+</code></pre>
+<p>Ahora vamos a preguntarle algunas cosas a nuestra tabla de goleadores de la vinotinto:</p>
+<pre><code class="language-python">&gt;&gt;&gt; query3 = &quot;SELECT * FROM la_vinotinto&quot;
+&gt;&gt;&gt; cursor.execute(query3)
+&gt;&gt;&gt; cursor.fetchone()
+(1, 22, &quot;Giancarlo&quot;, &quot;Maldonado&quot;)
+&gt;&gt;&gt; query4 = &quot;SELECT apellidos, nombre FROM la_vinotinto ORDER BY goles;&quot;
+&gt;&gt;&gt; cursor.execute(query4)
+&gt;&gt;&gt; resultados = cursor.fetchall()
+&gt;&gt;&gt; for i in resultados:
+...    print i
+...
+('Rey', 'Jose Manuel')
+('Moran', 'Ruberth')
+('Arango', 'Juan')
+('Maldonado', 'Giancarlo')
+&gt;&gt;&gt;
+</code></pre>
+<p>Finalmente con Python debe dejar claro a PostgreSQL que la comunicación se ha terminado, por lo que es necesario cerrar le cursor y la conexión. Es importante este paso, así liberará recursos en su programa y permitirá al gestor de bases de datos liberar la conexión dedicada al programa y usarla para otro usuario.</p>
+<pre><code class="language-python">&gt;&gt;&gt; 
+&gt;&gt;&gt; cursor.close()
+&gt;&gt;&gt; conexion.close()
+</code></pre>
+<h2 id="pequeño-script-de-python-con-postgresql">Pequeño Script de Python con PostgreSQL</h2>
+<p>Ahora vamos a escribir un pequeño programa con lo aprendido en el diálogo anterior, copie el siguiente programa en un archivo llamado <code>hola_postgres.py</code>:</p>
+<pre><code class="language-python">#/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import psycopg2
+DSN = &quot;dbname=prueba user=postgres&quot;
+
+def leer_datos():
+    con = psycopg2.connect(DSN)
+    cur = con.cursor()
+    query = &quot;SELECT * FROM la_vinotinto;&quot;
+    cur.execute(query)
+    for jugador in cur.fetchall():
+        print(jugador)
+    cur.close()
+    con.close()
+
+if __name__== &quot;__main__&quot;:
+   leer_datos();
+</code></pre>
+<p>El programa realiza en la función leer_datos() un despliegue de los jugadores almacenados en la tabla la_vinotinto, en si no reviste de mucha complejidad. Finalmente para ejecutar el programa escriba en su terminal:</p>
+<pre><code class="language-bash">$ python hola_postgres.py
+(1, 22, 'Maldonado', 'Giancarlo')
+(2, 21, 'Arango', 'Juan')
+(3, 14,'Moran', 'Ruberth')
+(4, 11'Rey', 'Jose Manuel')
+$
+</code></pre>
+<h2 id="recomendado-leer">Recomendado leer</h2>
+<p>Obviamente esto es un pequeño abreboca, para profundizar un poco más en las posibilidades que ofrecen estas herramientas es necesario leer un poco más. Sugiero como lecturas complementarias las siguientes páginas.</p>
+<ul>
+<li>
+<p><a href="https://www.python.org/dev/peps/pep-0249/">PEP-249</a></p>
+</li>
+<li>
+<p><a href="http://pythonhosted.org/psycopg2/">Documentación de Psycopg2</a><i class="fa-solid fa-link-slash roq-broken-link" aria-hidden="true" title="Broken link"></i></p>
+</li>
+<li>
+<p><a href="https://www.postgresql.org/docs/">Documentación de PostgreSQL</a></p>
+</li>
+<li>
+<p><a href="http://www.pip-installer.org/">Documentación de pip</a></p>
+</li>
+</ul>
+      </section>
+      <div class="page-footer">
+        <div class="footer-links">
+          <div class="page-share">
+            <a href="https://twitter.com/intent/tweet?text=“Hola PostgreSQL” (con Python)&url=https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fhola-postgresql-con-python%2F" title="Share on Twitter"
+              rel="nofollow noopener noreferrer"  target="_blank">Twitter</a>
+            <a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fhola-postgresql-con-python%2F" title="Share on Facebook" rel="nofollow noopener noreferrer"
+              target="_blank">Facebook</a>
+            <a href="https://bsky.app/intent/compose?text=“Hola PostgreSQL” (con Python)%0ACheck%20it%20out%20https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fhola-postgresql-con-python%2F"
+              title="Share on Bluesky" rel="nofollow noopener noreferrer" target="_blank">Bluesky</a>
+          </div>
+          <div class="page-tag">
+            <a href="/posts/tag/tutorial" class="tag">&#35; tutorial</a>
+            <a href="/posts/tag/guides" class="tag">&#35; guides</a>
+            <a href="/posts/tag/postgresql" class="tag">&#35; postgresql</a>
+            <a href="/posts/tag/python" class="tag">&#35; python</a>
+            <a href="/posts/tag/tubasededatoslibre" class="tag">&#35; tubasededatoslibre</a>
+            <a href="/posts/tag/spanish" class="tag">&#35; spanish</a>
+          </div>
+
+        </div>
+        <div class="author">
+    <img src="/images/logo-carlos-web.png" alt="author-carlosgruiz" />
+
+  <div class="author-data">
+    <a target="_blank" rel="noopener noreferrer" href="https://carlosgruiz.dev/" class="author-name">Carlos Gustavo Ruiz</a>
+    <span class="author-job-title">Pizza lover 🍕 · Web creature 💻 · Curious nerd 🤓 · Amateur musician 🎸</span>
+  </div>
+</div>
+
+      </div>
+    </section> <!-- End Wrap Content -->
+  </section> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+
+
+</main>
+
+
+
+</div>
+
+</body>
+</html>

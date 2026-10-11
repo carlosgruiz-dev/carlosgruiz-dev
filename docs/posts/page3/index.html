@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+
+<!-- Prevent flash of unstyled content for dark mode -->
+<script>
+  const savedTheme = localStorage.getItem('darkMode');
+  const isDark = savedTheme !== null
+    ? savedTheme === 'true'
+    : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (isDark) {
+    document.documentElement.classList.add('dark');
+  }
+</script>
+
+
+
+  <!-- SEO TITLE -->
+  
+  <title>Posts - Carlos Gustavo Ruiz</title>
+  <meta property="og:title" content="Posts" />
+  <meta name="twitter:title" content="Posts">
+  <meta property="og:site_name" content="Carlos Gustavo Ruiz">
+  <!-- SEO DESCRIPTION -->
+  <meta name="description" content="Code, data and maps — plus the occasional story.">
+  <meta property="og:description" content="Code, data and maps — plus the occasional story." />
+  <meta name="twitter:description" content="Code, data and maps — plus the occasional story.">
+
+  <!-- SEO URL -->
+  <link rel="canonical" href="https://carlosgruiz.dev/posts/page3/" />
+  <meta property="og:url" content="https://carlosgruiz.dev/posts/page3/" />
+  <meta name="twitter:url" content="https://carlosgruiz.dev/posts/page3/">
+
+  <!-- SEO TYPE -->
+  <meta property="og:type" content="website" />
+
+  <!-- SEO IMAGE -->
+  <meta name="twitter:card" content="summary">
+  <!-- SEO PAGINATOR -->
+  <link rel="prev" href="https://carlosgruiz.dev/posts/page2/"/>
+  <link rel="next" href="https://carlosgruiz.dev/posts/page4/"/>
+  <!-- SEO LOCALE -->
+  <meta property="og:locale" content="en_PA" />
+  <!-- SEO GENERATOR -->
+  <meta name="generator" content="Quarkus Roq v2.1.9" />
+
+<link rel="alternate" type="application/rss+xml" title="Carlos Gustavo Ruiz" href="https://carlosgruiz.dev/rss.xml"/>
+<!-- Favicon -->
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/images/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+<base href="/posts/page3/">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="theme-color" content="#1e1e2e">
+<meta name="msapplication-navbutton-color" content="#1e1e2e">
+<meta name="apple-mobile-web-app-status-bar-style" content="#1e1e2e">
+
+
+    <script type="module" src="/static/bundle/app-BNJCCHZQ.js"></script>
+      <link rel="stylesheet" href="/static/bundle/app-O2IDU56U.css" />
+
+<script type="module" src="/static/bundle/search.js?id=0d3b83cf-9dd0-4763-946e-b7ddccf42bd6"></script>
+<script type="module" nonce="01KJ2EZHMFP32C2GYZ01SS3DG3">
+  setupSearch({
+    url: '/search-index.json'
+  });
+</script>
+<link rel="stylesheet" href="/static/bundle/search.css?id=0d3b83cf-9dd0-4763-946e-b7ddccf42bd6"></head>
+<body >
+
+
+
+<div class="wrapper default">
+
+
+
+<aside class="sidebar main">
+  <header>
+<!-- Theme configuration: https://iamroq.dev/theme/default/#site-data -->
+<section class="about">
+  <div class="site-logo">
+    <a href="/"><img src="/images/logo-carlos-web.png" alt="Carlos Gustavo Ruiz"></a>
+  </div>
+  <div class="site-name">Carlos Gustavo Ruiz</div>
+  <p>Systems Engineer · code, data &amp; maps</p>
+</section><button type="button" id="search-button" class="search-button" aria-label="Search"></button>
+<section class="menu">
+  <h3 class="section-title menu-title">MENU</h3>
+  <ul>
+    <li><a class="" href="/" ><i class="fa-solid fa-house"></i>Home</a> </li>
+    <li><a class="" href="/posts" ><i class="fa-regular fa-newspaper"></i>Posts</a> </li>
+    <li><a class="" href="/tags" ><i class="fa-solid fa-tags"></i>Tags</a> </li>
+    <li><a class="" href="https://github.com/carlosgruiz-dev/carlosgruiz-dev/wiki" target="_blank"><i class="fa-solid fa-pen-clip"></i>Wiki</a> </li>
+    <li><a class="" href="/talks" ><i class="fa fa-chalkboard"></i>Talks</a> </li>
+    <li><a class="" href="/arts" ><i class="fa-solid fa-seedling"></i>Arts</a> </li>
+    <li><a class="" href="/now" ><i class="fa fa-calendar-day"></i>Now</a> </li>
+  </ul>
+</section>
+  </header> <!-- End Header -->
+  <footer>
+<section class="contact">
+    <h3 class="section-title contact-title">Contact me</h3>
+    <ul>
+        <li>
+            <a href="https://in.linkedin.com/in/carlosgruiz-dev" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://instagram.com/carlosgruiz_dev" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/carlosgruiz-dev" target="_blank" rel="noopener noreferrer" aria-label="github">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</section><section class="copyright">
+  <p>2026 &copy; Carlos Ruiz</p>
+</section>
+
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<!-- Dark Mode Toggle - Fixed top-right for all screen sizes -->
+<button class="dark-mode-toggle" aria-label="Toggle dark mode">
+  <i class="fas fa-moon"></i>
+</button>
+<main class="main-content">
+
+<div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Search" aria-hidden="true">
+  <div class="search-overlay-content">
+    <button class="search-close" id="search-close" aria-label="Close search">&times;</button>
+    <div id="search-field">
+      <input
+        type="search"
+        class="search-input"
+        id="search-input"
+        placeholder="Search..."
+        aria-label="Search"
+        autocomplete="off"
+        autofocus
+      />
+    </div>
+    <div class="search-results" id="search-results" role="region" aria-live="polite" aria-label="Search results">
+      <!-- Search results will be dynamically inserted here -->
+    </div>
+  </div>
+</div>
+<article class="page-content page-alt page-wide">
+
+  <section class="content-main">
+
+<section class="page-header">
+  <h1 class="page-title">Posts</h1>
+  <p class="page-header-intro">
+    Code, data and maps — plus the occasional story.
+  </p>
+</section>    <div class="content-prose">
+
+
+
+
+<div class="blog-list">
+
+
+  <div class="blog-grid">
+<article class="card post">
+  <a class="post-thumbnail" style='background-image: url("/posts/tutorial-introduccion-a-la-programacion-qt-y-otros-hallazgos-en-la-azotea/notepad-qt.png")' href="/posts/tutorial-introduccion-a-la-programacion-qt-y-otros-hallazgos-en-la-azotea/" aria-label="Tutorial “Introducción a la programacion Qt” y otros hallazgos en la azotea"></a>
+  <div class="post-content">
+    <h2 class="post-title"><a href="/posts/tutorial-introduccion-a-la-programacion-qt-y-otros-hallazgos-en-la-azotea/">Tutorial “Introducción a la programacion Qt” y otros hallazgos en la azotea</a></h2>
+    <p>Pasos resueltos del tutorial &#39;Getting Started Programming with Qt&#39; y otros trucos: unir repositorios Mercurial, eliminar espacios en nombres y mover una base PostgreSQL.</p>
+    <span class="post-date">Jan 25, 2013&nbsp;&nbsp;&nbsp;—&nbsp;</span>
+    <span class="post-words">
+    2 minute(s) read
+  </span>
+  </div>
+</article><article class="card post">
+  <div class="post-content">
+    <h2 class="post-title"><a href="/posts/geomatica-libre-en-venezuela-presentacion-a-jose-sosa-cnti/">Geomatica Libre en Venezuela (Presentación a José Sosa - CNTI)</a></h2>
+    <p>Presentación sobre Geomática Libre en Venezuela ante José Sosa, presidente del CNTI, junto a Zaida Pinto y Richard Hernandez.</p>
+    <span class="post-date">Dec 11, 2012&nbsp;&nbsp;&nbsp;—&nbsp;</span>
+    <span class="post-words">
+    1 minute(s) read
+  </span>
+  </div>
+</article><article class="card post">
+  <div class="post-content">
+    <h2 class="post-title"><a href="/posts/mini-taller-de-base-de-datos-y-postgresql/">Mini Taller de Base de Datos y PostgreSQL</a></h2>
+    <p>Material del taller introductorio de bases de datos y PostgreSQL dictado con TuBaseDeDatosLibre.org en Corpoelec y el Ministerio de la Cultura.</p>
+    <span class="post-date">Dec 10, 2012&nbsp;&nbsp;&nbsp;—&nbsp;</span>
+    <span class="post-words">
+    1 minute(s) read
+  </span>
+  </div>
+</article><article class="card post">
+  <a class="post-thumbnail" style='background-image: url("/posts/urumaco-y-los-datos/valessiobrito_Hoof_of_Green_Turtle.png")' href="/posts/urumaco-y-los-datos/" aria-label="Urumaco y los datos"></a>
+  <div class="post-content">
+    <h2 class="post-title"><a href="/posts/urumaco-y-los-datos/">Urumaco y los datos</a></h2>
+    <p>Sobre Urumaco, un visualizador cartográfico educativo, y los retos de conseguir datos geográficos abiertos en Venezuela.</p>
+    <span class="post-date">Dec 3, 2012&nbsp;&nbsp;&nbsp;—&nbsp;</span>
+    <span class="post-words">
+    6 minute(s) read
+  </span>
+  </div>
+</article><article class="card post">
+  <div class="post-content">
+    <h2 class="post-title"><a href="/posts/integrando-cpp-con-python/">Integrando C++ con Python</a></h2>
+    <p>Ejemplos prácticos de la charla del PyCon Venezuela 2012 para integrar Python y C++: incrustar Python, Swig y Boost.</p>
+    <span class="post-date">Nov 11, 2012&nbsp;&nbsp;&nbsp;—&nbsp;</span>
+    <span class="post-words">
+    6 minute(s) read
+  </span>
+  </div>
+</article><article class="card post">
+  <a class="post-thumbnail" style='background-image: url("/posts/web-mapping-con-django/webmapping-django.png")' href="/posts/web-mapping-con-django/" aria-label="Web Mapping con Django"></a>
+  <div class="post-content">
+    <h2 class="post-title"><a href="/posts/web-mapping-con-django/">Web Mapping con Django</a></h2>
+    <p>Material del taller de aplicaciones web de mapas con Django presentado en el PyCon Venezuela 2012: presentación paso a paso y ejercicios resueltos.</p>
+    <span class="post-date">Nov 7, 2012&nbsp;&nbsp;&nbsp;—&nbsp;</span>
+    <span class="post-words">
+    1 minute(s) read
+  </span>
+  </div>
+</article><article class="card post">
+  <a class="post-thumbnail" style='background-image: url("/posts/pycon-venezuela-2012/pyconve2012.jpg")' href="/posts/pycon-venezuela-2012/" aria-label="Pycon Venezuela 2012"></a>
+  <div class="post-content">
+    <h2 class="post-title"><a href="/posts/pycon-venezuela-2012/">Pycon Venezuela 2012</a></h2>
+    <p>Crónica del PyCon Venezuela 2012: tres días que consolidaron la comunidad Python del país, con Pygouts, PyDays y nuevas ediciones en camino.</p>
+    <span class="post-date">Nov 5, 2012&nbsp;&nbsp;&nbsp;—&nbsp;</span>
+    <span class="post-words">
+    2 minute(s) read
+  </span>
+  </div>
+</article><article class="card post">
+  <a class="post-thumbnail" style='background-image: url("/posts/openve-y-los-kits-de-arranque/openve_logo-300x300.jpeg")' href="/posts/openve-y-los-kits-de-arranque/" aria-label="OpenVE y los “Kits de arranque”"></a>
+  <div class="post-content">
+    <h2 class="post-title"><a href="/posts/openve-y-los-kits-de-arranque/">OpenVE y los “Kits de arranque”</a></h2>
+    <p>Kits de arranque para OpenVE: guías que permiten en 15 minutos tomarle el gusto a un lenguaje, y el esqueleto estándar que las compone.</p>
+    <span class="post-date">Oct 28, 2012&nbsp;&nbsp;&nbsp;—&nbsp;</span>
+    <span class="post-words">
+    4 minute(s) read
+  </span>
+  </div>
+</article><article class="card post">
+  <a class="post-thumbnail" style='background-image: url("/posts/dogfooding/dog_food_bowl.jpg")' href="/posts/dogfooding/" aria-label="Dogfooding"></a>
+  <div class="post-content">
+    <h2 class="post-title"><a href="/posts/dogfooding/">Dogfooding</a></h2>
+    <p>El concepto de comer la propia comida (eating your own dog food) para desmontar mitos tecnológicos y tomar mejores decisiones al adoptar tecnologías.</p>
+    <span class="post-date">Oct 18, 2012&nbsp;&nbsp;&nbsp;—&nbsp;</span>
+    <span class="post-words">
+    3 minute(s) read
+  </span>
+  </div>
+</article><article class="card post">
+  <a class="post-thumbnail" style='background-image: url("/posts/entrevista-en-echandocodigo-com/entrevista-echandocodigo-header.png")' href="/posts/entrevista-en-echandocodigo-com/" aria-label="Entrevista en echandocodigo.com"></a>
+  <div class="post-content">
+    <h2 class="post-title"><a href="/posts/entrevista-en-echandocodigo-com/">Entrevista en echandocodigo.com</a></h2>
+    <p>Entrevista con Osledy Bazó y Daniel Rodríguez del podcast Echando Código sobre TuBaseDeDatosLibre.org y la experiencia como programador.</p>
+    <span class="post-date">Oct 15, 2012&nbsp;&nbsp;&nbsp;—&nbsp;</span>
+    <span class="post-words">
+    2 minute(s) read
+  </span>
+  </div>
+</article>  </div>
+
+</div>
+
+
+<div class="container">
+
+  <nav class="pagination" role="navigation">
+    <ul>
+      <li><a class="newer-posts" href="/posts/page2/" aria-label="Newer posts"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a></li>
+
+      <li><span class="page-number">Page 3 of 5</span></li>
+
+      <li><a class="older-posts" href="/posts/page4/" aria-label="Older posts"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
+    </ul>
+  </nav>
+
+</div>
+    </div>
+  </section>
+</article>
+
+
+
+
+
+</main>
+
+
+
+</div>
+
+</body>
+</html>

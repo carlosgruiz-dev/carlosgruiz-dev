@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+
+<!-- Prevent flash of unstyled content for dark mode -->
+<script>
+  const savedTheme = localStorage.getItem('darkMode');
+  const isDark = savedTheme !== null
+    ? savedTheme === 'true'
+    : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (isDark) {
+    document.documentElement.classList.add('dark');
+  }
+</script>
+
+
+
+  <!-- SEO TITLE -->
+  
+  <title>Introducción a ZODB - Carlos Gustavo Ruiz</title>
+  <meta property="og:title" content="Introducción a ZODB" />
+  <meta name="twitter:title" content="Introducción a ZODB">
+  <meta property="og:site_name" content="Carlos Gustavo Ruiz">
+  <!-- SEO DESCRIPTION -->
+  <meta name="description" content="Introducción a ZODB (Zope Object Data Base), un gestor de bases de datos orientado a objetos para Python: instalación, ejemplos y almacenes disponibles.">
+  <meta property="og:description" content="Introducción a ZODB (Zope Object Data Base), un gestor de bases de datos orientado a objetos para Python: instalación, ejemplos y almacenes disponibles." />
+  <meta name="twitter:description" content="Introducción a ZODB (Zope Object Data Base), un gestor de bases de datos orientado a objetos para Python: instalación, ejemplos y almacenes disponibles.">
+  <!-- SEO AUTHOR -->
+  <meta property="article:author" content="carlosgruiz" />
+  <meta name="author" content="carlosgruiz" />
+
+  <!-- SEO URL -->
+  <link rel="canonical" href="https://carlosgruiz.dev/posts/breve-introduccion-a-zodb/" />
+  <meta property="og:url" content="https://carlosgruiz.dev/posts/breve-introduccion-a-zodb/" />
+  <meta name="twitter:url" content="https://carlosgruiz.dev/posts/breve-introduccion-a-zodb/">
+
+  <!-- SEO TYPE -->
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="2013-07-26T00:00-05:00[America/Panama]" />
+
+  <!-- SEO IMAGE -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image:src" content="https://carlosgruiz.dev/posts/breve-introduccion-a-zodb/zodb.png" />
+  <meta property="og:image" content="https://carlosgruiz.dev/posts/breve-introduccion-a-zodb/zodb.png" />
+  <!-- SEO COLLECTION PAGES -->
+  <link rel="prev" href="https://carlosgruiz.dev/posts/introduccion-a-pyramid/" />
+  <link rel="next" href="https://carlosgruiz.dev/posts/llena-tu-windows-de-foss/" />
+  <!-- SEO LOCALE -->
+  <meta property="og:locale" content="en_PA" />
+  <!-- SEO GENERATOR -->
+  <meta name="generator" content="Quarkus Roq v2.1.9" />
+
+<link rel="alternate" type="application/rss+xml" title="Carlos Gustavo Ruiz" href="https://carlosgruiz.dev/rss.xml"/>
+<!-- Favicon -->
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/images/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+<base href="/posts/breve-introduccion-a-zodb/">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="theme-color" content="#1e1e2e">
+<meta name="msapplication-navbutton-color" content="#1e1e2e">
+<meta name="apple-mobile-web-app-status-bar-style" content="#1e1e2e">
+
+
+    <script type="module" src="/static/bundle/app-BNJCCHZQ.js"></script>
+      <link rel="stylesheet" href="/static/bundle/app-O2IDU56U.css" />
+
+<script type="module" src="/static/bundle/search.js?id=0d3b83cf-9dd0-4763-946e-b7ddccf42bd6"></script>
+<script type="module" nonce="01KJ2EZHMFP32C2GYZ01SS3DG3">
+  setupSearch({
+    url: '/search-index.json'
+  });
+</script>
+<link rel="stylesheet" href="/static/bundle/search.css?id=0d3b83cf-9dd0-4763-946e-b7ddccf42bd6"></head>
+<body >
+
+
+
+<div class="wrapper default">
+
+
+
+<aside class="sidebar main">
+  <header>
+<!-- Theme configuration: https://iamroq.dev/theme/default/#site-data -->
+<section class="about">
+  <div class="site-logo">
+    <a href="/"><img src="/images/logo-carlos-web.png" alt="Carlos Gustavo Ruiz"></a>
+  </div>
+  <div class="site-name">Carlos Gustavo Ruiz</div>
+  <p>Systems Engineer · code, data &amp; maps</p>
+</section><button type="button" id="search-button" class="search-button" aria-label="Search"></button>
+<section class="menu">
+  <h3 class="section-title menu-title">MENU</h3>
+  <ul>
+    <li><a class="" href="/" ><i class="fa-solid fa-house"></i>Home</a> </li>
+    <li><a class="" href="/posts" ><i class="fa-regular fa-newspaper"></i>Posts</a> </li>
+    <li><a class="" href="/tags" ><i class="fa-solid fa-tags"></i>Tags</a> </li>
+    <li><a class="" href="https://github.com/carlosgruiz-dev/carlosgruiz-dev/wiki" target="_blank"><i class="fa-solid fa-pen-clip"></i>Wiki</a> </li>
+    <li><a class="" href="/talks" ><i class="fa fa-chalkboard"></i>Talks</a> </li>
+    <li><a class="" href="/arts" ><i class="fa-solid fa-seedling"></i>Arts</a> </li>
+    <li><a class="" href="/now" ><i class="fa fa-calendar-day"></i>Now</a> </li>
+  </ul>
+</section>
+  </header> <!-- End Header -->
+  <footer>
+<section class="contact">
+    <h3 class="section-title contact-title">Contact me</h3>
+    <ul>
+        <li>
+            <a href="https://in.linkedin.com/in/carlosgruiz-dev" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://instagram.com/carlosgruiz_dev" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/carlosgruiz-dev" target="_blank" rel="noopener noreferrer" aria-label="github">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</section><section class="copyright">
+  <p>2026 &copy; Carlos Ruiz</p>
+</section>
+
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<!-- Dark Mode Toggle - Fixed top-right for all screen sizes -->
+<button class="dark-mode-toggle" aria-label="Toggle dark mode">
+  <i class="fas fa-moon"></i>
+</button>
+<main class="main-content">
+
+<div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Search" aria-hidden="true">
+  <div class="search-overlay-content">
+    <button class="search-close" id="search-close" aria-label="Close search">&times;</button>
+    <div id="search-field">
+      <input
+        type="search"
+        class="search-input"
+        id="search-input"
+        placeholder="Search..."
+        aria-label="Search"
+        autocomplete="off"
+        autofocus
+      />
+    </div>
+    <div class="search-results" id="search-results" role="region" aria-live="polite" aria-label="Search results">
+      <!-- Search results will be dynamically inserted here -->
+    </div>
+  </div>
+</div>
+
+
+<article class="article-page" xmlns="http://www.w3.org/1999/html">
+  <section class="page-content">
+    <div class="page-cover-image">
+      <figure>
+        <img class="page-image" src="/posts/breve-introduccion-a-zodb/zodb.png" alt="Introducción a ZODB">
+      </figure>
+    </div> <!-- End Page Cover Image -->
+    <section class="wrap-content">
+
+<section class="page-header">
+  <h1 class="page-title">Introducción a ZODB</h1>
+  <div class="page-header-date"><span>Jul 26, 2013</span></div>
+  <p class="page-header-intro">
+    Introducción a ZODB (Zope Object Data Base), un gestor de bases de datos orientado a objetos para Python: instalación, ejemplos y almacenes disponibles.
+  </p>
+</section>      <section class="content-prose">
+<p>En concreto ZODB (Zope Object Data Base) es un gestor de bases de datos orientado a objetos. Esto significa para el usuario nuevo en esta tecnología que a diferencia de las bases de datos de uso mas frecuente en ZODB no hallará tablas ni esquemas ni nada parecido, así mismo no encontrará sentencias SQL en pues el lenguaje de consulta e indexado es Python.</p>
+<h2 id="instalación">Instalación</h2>
+<p>Instalar ZODB en su computador es bastante sencillo, en caso de tener instalado <a href="https://fedoraproject.org/">Fedora Linux</a> deberá escribir el siguiente comando <code>$ su -c &quot;yum install python-ZODB&quot;</code> y en caso de tener <a href="https://www.debian.org/">Debian Linux</a> sustituir el comando anterior por este <code>$ su -c &quot;aptitude install python-zodb&quot;</code>. Si es programador python probablemente prefiera realizar la instalación en un entorno virtual (virtualenv). Nótese que requerirá tener instalado un compilador como gcc para compilar ZOBD en este proceso. En este caso la instrucción será:</p>
+<pre><code class="language-bash">$ virtualenv --no-site-packages env
+$ source env/bin/activate
+(env) $ pip install ZODB3
+...
+... (chum chum chum) ...
+...
+(env) $
+</code></pre>
+<h2 id="zodb-desde-el-intérprete-de-python">ZODB desde el intérprete de Python</h2>
+<p>Una vez instalado comenzar a utilizar ZODB es bastante directo. Se incorporan los paquetes necesarios, definimos una fuente de datos, establecemos una conexión, buscamos la raíz de la Base de Datos y listo. ZODB funciona entonces como una Base de Datos de llave-valor de objetos python. Veamos un ejemplo:</p>
+<pre><code class="language-python">&gt;&gt;&gt; # llamado a los paquetes
+&gt;&gt;&gt; from ZODB import DB, FileStorage
+&gt;&gt;&gt; import transaction
+&gt;&gt;&gt;
+&gt;&gt;&gt; # se define la fuente física donde se encuentran los datos
+&gt;&gt;&gt; almacen = FileStorage.FileStorage(&quot;Datos.fs&quot;)
+&gt;&gt;&gt; bd = BD(almacen)
+&gt;&gt;&gt; con = bd.open()
+&gt;&gt;&gt; r = con.root()
+&gt;&gt;&gt;
+&gt;&gt;&gt; # ahora a guardar información
+&gt;&gt;&gt; r['saludo'] = 'Hola ZODB'
+&gt;&gt;&gt; r['numero'] = 3 + 7j
+&gt;&gt;&gt; r['lista'] = [1, 3, 5.987, True, 'texto']
+&gt;&gt;&gt;
+&gt;&gt;&gt; # para ver las llaves que tenemos almacenadas
+&gt;&gt;&gt; r.keys()
+['lista', 'saludo', 'numero']
+&gt;&gt;&gt;
+&gt;&gt;&gt; # almacenamos los cambios en el archivo de almacén
+&gt;&gt;&gt; transaction.commit()
+&gt;&gt;&gt;
+&gt;&gt;&gt; # cerramos la conexión.
+&gt;&gt;&gt; transaction.get()
+&gt;&gt;&gt; transaction.abort()
+&gt;&gt;&gt; con.close()
+&gt;&gt;&gt; bd.close()
+&gt;&gt;&gt; almacen.close()
+</code></pre>
+<h2 id="programa-simple">Programa Simple</h2>
+<p>Una lista de cosas pendientes (ToDo List) es un buen ejemplo de cómo podemos aprovechar esta base de datos. Acá una aproximación algo rústica utilizando ZODB como una base de datos de llave-valor (key-value). Creamos una clase que se encargue de manejar la conexión con el archivo de datos y operaciones de agregar, listar y borrar tareas. Seguidamente nos encargamos de manejar los argumentos de líneas de comandos y listo, tenemos nuestro pequeño programa de lista de cosas pendientes. Vea el código fuente:</p>
+<pre><code class="language-python"># -*- coding: utf-8 -*-
+
+from ZODB import (DB, FileStorage)
+import transaction
+import argparse
+
+class ToDo:
+    def __init__(self):
+        self.store = FileStorage.FileStorage(&quot;ToDo.fs&quot;)
+        self.database = DB(self.store)
+        self.connection = self.database.open()
+        self.root = self.connection.root()
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, type, value, traceback):
+        transaction.get()
+        transaction.abort()
+        self.connection.close()
+        self.database.close()
+        self.store.close()
+
+    def add(self, key, value):
+        if key != &quot;&quot;:
+            self.root[key] = value
+            transaction.commit()
+            print(&quot;New task added..&quot;)
+        else:
+            print(&quot;A task must have a name&quot;)
+
+    def list(self):
+        print(&quot;Tasks To Do..&quot;)
+        for k in self.root.keys():
+            print(&quot;%s\t%s&quot; % (k, self.root[k]))
+
+    def delete(self, key):
+        if key in self.root.keys():
+            del(self.root[key])
+            transaction.commit()
+            print(&quot;Task deleted..&quot;)
+        else:
+            print(&quot;There is no task '%s'..&quot; % key)
+
+if __name__ == &quot;__main__&quot;:
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-a', '--add', nargs=2, help=&quot;add a tast to the ToDo list&quot;)
+    parser.add_argument('-d', '--delete', nargs=1, help=&quot;delete a task from the ToDo list&quot;)
+    args = parser.parse_args()
+    tasks = ToDo()
+    if args.add:
+        tasks.add(args.add[0],args.add[1])
+    elif args.delete:
+        tasks.delete(args.delete[0])
+    else:
+        tasks.list()
+</code></pre>
+<p>Su modo de uso es:</p>
+<pre><code class="language-bash">$ python todo.py -h
+usage: todo.py [-h] [-a ADD ADD] [-d DELETE]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -a ADD ADD, --add ADD ADD
+                        add a tast to the ToDo list
+  -d DELETE, --delete DELETE
+                        delete a task from the ToDo list
+</code></pre>
+<p>Para agregar una tarea escriba:</p>
+<pre><code class="language-bash">$ python todo.py -a &quot;Completar Artículo&quot; &quot;atmantree: Breve Introducción a ZODB&quot;
+New task added..
+
+$
+</code></pre>
+<p>Para ver las tareas pendientes:</p>
+<pre><code class="language-bash">$ python todo.py
+Tasks To Do..
+Completar Artículo      atmantree: Breve Introducción a ZODB
+Comprar Pan, Jamón y Leche
+Llamar al veterinario   Vacunas de Rahula
+
+$
+</code></pre>
+<h2 id="zodb-como-base-de-datos-orientada-a-objetos">ZODB como Base de Datos Orientada a Objetos</h2>
+<p>Ahora bien, como se puede sospechar utilizar una base de datos como ZODB para un programa como el anterior puede ser considerado como matar moscas con una bazuca. Sin embargo la potencia de ZODB está en su capacidad de almacenar directamente en una base de datos cualquier objeto o tipo de datos existente en Python. En particular almacenar directamente objetos definidos por el programador.</p>
+<p>El diseño de una aplicación es un tema complejo y los escenarios son muy variados. Tal vez alguien quiera crear clases del tipo contenedoras, o tal vez prefiera agregarlas a la raíz del sistema de persistencia (ZODB en este caso) o simplemente manejarlo a través de una lista de objetos de algún tipo, las decisiones de diseño dependerán del contexto y el espacio de problema donde se inscriba la aplicación.</p>
+<p>A efecto del ejemplo se modificará levemente el programa anterior, convertirán las tareas en objetos de la clase Task y se almacenarán en una lista.</p>
+<pre><code class="language-python"># -*- coding: utf-8 -*-
+
+from ZODB import (DB, FileStorage)
+from persistent import Persistent
+import transaction
+import argparse
+
+class Task(Persistent):
+    def __init__(self):
+        self.name = &quot;&quot;
+        self.description = &quot;&quot;
+
+class ToDo:
+    def __init__(self):
+        self.store = FileStorage.FileStorage(&quot;ToDo2.fs&quot;)
+        self.database = DB(self.store)
+        self.connection = self.database.open()
+        self.root = self.connection.root()
+        if not 'Tasks' in self.root:
+            self.root['Tasks'] = []
+        self.tasks = self.root['Tasks']
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, type, value, traceback):
+        transaction.get()
+        transaction.abort()
+        self.connection.close()
+        self.database.close()
+        self.store.close()
+
+    def add(self, name, description):
+        if name != &quot;&quot;:
+            new_task = Task()
+            new_task.name = name
+            new_task.description = description
+            self.tasks.append(new_task)
+            self.root['Tasks'] = self.tasks
+            transaction.commit()
+            print(&quot;New task added..&quot;)
+        else:
+            print(&quot;Tasks must have a name&quot;)
+
+    def list(self):
+        if len(self.tasks) &gt; 0:
+            print(&quot;Tasks To Do..&quot;)
+            for task in self.tasks:
+                print(&quot;%s\t%s&quot; %(task.name, task.description))
+        else:
+            print(&quot;No pending tasks..&quot;)
+
+    def delete(self, name):
+        for i in range(len(self.tasks)):
+            deleted = False
+            if self.tasks[i].name == name:
+                del(self.tasks[i])
+                deleted = True
+            if deleted:
+                self.root['Tasks'] = self.tasks
+                transaction.commit()
+                print(&quot;Task deleted..&quot;)
+            else:
+                print(&quot;There is no task '%s'..&quot; % name)
+
+if __name__ == &quot;__main__&quot;:
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-a', '--add', nargs=2, help=&quot;add a tast to the ToDo list&quot;)
+    parser.add_argument('-d', '--delete', nargs=1, help=&quot;delete a task from the ToDo list&quot;)
+    args = parser.parse_args()
+    tasks = ToDo()
+    if args.add:
+        tasks.add(args.add[0],args.add[1])
+    elif args.delete:
+        tasks.delete(args.delete[0])
+    else:
+        tasks.list()
+</code></pre>
+<p>En general es el mismo programa, sin embargo las posibilidades aumentan a partir de acá aprovechando los métodos y opciones que da la superclase <strong>Persistent</strong>. En adelante lo que queda es invitarles a experimentar, probar y utilizar ZODB.</p>
+<h2 id="otros-temas-sobre-zodb">Otros temas sobre ZODB</h2>
+<h3 id="zodb-vs-orm">ZODB vs ORM</h3>
+<p>Los Mapeadores Objeto-Relacionales (<a href="https://es.wikipedia.org/wiki/Mapeo_objeto-relacional">ORM</a>) suelen ser una alternativa frecuente en esto de lidiar con objetos dentro de la base de datos, sin embargo no siempre es un camino de rosas pues se realizan algunas de concesiones de diseño en el proceso. Generalmente se termina ajustando el diseño al uso del ORM, asumiendo en los costes asociados al mapeo en el rendimiento de la aplicación. Al final es un tema de contexto, decisiones de diseño y métricas de desempeño.</p>
+<h3 id="otros-almacenes-de-zodb">Otros almacenes de ZODB</h3>
+<p>ZODB permite el uso de diversos tipos de almacenes de datos. Como vimos en los ejemplos almacenamos los datos en un archivo, sin embargo esta aproximación tiene la limitante que solo un proceso de Python puede acceder a los datos. Es por ello que se creó una solución llamada <a href="http://www.zodb.org/en/latest/documentation/guide/zeo.html">ZEO</a><i class="fa-solid fa-link-slash roq-broken-link" aria-hidden="true" title="Broken link"></i> para lidiar con este escenario, permitiendo escalar a una solución en la cual muchas conexiones y procesos puedan acceder aun un punto de acceso a un archivo de ZODB.</p>
+<p>Otro almacén de datos es <a href="https://pypi.python.org/pypi/RelStorage">RelStorage</a>, este permite guardar dentro de una Base de Datos Relacional como PostgreSQL o MySQL los objetos Python manejados por un programa. En tal sentido esta solución aprovecha las capacidades de replicación de estos gestores de bases de datos. Está diseñado para aplicaciones de alta demanda y en algunas pruebas obtiene mejores resultados en escenarios de alta concurrencia que la solución típica de ZODB + ZEO.</p>
+<p>Tal vez desee utilizar una estructura de directorios para almacenar sus objetos. Si ese es el caso puede utilizar <a href="https://dirstorage.sourceforge.net/">DirectoryStorage</a>. Su simplicidad en cuanto a mecanismo de almacenamiento garantiza que es una solución a prueba de desastres. Tiene herramientas curiosas como manejo de réplicas, firmas md5 de los distintos archivos, así como la posibilidad de trabajar a modo de solo lectura o <a href="https://en.wikipedia.org/wiki/Snapshot_(computer_storage)">Snapshots</a> para mantener la consistencia de los datos originales en un momento determinado del sistema.</p>
+<p>Finalmente podemos utilizar ZODB de forma similar a SQLite en cuanto a crear una base de datos en memoria, en tal sentido puede usar los almacenes <a href="http://zodb.readthedocs.org/en/latest/api.html#in-memory-for-testing">DemoStorage y MappingStorage</a><i class="fa-solid fa-link-slash roq-broken-link" aria-hidden="true" title="Broken link"></i> que le vendrán muy bien para tareas de pruebas o <a href="http://www.andreas-jung.com/contents/using-zodb-demostorage-for-migration-testing">migración de datos</a><i class="fa-solid fa-link-slash roq-broken-link" aria-hidden="true" title="Broken link"></i>.</p>
+<h3 id="visores-gráficos-de-una-base-de-datos">Visores Gráficos de una Base de Datos</h3>
+<p>En general siempre se agradece la posibilidad de contar con una herramienta gráfica que permita conocer los datos almacenados dentro de un gestor de bases de datos. Sin embargo esta tarea puede ser un poco críptica para personas habituadas a tratar con bases de datos relacionales, pues no existen tablas, estructuras o lenguaje SQL que aplicar. Se está en un espacio completamente lleno de Python. Al momento de escribir este artículo probé <a href="https://github.com/davisagli/eye">eye</a> que me pareció sencillo y bueno para ver el contenido de un archivo, sin embargo existen foros que recomiendan el uso de <a href="https://pypi.python.org/pypi/zodbbrowser">zodbbrowser</a> (basado en Zope 3).</p>
+<p>Para usar eye escriba:</p>
+<pre><code class="language-bash">$ eye (suBDdeZODB).fs
+serving on http://127.0.0.1:8080
+</code></pre>
+<p>Visite la dirección <a href="http://127.0.0.1:8080/">http://127.0.0.1:8080/</a> y podrá detallar el contenido de su base de datos:</p>
+<p><img src="/posts/breve-introduccion-a-zodb/zodb.png" alt="eye, Visualzador de ZODB" /></p>
+<h3 id="para-más-información">Para Más Información</h3>
+<p>La documentación de ZODB en realidad es bastante simple, no tiene muchos lugares oscuros por lo que una búsqueda en la web le podrá arrojar uno que otro manual o tutorial adicional. Sin embargo con los siguientes links podrá avanzar sin problemas:</p>
+<ul>
+<li>
+<p><a href="http://www.zodb.org/">http://www.zodb.org/</a><i class="fa-solid fa-link-slash roq-broken-link" aria-hidden="true" title="Broken link"></i></p>
+</li>
+<li>
+<p><a href="https://zodb.readthedocs.org/en/latest/index.html">https://zodb.readthedocs.org/en/latest/index.html</a></p>
+</li>
+<li>
+<p><a href="https://es.slideshare.net/carlos.delaguardia/zodb-tips-and-tricks">https://es.slideshare.net/carlos.delaguardia/zodb-tips-and-tricks</a></p>
+</li>
+<li>
+<p><a href="http://www.upfrontsystems.co.za/Members/roche/where-im-calling-from/zodb-benchmarks-revisited">http://www.upfrontsystems.co.za/Members/roche/where-im-calling-from/zodb-benchmarks-revisited</a></p>
+</li>
+</ul>
+<p>El código fuente de este artículo se encuentra en <a href="https://github.com/carlosgruiz-dev/post-introduccion-zodb">github</a>.</p>
+      </section>
+      <div class="page-footer">
+        <div class="footer-links">
+          <div class="page-share">
+            <a href="https://twitter.com/intent/tweet?text=Introducción a ZODB&url=https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fbreve-introduccion-a-zodb%2F" title="Share on Twitter"
+              rel="nofollow noopener noreferrer"  target="_blank">Twitter</a>
+            <a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fbreve-introduccion-a-zodb%2F" title="Share on Facebook" rel="nofollow noopener noreferrer"
+              target="_blank">Facebook</a>
+            <a href="https://bsky.app/intent/compose?text=Introducción a ZODB%0ACheck%20it%20out%20https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fbreve-introduccion-a-zodb%2F"
+              title="Share on Bluesky" rel="nofollow noopener noreferrer" target="_blank">Bluesky</a>
+          </div>
+          <div class="page-tag">
+            <a href="/posts/tag/lab" class="tag">&#35; lab</a>
+            <a href="/posts/tag/guides" class="tag">&#35; guides</a>
+            <a href="/posts/tag/python" class="tag">&#35; python</a>
+            <a href="/posts/tag/databases" class="tag">&#35; databases</a>
+            <a href="/posts/tag/spanish" class="tag">&#35; spanish</a>
+          </div>
+
+        </div>
+        <div class="author">
+    <img src="/images/logo-carlos-web.png" alt="author-carlosgruiz" />
+
+  <div class="author-data">
+    <a target="_blank" rel="noopener noreferrer" href="https://carlosgruiz.dev/" class="author-name">Carlos Gustavo Ruiz</a>
+    <span class="author-job-title">Pizza lover 🍕 · Web creature 💻 · Curious nerd 🤓 · Amateur musician 🎸</span>
+  </div>
+</div>
+
+      </div>
+    </section> <!-- End Wrap Content -->
+  </section> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+
+
+</main>
+
+
+
+</div>
+
+</body>
+</html>

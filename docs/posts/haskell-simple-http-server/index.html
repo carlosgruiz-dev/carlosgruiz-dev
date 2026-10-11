@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+
+<!-- Prevent flash of unstyled content for dark mode -->
+<script>
+  const savedTheme = localStorage.getItem('darkMode');
+  const isDark = savedTheme !== null
+    ? savedTheme === 'true'
+    : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (isDark) {
+    document.documentElement.classList.add('dark');
+  }
+</script>
+
+
+
+  <!-- SEO TITLE -->
+  
+  <title>Haskell Simple HTTP Server - Carlos Gustavo Ruiz</title>
+  <meta property="og:title" content="Haskell Simple HTTP Server" />
+  <meta name="twitter:title" content="Haskell Simple HTTP Server">
+  <meta property="og:site_name" content="Carlos Gustavo Ruiz">
+  <!-- SEO DESCRIPTION -->
+  <meta name="description" content="Un proyecto para crear un servidor HTTP simple en Haskell, comparando sockets, Wai y una referencia en Node.js.">
+  <meta property="og:description" content="Un proyecto para crear un servidor HTTP simple en Haskell, comparando sockets, Wai y una referencia en Node.js." />
+  <meta name="twitter:description" content="Un proyecto para crear un servidor HTTP simple en Haskell, comparando sockets, Wai y una referencia en Node.js.">
+  <!-- SEO AUTHOR -->
+  <meta property="article:author" content="carlosgruiz" />
+  <meta name="author" content="carlosgruiz" />
+
+  <!-- SEO URL -->
+  <link rel="canonical" href="https://carlosgruiz.dev/posts/haskell-simple-http-server/" />
+  <meta property="og:url" content="https://carlosgruiz.dev/posts/haskell-simple-http-server/" />
+  <meta name="twitter:url" content="https://carlosgruiz.dev/posts/haskell-simple-http-server/">
+
+  <!-- SEO TYPE -->
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="2017-08-20T00:00-05:00[America/Panama]" />
+
+  <!-- SEO IMAGE -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image:src" content="https://carlosgruiz.dev/posts/haskell-simple-http-server/plane-blueprint.png" />
+  <meta property="og:image" content="https://carlosgruiz.dev/posts/haskell-simple-http-server/plane-blueprint.png" />
+  <!-- SEO COLLECTION PAGES -->
+  <link rel="prev" href="https://carlosgruiz.dev/posts/starting-a-haskell-project-with-stack/" />
+  <link rel="next" href="https://carlosgruiz.dev/posts/installing-freebsd-on-virtualbox/" />
+  <!-- SEO LOCALE -->
+  <meta property="og:locale" content="en_PA" />
+  <!-- SEO GENERATOR -->
+  <meta name="generator" content="Quarkus Roq v2.1.9" />
+
+<link rel="alternate" type="application/rss+xml" title="Carlos Gustavo Ruiz" href="https://carlosgruiz.dev/rss.xml"/>
+<!-- Favicon -->
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/images/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+<base href="/posts/haskell-simple-http-server/">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="theme-color" content="#1e1e2e">
+<meta name="msapplication-navbutton-color" content="#1e1e2e">
+<meta name="apple-mobile-web-app-status-bar-style" content="#1e1e2e">
+
+
+    <script type="module" src="/static/bundle/app-BNJCCHZQ.js"></script>
+      <link rel="stylesheet" href="/static/bundle/app-O2IDU56U.css" />
+
+<script type="module" src="/static/bundle/search.js?id=0d3b83cf-9dd0-4763-946e-b7ddccf42bd6"></script>
+<script type="module" nonce="01KJ2EZHMFP32C2GYZ01SS3DG3">
+  setupSearch({
+    url: '/search-index.json'
+  });
+</script>
+<link rel="stylesheet" href="/static/bundle/search.css?id=0d3b83cf-9dd0-4763-946e-b7ddccf42bd6"></head>
+<body >
+
+
+
+<div class="wrapper default">
+
+
+
+<aside class="sidebar main">
+  <header>
+<!-- Theme configuration: https://iamroq.dev/theme/default/#site-data -->
+<section class="about">
+  <div class="site-logo">
+    <a href="/"><img src="/images/logo-carlos-web.png" alt="Carlos Gustavo Ruiz"></a>
+  </div>
+  <div class="site-name">Carlos Gustavo Ruiz</div>
+  <p>Systems Engineer · code, data &amp; maps</p>
+</section><button type="button" id="search-button" class="search-button" aria-label="Search"></button>
+<section class="menu">
+  <h3 class="section-title menu-title">MENU</h3>
+  <ul>
+    <li><a class="" href="/" ><i class="fa-solid fa-house"></i>Home</a> </li>
+    <li><a class="" href="/posts" ><i class="fa-regular fa-newspaper"></i>Posts</a> </li>
+    <li><a class="" href="/tags" ><i class="fa-solid fa-tags"></i>Tags</a> </li>
+    <li><a class="" href="https://github.com/carlosgruiz-dev/carlosgruiz-dev/wiki" target="_blank"><i class="fa-solid fa-pen-clip"></i>Wiki</a> </li>
+    <li><a class="" href="/talks" ><i class="fa fa-chalkboard"></i>Talks</a> </li>
+    <li><a class="" href="/arts" ><i class="fa-solid fa-seedling"></i>Arts</a> </li>
+    <li><a class="" href="/now" ><i class="fa fa-calendar-day"></i>Now</a> </li>
+  </ul>
+</section>
+  </header> <!-- End Header -->
+  <footer>
+<section class="contact">
+    <h3 class="section-title contact-title">Contact me</h3>
+    <ul>
+        <li>
+            <a href="https://in.linkedin.com/in/carlosgruiz-dev" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://instagram.com/carlosgruiz_dev" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/carlosgruiz-dev" target="_blank" rel="noopener noreferrer" aria-label="github">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</section><section class="copyright">
+  <p>2026 &copy; Carlos Ruiz</p>
+</section>
+
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<!-- Dark Mode Toggle - Fixed top-right for all screen sizes -->
+<button class="dark-mode-toggle" aria-label="Toggle dark mode">
+  <i class="fas fa-moon"></i>
+</button>
+<main class="main-content">
+
+<div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Search" aria-hidden="true">
+  <div class="search-overlay-content">
+    <button class="search-close" id="search-close" aria-label="Close search">&times;</button>
+    <div id="search-field">
+      <input
+        type="search"
+        class="search-input"
+        id="search-input"
+        placeholder="Search..."
+        aria-label="Search"
+        autocomplete="off"
+        autofocus
+      />
+    </div>
+    <div class="search-results" id="search-results" role="region" aria-live="polite" aria-label="Search results">
+      <!-- Search results will be dynamically inserted here -->
+    </div>
+  </div>
+</div>
+
+
+<article class="article-page" xmlns="http://www.w3.org/1999/html">
+  <section class="page-content">
+    <div class="page-cover-image">
+      <figure>
+        <img class="page-image" src="/posts/haskell-simple-http-server/plane-blueprint.png" alt="Haskell Simple HTTP Server">
+      </figure>
+    </div> <!-- End Page Cover Image -->
+    <section class="wrap-content">
+
+<section class="page-header">
+  <h1 class="page-title">Haskell Simple HTTP Server</h1>
+  <div class="page-header-date"><span>Aug 20, 2017</span></div>
+  <p class="page-header-intro">
+    Un proyecto para crear un servidor HTTP simple en Haskell, comparando sockets, Wai y una referencia en Node.js.
+  </p>
+</section>      <section class="content-prose">
+<p>I’m pushing myself to learn Haskell, but I realized that the best way to learn is to make things, broke them and build them again. So I decided to start a toy project to create a substitute for commands like <code>$ python3 -m http.server</code> or <code>$ php -S 0.0.0.0:8000</code> that fires a simple HTTP server to look your HTML files. For this, I have a <a href="https://twitter.com/octonemo/status/897987573024399361">twitter thread</a><i class="fa-solid fa-link-slash roq-broken-link" aria-hidden="true" title="Broken link"></i> to log me and avoid procrastination.</p>
+<p><img src="/posts/haskell-simple-http-server/plane-blueprint.png" alt="Plane Blueprint" /></p>
+<p>To meet my goal, I must find a way to work with a web server like in other programming languages or better. Let’s find out what we can do for this.</p>
+<h2 id="reference-implementation">Reference Implementation</h2>
+<p>So, let’s start with a reference implementation, and since JavaScript is widely in use this could be a good idea. On <a href="https://nodejs.org/">NodeJS</a> we can walk through this with this snippet:</p>
+<script src="https://gist.github.com/carlosgruiz-dev/effb9afcf5c82399a609ad622fc99a61.js"></script>
+<p>It’s self-explaining, we call for a module <em>(line 1)</em>, define a server <em>(lines 2-7)</em> and start the server <em>(line 8)</em>. For the project this is the kind of things I will like to do rather than going too low-level programming.</p>
+<h2 id="using-sockets">Using Sockets</h2>
+<p>For any project, we need a bit of research looking for options of how to do what we want, the <a href="https://wiki.haskell.org/">Haskell Wiki</a> has a page with a reference for creating <a href="https://wiki.haskell.org/Simple_Servers">Simple Servers</a>, plus it is in a concurrent fashion.</p>
+<script src="https://gist.github.com/carlosgruiz-dev/214d3da2f2814dfe3edaa8ae42b51bd0.js"></script>
+<p>Since we are using sockets <em>(line 5 <a href="https://hackage.haskell.org/package/network-2.6.3.2/docs/Network-Socket-Internal.html#v:withSocketsDo">withSocketsDo</a>)</em> it’s clear that its lower level programming in comparison with our JavaScript reference. If you still have doubts just see the <em>line 15</em>, and this string <code>&quot;HTTP/1.0 200\r\nContent-Length: 13\r\n\r\nHello, World!\r\n&quot;</code> rings the low-level programming bell again.</p>
+<p>Nothing bad with this kind of fine grain control, but is not the abstraction level I’m looking for. Anyway, it is worth to take a look at this example because even using sockets and other low-level abstraction resources Haskell still is a very expressive and concise.</p>
+<h2 id="using-wai">Using Wai</h2>
+<p>Some more googling and I found <a href="https://github.com/yesodweb/wai">Wai</a>, a package of the <a href="https://www.yesodweb.com/">Yesod</a> framework. This is pretty much is what I expect to use for my project. To be honest this code and the reference one maybe are oversimplifications, but still, give us valuable information about how our application is going to deal with the web server.</p>
+<script src="https://gist.github.com/carlosgruiz-dev/ba6ba743b5f1e35e089b9227cf41009f.js"></script>
+<p>To build this example you need to install two packages, since I use <a href="https://haskellstack.org">Haskell Stack</a> you can do it writing:</p>
+<pre><code class="language-bash">$ stack install wai warp
+</code></pre>
+<p>or:</p>
+<pre><code class="language-bash">$ cabal install wai warp
+</code></pre>
+<p>if you use the <a href="https://www.haskell.org/cabal/">cabal</a> build tool.</p>
+<p>A quick and dirty explanation of this code is, a language pragma to make strings polymorphic <em>(line 1)</em>, imports for modules and specific functions <em>(lines 2-4)</em>, a function definition for the application <em>(lines 6-7)</em> and finally a call for that function at the <code>main</code> entry point.</p>
+<p>And this is all for now, hope you find this post useful.</p>
+<hr />
+<p>Credits for the plane blueprints image to the <a href="https://commons.wikimedia.org/wiki/File:General_Motors_TBM-3S_Avenger_3-side-view_Blueprint.png">Bureau of Aeronautics, U.S. Navy</a></p>
+      </section>
+      <div class="page-footer">
+        <div class="footer-links">
+          <div class="page-share">
+            <a href="https://twitter.com/intent/tweet?text=Haskell Simple HTTP Server&url=https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fhaskell-simple-http-server%2F" title="Share on Twitter"
+              rel="nofollow noopener noreferrer"  target="_blank">Twitter</a>
+            <a href="https://facebook.com/sharer.php?u=https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fhaskell-simple-http-server%2F" title="Share on Facebook" rel="nofollow noopener noreferrer"
+              target="_blank">Facebook</a>
+            <a href="https://bsky.app/intent/compose?text=Haskell Simple HTTP Server%0ACheck%20it%20out%20https%3A%2F%2Fcarlosgruiz.dev%2Fposts%2Fhaskell-simple-http-server%2F"
+              title="Share on Bluesky" rel="nofollow noopener noreferrer" target="_blank">Bluesky</a>
+          </div>
+          <div class="page-tag">
+            <a href="/posts/tag/lab" class="tag">&#35; lab</a>
+            <a href="/posts/tag/haskell" class="tag">&#35; haskell</a>
+            <a href="/posts/tag/open-source" class="tag">&#35; open-source</a>
+            <a href="/posts/tag/english" class="tag">&#35; english</a>
+          </div>
+
+        </div>
+        <div class="author">
+    <img src="/images/logo-carlos-web.png" alt="author-carlosgruiz" />
+
+  <div class="author-data">
+    <a target="_blank" rel="noopener noreferrer" href="https://carlosgruiz.dev/" class="author-name">Carlos Gustavo Ruiz</a>
+    <span class="author-job-title">Pizza lover 🍕 · Web creature 💻 · Curious nerd 🤓 · Amateur musician 🎸</span>
+  </div>
+</div>
+
+      </div>
+    </section> <!-- End Wrap Content -->
+  </section> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+
+
+</main>
+
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+
+<!-- Prevent flash of unstyled content for dark mode -->
+<script>
+  const savedTheme = localStorage.getItem('darkMode');
+  const isDark = savedTheme !== null
+    ? savedTheme === 'true'
+    : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (isDark) {
+    document.documentElement.classList.add('dark');
+  }
+</script>
+
+
+
+  <!-- SEO TITLE -->
+  
+  <title>La Hydra - Carlos Gustavo Ruiz</title>
+  <meta property="og:title" content="La Hydra" />
+  <meta name="twitter:title" content="La Hydra">
+  <meta property="og:site_name" content="Carlos Gustavo Ruiz">
+  <!-- SEO DESCRIPTION -->
+  <meta name="description" content="Systems Engineer · code, data &amp; maps">
+  <meta property="og:description" content="Systems Engineer · code, data &amp; maps" />
+  <meta name="twitter:description" content="Systems Engineer · code, data &amp; maps">
+
+  <!-- SEO URL -->
+  <link rel="canonical" href="https://carlosgruiz.dev/writing/la-hydra/" />
+  <meta property="og:url" content="https://carlosgruiz.dev/writing/la-hydra/" />
+  <meta name="twitter:url" content="https://carlosgruiz.dev/writing/la-hydra/">
+
+  <!-- SEO TYPE -->
+  <meta property="og:type" content="website" />
+
+  <!-- SEO IMAGE -->
+  <meta name="twitter:card" content="summary">
+  <!-- SEO LOCALE -->
+  <meta property="og:locale" content="en_PA" />
+  <!-- SEO GENERATOR -->
+  <meta name="generator" content="Quarkus Roq v2.1.9" />
+
+<link rel="alternate" type="application/rss+xml" title="Carlos Gustavo Ruiz" href="https://carlosgruiz.dev/rss.xml"/>
+<!-- Favicon -->
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/images/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+<base href="/writing/la-hydra/">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="theme-color" content="#1e1e2e">
+<meta name="msapplication-navbutton-color" content="#1e1e2e">
+<meta name="apple-mobile-web-app-status-bar-style" content="#1e1e2e">
+
+
+    <script type="module" src="/static/bundle/app-BNJCCHZQ.js"></script>
+      <link rel="stylesheet" href="/static/bundle/app-O2IDU56U.css" />
+
+</head>
+<body >
+
+
+
+<div class="wrapper default">
+
+
+
+<aside class="sidebar main">
+  <header>
+<!-- Theme configuration: https://iamroq.dev/theme/default/#site-data -->
+<section class="about">
+  <div class="site-logo">
+    <a href="/"><img src="/images/logo-carlos-web.png" alt="Carlos Gustavo Ruiz"></a>
+  </div>
+  <div class="site-name">Carlos Gustavo Ruiz</div>
+  <p>Systems Engineer · code, data &amp; maps</p>
+</section><button type="button" id="search-button" class="search-button" aria-label="Search"></button>
+<section class="menu">
+  <h3 class="section-title menu-title">MENU</h3>
+  <ul>
+    <li><a class="" href="/" ><i class="fa-solid fa-house"></i>Home</a> </li>
+    <li><a class="" href="/posts" ><i class="fa-regular fa-newspaper"></i>Posts</a> </li>
+    <li><a class="" href="/tags" ><i class="fa-solid fa-tags"></i>Tags</a> </li>
+    <li><a class="" href="https://github.com/carlosgruiz-dev/carlosgruiz-dev/wiki" target="_blank"><i class="fa-solid fa-pen-clip"></i>Wiki</a> </li>
+    <li><a class="" href="/talks" ><i class="fa fa-chalkboard"></i>Talks</a> </li>
+    <li><a class="" href="/arts" ><i class="fa-solid fa-seedling"></i>Arts</a> </li>
+    <li><a class="" href="/now" ><i class="fa fa-calendar-day"></i>Now</a> </li>
+  </ul>
+</section>
+  </header> <!-- End Header -->
+  <footer>
+<section class="contact">
+    <h3 class="section-title contact-title">Contact me</h3>
+    <ul>
+        <li>
+            <a href="https://in.linkedin.com/in/carlosgruiz-dev" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://instagram.com/carlosgruiz_dev" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/carlosgruiz-dev" target="_blank" rel="noopener noreferrer" aria-label="github">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</section><section class="copyright">
+  <p>2026 &copy; Carlos Ruiz</p>
+</section>
+
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<!-- Dark Mode Toggle - Fixed top-right for all screen sizes -->
+<button class="dark-mode-toggle" aria-label="Toggle dark mode">
+  <i class="fas fa-moon"></i>
+</button>
+<main class="main-content">
+
+<div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Search" aria-hidden="true">
+  <div class="search-overlay-content">
+    <button class="search-close" id="search-close" aria-label="Close search">&times;</button>
+    <div id="search-field">
+      <input
+        type="search"
+        class="search-input"
+        id="search-input"
+        placeholder="Search..."
+        aria-label="Search"
+        autocomplete="off"
+        autofocus
+      />
+    </div>
+    <div class="search-results" id="search-results" role="region" aria-live="polite" aria-label="Search results">
+      <!-- Search results will be dynamically inserted here -->
+    </div>
+  </div>
+</div>
+<article class="page-content">
+
+  <section class="content-main">
+
+<section class="page-header">
+  <h1 class="page-title">La Hydra</h1>
+</section>    <div class="content-prose">
+<p>Aquí estoy de nuevo, parado sobre este montículo, esperando a la nueva batalla que se me presenta. Te veo y no te reconozco, se que estás allí, sin embargo te has convertido en algo desalentador. Comenzaste por tener una piel cada vez más dura, hasta que mis manos comenzaron a sentir tu textura de reptil, fría, luego escamas, ahora cuando logro tocar tu cuerpo siento que me consigo con un algo hostil, llena de agujas que de sentirlas en la posición equivocada mi cuerpo sangra. Tu rostro dulce y amable ahora se cubre de humo, ojos llenos de fuego y de rabia, donde hubo un cabello hermoso donde mis manos jugaban, hay cuernos, estrías, rugosidad y armas.</p>
+<p>En este instante reconocí que el demonio que te agobia es un miedo profundo, a dejar de ser tu, a cambiar tu historia, a permitirte que te ame. Sin embargo no ha hecho falta nada, sólo mi fe para que volvieras a ser mi dama. Esa hermosa mujer que mis ojos adoran, esa por la que mi corazón clama. No hizo falta otra cosa que verte a los ojos y sinceramente decirte, niña pequeña, no temas, soy yo, no traigo secretos ni armas, traigo esta flor para ti, mis deseos sinceros, eso y más nada.</p>
+<p>...</p>
+<p>Ha pasado ya cierto tiempo una vida feliz, cantos, juegos, risas y carcajadas. Aun así este tu dragón ha vuelto con más fuerzas, ebrio de ira, preparado para una batalla, ya no me ven dos ojos de fuego, sino cuatro o seis pares, he perdido la cuenta, ya pasan de cien, todo lo que ven lo incendian y arrasan. No se donde cometí el error, o solamente se que esto me deparaba, prepararé entonces mis argumentos para secar cada una de estas fachadas.</p>
+<p>Aquí estoy de nuevo, parado sobre este montículo, esperando a la nueva batalla. Un grupo de cabezas me atacan, ellas de tu pasado me hablan. Dicen a mil voces en coro, me dañaron, me engañaron, me hirieron, fui decepcionada, no te acerques a mi, soy criatura voraz y putrefacta, si das un paso más te comeré y de ti no quedará ni la mirada. Llantos del pasado, tristezas de mujer defraudada, regalos entregados en manos equivocadas, pulcritud pisoteada, virginidad desperdiciada. He allí los rostros de mil demonios surgiendo de la mujer que amo, Dios dame fortaleza que mi corazón sea más fuerte que su pasado. Huyo a ser el héroe de tus vidas anteriores, pues son ilusión que no se acaba, siempre que se entrega sangre en vano, se ha de morir por nada. Humo, lodo y llamaradas, si se ve de frente es la pintura de una escena desdichada, recordé la historia de Medusa, te vi por el reflejo de mi escudo, estabas allí sentada, como niña pequeña que está asustada, llorando en una silla porque se sintió sola alguna vez, indefensa y golpeada. Tus cabellos hermosos y húmedos de tantas lágrimas, un vestido harapiento, destrozado por unas garras, no eran huella de lobos ni felinos que vinieron antes, está hecho jirones por tus manos en esos momentos de rabia. Te veo fijamente a los ojos, esos que a falta de descanso se hacen sus propias almohadas, te vi con amor, te vi con el corazón, te vi mientras te amaba.</p>
+<p>Siento un fuerte temblor, como una estampida de mil manadas, como la travesía de cien mil bestias dispuestas a acabar conmigo en una sola pasada. Son tus fantasmas del futuro, los conozco bien, anhelos incumplidos y expectativas no alcanzadas que cual rueca sin fin repites ahora como si fuese alguna vieja tonada. Espectros azules con máscaras doradas, engañosamente presentes y vacías, llenos de nada. Desde mi corazón enciendo una luz y te diviso de nuevo, esta vez vaporosa y hermosa como una hada, pero tu rostro es de piedra por tantas ideas aferradas. Doy pasos por entre las sombras, me acerco a tu luz y tu nueva mirada, tiendo mi mano hacia ti y siento las mordidas de otra de las mil caras.</p>
+<p>-¡¡No quiero pelear contigo!! ¡¡He venido por ti, no vengo por ninguna de estas máscaras!!- grito destemplado. Ya la luna en lo alto alumbra la vista de este valle, delante el dragón hambriento de sangre, detrás piedras, un risco, un sendero de lodo y una quebrada. El canto de las cabezas ahora lleva otra tonada, -No sirvo, soy estúpida, soy infeliz, me veo mal, no merezco felicidad alguna, no valgo nada.. como puedes osar estar aquí en frente ante semejante barbarie, si te acercas te comeré y de ti no quedarán ni tus pisadas!- Ojos de fuego en cantidad de mil arañas, oscuridad y frío, alcohol, drogas, humo de tabaco mezclado con azufre, animales descompuestos, moscas, heces, como un infierno en la tierra que espanta un alma clara. Mi espíritu no es del hombre justo, ni un guerrero perfecto, ni un ángel que redime los pecados y lleva a los demás al cielo, soy un hombre enamorado de ti y que por ser su naturaleza no tiene más remedio.</p>
+<p>Detrás de esos demonios, monstruos y marejadas, divisé algo conocido, dos joyas, dos brillos, tus ojos mi mujer adorada. Allí estás tu, detrás de lentes de sol, fragancias que disimulan tu desgracia, no aquella que se ve con los ojos del rostro sino aquella que sientes en tu alma. -¡Te encontré!- me digo, entonces con voz poderosa y calmada grito a las máscaras, -¡Ustedes para mi no existen! Y no podrán entrar en mi mente, son miedos que no me pertenecen, son de su imaginación, son de su creación, yo sólo la veo a ella, no a ustedes!-. Convertidos a fantasmas translúcidos, conseguí a mi dama de pié, rígida de rabia, y con un beso te desperté de esa pesadilla. Tu mereces ser amada.</p>
+<p>Respiras de repente, como si volvieses de estar ahogada, dulces besos entre lágrimas, me dices te amo mientras me abrazas. Eres tu de nuevo, eres tu mi amada. Sol de mi existencia, color de mi vida ya en calma. Pasión de mi piel, refugio de mi madrugada, tersa y suave como la seda, cálida y divina cual diosa de la primavera. Besos que reconfortan mi alma, ternura de amor juvenil, siento tu cuerpo firmemente unido al mio, en esta noche fría y oscura solo estamos nosotros y la luz del cielo despejado. El calor de tu cuerpo me impregna, tu perfume de mujer y mil flores, tu voz y tu mirada. Amándonos amanece un nuevo día, una nueva vida, una grandiosa velada.</p>
+<p>En un instante siento en el lado izquierdo de mi espalda una punzante herida, una daga llena de veneno, un frío que me recorre hasta tocar el corazón. El demonio no tenía solo mil cabezas, también tiene una cola envenenada, cual escorpión certero me has dado donde no lo esperaba. Es una daga en tu cola que tiene la mano de un hombre, ese que me decías que ya no amabas, ese que habías olvidado por fuerza de nuestro amor, ese por el cual decías no sentir nada, ese que lloraste mil noches cuando ya no te respetaba, ese mismo que decías no se comparaba conmigo en la cama, ese que dijiste que había muerto, ese que ya no está pero me doy cuenta que aun añorabas.</p>
+<p>Sentí pasar mil años, tormento, dolor, frío, parálisis, veneno, oh Dios. Tu mirada dulce se tornó fría, indiferente y malcriada. Un segundo en la vida del universo, para mi una era llena de desgracias, dolor y sentir que la vida me dejaba.</p>
+<p>Morir en vano jamás. Nunca morir de amor en tus manos mujer extraña. Me libro de tu último veneno. Puedo vivir con el corazón herido, seguro el sana. Tu en cambio mujer estás muerta en vida, ya sin esperanzas. Pasé por alto en nombre del amor que eres todo lo que vi, no solo lo que adoraba. Eres todos esos monstruos que me mostrabas, y el peor era el secreto que te guardabas, un cofre lleno de ilusión por un ausente, aquel que sin estar aquí, por tu veneno me mata. Estás seca como un pozo desgastado, porque de el solo aprendiste a sacar lágrimas. Me voy lejos de ti, ya tu no me dañas. Si nos vemos alguna vez espero sea en el infierno, donde te juzguen por tu traición y a mi por mis faltas.</p>
+<section class="roq-section">
+  <h2>Carlos Gustavo Ruiz</h2>
+  <p>miércoles, 17 de marzo de 2010</p>
+</section>
+    </div>
+  </section>
+</article>
+
+
+
+
+
+</main>
+
+
+
+</div>
+
+</body>
+</html>
