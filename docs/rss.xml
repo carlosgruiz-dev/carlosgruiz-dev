@@ -5,15 +5,7 @@
     <link>https://carlosgruiz.dev/</link>
     <atom:link href="https://carlosgruiz.dev/rss.xml" rel="self" type="application/rss+xml"/>
     <generator>Quarkus Roq</generator>
-    <lastBuildDate>Sun, 13 Oct 2024 00:00:00 -0500</lastBuildDate>
-      <item>
-        <title><![CDATA[The First Roq!]]></title>
-        <link>https://carlosgruiz.dev/posts/the-first-roq/</link>
-        <guid isPermaLink="false">https://carlosgruiz.dev/posts/the-first-roq/</guid>
-        <pubDate>Sun, 13 Oct 2024 00:00:00 -0500</pubDate>
-        <description><![CDATA[This is my first article ever made with Quarkus Roq]]></description>
-        <content:encoded><![CDATA[<p>This is my first article ever made with Quarkus Roq</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="https://carlosgruiz.dev/posts/the-first-roq/">Keep reading</a>.</strong></div><br /> <br />]]></content:encoded>
-      </item>
+    <lastBuildDate>Fri, 21 Sep 2018 00:00:00 -0500</lastBuildDate>
       <item>
         <title><![CDATA[Entrevista Python Venezuela]]></title>
         <link>https://carlosgruiz.dev/posts/entrevista-python-venezuela/</link>

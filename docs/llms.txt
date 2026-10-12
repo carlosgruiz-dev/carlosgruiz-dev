@@ -4,7 +4,6 @@
 
 ## Posts
 
-- [The First Roq!](/posts/the-first-roq/): This is my first article ever made with Quarkus Roq
 - [Entrevista Python Venezuela](/posts/entrevista-python-venezuela/): Entrevista con Jesús Gómez del proyecto Python Venezuela sobre mis inicios como programador, Python y el proyecto en el que trabajo.
 - [Starting a Haskell Project With Stack](/posts/starting-a-haskell-project-with-stack/): Cómo empezar un proyecto de Haskell con Stack, usando plantillas para crear nuevos proyectos.
 - [Haskell Simple HTTP Server](/posts/haskell-simple-http-server/): Un proyecto para crear un servidor HTTP simple en Haskell, comparando sockets, Wai y una referencia en Node.js.
@@ -120,7 +119,6 @@
 - [#python](/posts/tag/python/page2/)
 - [#python](/posts/tag/python/page3/)
 - [#qt](/posts/tag/qt/)
-- [#blogging](/posts/tag/blogging/)
 - [#documentation](/posts/tag/documentation/)
 - [#open-source](/posts/tag/open-source/)
 - [#open-source](/posts/tag/open-source/page2/)

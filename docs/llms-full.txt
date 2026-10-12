@@ -4,33 +4,6 @@
 
 ## Posts
 
-### [The First Roq!](/posts/the-first-roq/)
-
-You can access page data like this:
-
-* {=page.data.cool}
-* {=page.data.fun}
-
-will render ⤵
-
-this is cool :)
-
-and fun!
-
-There are a few helpers on the page variable (more on variables):
-
-&amp;gt; {=page.date.format(&#39;YYYY&#39;)}: {=page.description}
-
-will render ⤵
-
-2024: This is my first article ever made with Quarkus Roq
-
-It&#39;s time to write awesome articles!
-
-Thank you!
-
-PS: To make the tag work (#blogging), you need to enable tagging.
-
 ### [Entrevista Python Venezuela](/posts/entrevista-python-venezuela/)
 
 Jesús Gómez (@jgomo3) ha dado inicio a una serie de entrevistas a miembros de la comunidad de Python Venezuela, y bueno tuve la fortuna de ser su primer invitado. Durante una hora estuvimos hablando de mis inicios como programador, cómo conocí y adopté a Python y finalmente un poco sobre el proyecto en el que trabajo actualmente.
@@ -2263,8 +2236,6 @@ lab (12)
  english (3)
 
  haskell (2)
-
- blogging (1)
 
 ### [Talks](/talks/)
 
@@ -5671,58 +5642,6 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
  Sobre Camelot, un proyecto para GUIs en Python inspirado en Django, con la presentación de FOSDEM 2009.
 
  Jun 9, 2010 —
-
- 1 minute(s) read
-
-### [#blogging](/posts/tag/blogging/)
-
-const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
- const isDark = savedTheme !== null
- ? savedTheme === &#39;true&#39;
- : window.matchMedia(&#39;(prefers-color-scheme: dark)&#39;).matches;
- if (isDark) {
- document.documentElement.classList.add(&#39;dark&#39;);
- }
-
- #blogging - Carlos Gustavo Ruiz
-
- setupSearch({
- url: &#39;/search-index.json&#39;
- });
-
- Carlos Gustavo Ruiz
-
- Systems Engineer · code, data &amp; maps
-
- MENU
-
- Home
-
- Posts
-
- Tags
-
- Wiki
-
- Talks
-
- Arts
-
- Now
-
- Contact me
-
- 2026 &amp;copy; Carlos Ruiz
-
- &amp;times;
-
- blogging
-
- The First Roq!
-
- This is my first article ever made with Quarkus Roq
-
- Oct 13, 2024 —
 
  1 minute(s) read
 

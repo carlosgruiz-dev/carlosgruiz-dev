@@ -2,10 +2,6 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>https://carlosgruiz.dev/posts/the-first-roq/</loc>
-        <lastmod>2026-10-02T19:04:50-05:00</lastmod>
-    </url>
-    <url>
         <loc>https://carlosgruiz.dev/posts/entrevista-python-venezuela/</loc>
         <lastmod>2026-10-10T22:14:37-05:00</lastmod>
     </url>
@@ -175,7 +171,7 @@
     </url>
     <url>
         <loc>https://carlosgruiz.dev/</loc>
-        <lastmod>2026-10-09T08:31:28-05:00</lastmod>
+        <lastmod>2026-10-11T22:13:01-05:00</lastmod>
     </url>
     <url>
         <loc>https://carlosgruiz.dev/writing/a-callar/</loc>
@@ -455,10 +451,6 @@
     </url>
     <url>
         <loc>https://carlosgruiz.dev/posts/tag/qt/</loc>
-        <lastmod>2026-10-02T19:04:50-05:00</lastmod>
-    </url>
-    <url>
-        <loc>https://carlosgruiz.dev/posts/tag/blogging/</loc>
         <lastmod>2026-10-02T19:04:50-05:00</lastmod>
     </url>
     <url>
