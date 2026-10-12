@@ -2145,13 +2145,13 @@ What is this page?
 
 ### [Tags](/tags/)
 
-Idiomas
+Language
 
  spanish (39)
 
  english (3)
 
-Tipo
+Type
 
  lab (12)
 
@@ -2165,7 +2165,7 @@ Tipo
 
  tutorial (8)
 
-Temas
+Topics
 
  javascript (1)
 
@@ -2217,7 +2217,7 @@ Temas
 
  haskell (2)
 
-Comunidades y proyectos
+Communities &amp; projects
 
  tubasededatoslibre (7)
 
