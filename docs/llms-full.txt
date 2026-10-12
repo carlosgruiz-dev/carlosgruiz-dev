@@ -100,6 +100,8 @@ $ convert -delay 60 -loop 0 *.jpg your-animated.gif
 
 Ayer fue mi primera charla sobre vim durante la primera jornada del PyDay Caracas 2016 - 1, (si, un día python de 2 días XD). Bueno, luego de estar ausente de hacer presentaciones desde el 2013 aquí estoy.
 
+View slides (PDF)
+
 Puede descargar la presentación aquí.
 
 ### [Manten tu documentacion a mano con Zeal](/posts/manten-tu-documentacion-a-mano-con-zeal/)
@@ -218,6 +220,8 @@ Por cierto, hay bastantes explicaciones de esta expresión aplicado a social med
 
 El día 17 de octubre tuve la oportunidad durante la 1ra Cayapa Universitaria en la UPTOS - CR (Cumaná, Estado Sucre, Venezuela) tuve la oportunidad de presentar la ponencia “Bases de Datos Libres desde 40.000 pies de altura” en representación del equipo de tubasededatoslibre.org. En esta dirección están los scripts y guiones que utilicé como ejemplos durante la presentación https://github.com/carlosgruiz-dev/presentacion-bd40000.
 
+View slides (PDF)
+
 ### [Comunidades Tecnologicas 101](/posts/comunidades-tecnologicas-101/)
 
 Durante mi visita al Estado Sucre tuve la oportunidad de compartir con un grupo de jóvenes entusiastas de la sede Cariaco de la Universidad Politécnica Territorial del Oeste de Sucre “Clodosbaldo Rusián” (en adelante la llamaré UPTOS-CR para simplificar), que preguntaron cómo iniciar una comunidad de software libre. Durante esa visita el tiempo voló, literalmente hablamos de miles de cosas, desde la instalación de GNU/Linux, hasta estrategias para alcanzar objetivos, pasando incluso por los problemas de salud comunes para el mundo geek.
@@ -257,6 +261,8 @@ Así que a mis amigos de la UPTOS-CR, aquí mis 2 centavos. Espero saber muy pro
 ### [¿Por qué hacemos persistencia de datos?](/posts/por-que-hacemos-persistencia-de-datos/)
 
 El día 4 de septiembre estuve nuevamente con el equipo de tubasededatoslibre.org presentando algunas ideas sobre diversos el tema de base de datos y persistencia de datos, esta vez en la “1ra sensibilización para la adopción de bases de datos libres” del CNTI.
+
+View slides (PDF)
 
 ### [Introducción a Pyramid](/posts/introduccion-a-pyramid/)
 
@@ -1302,9 +1308,13 @@ Espero a alguien le sean útiles estos trucos como me fueron a mi.
 
 El día 10 de diciembre se concretó una reunión bien esperada para que junto con la Geog. Zaida Pinto y el Ing. Richard Hernandez conversar con José Sosa (Presidente del CNTI) sobre la Geomática Libre en nuestro país. La reunión fue todo menos aburrida, fue muy cordial y amena, además de sincera en los planteamientos y observaciones. Esto que se presentó no es sino un abre-boca del trabajo que hay que realizar en el futuro en múltiples planos de acción, sin embargo hubo consenso en algunos aspectos como que el mayor esfuerzo no será meramente técnico sino de sensibilización al énfasis de la libertad dentro del ámbito de la geomática, que el tema de publicación de información georreferenciada está más allá del uso exclusivo de la geomática sino que debe llevar implícito un enfoque orientado al OpenData, y que es necesario participar en múltiples mesas técnicas para coordinar esfuerzos y potenciar iniciativas, entre otros temas tratados.
 
+View slides (PDF)
+
 ### [Mini Taller de Base de Datos y PostgreSQL](/posts/mini-taller-de-base-de-datos-y-postgresql/)
 
 Los días 5 y 6 de diciembre estuve junto con el equipo de TuBaseDeDatosLibre.org dictando un “Taller Introductorio de Bases de Datos y PostgreSQL” en las sedes de Corpoelec y el Ministerio de la Cultura. A continuación está el material utilizado para la presentación matutina correspondiente a la introducción a bases de datos y configuración de PostgreSQL para efectos del curso.
+
+View slides (PDF)
 
 ### [Urumaco y los datos](/posts/urumaco-y-los-datos/)
 
@@ -1329,6 +1339,8 @@ Durante el PyCon Venezuela hice una charla llamada Integrando mis librerías C++
 La Presentación
 
 La idea básica a presentar es el típico problema del “Performance vs. Productivity”, que aparece de cuando en cuando en las listas de correo de los distintos lenguajes de programación. Sin ahondar en el por qué de estas discusiones, me centro en que mi apuesta tecnológica es tomar lo mejor de ambos mundos y asegurarme que se puedan juntar. La Biblioteca Estándar de C++ y la STL tienen implementados muchas herramientas que con la correcta integración entre ambos lenguajes permiten sacar el mejor provecho de ambos mundos. Python provee la versatilidad y rapidez de desarrollo, C++ provee el poder y el control, balancear lo mejor de ambos en favor de una aplicación es aconsejable y deseable. En fin, les sugiero vean la presentación:
+
+View slides (PDF)
 
 La Práctica
 
@@ -1502,6 +1514,8 @@ Luego de 3 años tocando la puerta en distintos eventos de Geomática por fin tu
 
 Con el fin de permitir a aquellos que no pudieron asistir al PyCon Venezuela beneficiarse del taller incluyo en este post la presentación con el paso a paso, y si lo desean pueden descargar de aquí (pdf) y los ejercicios resueltos aquí (tar.gz).
 
+View slides (PDF)
+
 ### [Pycon Venezuela 2012](/posts/pycon-venezuela-2012/)
 
 La Conferencia de Usuarios Python de Venezuela (PyConVE) fue una jornada frenética. No solamente por las noches preparando el material sino por la cantidad de información que fluyó entre nosotros. Caras nuevas en nombres conocidos, fue una oportunidad de conocer personalmente a amigos a quienes conozco principalmente por sus perfiles en Twitter, GitHub o BitBucket. Al final, luego de estos tres días de intensas jornadas creo que el objetivo, desde mi punto de vista, se cumplió por completo, consolidar la comunidad de Python en nuestro país.
@@ -1592,6 +1606,8 @@ Presentaciones: Presentacion Gobierno en Línea, Geomática Libre con OpenStreet
 ### [Requerimientos para PostgreSQL](/posts/requerimientos-para-postgresql/)
 
 Presentación que realicé en el 3er Encuentro de Migración a Bases de Datos Libres, que se realizó el 04/05/2012 en la sede de CANTV organizado por el Centro Nacional de Tecnologías de Información.
+
+View slides (PDF)
 
 ### [Mi Distro de Linux](/posts/mi-distro-de-linux/)
 
@@ -1717,17 +1733,27 @@ Video
 
 Láminas
 
+View slides (PDF)
+
+View slides (PDF)
+
 ### [Mejores Prácticas para la Migracion de Bases de Datos](/posts/mejores-practicas-para-la-migracion-de-bases-de-datos/)
 
 En el marco de las jornadas del 2do Encuentro de Migración de Bases de Datos Privativas a Tecnologías de Información Libres hice la siguiente presentación. En ella procuro explicar mayormente algunos aspectos no meramente técnicos que deben ser tomados en cuenta a la hora de migrar sus bases de datos.
+
+View slides (PDF)
 
 ### [Mapa Colaborativo de Venezuela con OpenStreetMap](/posts/mapa-colaborativo-de-venezuela-osm/)
 
 Durante las jornadas de tecnologías de información libres para vivir viviendo realicé esta presentación con el fin de mostrar las bondades del uso de openstreetmap.
 
+View slides (PDF)
+
 ### [Python vs El Mundo](/posts/python-vs-el-mundo/)
 
 Inspirado en la Película Scott Pilgrim vs El Mundo y en ocasión del Día Python en Mayo de 2011, tuve la oportunidad de presentar la evaluación tecnológica para responder a la pregunta frecuente de ¿Por qué usar Python para mi proyecto?.
+
+View slides (PDF)
 
 ### [Django vs Pylons](/posts/django-vs-pylons/)
 
@@ -1778,6 +1804,8 @@ Anímense a probar ambos Frameworks, realmente son excelentes herramientas.
 ### [GeoEtiquetas (Presentación en Jornadas gvSIG)](/posts/geoetiquetas-presentacion-en-jornadas-gvsig/)
 
 Presentación del proyecto GeoEtiquetas, en las 2das Jornadas de gvSIG Latinoamérica y del Caribe.
+
+View slides (PDF)
 
 ### [Camelot](/posts/camelot/)
 
