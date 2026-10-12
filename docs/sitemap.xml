@@ -7,7 +7,7 @@
     </url>
     <url>
         <loc>https://carlosgruiz.dev/posts/starting-a-haskell-project-with-stack/</loc>
-        <lastmod>2026-10-10T20:58:52-05:00</lastmod>
+        <lastmod>2026-10-11T22:51:19-05:00</lastmod>
     </url>
     <url>
         <loc>https://carlosgruiz.dev/posts/haskell-simple-http-server/</loc>
@@ -15,15 +15,15 @@
     </url>
     <url>
         <loc>https://carlosgruiz.dev/posts/installing-freebsd-on-virtualbox/</loc>
-        <lastmod>2026-10-10T22:14:37-05:00</lastmod>
+        <lastmod>2026-10-11T23:22:56-05:00</lastmod>
     </url>
     <url>
         <loc>https://carlosgruiz.dev/posts/vim-python-mode/</loc>
-        <lastmod>2026-10-10T20:56:25-05:00</lastmod>
+        <lastmod>2026-10-11T23:22:56-05:00</lastmod>
     </url>
     <url>
         <loc>https://carlosgruiz.dev/posts/manten-tu-documentacion-a-mano-con-zeal/</loc>
-        <lastmod>2026-10-10T22:14:37-05:00</lastmod>
+        <lastmod>2026-10-11T23:22:56-05:00</lastmod>
     </url>
     <url>
         <loc>https://carlosgruiz.dev/posts/generador-de-archivos-gitignore/</loc>
@@ -31,7 +31,7 @@
     </url>
     <url>
         <loc>https://carlosgruiz.dev/posts/instalar-netbeans-en-gentoo/</loc>
-        <lastmod>2026-10-10T21:06:16-05:00</lastmod>
+        <lastmod>2026-10-11T23:22:56-05:00</lastmod>
     </url>
     <url>
         <loc>https://carlosgruiz.dev/posts/outrunning-the-bear/</loc>
@@ -39,11 +39,11 @@
     </url>
     <url>
         <loc>https://carlosgruiz.dev/posts/bases-de-datos-libres-desde-40000-pies-de-altura/</loc>
-        <lastmod>2026-10-10T22:14:37-05:00</lastmod>
+        <lastmod>2026-10-11T23:22:56-05:00</lastmod>
     </url>
     <url>
         <loc>https://carlosgruiz.dev/posts/comunidades-tecnologicas-101/</loc>
-        <lastmod>2026-10-10T22:14:37-05:00</lastmod>
+        <lastmod>2026-10-11T23:22:56-05:00</lastmod>
     </url>
     <url>
         <loc>https://carlosgruiz.dev/posts/por-que-hacemos-persistencia-de-datos/</loc>
@@ -51,15 +51,15 @@
     </url>
     <url>
         <loc>https://carlosgruiz.dev/posts/introduccion-a-pyramid/</loc>
-        <lastmod>2026-10-10T22:14:37-05:00</lastmod>
+        <lastmod>2026-10-11T23:22:56-05:00</lastmod>
     </url>
     <url>
         <loc>https://carlosgruiz.dev/posts/breve-introduccion-a-zodb/</loc>
-        <lastmod>2026-10-10T22:14:37-05:00</lastmod>
+        <lastmod>2026-10-11T23:22:56-05:00</lastmod>
     </url>
     <url>
         <loc>https://carlosgruiz.dev/posts/llena-tu-windows-de-foss/</loc>
-        <lastmod>2026-10-10T22:14:37-05:00</lastmod>
+        <lastmod>2026-10-11T23:22:56-05:00</lastmod>
     </url>
     <url>
         <loc>https://carlosgruiz.dev/posts/receta-para-hacer-un-mapa-electoral-simple/</loc>
@@ -71,11 +71,11 @@
     </url>
     <url>
         <loc>https://carlosgruiz.dev/posts/hola-postgresql-con-python/</loc>
-        <lastmod>2026-10-10T22:14:37-05:00</lastmod>
+        <lastmod>2026-10-11T23:22:56-05:00</lastmod>
     </url>
     <url>
         <loc>https://carlosgruiz.dev/posts/convertir-repositorios-mercurial-a-git/</loc>
-        <lastmod>2026-10-10T22:14:37-05:00</lastmod>
+        <lastmod>2026-10-11T23:22:56-05:00</lastmod>
     </url>
     <url>
         <loc>https://carlosgruiz.dev/posts/tutorial-introduccion-a-la-programacion-qt-y-otros-hallazgos-en-la-azotea/</loc>
@@ -107,11 +107,11 @@
     </url>
     <url>
         <loc>https://carlosgruiz.dev/posts/openve-y-los-kits-de-arranque/</loc>
-        <lastmod>2026-10-10T22:14:37-05:00</lastmod>
+        <lastmod>2026-10-11T23:22:56-05:00</lastmod>
     </url>
     <url>
         <loc>https://carlosgruiz.dev/posts/dogfooding/</loc>
-        <lastmod>2026-10-10T22:14:37-05:00</lastmod>
+        <lastmod>2026-10-11T23:22:56-05:00</lastmod>
     </url>
     <url>
         <loc>https://carlosgruiz.dev/posts/entrevista-en-echandocodigo-com/</loc>
@@ -119,7 +119,7 @@
     </url>
     <url>
         <loc>https://carlosgruiz.dev/posts/taller-de-geo-gobierno-en-linea/</loc>
-        <lastmod>2026-10-10T22:14:37-05:00</lastmod>
+        <lastmod>2026-10-11T23:22:56-05:00</lastmod>
     </url>
     <url>
         <loc>https://carlosgruiz.dev/posts/requerimientos-para-postgresql/</loc>
@@ -131,7 +131,7 @@
     </url>
     <url>
         <loc>https://carlosgruiz.dev/posts/frameworks-de-cpp-para-la-web/</loc>
-        <lastmod>2026-10-10T22:14:37-05:00</lastmod>
+        <lastmod>2026-10-11T23:22:56-05:00</lastmod>
     </url>
     <url>
         <loc>https://carlosgruiz.dev/posts/alta-disponibilidad-con-postgresql/</loc>
@@ -143,7 +143,7 @@
     </url>
     <url>
         <loc>https://carlosgruiz.dev/posts/mapa-colaborativo-de-venezuela-osm/</loc>
-        <lastmod>2026-10-10T22:14:37-05:00</lastmod>
+        <lastmod>2026-10-11T23:22:56-05:00</lastmod>
     </url>
     <url>
         <loc>https://carlosgruiz.dev/posts/python-vs-el-mundo/</loc>
@@ -151,11 +151,11 @@
     </url>
     <url>
         <loc>https://carlosgruiz.dev/posts/django-vs-pylons/</loc>
-        <lastmod>2026-10-10T22:14:37-05:00</lastmod>
+        <lastmod>2026-10-11T23:22:56-05:00</lastmod>
     </url>
     <url>
         <loc>https://carlosgruiz.dev/posts/geoetiquetas-presentacion-en-jornadas-gvsig/</loc>
-        <lastmod>2026-10-08T22:54:46-05:00</lastmod>
+        <lastmod>2026-10-11T23:22:56-05:00</lastmod>
     </url>
     <url>
         <loc>https://carlosgruiz.dev/posts/camelot/</loc>
@@ -239,7 +239,7 @@
     </url>
     <url>
         <loc>https://carlosgruiz.dev/tags/</loc>
-        <lastmod>2026-10-08T22:54:56-05:00</lastmod>
+        <lastmod>2026-10-11T23:22:56-05:00</lastmod>
     </url>
     <url>
         <loc>https://carlosgruiz.dev/talks/</loc>
@@ -270,10 +270,6 @@
         <lastmod>2026-10-08T22:55:07-05:00</lastmod>
     </url>
     <url>
-        <loc>https://carlosgruiz.dev/posts/tag/memcached/</loc>
-        <lastmod>2026-10-02T19:04:50-05:00</lastmod>
-    </url>
-    <url>
         <loc>https://carlosgruiz.dev/posts/tag/gentoo/</loc>
         <lastmod>2026-10-02T19:04:50-05:00</lastmod>
     </url>
@@ -291,10 +287,6 @@
     </url>
     <url>
         <loc>https://carlosgruiz.dev/posts/tag/collaborations/page2/</loc>
-        <lastmod>2026-10-02T19:04:50-05:00</lastmod>
-    </url>
-    <url>
-        <loc>https://carlosgruiz.dev/posts/tag/best-practices/</loc>
         <lastmod>2026-10-02T19:04:50-05:00</lastmod>
     </url>
     <url>
@@ -322,19 +314,7 @@
         <lastmod>2026-10-02T19:04:50-05:00</lastmod>
     </url>
     <url>
-        <loc>https://carlosgruiz.dev/posts/tag/redis/</loc>
-        <lastmod>2026-10-02T19:04:50-05:00</lastmod>
-    </url>
-    <url>
-        <loc>https://carlosgruiz.dev/posts/tag/guides/</loc>
-        <lastmod>2026-10-02T19:04:50-05:00</lastmod>
-    </url>
-    <url>
         <loc>https://carlosgruiz.dev/posts/tag/git/</loc>
-        <lastmod>2026-10-02T19:04:50-05:00</lastmod>
-    </url>
-    <url>
-        <loc>https://carlosgruiz.dev/posts/tag/openstreetmap/</loc>
         <lastmod>2026-10-02T19:04:50-05:00</lastmod>
     </url>
     <url>
@@ -382,7 +362,7 @@
         <lastmod>2026-10-02T19:04:50-05:00</lastmod>
     </url>
     <url>
-        <loc>https://carlosgruiz.dev/posts/tag/mongodb/</loc>
+        <loc>https://carlosgruiz.dev/posts/tag/tutorial/page2/</loc>
         <lastmod>2026-10-02T19:04:50-05:00</lastmod>
     </url>
     <url>
@@ -486,19 +466,7 @@
         <lastmod>2026-10-02T19:04:50-05:00</lastmod>
     </url>
     <url>
-        <loc>https://carlosgruiz.dev/posts/tag/dogfooding/</loc>
-        <lastmod>2026-10-02T19:04:50-05:00</lastmod>
-    </url>
-    <url>
-        <loc>https://carlosgruiz.dev/posts/tag/dogfooding/page2/</loc>
-        <lastmod>2026-10-02T19:04:50-05:00</lastmod>
-    </url>
-    <url>
         <loc>https://carlosgruiz.dev/posts/tag/javascript/</loc>
-        <lastmod>2026-10-02T19:04:50-05:00</lastmod>
-    </url>
-    <url>
-        <loc>https://carlosgruiz.dev/posts/tag/framework/</loc>
         <lastmod>2026-10-02T19:04:50-05:00</lastmod>
     </url>
     <url>
