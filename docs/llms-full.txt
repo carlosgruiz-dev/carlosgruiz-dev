@@ -2403,10 +2403,11 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Bitácora para instalar NetBeans en Gentoo Linux seleccionando los módulos deseados mediante la variable NETBEANS_MODULES.
 
- ES
  Feb 2, 2014 —
 
  2 minute(s) read
+
+ ES
 
 ### [#data](/posts/tag/data/)
 
@@ -2456,19 +2457,21 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Receta para elaborar un mapa electoral con los resultados de una elección usando Quantum GIS: ingredientes y procedimiento paso a paso.
 
- ES
  Apr 18, 2013 —
 
  2 minute(s) read
+
+ ES
 
  Urumaco y los datos
 
  Sobre Urumaco, un visualizador cartográfico educativo, y los retos de conseguir datos geográficos abiertos en Venezuela.
 
- ES
  Dec 3, 2012 —
 
  6 minute(s) read
+
+ ES
 
 ### [#freebsd](/posts/tag/freebsd/)
 
@@ -2518,10 +2521,11 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Practicing with a FreeBSD installation as a guest OS on VirtualBox, and how to make your own animated gif with ImageMagick.
 
- EN
  Aug 21, 2016 —
 
  1 minute(s) read
+
+ EN
 
 ### [#collaborations](/posts/tag/collaborations/)
 
@@ -2571,46 +2575,51 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Entrevista con Jesús Gómez del proyecto Python Venezuela sobre mis inicios como programador, Python y el proyecto en el que trabajo.
 
- ES
  Sep 21, 2018 —
 
  1 minute(s) read
+
+ ES
 
  Comunidades Tecnologicas 101
 
  Mi experiencia sobre cómo iniciar y mantener una comunidad tecnológica, a propósito de la visita a los jóvenes de la UPTOS-CR en Cariaco.
 
- ES
  Oct 30, 2013 —
 
  6 minute(s) read
+
+ ES
 
  Migraciones a Software Libre (Parte 1)
 
  Recomendaciones sobre migración a software libre basadas en la experiencia: antecedentes en Venezuela, las leyes de Newton del cambio y la direccionalidad de la migración.
 
- ES
  Apr 16, 2013 —
 
  11 minute(s) read
+
+ ES
 
  Geomatica Libre en Venezuela (Presentación a José Sosa - CNTI)
 
  Presentación sobre Geomática Libre en Venezuela ante José Sosa, presidente del CNTI, junto a Zaida Pinto y Richard Hernandez.
 
- ES
  Dec 11, 2012 —
 
  1 minute(s) read
+
+ ES
 
  Pycon Venezuela 2012
 
  Crónica del PyCon Venezuela 2012: tres días que consolidaron la comunidad Python del país, con Pygouts, PyDays y nuevas ediciones en camino.
 
- ES
  Nov 5, 2012 —
 
  2 minute(s) read
+
+ ES
 
  Page 1 of 2
 
@@ -2662,19 +2671,21 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Entrevista con Osledy Bazó y Daniel Rodríguez del podcast Echando Código sobre TuBaseDeDatosLibre.org y la experiencia como programador.
 
- ES
  Oct 15, 2012 —
 
  2 minute(s) read
+
+ ES
 
  Taller de Geo Gobierno en Línea
 
  Crónica del 2do Taller de Geo Gobierno en Línea: OpenStreetMap, el Mapa Colaborativo de Venezuela y la geomática libre.
 
- ES
  Oct 14, 2012 —
 
  3 minute(s) read
+
+ ES
 
  Page 2 of 2
 
@@ -2726,46 +2737,51 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Receta para elaborar un mapa electoral con los resultados de una elección usando Quantum GIS: ingredientes y procedimiento paso a paso.
 
- ES
  Apr 18, 2013 —
 
  2 minute(s) read
+
+ ES
 
  Geomatica Libre en Venezuela (Presentación a José Sosa - CNTI)
 
  Presentación sobre Geomática Libre en Venezuela ante José Sosa, presidente del CNTI, junto a Zaida Pinto y Richard Hernandez.
 
- ES
  Dec 11, 2012 —
 
  1 minute(s) read
+
+ ES
 
  Urumaco y los datos
 
  Sobre Urumaco, un visualizador cartográfico educativo, y los retos de conseguir datos geográficos abiertos en Venezuela.
 
- ES
  Dec 3, 2012 —
 
  6 minute(s) read
+
+ ES
 
  Web Mapping con Django
 
  Material del taller de aplicaciones web de mapas con Django presentado en el PyCon Venezuela 2012: presentación paso a paso y ejercicios resueltos.
 
- ES
  Nov 7, 2012 —
 
  1 minute(s) read
+
+ ES
 
  Taller de Geo Gobierno en Línea
 
  Crónica del 2do Taller de Geo Gobierno en Línea: OpenStreetMap, el Mapa Colaborativo de Venezuela y la geomática libre.
 
- ES
  Oct 14, 2012 —
 
  3 minute(s) read
+
+ ES
 
  Page 1 of 2
 
@@ -2817,28 +2833,31 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Presentación sobre las bondades del uso de OpenStreetMap, realizada en las jornadas de tecnologías de información libres para vivir viviendo.
 
- ES
  Sep 19, 2011 —
 
  1 minute(s) read
+
+ ES
 
  GeoEtiquetas (Presentación en Jornadas gvSIG)
 
  Presentación del proyecto GeoEtiquetas, en las 2das Jornadas de gvSIG Latinoamérica y del Caribe.
 
- ES
  Jul 19, 2010 —
 
  1 minute(s) read
+
+ ES
 
  Introduccion a Openlayers
 
  Introducción a OpenLayers, la librería JavaScript para colocar mapas en una página web, con un ejemplo paso a paso.
 
- ES
  Jun 9, 2010 —
 
  4 minute(s) read
+
+ ES
 
  Page 2 of 2
 
@@ -2890,28 +2909,31 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Entrevista con Jesús Gómez del proyecto Python Venezuela sobre mis inicios como programador, Python y el proyecto en el que trabajo.
 
- ES
  Sep 21, 2018 —
 
  1 minute(s) read
+
+ ES
 
  Camelot
 
  Sobre Camelot, un proyecto para GUIs en Python inspirado en Django, con la presentación de FOSDEM 2009.
 
- ES
  Jun 9, 2010 —
 
  1 minute(s) read
+
+ ES
 
  El Lenguaje De Programacion Javascript
 
  Una serie de videos que introducen el lenguaje de programación JavaScript, con las filminas de Douglas Crockford.
 
- ES
  Aug 3, 2009 —
 
  1 minute(s) read
+
+ ES
 
 ### [#lab](/posts/tag/lab/)
 
@@ -2961,46 +2983,51 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Cómo empezar un proyecto de Haskell con Stack, usando plantillas para crear nuevos proyectos.
 
- EN
  Mar 4, 2018 —
 
  1 minute(s) read
+
+ EN
 
  Haskell Simple HTTP Server
 
  Un proyecto para crear un servidor HTTP simple en Haskell, comparando sockets, Wai y una referencia en Node.js.
 
- EN
  Aug 20, 2017 —
 
  3 minute(s) read
+
+ EN
 
  Installing FreeBSD on Virtualbox
 
  Practicing with a FreeBSD installation as a guest OS on VirtualBox, and how to make your own animated gif with ImageMagick.
 
- EN
  Aug 21, 2016 —
 
  1 minute(s) read
+
+ EN
 
  Introducción a ZODB
 
  Introducción a ZODB (Zope Object Data Base), un gestor de bases de datos orientado a objetos para Python: instalación, ejemplos y almacenes disponibles.
 
- ES
  Jul 26, 2013 —
 
  10 minute(s) read
+
+ ES
 
  Urumaco y los datos
 
  Sobre Urumaco, un visualizador cartográfico educativo, y los retos de conseguir datos geográficos abiertos en Venezuela.
 
- ES
  Dec 3, 2012 —
 
  6 minute(s) read
+
+ ES
 
  Page 1 of 3
 
@@ -3052,46 +3079,51 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  El concepto de comer la propia comida (eating your own dog food) para desmontar mitos tecnológicos y tomar mejores decisiones al adoptar tecnologías.
 
- ES
  Oct 18, 2012 —
 
  3 minute(s) read
+
+ ES
 
  Mi Distro de Linux
 
  Impresiones no técnicas sobre las distribuciones de GNU/Linux que he usado: Fedora, Gentoo, Sabayon, (x)Ubuntu, Canaima, Debian, Mint y Suse.
 
- ES
  Apr 10, 2012 —
 
  5 minute(s) read
+
+ ES
 
  Frameworks de C++ para la web
 
  Un repaso de frameworks y toolkits para desarrollar para la web con C++: tntnet, TreeFrog Framework, Wt y CppCMS.
 
- ES
  Apr 3, 2012 —
 
  7 minute(s) read
+
+ ES
 
  Django vs Pylons
 
  Comparación entre Django y Pylons como frameworks web en Python: popularidad, administración, documentación, plantillas, URLs y flexibilidad.
 
- ES
  Aug 15, 2010 —
 
  5 minute(s) read
+
+ ES
 
  Camelot
 
  Sobre Camelot, un proyecto para GUIs en Python inspirado en Django, con la presentación de FOSDEM 2009.
 
- ES
  Jun 9, 2010 —
 
  1 minute(s) read
+
+ ES
 
  Page 2 of 3
 
@@ -3143,19 +3175,21 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Introducción a OpenLayers, la librería JavaScript para colocar mapas en una página web, con un ejemplo paso a paso.
 
- ES
  Jun 9, 2010 —
 
  4 minute(s) read
+
+ ES
 
  El Lenguaje De Programacion Javascript
 
  Una serie de videos que introducen el lenguaje de programación JavaScript, con las filminas de Douglas Crockford.
 
- ES
  Aug 3, 2009 —
 
  1 minute(s) read
+
+ ES
 
  Page 3 of 3
 
@@ -3207,19 +3241,21 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  gitignore.io, un generador de archivos .gitignore para sus proyectos.
 
- ES
  Sep 22, 2014 —
 
  1 minute(s) read
+
+ ES
 
  Convertir repositorios Mercurial a git
 
  Cómo migrar repositorios Mercurial a git usando fast-export: el paso a paso.
 
- ES
  Feb 4, 2013 —
 
  1 minute(s) read
+
+ ES
 
 ### [#postgresql](/posts/tag/postgresql/)
 
@@ -3269,46 +3305,51 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Ponencia sobre bases de datos libres presentada en la 1ra Cayapa Universitaria de la UPTOS-CR, en representación de TuBaseDeDatosLibre.org.
 
- ES
  Oct 30, 2013 —
 
  1 minute(s) read
+
+ ES
 
  “Hola PostgreSQL” (con Python)
 
  Cómo conectar Python con PostgreSQL usando psycopg2 y la DB API 2.0 (PEP-249): instalación, conexión y un pequeño script.
 
- ES
  Feb 18, 2013 —
 
  6 minute(s) read
+
+ ES
 
  Tutorial “Introducción a la programacion Qt” y otros hallazgos en la azotea
 
  Pasos resueltos del tutorial &#39;Getting Started Programming with Qt&#39; y otros trucos: unir repositorios Mercurial, eliminar espacios en nombres y mover una base PostgreSQL.
 
- ES
  Jan 25, 2013 —
 
  2 minute(s) read
+
+ ES
 
  Mini Taller de Base de Datos y PostgreSQL
 
  Material del taller introductorio de bases de datos y PostgreSQL dictado con TuBaseDeDatosLibre.org en Corpoelec y el Ministerio de la Cultura.
 
- ES
  Dec 10, 2012 —
 
  1 minute(s) read
+
+ ES
 
  Requerimientos para PostgreSQL
 
  Presentación sobre los requerimientos para PostgreSQL, realizada en el 3er Encuentro de Migración a Bases de Datos Libres (CANTV, 2012).
 
- ES
  May 30, 2012 —
 
  1 minute(s) read
+
+ ES
 
  Page 1 of 2
 
@@ -3360,10 +3401,11 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Consideraciones sobre lo que se entiende por Alta Disponibilidad desde el punto de vista de las bases de datos, y en particular con PostgreSQL.
 
- ES
  Nov 29, 2011 —
 
  1 minute(s) read
+
+ ES
 
  Page 2 of 2
 
@@ -3415,19 +3457,21 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Sobre la expresión &#39;outrunning the bear&#39; (o dejar atrás al oso) y cómo enfocar las energías hacia los competidores directos.
 
- ES
  Jan 31, 2014 —
 
  2 minute(s) read
+
+ ES
 
  Dogfooding
 
  El concepto de comer la propia comida (eating your own dog food) para desmontar mitos tecnológicos y tomar mejores decisiones al adoptar tecnologías.
 
- ES
  Oct 18, 2012 —
 
  3 minute(s) read
+
+ ES
 
 ### [#web](/posts/tag/web/)
 
@@ -3477,19 +3521,21 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Un repaso de frameworks y toolkits para desarrollar para la web con C++: tntnet, TreeFrog Framework, Wt y CppCMS.
 
- ES
  Apr 3, 2012 —
 
  7 minute(s) read
+
+ ES
 
  Introduccion a Openlayers
 
  Introducción a OpenLayers, la librería JavaScript para colocar mapas en una página web, con un ejemplo paso a paso.
 
- ES
  Jun 9, 2010 —
 
  4 minute(s) read
+
+ ES
 
 ### [#linux](/posts/tag/linux/)
 
@@ -3539,10 +3585,11 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Impresiones no técnicas sobre las distribuciones de GNU/Linux que he usado: Fedora, Gentoo, Sabayon, (x)Ubuntu, Canaima, Debian, Mint y Suse.
 
- ES
  Apr 10, 2012 —
 
  5 minute(s) read
+
+ ES
 
 ### [#talks](/posts/tag/talks/)
 
@@ -3592,46 +3639,51 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Presentación de mi primera charla sobre vim en el PyDay Caracas 2016.
 
- ES
  Apr 22, 2016 —
 
  1 minute(s) read
+
+ ES
 
  Bases de Datos Libres desde 40.000 pies de altura
 
  Ponencia sobre bases de datos libres presentada en la 1ra Cayapa Universitaria de la UPTOS-CR, en representación de TuBaseDeDatosLibre.org.
 
- ES
  Oct 30, 2013 —
 
  1 minute(s) read
+
+ ES
 
  ¿Por qué hacemos persistencia de datos?
 
  Presentación sobre bases de datos y persistencia de datos en la 1ra sensibilización para la adopción de bases de datos libres del CNTI.
 
- ES
  Sep 6, 2013 —
 
  1 minute(s) read
+
+ ES
 
  Mini Taller de Base de Datos y PostgreSQL
 
  Material del taller introductorio de bases de datos y PostgreSQL dictado con TuBaseDeDatosLibre.org en Corpoelec y el Ministerio de la Cultura.
 
- ES
  Dec 10, 2012 —
 
  1 minute(s) read
+
+ ES
 
  Integrando C++ con Python
 
  Ejemplos prácticos de la charla del PyCon Venezuela 2012 para integrar Python y C++: incrustar Python, Swig y Boost.
 
- ES
  Nov 11, 2012 —
 
  6 minute(s) read
+
+ ES
 
  Page 1 of 3
 
@@ -3683,46 +3735,51 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Material del taller de aplicaciones web de mapas con Django presentado en el PyCon Venezuela 2012: presentación paso a paso y ejercicios resueltos.
 
- ES
  Nov 7, 2012 —
 
  1 minute(s) read
+
+ ES
 
  Requerimientos para PostgreSQL
 
  Presentación sobre los requerimientos para PostgreSQL, realizada en el 3er Encuentro de Migración a Bases de Datos Libres (CANTV, 2012).
 
- ES
  May 30, 2012 —
 
  1 minute(s) read
+
+ ES
 
  Alta Disponibilidad con PostgreSQL
 
  Consideraciones sobre lo que se entiende por Alta Disponibilidad desde el punto de vista de las bases de datos, y en particular con PostgreSQL.
 
- ES
  Nov 29, 2011 —
 
  1 minute(s) read
+
+ ES
 
  Mejores Prácticas para la Migracion de Bases de Datos
 
  Presentación sobre los aspectos no meramente técnicos a tomar en cuenta al migrar bases de datos, en el 2do Encuentro de Migración de Bases de Datos Privativas a Tecnologías de Información Libres.
 
- ES
  Oct 5, 2011 —
 
  1 minute(s) read
+
+ ES
 
  Mapa Colaborativo de Venezuela con OpenStreetMap
 
  Presentación sobre las bondades del uso de OpenStreetMap, realizada en las jornadas de tecnologías de información libres para vivir viviendo.
 
- ES
  Sep 19, 2011 —
 
  1 minute(s) read
+
+ ES
 
  Page 2 of 3
 
@@ -3774,19 +3831,21 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Inspirado en Scott Pilgrim vs El Mundo y en el Día Python de mayo de 2011, una presentación sobre por qué usar Python para tu proyecto.
 
- ES
  May 10, 2011 —
 
  1 minute(s) read
+
+ ES
 
  GeoEtiquetas (Presentación en Jornadas gvSIG)
 
  Presentación del proyecto GeoEtiquetas, en las 2das Jornadas de gvSIG Latinoamérica y del Caribe.
 
- ES
  Jul 19, 2010 —
 
  1 minute(s) read
+
+ ES
 
  Page 3 of 3
 
@@ -3838,28 +3897,31 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Cómo empezar un proyecto de Haskell con Stack, usando plantillas para crear nuevos proyectos.
 
- EN
  Mar 4, 2018 —
 
  1 minute(s) read
+
+ EN
 
  Haskell Simple HTTP Server
 
  Un proyecto para crear un servidor HTTP simple en Haskell, comparando sockets, Wai y una referencia en Node.js.
 
- EN
  Aug 20, 2017 —
 
  3 minute(s) read
+
+ EN
 
  Installing FreeBSD on Virtualbox
 
  Practicing with a FreeBSD installation as a guest OS on VirtualBox, and how to make your own animated gif with ImageMagick.
 
- EN
  Aug 21, 2016 —
 
  1 minute(s) read
+
+ EN
 
 ### [#vim](/posts/tag/vim/)
 
@@ -3909,10 +3971,11 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Presentación de mi primera charla sobre vim en el PyDay Caracas 2016.
 
- ES
  Apr 22, 2016 —
 
  1 minute(s) read
+
+ ES
 
 ### [#tutorial](/posts/tag/tutorial/)
 
@@ -3962,46 +4025,51 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Bitácora para instalar NetBeans en Gentoo Linux seleccionando los módulos deseados mediante la variable NETBEANS_MODULES.
 
- ES
  Feb 2, 2014 —
 
  2 minute(s) read
+
+ ES
 
  Introducción a Pyramid
 
  Introducción a Pyramid, un framework ligero para desarrollo web en Python: principios, instalación, primeras aplicaciones y el uso de armazones con SQLAlchemy.
 
- ES
  Aug 20, 2013 —
 
  15 minute(s) read
+
+ ES
 
  Introducción a ZODB
 
  Introducción a ZODB (Zope Object Data Base), un gestor de bases de datos orientado a objetos para Python: instalación, ejemplos y almacenes disponibles.
 
- ES
  Jul 26, 2013 —
 
  10 minute(s) read
+
+ ES
 
  Receta para hacer un mapa electoral simple
 
  Receta para elaborar un mapa electoral con los resultados de una elección usando Quantum GIS: ingredientes y procedimiento paso a paso.
 
- ES
  Apr 18, 2013 —
 
  2 minute(s) read
+
+ ES
 
  “Hola PostgreSQL” (con Python)
 
  Cómo conectar Python con PostgreSQL usando psycopg2 y la DB API 2.0 (PEP-249): instalación, conexión y un pequeño script.
 
- ES
  Feb 18, 2013 —
 
  6 minute(s) read
+
+ ES
 
  Page 1 of 2
 
@@ -4053,28 +4121,31 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Cómo migrar repositorios Mercurial a git usando fast-export: el paso a paso.
 
- ES
  Feb 4, 2013 —
 
  1 minute(s) read
+
+ ES
 
  Tutorial “Introducción a la programacion Qt” y otros hallazgos en la azotea
 
  Pasos resueltos del tutorial &#39;Getting Started Programming with Qt&#39; y otros trucos: unir repositorios Mercurial, eliminar espacios en nombres y mover una base PostgreSQL.
 
- ES
  Jan 25, 2013 —
 
  2 minute(s) read
+
+ ES
 
  OpenVE y los “Kits de arranque”
 
  Kits de arranque para OpenVE: guías que permiten en 15 minutos tomarle el gusto a un lenguaje, y el esqueleto estándar que las compone.
 
- ES
  Oct 28, 2012 —
 
  4 minute(s) read
+
+ ES
 
  Page 2 of 2
 
@@ -4126,19 +4197,21 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Cómo empezar un proyecto de Haskell con Stack, usando plantillas para crear nuevos proyectos.
 
- EN
  Mar 4, 2018 —
 
  1 minute(s) read
+
+ EN
 
  Haskell Simple HTTP Server
 
  Un proyecto para crear un servidor HTTP simple en Haskell, comparando sockets, Wai y una referencia en Node.js.
 
- EN
  Aug 20, 2017 —
 
  3 minute(s) read
+
+ EN
 
 ### [#databases](/posts/tag/databases/)
 
@@ -4188,46 +4261,51 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Ponencia sobre bases de datos libres presentada en la 1ra Cayapa Universitaria de la UPTOS-CR, en representación de TuBaseDeDatosLibre.org.
 
- ES
  Oct 30, 2013 —
 
  1 minute(s) read
+
+ ES
 
  ¿Por qué hacemos persistencia de datos?
 
  Presentación sobre bases de datos y persistencia de datos en la 1ra sensibilización para la adopción de bases de datos libres del CNTI.
 
- ES
  Sep 6, 2013 —
 
  1 minute(s) read
+
+ ES
 
  Introducción a ZODB
 
  Introducción a ZODB (Zope Object Data Base), un gestor de bases de datos orientado a objetos para Python: instalación, ejemplos y almacenes disponibles.
 
- ES
  Jul 26, 2013 —
 
  10 minute(s) read
+
+ ES
 
  Mini Taller de Base de Datos y PostgreSQL
 
  Material del taller introductorio de bases de datos y PostgreSQL dictado con TuBaseDeDatosLibre.org en Corpoelec y el Ministerio de la Cultura.
 
- ES
  Dec 10, 2012 —
 
  1 minute(s) read
+
+ ES
 
  Entrevista en echandocodigo.com
 
  Entrevista con Osledy Bazó y Daniel Rodríguez del podcast Echando Código sobre TuBaseDeDatosLibre.org y la experiencia como programador.
 
- ES
  Oct 15, 2012 —
 
  2 minute(s) read
+
+ ES
 
  Page 1 of 2
 
@@ -4279,28 +4357,31 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Presentación sobre los requerimientos para PostgreSQL, realizada en el 3er Encuentro de Migración a Bases de Datos Libres (CANTV, 2012).
 
- ES
  May 30, 2012 —
 
  1 minute(s) read
+
+ ES
 
  Alta Disponibilidad con PostgreSQL
 
  Consideraciones sobre lo que se entiende por Alta Disponibilidad desde el punto de vista de las bases de datos, y en particular con PostgreSQL.
 
- ES
  Nov 29, 2011 —
 
  1 minute(s) read
+
+ ES
 
  Mejores Prácticas para la Migracion de Bases de Datos
 
  Presentación sobre los aspectos no meramente técnicos a tomar en cuenta al migrar bases de datos, en el 2do Encuentro de Migración de Bases de Datos Privativas a Tecnologías de Información Libres.
 
- ES
  Oct 5, 2011 —
 
  1 minute(s) read
+
+ ES
 
  Page 2 of 2
 
@@ -4352,46 +4433,51 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Entrevista con Jesús Gómez del proyecto Python Venezuela sobre mis inicios como programador, Python y el proyecto en el que trabajo.
 
- ES
  Sep 21, 2018 —
 
  1 minute(s) read
+
+ ES
 
  Vim + Python Mode
 
  Presentación de mi primera charla sobre vim en el PyDay Caracas 2016.
 
- ES
  Apr 22, 2016 —
 
  1 minute(s) read
+
+ ES
 
  Manten tu documentacion a mano con Zeal
 
  Zeal, una herramienta para explorar la documentación de las APIs más populares en modo desconectado: instalación, docsets e integraciones.
 
- ES
  Mar 13, 2015 —
 
  2 minute(s) read
+
+ ES
 
  Generador de archivos .gitignore
 
  gitignore.io, un generador de archivos .gitignore para sus proyectos.
 
- ES
  Sep 22, 2014 —
 
  1 minute(s) read
+
+ ES
 
  Instalar Netbeans en Gentoo
 
  Bitácora para instalar NetBeans en Gentoo Linux seleccionando los módulos deseados mediante la variable NETBEANS_MODULES.
 
- ES
  Feb 2, 2014 —
 
  2 minute(s) read
+
+ ES
 
  Page 1 of 8
 
@@ -4443,46 +4529,51 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Sobre la expresión &#39;outrunning the bear&#39; (o dejar atrás al oso) y cómo enfocar las energías hacia los competidores directos.
 
- ES
  Jan 31, 2014 —
 
  2 minute(s) read
+
+ ES
 
  Bases de Datos Libres desde 40.000 pies de altura
 
  Ponencia sobre bases de datos libres presentada en la 1ra Cayapa Universitaria de la UPTOS-CR, en representación de TuBaseDeDatosLibre.org.
 
- ES
  Oct 30, 2013 —
 
  1 minute(s) read
+
+ ES
 
  Comunidades Tecnologicas 101
 
  Mi experiencia sobre cómo iniciar y mantener una comunidad tecnológica, a propósito de la visita a los jóvenes de la UPTOS-CR en Cariaco.
 
- ES
  Oct 30, 2013 —
 
  6 minute(s) read
+
+ ES
 
  ¿Por qué hacemos persistencia de datos?
 
  Presentación sobre bases de datos y persistencia de datos en la 1ra sensibilización para la adopción de bases de datos libres del CNTI.
 
- ES
  Sep 6, 2013 —
 
  1 minute(s) read
+
+ ES
 
  Introducción a Pyramid
 
  Introducción a Pyramid, un framework ligero para desarrollo web en Python: principios, instalación, primeras aplicaciones y el uso de armazones con SQLAlchemy.
 
- ES
  Aug 20, 2013 —
 
  15 minute(s) read
+
+ ES
 
  Page 2 of 8
 
@@ -4534,46 +4625,51 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Introducción a ZODB (Zope Object Data Base), un gestor de bases de datos orientado a objetos para Python: instalación, ejemplos y almacenes disponibles.
 
- ES
  Jul 26, 2013 —
 
  10 minute(s) read
+
+ ES
 
  Llena tu Windows de FOSS
 
  Mi set de herramientas libres y de código abierto para trabajar en Windows: programas, un terminal bash con Cygwin, y lo que decidí no instalar.
 
- ES
  Jul 12, 2013 —
 
  9 minute(s) read
+
+ ES
 
  Receta para hacer un mapa electoral simple
 
  Receta para elaborar un mapa electoral con los resultados de una elección usando Quantum GIS: ingredientes y procedimiento paso a paso.
 
- ES
  Apr 18, 2013 —
 
  2 minute(s) read
+
+ ES
 
  Migraciones a Software Libre (Parte 1)
 
  Recomendaciones sobre migración a software libre basadas en la experiencia: antecedentes en Venezuela, las leyes de Newton del cambio y la direccionalidad de la migración.
 
- ES
  Apr 16, 2013 —
 
  11 minute(s) read
+
+ ES
 
  “Hola PostgreSQL” (con Python)
 
  Cómo conectar Python con PostgreSQL usando psycopg2 y la DB API 2.0 (PEP-249): instalación, conexión y un pequeño script.
 
- ES
  Feb 18, 2013 —
 
  6 minute(s) read
+
+ ES
 
  Page 3 of 8
 
@@ -4625,46 +4721,51 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Cómo migrar repositorios Mercurial a git usando fast-export: el paso a paso.
 
- ES
  Feb 4, 2013 —
 
  1 minute(s) read
+
+ ES
 
  Tutorial “Introducción a la programacion Qt” y otros hallazgos en la azotea
 
  Pasos resueltos del tutorial &#39;Getting Started Programming with Qt&#39; y otros trucos: unir repositorios Mercurial, eliminar espacios en nombres y mover una base PostgreSQL.
 
- ES
  Jan 25, 2013 —
 
  2 minute(s) read
+
+ ES
 
  Geomatica Libre en Venezuela (Presentación a José Sosa - CNTI)
 
  Presentación sobre Geomática Libre en Venezuela ante José Sosa, presidente del CNTI, junto a Zaida Pinto y Richard Hernandez.
 
- ES
  Dec 11, 2012 —
 
  1 minute(s) read
+
+ ES
 
  Mini Taller de Base de Datos y PostgreSQL
 
  Material del taller introductorio de bases de datos y PostgreSQL dictado con TuBaseDeDatosLibre.org en Corpoelec y el Ministerio de la Cultura.
 
- ES
  Dec 10, 2012 —
 
  1 minute(s) read
+
+ ES
 
  Urumaco y los datos
 
  Sobre Urumaco, un visualizador cartográfico educativo, y los retos de conseguir datos geográficos abiertos en Venezuela.
 
- ES
  Dec 3, 2012 —
 
  6 minute(s) read
+
+ ES
 
  Page 4 of 8
 
@@ -4716,46 +4817,51 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Ejemplos prácticos de la charla del PyCon Venezuela 2012 para integrar Python y C++: incrustar Python, Swig y Boost.
 
- ES
  Nov 11, 2012 —
 
  6 minute(s) read
+
+ ES
 
  Web Mapping con Django
 
  Material del taller de aplicaciones web de mapas con Django presentado en el PyCon Venezuela 2012: presentación paso a paso y ejercicios resueltos.
 
- ES
  Nov 7, 2012 —
 
  1 minute(s) read
+
+ ES
 
  Pycon Venezuela 2012
 
  Crónica del PyCon Venezuela 2012: tres días que consolidaron la comunidad Python del país, con Pygouts, PyDays y nuevas ediciones en camino.
 
- ES
  Nov 5, 2012 —
 
  2 minute(s) read
+
+ ES
 
  OpenVE y los “Kits de arranque”
 
  Kits de arranque para OpenVE: guías que permiten en 15 minutos tomarle el gusto a un lenguaje, y el esqueleto estándar que las compone.
 
- ES
  Oct 28, 2012 —
 
  4 minute(s) read
+
+ ES
 
  Dogfooding
 
  El concepto de comer la propia comida (eating your own dog food) para desmontar mitos tecnológicos y tomar mejores decisiones al adoptar tecnologías.
 
- ES
  Oct 18, 2012 —
 
  3 minute(s) read
+
+ ES
 
  Page 5 of 8
 
@@ -4807,46 +4913,51 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Entrevista con Osledy Bazó y Daniel Rodríguez del podcast Echando Código sobre TuBaseDeDatosLibre.org y la experiencia como programador.
 
- ES
  Oct 15, 2012 —
 
  2 minute(s) read
+
+ ES
 
  Taller de Geo Gobierno en Línea
 
  Crónica del 2do Taller de Geo Gobierno en Línea: OpenStreetMap, el Mapa Colaborativo de Venezuela y la geomática libre.
 
- ES
  Oct 14, 2012 —
 
  3 minute(s) read
+
+ ES
 
  Requerimientos para PostgreSQL
 
  Presentación sobre los requerimientos para PostgreSQL, realizada en el 3er Encuentro de Migración a Bases de Datos Libres (CANTV, 2012).
 
- ES
  May 30, 2012 —
 
  1 minute(s) read
+
+ ES
 
  Mi Distro de Linux
 
  Impresiones no técnicas sobre las distribuciones de GNU/Linux que he usado: Fedora, Gentoo, Sabayon, (x)Ubuntu, Canaima, Debian, Mint y Suse.
 
- ES
  Apr 10, 2012 —
 
  5 minute(s) read
+
+ ES
 
  Frameworks de C++ para la web
 
  Un repaso de frameworks y toolkits para desarrollar para la web con C++: tntnet, TreeFrog Framework, Wt y CppCMS.
 
- ES
  Apr 3, 2012 —
 
  7 minute(s) read
+
+ ES
 
  Page 6 of 8
 
@@ -4898,46 +5009,51 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Consideraciones sobre lo que se entiende por Alta Disponibilidad desde el punto de vista de las bases de datos, y en particular con PostgreSQL.
 
- ES
  Nov 29, 2011 —
 
  1 minute(s) read
+
+ ES
 
  Mejores Prácticas para la Migracion de Bases de Datos
 
  Presentación sobre los aspectos no meramente técnicos a tomar en cuenta al migrar bases de datos, en el 2do Encuentro de Migración de Bases de Datos Privativas a Tecnologías de Información Libres.
 
- ES
  Oct 5, 2011 —
 
  1 minute(s) read
+
+ ES
 
  Mapa Colaborativo de Venezuela con OpenStreetMap
 
  Presentación sobre las bondades del uso de OpenStreetMap, realizada en las jornadas de tecnologías de información libres para vivir viviendo.
 
- ES
  Sep 19, 2011 —
 
  1 minute(s) read
+
+ ES
 
  Python vs El Mundo
 
  Inspirado en Scott Pilgrim vs El Mundo y en el Día Python de mayo de 2011, una presentación sobre por qué usar Python para tu proyecto.
 
- ES
  May 10, 2011 —
 
  1 minute(s) read
+
+ ES
 
  Django vs Pylons
 
  Comparación entre Django y Pylons como frameworks web en Python: popularidad, administración, documentación, plantillas, URLs y flexibilidad.
 
- ES
  Aug 15, 2010 —
 
  5 minute(s) read
+
+ ES
 
  Page 7 of 8
 
@@ -4989,37 +5105,41 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Presentación del proyecto GeoEtiquetas, en las 2das Jornadas de gvSIG Latinoamérica y del Caribe.
 
- ES
  Jul 19, 2010 —
 
  1 minute(s) read
+
+ ES
 
  Camelot
 
  Sobre Camelot, un proyecto para GUIs en Python inspirado en Django, con la presentación de FOSDEM 2009.
 
- ES
  Jun 9, 2010 —
 
  1 minute(s) read
+
+ ES
 
  Introduccion a Openlayers
 
  Introducción a OpenLayers, la librería JavaScript para colocar mapas en una página web, con un ejemplo paso a paso.
 
- ES
  Jun 9, 2010 —
 
  4 minute(s) read
+
+ ES
 
  El Lenguaje De Programacion Javascript
 
  Una serie de videos que introducen el lenguaje de programación JavaScript, con las filminas de Douglas Crockford.
 
- ES
  Aug 3, 2009 —
 
  1 minute(s) read
+
+ ES
 
  Page 8 of 8
 
@@ -5071,10 +5191,11 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Kits de arranque para OpenVE: guías que permiten en 15 minutos tomarle el gusto a un lenguaje, y el esqueleto estándar que las compone.
 
- ES
  Oct 28, 2012 —
 
  4 minute(s) read
+
+ ES
 
 ### [#cpp](/posts/tag/cpp/)
 
@@ -5124,37 +5245,41 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Pasos resueltos del tutorial &#39;Getting Started Programming with Qt&#39; y otros trucos: unir repositorios Mercurial, eliminar espacios en nombres y mover una base PostgreSQL.
 
- ES
  Jan 25, 2013 —
 
  2 minute(s) read
+
+ ES
 
  Integrando C++ con Python
 
  Ejemplos prácticos de la charla del PyCon Venezuela 2012 para integrar Python y C++: incrustar Python, Swig y Boost.
 
- ES
  Nov 11, 2012 —
 
  6 minute(s) read
+
+ ES
 
  OpenVE y los “Kits de arranque”
 
  Kits de arranque para OpenVE: guías que permiten en 15 minutos tomarle el gusto a un lenguaje, y el esqueleto estándar que las compone.
 
- ES
  Oct 28, 2012 —
 
  4 minute(s) read
+
+ ES
 
  Frameworks de C++ para la web
 
  Un repaso de frameworks y toolkits para desarrollar para la web con C++: tntnet, TreeFrog Framework, Wt y CppCMS.
 
- ES
  Apr 3, 2012 —
 
  7 minute(s) read
+
+ ES
 
 ### [#python](/posts/tag/python/)
 
@@ -5204,46 +5329,51 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Entrevista con Jesús Gómez del proyecto Python Venezuela sobre mis inicios como programador, Python y el proyecto en el que trabajo.
 
- ES
  Sep 21, 2018 —
 
  1 minute(s) read
+
+ ES
 
  Vim + Python Mode
 
  Presentación de mi primera charla sobre vim en el PyDay Caracas 2016.
 
- ES
  Apr 22, 2016 —
 
  1 minute(s) read
+
+ ES
 
  Introducción a Pyramid
 
  Introducción a Pyramid, un framework ligero para desarrollo web en Python: principios, instalación, primeras aplicaciones y el uso de armazones con SQLAlchemy.
 
- ES
  Aug 20, 2013 —
 
  15 minute(s) read
+
+ ES
 
  Introducción a ZODB
 
  Introducción a ZODB (Zope Object Data Base), un gestor de bases de datos orientado a objetos para Python: instalación, ejemplos y almacenes disponibles.
 
- ES
  Jul 26, 2013 —
 
  10 minute(s) read
+
+ ES
 
  “Hola PostgreSQL” (con Python)
 
  Cómo conectar Python con PostgreSQL usando psycopg2 y la DB API 2.0 (PEP-249): instalación, conexión y un pequeño script.
 
- ES
  Feb 18, 2013 —
 
  6 minute(s) read
+
+ ES
 
  Page 1 of 3
 
@@ -5295,46 +5425,51 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Pasos resueltos del tutorial &#39;Getting Started Programming with Qt&#39; y otros trucos: unir repositorios Mercurial, eliminar espacios en nombres y mover una base PostgreSQL.
 
- ES
  Jan 25, 2013 —
 
  2 minute(s) read
+
+ ES
 
  Integrando C++ con Python
 
  Ejemplos prácticos de la charla del PyCon Venezuela 2012 para integrar Python y C++: incrustar Python, Swig y Boost.
 
- ES
  Nov 11, 2012 —
 
  6 minute(s) read
+
+ ES
 
  Web Mapping con Django
 
  Material del taller de aplicaciones web de mapas con Django presentado en el PyCon Venezuela 2012: presentación paso a paso y ejercicios resueltos.
 
- ES
  Nov 7, 2012 —
 
  1 minute(s) read
+
+ ES
 
  Pycon Venezuela 2012
 
  Crónica del PyCon Venezuela 2012: tres días que consolidaron la comunidad Python del país, con Pygouts, PyDays y nuevas ediciones en camino.
 
- ES
  Nov 5, 2012 —
 
  2 minute(s) read
+
+ ES
 
  OpenVE y los “Kits de arranque”
 
  Kits de arranque para OpenVE: guías que permiten en 15 minutos tomarle el gusto a un lenguaje, y el esqueleto estándar que las compone.
 
- ES
  Oct 28, 2012 —
 
  4 minute(s) read
+
+ ES
 
  Page 2 of 3
 
@@ -5386,37 +5521,41 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Inspirado en Scott Pilgrim vs El Mundo y en el Día Python de mayo de 2011, una presentación sobre por qué usar Python para tu proyecto.
 
- ES
  May 10, 2011 —
 
  1 minute(s) read
+
+ ES
 
  Django vs Pylons
 
  Comparación entre Django y Pylons como frameworks web en Python: popularidad, administración, documentación, plantillas, URLs y flexibilidad.
 
- ES
  Aug 15, 2010 —
 
  5 minute(s) read
+
+ ES
 
  GeoEtiquetas (Presentación en Jornadas gvSIG)
 
  Presentación del proyecto GeoEtiquetas, en las 2das Jornadas de gvSIG Latinoamérica y del Caribe.
 
- ES
  Jul 19, 2010 —
 
  1 minute(s) read
+
+ ES
 
  Camelot
 
  Sobre Camelot, un proyecto para GUIs en Python inspirado en Django, con la presentación de FOSDEM 2009.
 
- ES
  Jun 9, 2010 —
 
  1 minute(s) read
+
+ ES
 
  Page 3 of 3
 
@@ -5468,28 +5607,31 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Pasos resueltos del tutorial &#39;Getting Started Programming with Qt&#39; y otros trucos: unir repositorios Mercurial, eliminar espacios en nombres y mover una base PostgreSQL.
 
- ES
  Jan 25, 2013 —
 
  2 minute(s) read
+
+ ES
 
  Urumaco y los datos
 
  Sobre Urumaco, un visualizador cartográfico educativo, y los retos de conseguir datos geográficos abiertos en Venezuela.
 
- ES
  Dec 3, 2012 —
 
  6 minute(s) read
+
+ ES
 
  Camelot
 
  Sobre Camelot, un proyecto para GUIs en Python inspirado en Django, con la presentación de FOSDEM 2009.
 
- ES
  Jun 9, 2010 —
 
  1 minute(s) read
+
+ ES
 
 ### [#documentation](/posts/tag/documentation/)
 
@@ -5539,10 +5681,11 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Zeal, una herramienta para explorar la documentación de las APIs más populares en modo desconectado: instalación, docsets e integraciones.
 
- ES
  Mar 13, 2015 —
 
  2 minute(s) read
+
+ ES
 
 ### [#open-source](/posts/tag/open-source/)
 
@@ -5592,46 +5735,51 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Cómo empezar un proyecto de Haskell con Stack, usando plantillas para crear nuevos proyectos.
 
- EN
  Mar 4, 2018 —
 
  1 minute(s) read
+
+ EN
 
  Haskell Simple HTTP Server
 
  Un proyecto para crear un servidor HTTP simple en Haskell, comparando sockets, Wai y una referencia en Node.js.
 
- EN
  Aug 20, 2017 —
 
  3 minute(s) read
+
+ EN
 
  Installing FreeBSD on Virtualbox
 
  Practicing with a FreeBSD installation as a guest OS on VirtualBox, and how to make your own animated gif with ImageMagick.
 
- EN
  Aug 21, 2016 —
 
  1 minute(s) read
+
+ EN
 
  Vim + Python Mode
 
  Presentación de mi primera charla sobre vim en el PyDay Caracas 2016.
 
- ES
  Apr 22, 2016 —
 
  1 minute(s) read
+
+ ES
 
  Llena tu Windows de FOSS
 
  Mi set de herramientas libres y de código abierto para trabajar en Windows: programas, un terminal bash con Cygwin, y lo que decidí no instalar.
 
- ES
  Jul 12, 2013 —
 
  9 minute(s) read
+
+ ES
 
  Page 1 of 2
 
@@ -5683,19 +5831,21 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Presentación sobre Geomática Libre en Venezuela ante José Sosa, presidente del CNTI, junto a Zaida Pinto y Richard Hernandez.
 
- ES
  Dec 11, 2012 —
 
  1 minute(s) read
+
+ ES
 
  Mini Taller de Base de Datos y PostgreSQL
 
  Material del taller introductorio de bases de datos y PostgreSQL dictado con TuBaseDeDatosLibre.org en Corpoelec y el Ministerio de la Cultura.
 
- ES
  Dec 10, 2012 —
 
  1 minute(s) read
+
+ ES
 
  Page 2 of 2
 
@@ -5747,10 +5897,11 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Bitácora para instalar NetBeans en Gentoo Linux seleccionando los módulos deseados mediante la variable NETBEANS_MODULES.
 
- ES
  Feb 2, 2014 —
 
  2 minute(s) read
+
+ ES
 
 ### [#openlayers](/posts/tag/openlayers/)
 
@@ -5800,10 +5951,11 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Introducción a OpenLayers, la librería JavaScript para colocar mapas en una página web, con un ejemplo paso a paso.
 
- ES
  Jun 9, 2010 —
 
  4 minute(s) read
+
+ ES
 
 ### [#pycon-venezuela](/posts/tag/pycon-venezuela/)
 
@@ -5853,28 +6005,31 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Ejemplos prácticos de la charla del PyCon Venezuela 2012 para integrar Python y C++: incrustar Python, Swig y Boost.
 
- ES
  Nov 11, 2012 —
 
  6 minute(s) read
+
+ ES
 
  Web Mapping con Django
 
  Material del taller de aplicaciones web de mapas con Django presentado en el PyCon Venezuela 2012: presentación paso a paso y ejercicios resueltos.
 
- ES
  Nov 7, 2012 —
 
  1 minute(s) read
+
+ ES
 
  Pycon Venezuela 2012
 
  Crónica del PyCon Venezuela 2012: tres días que consolidaron la comunidad Python del país, con Pygouts, PyDays y nuevas ediciones en camino.
 
- ES
  Nov 5, 2012 —
 
  2 minute(s) read
+
+ ES
 
 ### [#community](/posts/tag/community/)
 
@@ -5924,28 +6079,31 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Entrevista con Jesús Gómez del proyecto Python Venezuela sobre mis inicios como programador, Python y el proyecto en el que trabajo.
 
- ES
  Sep 21, 2018 —
 
  1 minute(s) read
+
+ ES
 
  Comunidades Tecnologicas 101
 
  Mi experiencia sobre cómo iniciar y mantener una comunidad tecnológica, a propósito de la visita a los jóvenes de la UPTOS-CR en Cariaco.
 
- ES
  Oct 30, 2013 —
 
  6 minute(s) read
+
+ ES
 
  Pycon Venezuela 2012
 
  Crónica del PyCon Venezuela 2012: tres días que consolidaron la comunidad Python del país, con Pygouts, PyDays y nuevas ediciones en camino.
 
- ES
  Nov 5, 2012 —
 
  2 minute(s) read
+
+ ES
 
 ### [#sqlalchemy](/posts/tag/sqlalchemy/)
 
@@ -5995,10 +6153,11 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Introducción a Pyramid, un framework ligero para desarrollo web en Python: principios, instalación, primeras aplicaciones y el uso de armazones con SQLAlchemy.
 
- ES
  Aug 20, 2013 —
 
  15 minute(s) read
+
+ ES
 
 ### [#javascript](/posts/tag/javascript/)
 
@@ -6048,10 +6207,11 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Una serie de videos que introducen el lenguaje de programación JavaScript, con las filminas de Douglas Crockford.
 
- ES
  Aug 3, 2009 —
 
  1 minute(s) read
+
+ ES
 
 ### [#django](/posts/tag/django/)
 
@@ -6101,10 +6261,11 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Presentación del proyecto GeoEtiquetas, en las 2das Jornadas de gvSIG Latinoamérica y del Caribe.
 
- ES
  Jul 19, 2010 —
 
  1 minute(s) read
+
+ ES
 
 ### [#qgis](/posts/tag/qgis/)
 
@@ -6154,10 +6315,11 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Receta para elaborar un mapa electoral con los resultados de una elección usando Quantum GIS: ingredientes y procedimiento paso a paso.
 
- ES
  Apr 18, 2013 —
 
  2 minute(s) read
+
+ ES
 
 ### [#tubasededatoslibre](/posts/tag/tubasededatoslibre/)
 
@@ -6207,46 +6369,51 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Presentación sobre bases de datos y persistencia de datos en la 1ra sensibilización para la adopción de bases de datos libres del CNTI.
 
- ES
  Sep 6, 2013 —
 
  1 minute(s) read
+
+ ES
 
  Migraciones a Software Libre (Parte 1)
 
  Recomendaciones sobre migración a software libre basadas en la experiencia: antecedentes en Venezuela, las leyes de Newton del cambio y la direccionalidad de la migración.
 
- ES
  Apr 16, 2013 —
 
  11 minute(s) read
+
+ ES
 
  “Hola PostgreSQL” (con Python)
 
  Cómo conectar Python con PostgreSQL usando psycopg2 y la DB API 2.0 (PEP-249): instalación, conexión y un pequeño script.
 
- ES
  Feb 18, 2013 —
 
  6 minute(s) read
+
+ ES
 
  Mini Taller de Base de Datos y PostgreSQL
 
  Material del taller introductorio de bases de datos y PostgreSQL dictado con TuBaseDeDatosLibre.org en Corpoelec y el Ministerio de la Cultura.
 
- ES
  Dec 10, 2012 —
 
  1 minute(s) read
+
+ ES
 
  Entrevista en echandocodigo.com
 
  Entrevista con Osledy Bazó y Daniel Rodríguez del podcast Echando Código sobre TuBaseDeDatosLibre.org y la experiencia como programador.
 
- ES
  Oct 15, 2012 —
 
  2 minute(s) read
+
+ ES
 
  Page 1 of 2
 
@@ -6298,19 +6465,21 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Presentación sobre los requerimientos para PostgreSQL, realizada en el 3er Encuentro de Migración a Bases de Datos Libres (CANTV, 2012).
 
- ES
  May 30, 2012 —
 
  1 minute(s) read
+
+ ES
 
  Alta Disponibilidad con PostgreSQL
 
  Consideraciones sobre lo que se entiende por Alta Disponibilidad desde el punto de vista de las bases de datos, y en particular con PostgreSQL.
 
- ES
  Nov 29, 2011 —
 
  1 minute(s) read
+
+ ES
 
  Page 2 of 2
 
@@ -6362,10 +6531,11 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Introducción a Pyramid, un framework ligero para desarrollo web en Python: principios, instalación, primeras aplicaciones y el uso de armazones con SQLAlchemy.
 
- ES
  Aug 20, 2013 —
 
  15 minute(s) read
+
+ ES
 
 ### [#mercurial](/posts/tag/mercurial/)
 
@@ -6415,19 +6585,21 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Cómo migrar repositorios Mercurial a git usando fast-export: el paso a paso.
 
- ES
  Feb 4, 2013 —
 
  1 minute(s) read
+
+ ES
 
  Tutorial “Introducción a la programacion Qt” y otros hallazgos en la azotea
 
  Pasos resueltos del tutorial &#39;Getting Started Programming with Qt&#39; y otros trucos: unir repositorios Mercurial, eliminar espacios en nombres y mover una base PostgreSQL.
 
- ES
  Jan 25, 2013 —
 
  2 minute(s) read
+
+ ES
 
 ### [#migration](/posts/tag/migration/)
 
@@ -6477,37 +6649,41 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Mi set de herramientas libres y de código abierto para trabajar en Windows: programas, un terminal bash con Cygwin, y lo que decidí no instalar.
 
- ES
  Jul 12, 2013 —
 
  9 minute(s) read
+
+ ES
 
  Migraciones a Software Libre (Parte 1)
 
  Recomendaciones sobre migración a software libre basadas en la experiencia: antecedentes en Venezuela, las leyes de Newton del cambio y la direccionalidad de la migración.
 
- ES
  Apr 16, 2013 —
 
  11 minute(s) read
+
+ ES
 
  Requerimientos para PostgreSQL
 
  Presentación sobre los requerimientos para PostgreSQL, realizada en el 3er Encuentro de Migración a Bases de Datos Libres (CANTV, 2012).
 
- ES
  May 30, 2012 —
 
  1 minute(s) read
+
+ ES
 
  Mejores Prácticas para la Migracion de Bases de Datos
 
  Presentación sobre los aspectos no meramente técnicos a tomar en cuenta al migrar bases de datos, en el 2do Encuentro de Migración de Bases de Datos Privativas a Tecnologías de Información Libres.
 
- ES
  Oct 5, 2011 —
 
  1 minute(s) read
+
+ ES
 
 ### [#openve](/posts/tag/openve/)
 
@@ -6557,8 +6733,9 @@ const savedTheme = localStorage.getItem(&#39;darkMode&#39;);
 
  Kits de arranque para OpenVE: guías que permiten en 15 minutos tomarle el gusto a un lenguaje, y el esqueleto estándar que las compone.
 
- ES
  Oct 28, 2012 —
 
  4 minute(s) read
+
+ ES
 
